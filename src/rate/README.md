@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Rate } from 'vant';
+import { Rate } from 'ghbui';
 
 Vue.use(Rate);
 ```
@@ -14,7 +14,7 @@ Vue.use(Rate);
 ### Basic Usage
 
 ```html
-<van-rate v-model="value" />
+<ghb-rate v-model="value" />
 ```
 
 ```js
@@ -30,13 +30,13 @@ export default {
 ### Custom Icon
 
 ```html
-<van-rate v-model="value" icon="like" void-icon="like-o" />
+<ghb-rate v-model="value" icon="like" void-icon="like-o" />
 ```
 
 ### Custom Style
 
 ```html
-<van-rate
+<ghb-rate
   v-model="value"
   :size="25"
   color="#ffd21e"
@@ -48,7 +48,7 @@ export default {
 ### Half Star
 
 ```html
-<van-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
+<ghb-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
 ```
 
 ```js
@@ -64,25 +64,25 @@ export default {
 ### Custom Count
 
 ```html
-<van-rate v-model="value" :count="6" />
+<ghb-rate v-model="value" :count="6" />
 ```
 
 ### Disabled
 
 ```html
-<van-rate v-model="value" disabled />
+<ghb-rate v-model="value" disabled />
 ```
 
 ### Readonly
 
 ```html
-<van-rate v-model="value" readonly />
+<ghb-rate v-model="value" readonly />
 ```
 
 ### Change Event
 
 ```html
-<van-rate v-model="value" @change="onChange" />
+<ghb-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript
@@ -110,7 +110,7 @@ export default {
 | disabled-color | Disabled color | _string_ | `#c8c9cc` |
 | icon | Selected icon | _string_ | `star` |
 | void-icon | Void icon | _string_ | `star-o` |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `ghb-icon` |
 | allow-half | Whether to allow half star | _boolean_ | `false` |
 | readonly | Whether to be readonly | _boolean_ | `false` |
 | disabled | Whether to disable rate | _boolean_ | `false` |

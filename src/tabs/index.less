@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-tab {
+.ghb-tab {
   position: relative;
   display: flex;
   flex: 1;
@@ -37,7 +37,7 @@
   }
 }
 
-.van-tabs {
+.ghb-tabs {
   position: relative;
 
   &__wrap {
@@ -53,12 +53,12 @@
     }
 
     &--scrollable {
-      .van-tab {
+      .ghb-tab {
         flex: 1 0 auto;
         padding: 0 @padding-sm;
       }
 
-      .van-tabs__nav {
+      .ghb-tabs__nav {
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
@@ -94,7 +94,7 @@
       border: @border-width-base solid @tabs-default-color;
       border-radius: @border-radius-sm;
 
-      .van-tab {
+      .ghb-tab {
         color: @tabs-default-color;
         border-right: @border-width-base solid @tabs-default-color;
 
@@ -102,7 +102,7 @@
           border-right: none;
         }
 
-        &.van-tab--active {
+        &.ghb-tab--active {
           color: @white;
           background-color: @tabs-default-color;
         }
@@ -140,13 +140,13 @@
   }
 
   &--line {
-    .van-tabs__wrap {
+    .ghb-tabs__wrap {
       height: @tabs-line-height;
     }
   }
 
   &--card {
-    > .van-tabs__wrap {
+    > .ghb-tabs__wrap {
       height: @tabs-card-height;
     }
   }

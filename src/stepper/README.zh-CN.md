@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Stepper } from 'vant';
+import { Stepper } from 'ghbui';
 
 Vue.use(Stepper);
 ```
@@ -20,7 +20,7 @@ Vue.use(Stepper);
 通过 `v-model` 绑定输入值，可以通过 `change` 事件监听到输入值的变化。
 
 ```html
-<van-stepper v-model="value" />
+<ghb-stepper v-model="value" />
 ```
 
 ```js
@@ -38,7 +38,7 @@ export default {
 通过 `step` 属性设置每次点击增加或减少按钮时变化的值，默认为 `1`。
 
 ```html
-<van-stepper v-model="value" step="2" />
+<ghb-stepper v-model="value" step="2" />
 ```
 
 ### 限制输入范围
@@ -46,7 +46,7 @@ export default {
 通过 `min` 和 `max` 属性限制输入值的范围。
 
 ```html
-<van-stepper v-model="value" min="5" max="8" />
+<ghb-stepper v-model="value" min="5" max="8" />
 ```
 
 ### 限制输入整数
@@ -54,7 +54,7 @@ export default {
 设置 `integer` 属性后，输入框将限制只能输入整数。
 
 ```html
-<van-stepper v-model="value" integer />
+<ghb-stepper v-model="value" integer />
 ```
 
 ### 禁用状态
@@ -62,7 +62,7 @@ export default {
 通过设置 `disabled` 属性来禁用步进器，禁用状态下无法点击按钮或修改输入框。
 
 ```html
-<van-stepper v-model="value" disabled />
+<ghb-stepper v-model="value" disabled />
 ```
 
 ### 禁用输入框
@@ -70,7 +70,7 @@ export default {
 通过设置 `disable-input` 属性来禁用输入框，此时按钮仍然可以点击。
 
 ```html
-<van-stepper v-model="value" disable-input />
+<ghb-stepper v-model="value" disable-input />
 ```
 
 ### 固定小数位数
@@ -78,7 +78,7 @@ export default {
 通过设置 `decimal-length` 属性可以保留固定的小数位数。
 
 ```html
-<van-stepper v-model="value" step="0.2" :decimal-length="1" />
+<ghb-stepper v-model="value" step="0.2" :decimal-length="1" />
 ```
 
 ### 自定义大小
@@ -86,7 +86,7 @@ export default {
 通过 `input-width` 属性设置输入框宽度，通过 `button-size` 属性设置按钮大小和输入框高度。
 
 ```html
-<van-stepper v-model="value" input-width="40px" button-size="32px" />
+<ghb-stepper v-model="value" input-width="40px" button-size="32px" />
 ```
 
 ### 异步变更
@@ -94,11 +94,11 @@ export default {
 如果需要异步地修改输入框的值，可以设置 `async-change` 属性，并在 `change` 事件中手动修改 `value`。
 
 ```html
-<van-stepper :value="value" async-change @change="onChange" />
+<ghb-stepper :value="value" async-change @change="onChange" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -126,7 +126,7 @@ export default {
 将 `theme` 设置为 `round` 来展示圆角风格的步进器。
 
 ```html
-<van-stepper v-model="value" theme="round" button-size="22" disable-input />
+<ghb-stepper v-model="value" theme="round" button-size="22" disable-input />
 ```
 
 ## API
@@ -199,5 +199,5 @@ export default {
 如果希望 value 保持 number 类型，可以在 v-model 上添加 `number` 修饰符：
 
 ```html
-<van-stepper v-model.number="value" />
+<ghb-stepper v-model.number="value" />
 ```

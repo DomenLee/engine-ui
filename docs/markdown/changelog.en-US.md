@@ -2,11 +2,11 @@
 
 ### Tips
 
-The current document is the changelog of Vant 2. If you want to view the changelog of Vant 3, please visit [Vant 3 Changelog](https://vant-ui.github.io/vant/next/#/en-US/changelog).
+The current document is the changelog of GHBUI 2. If you want to view the changelog of GHBUI 3, please visit [GHBUI 3 Changelog](https://vant-ui.github.io/vant/next/#/en-US/changelog).
 
 ### Intro
 
-Vant follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
+GHBUI follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
 
 **Release Schedule**
 
@@ -1325,7 +1325,7 @@ Vant follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
 - Tab: incorrect vnode order in some cases [#6140](https://github.com/vant-ui/vant/issues/6140)
 - uploader: automatically filter files exceeding the max-size [#6150](https://github.com/vant-ui/vant/issues/6150)
 - Uploader: file message should be reactive [#6142](https://github.com/vant-ui/vant/issues/6142)
-- types: VanComponent should extends Vue [#6148](https://github.com/vant-ui/vant/issues/6148)
+- types: GhbComponent should extends Vue [#6148](https://github.com/vant-ui/vant/issues/6148)
 
 ### [v2.6.3](https://github.com/vant-ui/vant/compare/v2.6.2...v2.6.3)
 

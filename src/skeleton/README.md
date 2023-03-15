@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Skeleton } from 'vant';
+import { Skeleton } from 'ghbui';
 
 Vue.use(Skeleton);
 ```
@@ -14,21 +14,21 @@ Vue.use(Skeleton);
 ### Basic Usage
 
 ```html
-<van-skeleton title :row="3" />
+<ghb-skeleton title :row="3" />
 ```
 
 ### Show Avatar
 
 ```html
-<van-skeleton title avatar :row="3" />
+<ghb-skeleton title avatar :row="3" />
 ```
 
 ### Show Children
 
 ```html
-<van-skeleton title avatar :row="3" :loading="loading">
+<ghb-skeleton title avatar :row="3" :loading="loading">
   <div>Content</div>
-</van-skeleton>
+</ghb-skeleton>
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { IndexBar } from 'vant';
+import { IndexBar } from 'ghbui';
 
 Vue.use(IndexBar);
 Vue.use(IndexAnchor);
@@ -15,37 +15,37 @@ Vue.use(IndexAnchor);
 ### Basic Usage
 
 ```html
-<van-index-bar>
-  <van-index-anchor index="A" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<ghb-index-bar>
+  <ghb-index-anchor index="A" />
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
 
-  <van-index-anchor index="B" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <ghb-index-anchor index="B" />
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
 
   ...
-</van-index-bar>
+</ghb-index-bar>
 ```
 
 ### Custom Index List
 
 ```html
-<van-index-bar :index-list="indexList">
-  <van-index-anchor index="1">Title 1</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<ghb-index-bar :index-list="indexList">
+  <ghb-index-anchor index="1">Title 1</ghb-index-anchor>
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
 
-  <van-index-anchor index="2">Title 2</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <ghb-index-anchor index="2">Title 2</ghb-index-anchor>
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
+  <ghb-cell title="Text" />
 
   ...
-</van-index-bar>
+</ghb-index-bar>
 ```
 
 ```js

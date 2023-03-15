@@ -1,7 +1,7 @@
 <div class="card">
-  <div class="van-doc-intro">
-    <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img01.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
+  <div class="ghb-doc-intro">
+    <img class="ghb-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img01.yzcdn.cn/vant/logo.png">
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">GHBUI</h2>
     <p>Mobile UI Components built on Vue</p>
   </div>
 </div>
@@ -30,31 +30,31 @@ Please make sure to read the [Contributing Guide](https://github.com/vant-ui/van
 
 ### Browser Support
 
-Vant 2 supports modern browsers and Android >= 4.0、iOS >= 8.0.
+GHBUI 2 supports modern browsers and Android >= 4.0、iOS >= 8.0.
 
-Vant 3 supports modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3).
+GHBUI 3 supports modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3).
 
 ### Official Ecosystem
 
 | Project | Description |
 | --- | --- |
 | [vant-weapp](https://github.com/vant-ui/vant-weapp) | WeChat MiniProgram UI |
-| [vant-demo](https://github.com/vant-ui/vant-demo) | Collection of Vant demos |
+| [vant-demo](https://github.com/vant-ui/vant-demo) | Collection of GHBUI demos |
 | [vant-cli](https://github.com/vant-ui/vant/tree/dev/packages/vant-cli) | Scaffold for UI library |
-| [vant-icons](https://github.com/vant-ui/vant/tree/dev/packages/vant-icons) | Vant icons |
+| [vant-icons](https://github.com/vant-ui/vant/tree/dev/packages/vant-icons) | GHBUI icons |
 | [vant-touch-emulator](https://github.com/vant-ui/vant/tree/dev/packages/vant-touch-emulator) | Using vant in desktop browsers |
 
 ### Community Ecosystem
 
 | Project | Description |
 | --- | --- |
-| [3lang3/react-vant](https://github.com/3lang3/react-vant) | React mobile UI Components based on Vant |
-| [mxdi9i7/vant-react](https://github.com/mxdi9i7/vant-react) | Mobile UI Components built on React and TS, inspired by Vant |
-| [vant-aliapp](https://github.com/ant-move/Vant-Aliapp) | Alipay MiniProgram UI |
-| [taroify](https://gitee.com/mallfoundry/taroify) | Vant Taro |
-| [vant-theme](https://github.com/Aisen60/vant-theme) | Online theme preview built on Vant UI |
-| [@antmjs/vantui](https://github.com/antmjs/vantui) | Mobile UI Components based on Vant, supporting Taro and React |
-| [@formily/vant](https://github.com/formilyjs/vant) | Form solution based on Vant and Formily |
+| [3lang3/react-vant](https://github.com/3lang3/react-vant) | React mobile UI Components based on GHBUI |
+| [mxdi9i7/vant-react](https://github.com/mxdi9i7/vant-react) | Mobile UI Components built on React and TS, inspired by GHBUI |
+| [vant-aliapp](https://github.com/ant-move/GHBUI-Aliapp) | Alipay MiniProgram UI |
+| [taroify](https://gitee.com/mallfoundry/taroify) | GHBUI Taro |
+| [vant-theme](https://github.com/Aisen60/vant-theme) | Online theme preview built on GHBUI UI |
+| [@antmjs/vantui](https://github.com/antmjs/vantui) | Mobile UI Components based on GHBUI, supporting Taro and React |
+| [@formily/vant](https://github.com/formilyjs/vant) | Form solution based on GHBUI and Formily |
 
 ### Links
 

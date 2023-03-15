@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-switch v-model="checked" />
+      <ghb-switch v-model="checked" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-switch v-model="checked" disabled />
+      <ghb-switch v-model="checked" disabled />
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <van-switch v-model="checked" loading />
+      <ghb-switch v-model="checked" loading />
     </demo-block>
 
     <demo-block :title="t('customSize')">
-      <van-switch v-model="checked2" size="24px" />
+      <ghb-switch v-model="checked2" size="24px" />
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <van-switch
+      <ghb-switch
         v-model="checked3"
         active-color="#ee0a24"
         inactive-color="#dcdee0"
@@ -25,15 +25,15 @@
     </demo-block>
 
     <demo-block :title="t('asyncControl')">
-      <van-switch :value="checked4" @input="onInput" />
+      <ghb-switch :value="checked4" @input="onInput" />
     </demo-block>
 
     <demo-block :title="t('withCell')">
-      <van-cell center :title="t('title')">
+      <ghb-cell center :title="t('title')">
         <template #right-icon>
-          <van-switch v-model="checked5" size="24" />
+          <ghb-switch v-model="checked5" size="24" />
         </template>
-      </van-cell>
+      </ghb-cell>
     </demo-block>
   </demo-section>
 </template>
@@ -91,7 +91,7 @@ export default {
 @import '../../style/var';
 
 .demo-switch {
-  .van-switch {
+  .ghb-switch {
     margin-left: @padding-md;
   }
 }

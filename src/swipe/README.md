@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'ghbui';
 
 Vue.use(Swipe);
 Vue.use(SwipeItem);
@@ -17,15 +17,15 @@ Vue.use(SwipeItem);
 Use `autoplay` prop to set autoplay interval.
 
 ```html
-<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 
 <style>
-  .my-swipe .van-swipe-item {
+  .my-swipe .ghb-swipe-item {
     color: #fff;
     font-size: 20px;
     line-height: 150px;
@@ -40,16 +40,16 @@ Use `autoplay` prop to set autoplay interval.
 Use [Lazyload](#/en-US/lazyload) component to lazyload image.
 
 ```html
-<van-swipe>
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<ghb-swipe>
+  <ghb-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </ghb-swipe-item>
+</ghb-swipe>
 ```
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'ghbui';
 
 Vue.use(Lazyload);
 
@@ -68,16 +68,16 @@ export default {
 ### Change Event
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe @change="onChange">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -91,23 +91,23 @@ export default {
 ### Vertical Scrolling
 
 ```html
-<van-swipe :autoplay="3000" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe :autoplay="3000" vertical>
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 ```
 
 ### Set SwipeItem Size
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe :loop="false" :width="300">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 ```
 
 > It's not supported to set SwipeItem size in the loop mode.
@@ -115,15 +115,15 @@ export default {
 ### Custom Indicator
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<ghb-swipe @change="onChange">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
   <template #indicator>
     <div class="custom-indicator">{{ current + 1 }}/4</div>
   </template>
-</van-swipe>
+</ghb-swipe>
 
 <style>
   .custom-indicator {

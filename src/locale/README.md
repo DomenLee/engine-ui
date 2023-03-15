@@ -11,8 +11,8 @@ Vant uses Chinese as the default language. If you want to use other languages, p
 Vant supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
 
 ```js
-import { Locale } from 'vant';
-import enUS from 'vant/es/locale/lang/en-US';
+import { Locale } from 'ghbui';
+import enUS from 'ghbui/es/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```
@@ -22,7 +22,7 @@ Locale.use('en-US', enUS);
 Use `Locale.add` method to modify the default configs.
 
 ```js
-import { Locale } from 'vant';
+import { Locale } from 'ghbui';
 
 const messages = {
   'en-US': {
@@ -56,8 +56,8 @@ Current supported languages:
 | French                   | fr-FR        |
 | Vietnamese               | vi-VN        |
 
-> View all language configs [Here](https://github.com/vant-ui/vant/tree/2.x/src/locale/lang).
+> View all language configs [Here](https://github.com/ghbui-ui/vant/tree/2.x/src/locale/lang).
 
 ### Add new language
 
-If you can’t find the language you need, please send us a Pull Request to add the new language pack, you can refer to [Add German language pack](https://github.com/vant-ui/vant/pull/7245) PR.
+If you can’t find the language you need, please send us a Pull Request to add the new language pack, you can refer to [Add German language pack](https://github.com/ghbui-ui/vant/pull/7245) PR.

@@ -1,38 +1,38 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-popover
+      <ghb-popover
         v-model="show.lightTheme"
         trigger="click"
         :actions="t('actions')"
         placement="bottom-start"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @select="onSelect"
       >
         <template #reference>
-          <van-button type="primary">
+          <ghb-button type="primary">
             {{ t('lightTheme') }}
-          </van-button>
+          </ghb-button>
         </template>
-      </van-popover>
-      <van-popover
+      </ghb-popover>
+      <ghb-popover
         v-model="show.darkTheme"
         theme="dark"
         trigger="click"
         :actions="t('actions')"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @select="onSelect"
       >
         <template #reference>
-          <van-button type="primary">
+          <ghb-button type="primary">
             {{ t('darkTheme') }}
-          </van-button>
+          </ghb-button>
         </template>
-      </van-popover>
+      </ghb-popover>
     </demo-block>
 
     <demo-block :title="t('placement')">
-      <van-field
+      <ghb-field
         is-link
         readonly
         name="picker"
@@ -40,14 +40,14 @@
         @click="showPicker = true"
       />
 
-      <van-popup
+      <ghb-popup
         v-model="showPicker"
         round
         position="bottom"
         get-container="body"
       >
         <div class="demo-popover-box">
-          <van-popover
+          <ghb-popover
             v-model="show.placement"
             theme="dark"
             trigger="click"
@@ -58,72 +58,72 @@
             <template #reference>
               <div class="demo-popover-refer" />
             </template>
-          </van-popover>
+          </ghb-popover>
         </div>
-        <van-picker :columns="placements" @change="onPickerChange" />
-      </van-popup>
+        <ghb-picker :columns="placements" @change="onPickerChange" />
+      </ghb-popup>
     </demo-block>
 
     <demo-block :title="t('actionOptions')">
-      <van-popover
+      <ghb-popover
         v-model="show.showIcon"
         trigger="click"
         :actions="t('actionsWithIcon')"
         placement="bottom-start"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @select="onSelect"
       >
         <template #reference>
-          <van-button type="primary">
+          <ghb-button type="primary">
             {{ t('showIcon') }}
-          </van-button>
+          </ghb-button>
         </template>
-      </van-popover>
+      </ghb-popover>
 
-      <van-popover
+      <ghb-popover
         v-model="show.disableAction"
         trigger="click"
         :actions="t('actionsDisabled')"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @select="onSelect"
       >
         <template #reference>
-          <van-button type="primary">
+          <ghb-button type="primary">
             {{ t('disableAction') }}
-          </van-button>
+          </ghb-button>
         </template>
-      </van-popover>
+      </ghb-popover>
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <van-popover
+      <ghb-popover
         v-model="show.customContent"
         trigger="click"
         placement="top-start"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @select="onSelect"
       >
-        <van-grid
+        <ghb-grid
           square
           clickable
           :border="false"
           column-num="3"
-          style="width: 240px;"
+          style="width: 240px"
         >
-          <van-grid-item
+          <ghb-grid-item
             v-for="i in 6"
             :key="i"
             icon="photo-o"
             :text="t('option')"
             @click="show.customContent = false"
           />
-        </van-grid>
+        </ghb-grid>
         <template #reference>
-          <van-button type="primary">
+          <ghb-button type="primary">
             {{ t('customContent') }}
-          </van-button>
+          </ghb-button>
         </template>
-      </van-popover>
+      </ghb-popover>
     </demo-block>
   </demo-section>
 </template>
@@ -239,7 +239,7 @@ export default {
     border-radius: 8px;
   }
 
-  .van-field {
+  .ghb-field {
     width: auto;
     margin: 0 12px;
     overflow: hidden;

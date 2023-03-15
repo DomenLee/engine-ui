@@ -1,25 +1,25 @@
 <template>
   <demo-section>
-    <van-cell is-link @touchstart.native.stop="keyboard = 'default'">
+    <ghb-cell is-link @touchstart.native.stop="keyboard = 'default'">
       {{ t('button1') }}
-    </van-cell>
-    <van-cell is-link @touchstart.native.stop="keyboard = 'custom'">
+    </ghb-cell>
+    <ghb-cell is-link @touchstart.native.stop="keyboard = 'custom'">
       {{ t('button2') }}
-    </van-cell>
-    <van-cell is-link @touchstart.native.stop="keyboard = 'extraKey'">
+    </ghb-cell>
+    <ghb-cell is-link @touchstart.native.stop="keyboard = 'extraKey'">
       {{ t('button3') }}
-    </van-cell>
-    <van-cell is-link @touchstart.native.stop="keyboard = 'title'">
+    </ghb-cell>
+    <ghb-cell is-link @touchstart.native.stop="keyboard = 'title'">
       {{ t('button4') }}
-    </van-cell>
-    <van-cell is-link @touchstart.native.stop="keyboard = 'multiExtraKey'">
+    </ghb-cell>
+    <ghb-cell is-link @touchstart.native.stop="keyboard = 'multiExtraKey'">
       {{ t('button5') }}
-    </van-cell>
-    <van-cell is-link @touchstart.native.stop="keyboard = 'randomKeyOrder'">
+    </ghb-cell>
+    <ghb-cell is-link @touchstart.native.stop="keyboard = 'randomKeyOrder'">
       {{ t('button6') }}
-    </van-cell>
+    </ghb-cell>
 
-    <van-field
+    <ghb-field
       readonly
       clickable
       :value="value"
@@ -28,14 +28,14 @@
       @touchstart.native.stop="keyboard = 'bindValue'"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       :show="keyboard === 'default'"
       @blur="keyboard = ''"
       @input="onInput"
       @delete="onDelete"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       :show="keyboard === 'custom'"
       :close-button-text="t('close')"
       theme="custom"
@@ -45,7 +45,7 @@
       @delete="onDelete"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       :show="keyboard === 'extraKey'"
       :close-button-text="t('close')"
       extra-key="X"
@@ -54,7 +54,7 @@
       @delete="onDelete"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       :show="keyboard === 'title'"
       :close-button-text="t('close')"
       :title="t('title')"
@@ -64,7 +64,7 @@
       @delete="onDelete"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       :show="keyboard === 'multiExtraKey'"
       :close-button-text="t('close')"
       theme="custom"
@@ -74,7 +74,7 @@
       @delete="onDelete"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       v-if="!isTest"
       :show="keyboard === 'randomKeyOrder'"
       random-key-order
@@ -83,7 +83,7 @@
       @delete="onDelete"
     />
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       v-model="value"
       :show="keyboard === 'bindValue'"
       maxlength="6"
@@ -155,7 +155,7 @@ export default {
 .demo-number-keyboard {
   padding-bottom: 300px;
 
-  .van-button {
+  .ghb-button {
     margin-left: @padding-md;
   }
 }

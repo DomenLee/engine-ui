@@ -1,39 +1,39 @@
 <template>
   <demo-section>
     <demo-block :title="t('type')">
-      <van-loading />
-      <van-loading type="spinner" />
+      <ghb-loading />
+      <ghb-loading type="spinner" />
     </demo-block>
 
     <demo-block :title="t('color')">
-      <van-loading color="#1989fa" />
-      <van-loading type="spinner" color="#1989fa" />
+      <ghb-loading color="#1989fa" />
+      <ghb-loading type="spinner" color="#1989fa" />
     </demo-block>
 
     <demo-block :title="t('size')">
-      <van-loading size="24" />
-      <van-loading type="spinner" size="24" />
+      <ghb-loading size="24" />
+      <ghb-loading type="spinner" size="24" />
     </demo-block>
 
     <demo-block :title="t('text')">
-      <van-loading size="24px">
+      <ghb-loading size="24px">
         {{ t('loading') }}
-      </van-loading>
+      </ghb-loading>
     </demo-block>
 
     <demo-block :title="t('vertical')">
-      <van-loading size="24px" vertical>
+      <ghb-loading size="24px" vertical>
         {{ t('loading') }}
-      </van-loading>
+      </ghb-loading>
     </demo-block>
 
     <demo-block :title="t('textColor')">
-      <van-loading size="24px" vertical color="#0094ff">
+      <ghb-loading size="24px" vertical color="#0094ff">
         {{ t('loading') }}
-      </van-loading>
-      <van-loading size="24px" vertical text-color="#0094ff">
+      </ghb-loading>
+      <ghb-loading size="24px" vertical text-color="#0094ff">
         {{ t('loading') }}
-      </van-loading>
+      </ghb-loading>
     </demo-block>
   </demo-section>
 </template>
@@ -67,7 +67,7 @@ export default {
 .demo-loading {
   background: @white;
 
-  .van-loading {
+  .ghb-loading {
     display: inline-block;
     margin: 5px 0 5px 20px;
 

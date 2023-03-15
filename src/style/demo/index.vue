@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('ellipsis')">
-      <div class="van-ellipsis">{{ t('text1') }}</div>
-      <div class="van-multi-ellipsis--l2">{{ t('text2') }}</div>
+      <div class="ghb-ellipsis">{{ t('text1') }}</div>
+      <div class="ghb-multi-ellipsis--l2">{{ t('text2') }}</div>
     </demo-block>
 
     <demo-block card :title="t('hairline')">
-      <div class="van-hairline--top" />
+      <div class="ghb-hairline--top" />
     </demo-block>
 
     <demo-block card :title="t('animation')">
-      <van-cell is-link title="Fade" @click="animate('van-fade')" />
-      <van-cell is-link title="Slide Up" @click="animate('van-slide-up')" />
-      <van-cell is-link title="Slide Down" @click="animate('van-slide-down')" />
-      <van-cell is-link title="Slide Left" @click="animate('van-slide-left')" />
-      <van-cell
+      <ghb-cell is-link title="Fade" @click="animate('ghb-fade')" />
+      <ghb-cell is-link title="Slide Up" @click="animate('ghb-slide-up')" />
+      <ghb-cell is-link title="Slide Down" @click="animate('ghb-slide-down')" />
+      <ghb-cell is-link title="Slide Left" @click="animate('ghb-slide-left')" />
+      <ghb-cell
         is-link
         title="Slide Right"
-        @click="animate('van-slide-right')"
+        @click="animate('ghb-slide-right')"
       />
     </demo-block>
 
@@ -75,19 +75,19 @@ export default {
 @import '../../style/var';
 
 .demo-style {
-  .van-ellipsis,
-  .van-multi-ellipsis--l2 {
+  .ghb-ellipsis,
+  .ghb-multi-ellipsis--l2 {
     max-width: 300px;
     margin-left: @padding-md;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .van-ellipsis {
+  .ghb-ellipsis {
     margin-bottom: @padding-md;
   }
 
-  .van-hairline--top {
+  .ghb-hairline--top {
     height: 30px;
     background-color: @white;
 

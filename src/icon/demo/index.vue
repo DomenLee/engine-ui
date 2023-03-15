@@ -1,83 +1,83 @@
 <template>
   <demo-section>
-    <van-tabs v-model="tab" sticky>
-      <van-tab :title="t('demo')">
+    <ghb-tabs v-model="tab" sticky>
+      <ghb-tab :title="t('demo')">
         <demo-block :title="t('basicUsage')">
-          <van-col span="6" @click="copy(demoIcon)">
-            <van-icon :name="demoIcon" />
-          </van-col>
-          <van-col span="6" @click="copy(demoImage)">
-            <van-icon :name="demoImage" />
-          </van-col>
+          <ghb-col span="6" @click="copy(demoIcon)">
+            <ghb-icon :name="demoIcon" />
+          </ghb-col>
+          <ghb-col span="6" @click="copy(demoImage)">
+            <ghb-icon :name="demoImage" />
+          </ghb-col>
         </demo-block>
 
         <demo-block :title="t('badge')">
-          <van-col span="6" @click="copy(demoIcon, { dot: true })">
-            <van-icon :name="demoIcon" dot />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { badge: '9' })">
-            <van-icon :name="demoIcon" badge="9" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { badge: '99+' })">
-            <van-icon :name="demoIcon" badge="99+" />
-          </van-col>
+          <ghb-col span="6" @click="copy(demoIcon, { dot: true })">
+            <ghb-icon :name="demoIcon" dot />
+          </ghb-col>
+          <ghb-col span="6" @click="copy(demoIcon, { badge: '9' })">
+            <ghb-icon :name="demoIcon" badge="9" />
+          </ghb-col>
+          <ghb-col span="6" @click="copy(demoIcon, { badge: '99+' })">
+            <ghb-icon :name="demoIcon" badge="99+" />
+          </ghb-col>
         </demo-block>
 
         <demo-block :title="t('color')">
-          <van-col span="6" @click="copy(demoIcon, { color: '#1989fa' })">
-            <van-icon name="cart-o" color="#1989fa" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { color: RED })">
-            <van-icon name="fire-o" :color="RED" />
-          </van-col>
+          <ghb-col span="6" @click="copy(demoIcon, { color: '#1989fa' })">
+            <ghb-icon name="cart-o" color="#1989fa" />
+          </ghb-col>
+          <ghb-col span="6" @click="copy(demoIcon, { color: RED })">
+            <ghb-icon name="fire-o" :color="RED" />
+          </ghb-col>
         </demo-block>
 
         <demo-block :title="t('size')">
-          <van-col span="6" @click="copy(demoIcon, { size: '40' })">
-            <van-icon :name="demoIcon" size="40" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { size: '3rem' })">
-            <van-icon :name="demoIcon" size="3rem" />
-          </van-col>
+          <ghb-col span="6" @click="copy(demoIcon, { size: '40' })">
+            <ghb-icon :name="demoIcon" size="40" />
+          </ghb-col>
+          <ghb-col span="6" @click="copy(demoIcon, { size: '3rem' })">
+            <ghb-icon :name="demoIcon" size="3rem" />
+          </ghb-col>
         </demo-block>
-      </van-tab>
+      </ghb-tab>
 
-      <van-tab :title="t('basic')">
-        <van-col
+      <ghb-tab :title="t('basic')">
+        <ghb-col
           v-for="icon in icons.basic"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <ghb-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
+        </ghb-col>
+      </ghb-tab>
 
-      <van-tab :title="t('outline')">
-        <van-col
+      <ghb-tab :title="t('outline')">
+        <ghb-col
           v-for="icon in icons.outline"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <ghb-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
+        </ghb-col>
+      </ghb-tab>
 
-      <van-tab :title="t('filled')">
-        <van-col
+      <ghb-tab :title="t('filled')">
+        <ghb-col
           v-for="icon in icons.filled"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <ghb-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
-    </van-tabs>
+        </ghb-col>
+      </ghb-tab>
+    </ghb-tabs>
   </demo-section>
 </template>
 
@@ -147,7 +147,7 @@ export default {
 
   methods: {
     copy(icon, option = {}) {
-      let tag = `<van-icon name="${icon}"`;
+      let tag = `<ghb-icon name="${icon}"`;
       if ('dot' in option) {
         tag = `${tag} ${option.dot ? 'dot' : ''}`;
       }
@@ -184,7 +184,7 @@ export default {
     font-size: 13px;
   }
 
-  .van-col {
+  .ghb-col {
     display: inline-block;
     float: none;
     text-align: center;
@@ -206,13 +206,13 @@ export default {
     }
   }
 
-  .van-icon {
+  .ghb-icon {
     margin: 16px 0 16px;
     color: @text-color;
     font-size: 32px;
   }
 
-  .van-tab__pane {
+  .ghb-tab__pane {
     width: auto;
     margin: 20px;
     background-color: #fff;

@@ -111,7 +111,7 @@ test('render empty coupon list', () => {
       disabledCoupons: [],
     },
   });
-  wrapper.findAll('.van-tab').at(1).trigger('click');
+  wrapper.findAll('.ghb-tab').at(1).trigger('click');
   expect(wrapper).toMatchSnapshot();
 });
 
@@ -127,7 +127,7 @@ test('empty-image prop', () => {
 
 test('exchange coupon', () => {
   const wrapper = mount(CouponList);
-  const exchange = wrapper.find('.van-coupon-list__exchange');
+  const exchange = wrapper.find('.ghb-coupon-list__exchange');
 
   wrapper.setData({
     currentCode: '1',

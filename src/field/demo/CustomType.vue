@@ -1,29 +1,29 @@
 <template>
   <demo-block :title="t('customType')">
-    <van-field
+    <ghb-field
       v-model="text"
       :label="t('text')"
       :placeholder="t('textPlaceholder')"
     />
-    <van-field
+    <ghb-field
       v-model="phone"
       type="tel"
       :label="t('phone')"
       :placeholder="t('phonePlaceholder')"
     />
-    <van-field
+    <ghb-field
       v-model="digit"
       type="digit"
       :label="t('digit')"
       :placeholder="t('digitPlaceholder')"
     />
-    <van-field
+    <ghb-field
       v-model="number"
       type="number"
       :label="t('number')"
       :placeholder="t('numberPlaceholder')"
     />
-    <van-field
+    <ghb-field
       v-model="password"
       type="password"
       :label="t('password')"

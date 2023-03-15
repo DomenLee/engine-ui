@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { List } from 'vant';
+import { List } from 'ghbui';
 
 Vue.use(List);
 ```
@@ -20,14 +20,14 @@ Vue.use(List);
 List 组件通过 `loading` 和 `finished` 两个变量控制加载状态，当组件滚动到底部时，会触发 `load` 事件并将 `loading` 设置成 `true`。此时可以发起异步操作并更新数据，数据更新完毕后，将 `loading` 设置成 `false` 即可。若数据已全部加载完毕，则直接将 `finished` 设置成 `true` 即可。
 
 ```html
-<van-list
+<ghb-list
   v-model="loading"
   :finished="finished"
   finished-text="没有更多了"
   @load="onLoad"
 >
-  <van-cell v-for="item in list" :key="item" :title="item" />
-</van-list>
+  <ghb-cell v-for="item in list" :key="item" :title="item" />
+</ghb-list>
 ```
 
 ```js
@@ -66,14 +66,14 @@ export default {
 若列表数据加载失败，将 `error` 设置成 `true` 即可显示错误提示，用户点击错误提示后会重新触发 load 事件。
 
 ```html
-<van-list
+<ghb-list
   v-model="loading"
   :error.sync="error"
   error-text="请求失败，点击重新加载"
   @load="onLoad"
 >
-  <van-cell v-for="item in list" :key="item" :title="item" />
-</van-list>
+  <ghb-cell v-for="item in list" :key="item" :title="item" />
+</ghb-list>
 ```
 
 ```js
@@ -100,16 +100,16 @@ export default {
 List 组件可以与 [PullRefresh](#/zh-CN/pull-refresh) 组件结合使用，实现下拉刷新的效果。
 
 ```html
-<van-pull-refresh v-model="refreshing" @refresh="onRefresh">
-  <van-list
+<ghb-pull-refresh v-model="refreshing" @refresh="onRefresh">
+  <ghb-list
     v-model="loading"
     :finished="finished"
     finished-text="没有更多了"
     @load="onLoad"
   >
-    <van-cell v-for="item in list" :key="item" :title="item" />
-  </van-list>
-</van-pull-refresh>
+    <ghb-cell v-for="item in list" :key="item" :title="item" />
+  </ghb-list>
+</ghb-pull-refresh>
 ```
 
 ```js
@@ -196,11 +196,11 @@ export default {
 
 组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
 
-| 名称                    | 默认值          | 描述 |
-| ----------------------- | --------------- | ---- |
-| @list-text-color        | `@gray-6`       | -    |
-| @list-text-font-size    | `@font-size-md` | -    |
-| @list-text-line-height  | `50px`          | -    |
+| 名称                   | 默认值          | 描述 |
+| ---------------------- | --------------- | ---- |
+| @list-text-color       | `@gray-6`       | -    |
+| @list-text-font-size   | `@font-size-md` | -    |
+| @list-text-line-height | `50px`          | -    |
 
 ## 常见问题
 
@@ -228,16 +228,16 @@ List 初始化后会触发一次 load 事件，用于加载第一屏的数据，
 
 ### 使用 float 布局后一直触发加载？
 
-若 List 的内容使用了 float 布局，可以在容器上添加`van-clearfix`类名来清除浮动，使得 List 能正确判断元素位置
+若 List 的内容使用了 float 布局，可以在容器上添加`ghb-clearfix`类名来清除浮动，使得 List 能正确判断元素位置
 
 ```html
-<van-list>
-  <div class="van-clearfix">
+<ghb-list>
+  <div class="ghb-clearfix">
     <div class="float-item" />
     <div class="float-item" />
     <div class="float-item" />
   </div>
-</van-list>
+</ghb-list>
 ```
 
 ### 在 html、body 上设置 overflow 后一直触发加载？

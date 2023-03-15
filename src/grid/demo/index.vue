@@ -1,96 +1,96 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-grid>
-        <van-grid-item
+      <ghb-grid>
+        <ghb-grid-item
           v-for="i in 4"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </van-grid>
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('columnNum')">
-      <van-grid :column-num="3">
-        <van-grid-item
+      <ghb-grid :column-num="3">
+        <ghb-grid-item
           v-for="i in 6"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </van-grid>
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <van-grid :border="false" :column-num="3">
-        <van-grid-item>
-          <van-image
+      <ghb-grid :border="false" :column-num="3">
+        <ghb-grid-item>
+          <ghb-image
             fit="contain"
             src="https://img01.yzcdn.cn/vant/apple-1.jpg"
           />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image
+        </ghb-grid-item>
+        <ghb-grid-item>
+          <ghb-image
             fit="contain"
             src="https://img01.yzcdn.cn/vant/apple-2.jpg"
           />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image
+        </ghb-grid-item>
+        <ghb-grid-item>
+          <ghb-image
             fit="contain"
             src="https://img01.yzcdn.cn/vant/apple-3.jpg"
           />
-        </van-grid-item>
-      </van-grid>
+        </ghb-grid-item>
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('square')">
-      <van-grid square>
-        <van-grid-item
+      <ghb-grid square>
+        <ghb-grid-item
           v-for="i in 8"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </van-grid>
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('gutter')">
-      <van-grid :gutter="10">
-        <van-grid-item
+      <ghb-grid :gutter="10">
+        <ghb-grid-item
           v-for="i in 8"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </van-grid>
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('horizontal')">
-      <van-grid direction="horizontal" :column-num="3">
-        <van-grid-item icon="photo-o" :text="t('text')" />
-        <van-grid-item icon="photo-o" :text="t('text')" />
-        <van-grid-item icon="photo-o" :text="t('text')" />
-      </van-grid>
+      <ghb-grid direction="horizontal" :column-num="3">
+        <ghb-grid-item icon="photo-o" :text="t('text')" />
+        <ghb-grid-item icon="photo-o" :text="t('text')" />
+        <ghb-grid-item icon="photo-o" :text="t('text')" />
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('route')">
-      <van-grid clickable :column-num="2">
-        <van-grid-item icon="home-o" :text="t('vueRoute')" to="/" />
-        <van-grid-item
+      <ghb-grid clickable :column-num="2">
+        <ghb-grid-item icon="home-o" :text="t('vueRoute')" to="/" />
+        <ghb-grid-item
           icon="search"
           :text="t('urlRoute')"
           url="/vant/mobile.html"
         />
-      </van-grid>
+      </ghb-grid>
     </demo-block>
 
     <demo-block :title="t('showBadge')">
-      <van-grid :column-num="2">
-        <van-grid-item icon="home-o" :text="t('text')" dot />
-        <van-grid-item icon="search" :text="t('text')" badge="99+" />
-      </van-grid>
+      <ghb-grid :column-num="2">
+        <ghb-grid-item icon="home-o" :text="t('text')" dot />
+        <ghb-grid-item icon="search" :text="t('text')" badge="99+" />
+      </ghb-grid>
     </demo-block>
   </demo-section>
 </template>

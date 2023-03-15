@@ -1,27 +1,27 @@
 <template>
   <demo-section>
     <demo-block :title="t('title1')">
-      <van-slider v-model="value1" @change="onChange" />
+      <ghb-slider v-model="value1" @change="onChange" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('title2')">
-      <van-slider range v-model="value2" @change="onChange" />
+      <ghb-slider range v-model="value2" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <van-slider v-model="value3" :min="-50" :max="50" @change="onChange" />
+      <ghb-slider v-model="value3" :min="-50" :max="50" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <van-slider v-model="value4" disabled />
+      <ghb-slider v-model="value4" disabled />
     </demo-block>
 
     <demo-block :title="t('title5')">
-      <van-slider v-model="value5" :step="10" @change="onChange" />
+      <ghb-slider v-model="value5" :step="10" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-slider
+      <ghb-slider
         v-model="value6"
         bar-height="4px"
         active-color="#ee0a24"
@@ -30,17 +30,17 @@
     </demo-block>
 
     <demo-block :title="t('customButton')">
-      <van-slider v-model="value7" active-color="#ee0a24">
+      <ghb-slider v-model="value7" active-color="#ee0a24">
         <template #button>
           <div class="custom-button">{{ value7 }}</div>
         </template>
-      </van-slider>
+      </ghb-slider>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('vertical')">
       <div :style="{ height: '150px', paddingLeft: '30px' }">
-        <van-slider v-model="value8" vertical @change="onChange" />
-        <van-slider
+        <ghb-slider v-model="value8" vertical @change="onChange" />
+        <ghb-slider
           v-model="value9"
           range
           vertical
@@ -106,11 +106,11 @@ export default {
   background: @white;
   user-select: none;
 
-  .van-doc-demo-block {
+  .ghb-doc-demo-block {
     padding: 0 @padding-md 20px;
   }
 
-  .van-doc-demo-block__title {
+  .ghb-doc-demo-block__title {
     padding-left: 0;
   }
 

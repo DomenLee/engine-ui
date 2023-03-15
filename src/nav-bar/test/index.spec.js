@@ -44,7 +44,7 @@ test('should emit click-left event when clicking left text', () => {
     },
   });
 
-  wrapper.find('.van-nav-bar__left').trigger('click');
+  wrapper.find('.ghb-nav-bar__left').trigger('click');
   expect(wrapper.emitted('click-left')).toBeTruthy();
 });
 
@@ -55,7 +55,7 @@ test('should emit click-right event when clicking right text', () => {
     },
   });
 
-  wrapper.find('.van-nav-bar__right').trigger('click');
+  wrapper.find('.ghb-nav-bar__right').trigger('click');
   expect(wrapper.emitted('click-right')).toBeTruthy();
 });
 
@@ -66,5 +66,5 @@ test('should have safe-area-inset-top class when using safe-area-inset-top prop'
     },
   });
 
-  expect(wrapper.contains('.van-nav-bar--safe-area-inset-top')).toBeTruthy();
+  expect(wrapper.contains('.ghb-nav-bar--safe-area-inset-top')).toBeTruthy();
 });

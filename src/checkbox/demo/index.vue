@@ -1,94 +1,94 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-checkbox v-model="checkbox1">{{ t('checkbox') }}</van-checkbox>
+      <ghb-checkbox v-model="checkbox1">{{ t('checkbox') }}</ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-checkbox :value="false" disabled>
+      <ghb-checkbox :value="false" disabled>
         {{ t('checkbox') }}
-      </van-checkbox>
-      <van-checkbox :value="true" disabled>
+      </ghb-checkbox>
+      <ghb-checkbox :value="true" disabled>
         {{ t('checkbox') }}
-      </van-checkbox>
+      </ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('customShape')">
-      <van-checkbox v-model="checkboxShape" shape="square">
+      <ghb-checkbox v-model="checkboxShape" shape="square">
         {{ t('customShape') }}
-      </van-checkbox>
+      </ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <van-checkbox v-model="checkbox2" checked-color="#ee0a24">
+      <ghb-checkbox v-model="checkbox2" checked-color="#ee0a24">
         {{ t('customColor') }}
-      </van-checkbox>
+      </ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('customIconSize')">
-      <van-checkbox v-model="checboxIcon" icon-size="24px">
+      <ghb-checkbox v-model="checboxIcon" icon-size="24px">
         {{ t('customIconSize') }}
-      </van-checkbox>
+      </ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('customIcon')">
-      <van-checkbox v-model="checkbox3">
+      <ghb-checkbox v-model="checkbox3">
         {{ t('customIcon') }}
         <template #icon="{ checked }">
           <img :src="checked ? activeIcon : inactiveIcon" />
         </template>
-      </van-checkbox>
+      </ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('disableLabel')">
-      <van-checkbox v-model="checkboxLabel" label-disabled>
+      <ghb-checkbox v-model="checkboxLabel" label-disabled>
         {{ t('checkbox') }}
-      </van-checkbox>
+      </ghb-checkbox>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <van-checkbox-group v-model="result">
-        <van-checkbox name="a">{{ t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ t('checkbox') }} b</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="result">
+        <ghb-checkbox name="a">{{ t('checkbox') }} a</ghb-checkbox>
+        <ghb-checkbox name="b">{{ t('checkbox') }} b</ghb-checkbox>
+      </ghb-checkbox-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('horizontal')">
-      <van-checkbox-group v-model="horizontalResult" direction="horizontal">
-        <van-checkbox name="a">{{ t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ t('checkbox') }} b</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="horizontalResult" direction="horizontal">
+        <ghb-checkbox name="a">{{ t('checkbox') }} a</ghb-checkbox>
+        <ghb-checkbox name="b">{{ t('checkbox') }} b</ghb-checkbox>
+      </ghb-checkbox-group>
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <van-checkbox-group v-model="result2" :max="2">
-        <van-checkbox name="a">{{ t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ t('checkbox') }} b</van-checkbox>
-        <van-checkbox name="c">{{ t('checkbox') }} c</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="result2" :max="2">
+        <ghb-checkbox name="a">{{ t('checkbox') }} a</ghb-checkbox>
+        <ghb-checkbox name="b">{{ t('checkbox') }} b</ghb-checkbox>
+        <ghb-checkbox name="c">{{ t('checkbox') }} c</ghb-checkbox>
+      </ghb-checkbox-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('toggleAll')">
-      <van-checkbox-group v-model="checkAllResult" ref="group">
-        <van-checkbox name="a">{{ t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ t('checkbox') }} b</van-checkbox>
-        <van-checkbox name="c">{{ t('checkbox') }} c</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="checkAllResult" ref="group">
+        <ghb-checkbox name="a">{{ t('checkbox') }} a</ghb-checkbox>
+        <ghb-checkbox name="b">{{ t('checkbox') }} b</ghb-checkbox>
+        <ghb-checkbox name="c">{{ t('checkbox') }} c</ghb-checkbox>
+      </ghb-checkbox-group>
 
       <div class="demo-checkbox-buttons">
-        <van-button type="primary" @click="checkAll">
+        <ghb-button type="primary" @click="checkAll">
           {{ t('checkAll') }}
-        </van-button>
-        <van-button type="info" @click="toggleAll">
+        </ghb-button>
+        <ghb-button type="info" @click="toggleAll">
           {{ t('inverse') }}
-        </van-button>
+        </ghb-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('title5')">
-      <van-checkbox-group v-model="result3">
-        <van-cell-group>
-          <van-cell
+      <ghb-checkbox-group v-model="result3">
+        <ghb-cell-group>
+          <ghb-cell
             v-for="(item, index) in list"
             clickable
             :key="index"
@@ -96,11 +96,11 @@
             @click="toggle(index)"
           >
             <template #right-icon>
-              <van-checkbox ref="checkboxes" :name="item" />
+              <ghb-checkbox ref="checkboxes" :name="item" />
             </template>
-          </van-cell>
-        </van-cell-group>
-      </van-checkbox-group>
+          </ghb-cell>
+        </ghb-cell-group>
+      </ghb-checkbox-group>
     </demo-block>
   </demo-section>
 </template>
@@ -181,12 +181,12 @@ export default {
 .demo-checkbox {
   background: @white;
 
-  .van-checkbox {
+  .ghb-checkbox {
     margin: 0 0 8px 20px;
   }
 
-  .van-cell {
-    .van-checkbox {
+  .ghb-cell {
+    .ghb-checkbox {
       margin: 0;
     }
   }
@@ -198,12 +198,12 @@ export default {
   &-buttons {
     margin-top: @padding-md;
 
-    .van-button {
+    .ghb-button {
       margin-left: @padding-md;
     }
   }
 
-  .van-doc-demo-block__title {
+  .ghb-doc-demo-block__title {
     margin-top: -8px;
   }
 }

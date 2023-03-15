@@ -36,8 +36,8 @@ test('formatter prop', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
   await later();
 
   expect(wrapper.emitted('change')[0][0].getValues()).toEqual([
@@ -60,11 +60,11 @@ test('confirm event', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0].getFullYear()).toEqual(2020);
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0].getFullYear()).toEqual(2025);
 });
 
@@ -80,17 +80,17 @@ test('year-month type', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0].getFullYear()).toEqual(2020);
   expect(wrapper.emitted('confirm')[0][0].getMonth()).toEqual(10);
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0].getFullYear()).toEqual(2025);
   expect(wrapper.emitted('confirm')[1][0].getMonth()).toEqual(0);
 
-  triggerDrag(wrapper.findAll('.van-picker-column').at(1), 0, -100);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(1), 0, -100);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[2][0].getFullYear()).toEqual(2025);
   expect(wrapper.emitted('confirm')[2][0].getMonth()).toEqual(10);
 });
@@ -107,17 +107,17 @@ test('month-day type', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0].getMonth()).toEqual(10);
   expect(wrapper.emitted('confirm')[0][0].getDate()).toEqual(1);
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -300);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -300);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0].getMonth()).toEqual(11);
   expect(wrapper.emitted('confirm')[1][0].getDate()).toEqual(1);
 
-  triggerDrag(wrapper.findAll('.van-picker-column').at(1), 0, -300);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(1), 0, -300);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[2][0].getMonth()).toEqual(11);
   expect(wrapper.emitted('confirm')[2][0].getDate()).toEqual(31);
 });
@@ -131,18 +131,18 @@ test('datehour type', async () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0].getHours()).toEqual(0);
 
-  triggerDrag(wrapper.findAll('.van-picker-column').at(3), 0, -300);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(3), 0, -300);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0].getHours()).toEqual(23);
 });
 
 test('cancel event', () => {
   const wrapper = mount(DatePicker);
 
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.ghb-picker__cancel').trigger('click');
   expect(wrapper.emitted('cancel')).toBeTruthy();
 });
 
@@ -155,7 +155,7 @@ test('max-date prop', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(maxDate);
 });
 
@@ -168,7 +168,7 @@ test('min-date prop', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(minDate);
 });
 
@@ -180,9 +180,9 @@ test('dynamic set value', () => {
   });
 
   wrapper.setProps({ value: new Date(2019, 1, 1) });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   wrapper.setProps({ value: new Date(2025, 1, 1) });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
 
   expect(wrapper.emitted('confirm')[0][0].getFullYear()).toEqual(2019);
   expect(wrapper.emitted('confirm')[1][0].getFullYear()).toEqual(2025);
@@ -209,7 +209,7 @@ test('use min-date with filter', async () => {
 
   await later();
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(new Date(2030, 0, 0, 0, 30));
 });
 
@@ -218,10 +218,10 @@ test('v-model', async () => {
 
   const wrapper = mount({
     template: `
-      <van-datetime-picker
+      <ghb-datetime-picker
           v-model="date"
           :min-date="minDate"
-      ></van-datetime-picker>
+      ></ghb-datetime-picker>
     `,
     data() {
       return {
@@ -233,7 +233,7 @@ test('v-model', async () => {
 
   await later();
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.vm.date).toEqual(minDate);
 });
 
@@ -245,7 +245,7 @@ test('value has an inital value', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(defaultValue);
 });
 
@@ -253,7 +253,7 @@ test('dynamic set min-date then emit correct value', async () => {
   const defaultValue = new Date(2020, 10, 2, 10, 30);
   const wrapper = mount({
     template: `
-    <van-datetime-picker
+    <ghb-datetime-picker
       v-model="date"
       :min-date="minDate"
       @confirm="value => this.$emit('confirm', value)"
@@ -271,7 +271,7 @@ test('dynamic set min-date then emit correct value', async () => {
   });
 
   await later();
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(defaultValue);
 });
 
@@ -280,7 +280,7 @@ test('dynamic set max-date then emit correct value', async () => {
   const minDate = new Date(0);
   const wrapper = mount({
     template: `
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="date"
         :min-date="minDate"
         :max-date="maxDate"
@@ -304,29 +304,29 @@ test('dynamic set max-date then emit correct value', async () => {
   });
 
   await later();
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(date);
 
   await later();
   wrapper.vm.onChangeMaxDate(new Date(2029, 10, 10, 10, 10));
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(date);
 
   await later();
   wrapper.vm.onChangeMaxDate(new Date(2020, 10, 10, 10, 10));
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[2][0]).toEqual(date);
 
   await later();
   wrapper.vm.onChangeMaxDate(new Date(2019, 10, 10, 10, 10));
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[3][0]).toEqual(
     new Date(2019, 10, 10, 10, 10)
   );
 
   await later();
   wrapper.vm.onChangeMaxDate(new Date(2040, 10, 10, 10, 10));
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[4][0]).toEqual(
     new Date(2019, 10, 10, 10, 10)
   );
@@ -338,7 +338,7 @@ test('should value correctly when using filter and select over min date', async 
 
   const wrapper = mount({
     template: `
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value"
         :min-date="minDate"
         :max-date="maxDate"
@@ -366,24 +366,24 @@ test('should value correctly when using filter and select over min date', async 
     },
   });
 
-  const confirm = wrapper.find('.van-picker__confirm');
+  const confirm = wrapper.find('.ghb-picker__confirm');
   await later();
   confirm.trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(new Date(2010, 0, 1, 0, 30));
 
   await later();
-  triggerDrag(wrapper.findAll('.van-picker-column').at(3), 0, -300);
-  wrapper.findAll('.van-picker-column ul').at(3).trigger('transitionend');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(3), 0, -300);
+  wrapper.findAll('.ghb-picker-column ul').at(3).trigger('transitionend');
   await later();
-  triggerDrag(wrapper.findAll('.van-picker-column').at(4), 0, 300);
-  wrapper.findAll('.van-picker-column ul').at(3).trigger('transitionend');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(4), 0, 300);
+  wrapper.findAll('.ghb-picker-column ul').at(3).trigger('transitionend');
   await later();
   confirm.trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(new Date(2010, 0, 1, 23, 0));
 
   await later();
-  triggerDrag(wrapper.findAll('.van-picker-column').at(3), 0, 300);
-  wrapper.findAll('.van-picker-column ul').at(3).trigger('transitionend');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(3), 0, 300);
+  wrapper.findAll('.ghb-picker-column ul').at(3).trigger('transitionend');
   await later();
   confirm.trigger('click');
   expect(wrapper.emitted('confirm')[2][0]).toEqual(new Date(2010, 0, 1, 0, 30));
@@ -396,18 +396,18 @@ test('should value correctly when using filter and select over min date', async 
   );
 
   await later();
-  triggerDrag(wrapper.findAll('.van-picker-column').at(3), 0, 300);
-  wrapper.findAll('.van-picker-column ul').at(3).trigger('transitionend');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(3), 0, 300);
+  wrapper.findAll('.ghb-picker-column ul').at(3).trigger('transitionend');
   await later();
-  triggerDrag(wrapper.findAll('.van-picker-column').at(4), 0, -300);
-  wrapper.findAll('.van-picker-column ul').at(3).trigger('transitionend');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(4), 0, -300);
+  wrapper.findAll('.ghb-picker-column ul').at(3).trigger('transitionend');
   await later();
   confirm.trigger('click');
   expect(wrapper.emitted('confirm')[4][0]).toEqual(new Date(2020, 0, 1, 0, 50));
 
   await later();
-  triggerDrag(wrapper.findAll('.van-picker-column').at(3), 0, -300);
-  wrapper.findAll('.van-picker-column ul').at(3).trigger('transitionend');
+  triggerDrag(wrapper.findAll('.ghb-picker-column').at(3), 0, -300);
+  wrapper.findAll('.ghb-picker-column ul').at(3).trigger('transitionend');
   await later();
   confirm.trigger('click');
   expect(wrapper.emitted('confirm')[5][0]).toEqual(

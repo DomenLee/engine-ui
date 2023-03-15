@@ -88,6 +88,6 @@ test('should allow to disable clickable when using is-link prop', () => {
   });
 
   expect(
-    wrapper.element.classList.contains('.van-cell--clickable')
+    wrapper.element.classList.contains('.ghb-cell--clickable')
   ).toBeFalsy();
 });

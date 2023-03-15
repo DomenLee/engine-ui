@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Checkbox, CheckboxGroup } from 'vant';
+import { Checkbox, CheckboxGroup } from 'ghbui';
 
 Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
@@ -15,7 +15,7 @@ Vue.use(CheckboxGroup);
 ### Basic Usage
 
 ```html
-<van-checkbox v-model="checked">Checkbox</van-checkbox>
+<ghb-checkbox v-model="checked">Checkbox</ghb-checkbox>
 ```
 
 ```js
@@ -31,25 +31,25 @@ export default {
 ### Disabled
 
 ```html
-<van-checkbox v-model="checked" disabled>Checkbox</van-checkbox>
+<ghb-checkbox v-model="checked" disabled>Checkbox</ghb-checkbox>
 ```
 
 ### Custom Shape
 
 ```html
-<van-checkbox v-model="checked" shape="square">Checkbox</van-checkbox>
+<ghb-checkbox v-model="checked" shape="square">Checkbox</ghb-checkbox>
 ```
 
 ### Custom Color
 
 ```html
-<van-checkbox v-model="checked" checked-color="#ee0a24">Checkbox</van-checkbox>
+<ghb-checkbox v-model="checked" checked-color="#ee0a24">Checkbox</ghb-checkbox>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-checkbox v-model="checked" icon-size="24px">Checkbox</van-checkbox>
+<ghb-checkbox v-model="checked" icon-size="24px">Checkbox</ghb-checkbox>
 ```
 
 ### Custom Icon
@@ -57,12 +57,12 @@ export default {
 Use icon slot to custom icon.
 
 ```html
-<van-checkbox v-model="checked">
+<ghb-checkbox v-model="checked">
   customize icon
   <template #icon="props">
     <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
   </template>
-</van-checkbox>
+</ghb-checkbox>
 
 <style>
   .img-icon {
@@ -86,7 +86,7 @@ export default {
 ### Disable Label Click
 
 ```html
-<van-checkbox v-model="checked" label-disabled>Checkbox</van-checkbox>
+<ghb-checkbox v-model="checked" label-disabled>Checkbox</ghb-checkbox>
 ```
 
 ### Checkbox Group
@@ -94,10 +94,10 @@ export default {
 When Checkboxes are inside a CheckboxGroup, the checked checkboxes's name is an array and bound with CheckboxGroup by v-model.
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result">
+  <ghb-checkbox name="a">Checkbox a</ghb-checkbox>
+  <ghb-checkbox name="b">Checkbox b</ghb-checkbox>
+</ghb-checkbox-group>
 ```
 
 ```js
@@ -113,10 +113,10 @@ export default {
 ### Horizontal
 
 ```html
-<van-checkbox-group v-model="result" direction="horizontal">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result" direction="horizontal">
+  <ghb-checkbox name="a">Checkbox a</ghb-checkbox>
+  <ghb-checkbox name="b">Checkbox b</ghb-checkbox>
+</ghb-checkbox-group>
 ```
 
 ```js
@@ -132,24 +132,24 @@ export default {
 ### Maximum amount of checked options
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result" :max="2">
+  <ghb-checkbox name="a">Checkbox a</ghb-checkbox>
+  <ghb-checkbox name="b">Checkbox b</ghb-checkbox>
+  <ghb-checkbox name="c">Checkbox c</ghb-checkbox>
+</ghb-checkbox-group>
 ```
 
 ### Toggle All
 
 ```html
-<van-checkbox-group v-model="result" ref="checkboxGroup">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result" ref="checkboxGroup">
+  <ghb-checkbox name="a">Checkbox a</ghb-checkbox>
+  <ghb-checkbox name="b">Checkbox b</ghb-checkbox>
+  <ghb-checkbox name="c">Checkbox c</ghb-checkbox>
+</ghb-checkbox-group>
 
-<van-button type="primary" @click="checkAll">Check All</van-button>
-<van-button type="info" @click="toggleAll">Toggle All</van-button>
+<ghb-button type="primary" @click="checkAll">Check All</ghb-button>
+<ghb-button type="info" @click="toggleAll">Toggle All</ghb-button>
 ```
 
 ```js
@@ -173,9 +173,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-cell-group>
-    <van-cell
+<ghb-checkbox-group v-model="result">
+  <ghb-cell-group>
+    <ghb-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -183,11 +183,11 @@ export default {
       @click="toggle(index)"
     >
       <template #right-icon>
-        <van-checkbox :name="item" ref="checkboxes" />
+        <ghb-checkbox :name="item" ref="checkboxes" />
       </template>
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </ghb-cell>
+  </ghb-cell-group>
+</ghb-checkbox-group>
 ```
 
 ```js

@@ -10,15 +10,15 @@ Vant 中默认包含了一些常用样式，可以直接通过 className 的方�
 
 ```html
 <!-- 最多显示一行 -->
-<div class="van-ellipsis">这是一段最多显示一行的文字，多余的内容会被省略</div>
+<div class="ghb-ellipsis">这是一段最多显示一行的文字，多余的内容会被省略</div>
 
 <!-- 最多显示两行 -->
-<div class="van-multi-ellipsis--l2">
+<div class="ghb-multi-ellipsis--l2">
   这是一段最多显示两行的文字，多余的内容会被省略
 </div>
 
 <!-- 最多显示三行 -->
-<div class="van-multi-ellipsis--l3">
+<div class="ghb-multi-ellipsis--l3">
   这是一段最多显示三行的文字，多余的内容会被省略
 </div>
 ```
@@ -29,22 +29,22 @@ Vant 中默认包含了一些常用样式，可以直接通过 className 的方�
 
 ```html
 <!-- 上边框 -->
-<div class="van-hairline--top"></div>
+<div class="ghb-hairline--top"></div>
 
 <!-- 下边框 -->
-<div class="van-hairline--bottom"></div>
+<div class="ghb-hairline--bottom"></div>
 
 <!-- 左边框 -->
-<div class="van-hairline--left"></div>
+<div class="ghb-hairline--left"></div>
 
 <!-- 右边框 -->
-<div class="van-hairline--right"></div>
+<div class="ghb-hairline--right"></div>
 
 <!-- 上下边框 -->
-<div class="van-hairline--top-bottom"></div>
+<div class="ghb-hairline--top-bottom"></div>
 
 <!-- 全边框 -->
-<div class="van-hairline--surround"></div>
+<div class="ghb-hairline--surround"></div>
 ```
 
 ### 动画
@@ -53,27 +53,27 @@ Vant 中默认包含了一些常用样式，可以直接通过 className 的方�
 
 ```html
 <!-- 淡入 -->
-<transition name="van-fade">
+<transition name="ghb-fade">
   <div v-show="visible">Fade</div>
 </transition>
 
 <!-- 上滑进入 -->
-<transition name="van-slide-up">
+<transition name="ghb-slide-up">
   <div v-show="visible">Slide Up</div>
 </transition>
 
 <!-- 下滑进入 -->
-<transition name="van-slide-down">
+<transition name="ghb-slide-down">
   <div v-show="visible">Slide Down</div>
 </transition>
 
 <!-- 左滑进入 -->
-<transition name="van-slide-left">
+<transition name="ghb-slide-left">
   <div v-show="visible">Slide Left</div>
 </transition>
 
 <!-- 右滑进入 -->
-<transition name="van-slide-right">
+<transition name="ghb-slide-right">
   <div v-show="visible">Slide Right</div>
 </transition>
 ```

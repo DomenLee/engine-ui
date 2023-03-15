@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { ImagePreview } from 'vant';
+import { ImagePreview } from 'ghbui';
 
 Vue.use(ImagePreview);
 ```
@@ -49,7 +49,7 @@ ImagePreview({
 ### Close Event
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 ImagePreview({
   images: [
@@ -81,9 +81,9 @@ setTimeout(() => {
 ### Component Call
 
 ```html
-<van-image-preview v-model="show" :images="images" @change="onChange">
+<ghb-image-preview v-model="show" :images="images" @change="onChange">
   <template v-slot:index>Page: {{ index }}</template>
-</van-image-preview>
+</ghb-image-preview>
 ```
 
 ```js
@@ -129,7 +129,7 @@ export default {
 | closeable `v2.5.0` | Whether to show close icon | _boolean_ | `false` |
 | closeIcon `v2.5.0` | Close icon name | _string_ | `clear` |
 | closeIconPosition `v2.5.0` | Close icon position，can be set to `top-left` `bottom-left` `bottom-right` | _string_ | `top-right` |
-| transition `v2.12.8` | Transition, equivalent to `name` prop of [transition](https://vuejs.org/v2/api/#transition) | _string_ | `van-fade` |
+| transition `v2.12.8` | Transition, equivalent to `name` prop of [transition](https://vuejs.org/v2/api/#transition) | _string_ | `ghb-fade` |
 | overlayStyle `v2.12.37` | Custom overlay style | _object_ | - |
 | getContainer | Return the mount node for ImagePreview | _string \| () => Element_ | - |
 
@@ -151,7 +151,7 @@ export default {
 | closeable `v2.5.0` | Whether to show close icon | _boolean_ | `false` |
 | close-icon `v2.5.0` | Close icon name | _string_ | `clear` |
 | close-icon-position `v2.5.0` | Close icon position，can be set to `top-left` `bottom-left` `bottom-right` | _string_ | `top-right` |
-| transition `v2.12.8` | Transition, equivalent to `name` prop of [transition](https://vuejs.org/v2/api/#transition) | _string_ | `van-fade` |
+| transition `v2.12.8` | Transition, equivalent to `name` prop of [transition](https://vuejs.org/v2/api/#transition) | _string_ | `ghb-fade` |
 | overlay-style `v2.12.37` | Custom overlay style | _object_ | - |
 | get-container | Return the mount node for ImagePreview | _string \| () => Element_ | - |
 

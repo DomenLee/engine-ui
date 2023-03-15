@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { NumberKeyboard } from 'vant';
+import { NumberKeyboard } from 'ghbui';
 
 Vue.use(NumberKeyboard);
 ```
@@ -14,8 +14,8 @@ Vue.use(NumberKeyboard);
 ### Default Keyboard
 
 ```html
-<van-cell @touchstart.native.stop="show = true">Show Keyboard</van-cell>
-<van-number-keyboard
+<ghb-cell @touchstart.native.stop="show = true">Show Keyboard</ghb-cell>
+<ghb-number-keyboard
   :show="show"
   @blur="show = false"
   @input="onInput"
@@ -24,7 +24,7 @@ Vue.use(NumberKeyboard);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -46,7 +46,7 @@ export default {
 ### Keyboard With Sidebar
 
 ```html
-<van-number-keyboard
+<ghb-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -62,11 +62,11 @@ export default {
 Use `extra-key` prop to set the content of bottom left button.
 
 ```html
-<van-cell plain type="primary" @touchstart.native.stop="show = true">
+<ghb-cell plain type="primary" @touchstart.native.stop="show = true">
   Show IdNumber Keyboard
-</van-cell>
+</ghb-cell>
 
-<van-number-keyboard
+<ghb-number-keyboard
   :show="show"
   extra-key="X"
   close-button-text="Close"
@@ -81,10 +81,10 @@ Use `extra-key` prop to set the content of bottom left button.
 Use `title` prop to set keyboard title.
 
 ```html
-<van-cell plain type="info" @touchstart.native.stop="show = true">
+<ghb-cell plain type="info" @touchstart.native.stop="show = true">
   Show Keyboard With Title
-</van-cell>
-<van-number-keyboard
+</ghb-cell>
+<ghb-number-keyboard
   :show="show"
   title="Keyboard Title"
   extra-key="."
@@ -98,10 +98,10 @@ Use `title` prop to set keyboard title.
 ### Multiple ExtraKey
 
 ```html
-<van-cell plain type="primary" @touchstart.native.stop="show = true">
+<ghb-cell plain type="primary" @touchstart.native.stop="show = true">
   Show Keyboard With Multiple ExtraKey
-</van-cell>
-<van-number-keyboard
+</ghb-cell>
+<ghb-number-keyboard
   :show="show"
   theme="custom"
   :extra-key="['00', '.']"
@@ -117,10 +117,10 @@ Use `title` prop to set keyboard title.
 Use `random-key-order` prop to shuffle the order of keys.
 
 ```html
-<van-cell @touchstart.native.stop="show = true">
+<ghb-cell @touchstart.native.stop="show = true">
   Show Keyboard With Random Key Order
-</van-cell>
-<van-number-keyboard
+</ghb-cell>
+<ghb-number-keyboard
   :show="show"
   random-key-order
   @blur="show = false"
@@ -132,13 +132,13 @@ Use `random-key-order` prop to shuffle the order of keys.
 ### Bind Value
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
-<van-number-keyboard
+<ghb-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

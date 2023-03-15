@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Circle } from 'vant';
+import { Circle } from 'ghbui';
 
 Vue.use(Circle);
 ```
@@ -14,7 +14,7 @@ Vue.use(Circle);
 ### Basic Usage
 
 ```html
-<van-circle v-model="currentRate" :rate="30" :speed="100" :text="text" />
+<ghb-circle v-model="currentRate" :rate="30" :speed="100" :text="text" />
 ```
 
 ```js
@@ -35,7 +35,7 @@ export default {
 ### Custom Width
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   :stroke-width="60"
@@ -46,7 +46,7 @@ export default {
 ### Custom Color
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   layer-color="#ebedf0"
@@ -57,7 +57,7 @@ export default {
 ### Gradient
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   :color="gradientColor"
@@ -82,7 +82,7 @@ export default {
 ### Counter Clockwise
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   :clockwise="false"
@@ -93,7 +93,7 @@ export default {
 ### Custom Size
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   size="120px"

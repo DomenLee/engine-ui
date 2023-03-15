@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { NoticeBar } from 'vant';
+import { NoticeBar } from 'ghbui';
 
 Vue.use(NoticeBar);
 ```
@@ -20,7 +20,7 @@ Vue.use(NoticeBar);
 通过 `text` 属性设置通知栏的内容，通过 `left-icon` 属性设置通知栏左侧的图标。
 
 ```html
-<van-notice-bar
+<ghb-notice-bar
   left-icon="volume-o"
   text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
 />
@@ -32,10 +32,10 @@ Vue.use(NoticeBar);
 
 ```html
 <!-- 文字较短时，通过设置 scrollable 属性开启滚动播放 -->
-<van-notice-bar scrollable text="技术是开发它的人的共同灵魂。" />
+<ghb-notice-bar scrollable text="技术是开发它的人的共同灵魂。" />
 
 <!-- 文字较长时，通过禁用 scrollable 属性关闭滚动播放 -->
-<van-notice-bar
+<ghb-notice-bar
   :scrollable="false"
   text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
 />
@@ -46,7 +46,7 @@ Vue.use(NoticeBar);
 文字较长时，可以通过设置 `wrapable` 属性来开启多行展示。
 
 ```html
-<van-notice-bar
+<ghb-notice-bar
   wrapable
   :scrollable="false"
   text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
@@ -59,10 +59,10 @@ Vue.use(NoticeBar);
 
 ```html
 <!-- closeable 模式，在右侧显示关闭按钮 -->
-<van-notice-bar mode="closeable">技术是开发它的人的共同灵魂。</van-notice-bar>
+<ghb-notice-bar mode="closeable">技术是开发它的人的共同灵魂。</ghb-notice-bar>
 
 <!-- link 模式，在右侧显示链接箭头 -->
-<van-notice-bar mode="link">技术是开发它的人的共同灵魂。</van-notice-bar>
+<ghb-notice-bar mode="link">技术是开发它的人的共同灵魂。</ghb-notice-bar>
 ```
 
 ### 自定义样式
@@ -70,9 +70,9 @@ Vue.use(NoticeBar);
 通过 `color` 属性设置文本颜色，通过 `background` 属性设置背景色。
 
 ```html
-<van-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o">
+<ghb-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o">
   技术是开发它的人的共同灵魂。
-</van-notice-bar>
+</ghb-notice-bar>
 ```
 
 ### 垂直滚动
@@ -80,18 +80,18 @@ Vue.use(NoticeBar);
 搭配 NoticeBar 和 Swipe 组件可以实现垂直滚动的效果。
 
 ```html
-<van-notice-bar left-icon="volume-o" :scrollable="false">
-  <van-swipe
+<ghb-notice-bar left-icon="volume-o" :scrollable="false">
+  <ghb-swipe
     vertical
     class="notice-swipe"
     :autoplay="3000"
     :show-indicators="false"
   >
-    <van-swipe-item>内容 1</van-swipe-item>
-    <van-swipe-item>内容 2</van-swipe-item>
-    <van-swipe-item>内容 3</van-swipe-item>
-  </van-swipe>
-</van-notice-bar>
+    <ghb-swipe-item>内容 1</ghb-swipe-item>
+    <ghb-swipe-item>内容 2</ghb-swipe-item>
+    <ghb-swipe-item>内容 3</ghb-swipe-item>
+  </ghb-swipe>
+</ghb-notice-bar>
 
 <style>
   .notice-swipe {

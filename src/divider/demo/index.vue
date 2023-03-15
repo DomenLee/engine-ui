@@ -1,37 +1,37 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-divider />
+      <ghb-divider />
     </demo-block>
 
     <demo-block :title="t('withText')">
-      <van-divider>
+      <ghb-divider>
         {{ t('text') }}
-      </van-divider>
+      </ghb-divider>
     </demo-block>
 
     <demo-block :title="t('contentPosition')">
-      <van-divider content-position="left">
+      <ghb-divider content-position="left">
         {{ t('text') }}
-      </van-divider>
+      </ghb-divider>
 
-      <van-divider content-position="right">
+      <ghb-divider content-position="right">
         {{ t('text') }}
-      </van-divider>
+      </ghb-divider>
     </demo-block>
 
     <demo-block :title="t('dashed')">
-      <van-divider dashed :hairline="false">
+      <ghb-divider dashed :hairline="false">
         {{ t('text') }}
-      </van-divider>
+      </ghb-divider>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-divider
+      <ghb-divider
         :style="{ borderColor: '#1989fa', color: '#1989fa', padding: '0 16px' }"
       >
         {{ t('text') }}
-      </van-divider>
+      </ghb-divider>
     </demo-block>
   </demo-section>
 </template>
@@ -63,7 +63,7 @@ export default {
 .demo-divider {
   background-color: @white;
 
-  .van-doc-demo-block__title {
+  .ghb-doc-demo-block__title {
     padding-top: @padding-md;
   }
 }

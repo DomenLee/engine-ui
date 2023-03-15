@@ -20,20 +20,20 @@ test('route mode', async () => {
   const wrapper = mount(
     {
       template: `
-      <van-tabbar route>
-        <van-tabbar-item replace to="/">
+      <ghb-tabbar route>
+        <ghb-tabbar-item replace to="/">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item replace to="/search">
+        </ghb-tabbar-item>
+        <ghb-tabbar-item replace to="/search">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item replace :to="{ path: '/star' }">
+        </ghb-tabbar-item>
+        <ghb-tabbar-item replace :to="{ path: '/star' }">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item>
+        </ghb-tabbar-item>
+        <ghb-tabbar-item>
           Tab
-        </van-tabbar-item>
-      </van-tabbar>
+        </ghb-tabbar-item>
+      </ghb-tabbar>
     `,
     },
     { localVue, router }
@@ -41,7 +41,7 @@ test('route mode', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  const items = wrapper.findAll('.van-tabbar-item');
+  const items = wrapper.findAll('.ghb-tabbar-item');
 
   items.at(1).trigger('click');
   await later();
@@ -66,18 +66,18 @@ test('route mode match by name', async () => {
   const wrapper = mount({
     router,
     template: `
-      <van-tabbar route>
-        <van-tabbar-item :to="{ name: 'foo' }">
+      <ghb-tabbar route>
+        <ghb-tabbar-item :to="{ name: 'foo' }">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item :to="{ name: 'bar' }">
+        </ghb-tabbar-item>
+        <ghb-tabbar-item :to="{ name: 'bar' }">
           Tab
-        </van-tabbar-item>
-      </van-tabbar>
+        </ghb-tabbar-item>
+      </ghb-tabbar>
     `,
   });
 
-  const items = wrapper.findAll('.van-tabbar-item');
+  const items = wrapper.findAll('.ghb-tabbar-item');
   items.at(0).trigger('click');
   await later();
   expect(wrapper).toMatchSnapshot();
@@ -93,15 +93,15 @@ test('router NavigationDuplicated', async (done) => {
     const wrapper = mount({
       router,
       template: `
-      <van-tabbar route>
-        <van-tabbar-item replace to="/home">
+      <ghb-tabbar route>
+        <ghb-tabbar-item replace to="/home">
           Tab
-        </van-tabbar-item>
-      </van-tabbar>
+        </ghb-tabbar-item>
+      </ghb-tabbar>
     `,
     });
 
-    const item = wrapper.find('.van-tabbar-item');
+    const item = wrapper.find('.ghb-tabbar-item');
     item.trigger('click');
     item.trigger('click');
 
@@ -113,10 +113,10 @@ test('router NavigationDuplicated', async (done) => {
 test('watch tabbar value', () => {
   const wrapper = mount({
     template: `
-      <van-tabbar :value="value">
-        <van-tabbar-item>Tab</van-tabbar-item>
-        <van-tabbar-item>Tab</van-tabbar-item>
-      </van-tabbar>
+      <ghb-tabbar :value="value">
+        <ghb-tabbar-item>Tab</ghb-tabbar-item>
+        <ghb-tabbar-item>Tab</ghb-tabbar-item>
+      </ghb-tabbar>
     `,
     data() {
       return {
@@ -135,9 +135,9 @@ test('click event', () => {
 
   const wrapper = mount({
     template: `
-      <van-tabbar @change="onChange">
-        <van-tabbar-item @click="onClick">Tab</van-tabbar-item>
-      </van-tabbar>
+      <ghb-tabbar @change="onChange">
+        <ghb-tabbar-item @click="onClick">Tab</ghb-tabbar-item>
+      </ghb-tabbar>
     `,
     methods: {
       onClick,
@@ -145,7 +145,7 @@ test('click event', () => {
     },
   });
 
-  wrapper.find('.van-tabbar-item').trigger('click');
+  wrapper.find('.ghb-tabbar-item').trigger('click');
   expect(onClick).toHaveBeenCalledTimes(1);
   expect(onChange).toHaveBeenCalledTimes(0);
 });
@@ -154,10 +154,10 @@ test('name prop', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabbar :value="value" @change="onChange">
-        <van-tabbar-item name="a">Tab</van-tabbar-item>
-        <van-tabbar-item name="b">Tab</van-tabbar-item>
-      </van-tabbar>
+      <ghb-tabbar :value="value" @change="onChange">
+        <ghb-tabbar-item name="a">Tab</ghb-tabbar-item>
+        <ghb-tabbar-item name="b">Tab</ghb-tabbar-item>
+      </ghb-tabbar>
     `,
     data() {
       return {
@@ -169,7 +169,7 @@ test('name prop', () => {
     },
   });
 
-  wrapper.findAll('.van-tabbar-item').at(1).trigger('click');
+  wrapper.findAll('.ghb-tabbar-item').at(1).trigger('click');
 
   expect(onChange).toHaveBeenCalledWith('b');
 });

@@ -61,7 +61,7 @@ export default createComponent({
 
     const transitionName =
       this.transition ||
-      (isCenter ? 'van-fade' : `van-popup-slide-${position}`);
+      (isCenter ? 'ghb-fade' : `ghb-popup-slide-${position}`);
 
     const style = {};
     if (isDef(duration)) {

@@ -231,7 +231,7 @@ export default createComponent({
     const Title = this.genTitle();
 
     return (
-      <transition name={this.transition ? 'van-slide-up' : ''}>
+      <transition name={this.transition ? 'ghb-slide-up' : ''}>
         <div
           vShow={this.show}
           style={{ zIndex: this.zIndex }}

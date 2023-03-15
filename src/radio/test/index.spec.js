@@ -3,16 +3,16 @@ import { mount } from '../../../test';
 test('radio-group change', () => {
   const wrapper = mount({
     template: `
-      <van-radio-group v-model="result" @change="$emit('change', $event)">
-        <van-radio
+      <ghb-radio-group v-model="result" @change="$emit('change', $event)">
+        <ghb-radio
           v-for="item in list"
           :key="item"
           :name="item"
           :disabled="item === 'd'"
         >
           label
-        </van-radio>
-      </van-radio-group>
+        </ghb-radio>
+      </ghb-radio-group>
     `,
     data() {
       return {
@@ -22,8 +22,8 @@ test('radio-group change', () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-radio__icon');
-  const labels = wrapper.findAll('.van-radio__label');
+  const icons = wrapper.findAll('.ghb-radio__icon');
+  const labels = wrapper.findAll('.ghb-radio__label');
 
   icons.at(2).trigger('click');
   expect(wrapper.vm.result).toEqual('c');
@@ -41,15 +41,15 @@ test('radio-group change', () => {
 test('radio group disabled', () => {
   const wrapper = mount({
     template: `
-      <van-radio-group v-model="result" disabled @change="$emit('change', $event)">
-        <van-radio
+      <ghb-radio-group v-model="result" disabled @change="$emit('change', $event)">
+        <ghb-radio
           v-for="item in list"
           :key="item"
           :name="item"
         >
           label
-        </van-radio>
-      </van-radio-group>
+        </ghb-radio>
+      </ghb-radio-group>
     `,
     data() {
       return {
@@ -59,7 +59,7 @@ test('radio group disabled', () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-radio__icon');
+  const icons = wrapper.findAll('.ghb-radio__icon');
   icons.at(2).trigger('click');
 
   expect(wrapper.emitted('change')).toBeFalsy();
@@ -68,10 +68,10 @@ test('radio group disabled', () => {
 test('icon-size prop', () => {
   const wrapper = mount({
     template: `
-      <van-radio-group icon-size="10rem">
-        <van-radio>label</van-radio>
-        <van-radio icon-size="5rem">label</van-radio>
-      </van-radio-group>
+      <ghb-radio-group icon-size="10rem">
+        <ghb-radio>label</ghb-radio>
+        <ghb-radio icon-size="5rem">label</ghb-radio>
+      </ghb-radio-group>
     `,
   });
 
@@ -81,10 +81,10 @@ test('icon-size prop', () => {
 test('checked-color prop', () => {
   const wrapper = mount({
     template: `
-      <van-radio-group checked-color="black">
-        <van-radio :value="true">label</van-radio>
-        <van-radio :value="true" checked-color="white">label</van-radio>
-      </van-radio-group>
+      <ghb-radio-group checked-color="black">
+        <ghb-radio :value="true">label</ghb-radio>
+        <ghb-radio :value="true" checked-color="white">label</ghb-radio>
+      </ghb-radio-group>
     `,
   });
 

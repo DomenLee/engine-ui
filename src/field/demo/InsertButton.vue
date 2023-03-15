@@ -1,6 +1,6 @@
 <template>
   <demo-block :title="t('insertButton')">
-    <van-field
+    <ghb-field
       v-model="sms"
       center
       clearable
@@ -8,11 +8,11 @@
       :placeholder="t('smsPlaceholder')"
     >
       <template #button>
-        <van-button size="small" type="primary">
+        <ghb-button size="small" type="primary">
           {{ t('sendSMS') }}
-        </van-button>
+        </ghb-button>
       </template>
-    </van-field>
+    </ghb-field>
   </demo-block>
 </template>
 

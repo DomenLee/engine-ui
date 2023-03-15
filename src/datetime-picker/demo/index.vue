@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block card :title="t('dateType')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.date"
         type="date"
         :title="t('dateType')"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block card :title="t('yearMonthType')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.yearMonth"
         type="year-month"
         :title="t('yearMonthType')"
@@ -22,7 +22,7 @@
     </demo-block>
 
     <demo-block v-if="!isWeapp" card :title="t('monthDayType')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.monthDayType"
         type="month-day"
         :title="t('monthDayType')"
@@ -33,7 +33,7 @@
     </demo-block>
 
     <demo-block card :title="t('timeType')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.time"
         type="time"
         :title="t('timeType')"
@@ -43,7 +43,7 @@
     </demo-block>
 
     <demo-block card :title="t('datetimeType')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.datetime"
         type="datetime"
         :title="t('datetimeType')"
@@ -53,7 +53,7 @@
     </demo-block>
 
     <demo-block v-if="!isWeapp" card :title="t('datehourType')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.datehour"
         type="datehour"
         :title="t('datehourType')"
@@ -63,7 +63,7 @@
     </demo-block>
 
     <demo-block card :title="t('optionFilter')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.optionFilter"
         type="time"
         :title="t('optionFilter')"
@@ -72,7 +72,7 @@
     </demo-block>
 
     <demo-block v-if="!isWeapp" card :title="t('sortColumns')">
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="value.sortColumnsDate"
         type="date"
         :title="t('sortColumns')"

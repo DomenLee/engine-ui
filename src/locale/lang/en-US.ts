@@ -12,7 +12,7 @@ export default {
   nameInvalid: 'Malformed name',
   confirmDelete: 'Are you sure you want to delete?',
   telInvalid: 'Malformed phone number',
-  vanCalendar: {
+  ghbCalendar: {
     end: 'End',
     start: 'Start',
     title: 'Calendar',
@@ -21,37 +21,37 @@ export default {
     monthTitle: (year: number, month: number) => `${year}/${month}`,
     rangePrompt: (maxRange: number) => `Choose no more than ${maxRange} days`,
   },
-  vanCascader: {
+  ghbCascader: {
     select: 'Select',
   },
-  vanContactCard: {
+  ghbContactCard: {
     addText: 'Add contact info',
   },
-  vanContactList: {
+  ghbContactList: {
     addText: 'Add new contact',
   },
-  vanPagination: {
+  ghbPagination: {
     prev: 'Previous',
     next: 'Next',
   },
-  vanPullRefresh: {
+  ghbPullRefresh: {
     pulling: 'Pull to refresh...',
     loosing: 'Loose to refresh...',
   },
-  vanSubmitBar: {
+  ghbSubmitBar: {
     label: 'Total：',
   },
-  vanCoupon: {
+  ghbCoupon: {
     unlimited: 'Unlimited',
     discount: (discount: number) => `${discount * 10}% off`,
     condition: (condition: number) => `At least ${condition}`,
   },
-  vanCouponCell: {
+  ghbCouponCell: {
     title: 'Coupon',
     tips: 'No coupons',
     count: (count: number) => `You have ${count} coupons`,
   },
-  vanCouponList: {
+  ghbCouponList: {
     empty: 'No coupons',
     exchange: 'Exchange',
     close: 'Close',
@@ -59,7 +59,7 @@ export default {
     disabled: 'Unavailable',
     placeholder: 'Coupon code',
   },
-  vanAddressEdit: {
+  ghbAddressEdit: {
     area: 'Area',
     postal: 'Postal',
     areaEmpty: 'Please select a receiving area',
@@ -70,11 +70,11 @@ export default {
     namePlaceholder: 'Name',
     areaPlaceholder: 'Area',
   },
-  vanAddressEditDetail: {
+  ghbAddressEditDetail: {
     label: 'Address',
     placeholder: 'Address',
   },
-  vanAddressList: {
+  ghbAddressList: {
     add: 'Add new address',
   },
 };

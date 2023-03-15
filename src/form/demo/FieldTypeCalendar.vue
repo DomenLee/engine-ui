@@ -1,5 +1,5 @@
 <template>
-  <van-field
+  <ghb-field
     readonly
     clickable
     name="calendar"
@@ -9,14 +9,14 @@
     @click="showCalendar = true"
   >
     <template #extra>
-      <van-calendar
+      <ghb-calendar
         v-model="showCalendar"
         round
         get-container="body"
         @confirm="onConfirm"
       />
     </template>
-  </van-field>
+  </ghb-field>
 </template>
 
 <script>

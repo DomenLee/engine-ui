@@ -95,7 +95,7 @@ export default createComponent({
         {this.genImage(classPrefix)}
         <div class={`${classPrefix}-name`}>
           {this.largeImageMode ? (
-            <span class={{ 'van-multi-ellipsis--l2': this.largeImageMode }}>
+            <span class={{ 'ghb-multi-ellipsis--l2': this.largeImageMode }}>
               {this.skuValue.name}
             </span>
           ) : (

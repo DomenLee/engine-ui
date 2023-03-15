@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Button } from 'vant';
+import { Button } from 'ghbui';
 
 Vue.use(Button);
 ```
@@ -14,89 +14,89 @@ Vue.use(Button);
 ### Type
 
 ```html
-<van-button type="primary">Primary</van-button>
-<van-button type="info">Info</van-button>
-<van-button type="default">Default</van-button>
-<van-button type="danger">Danger</van-button>
-<van-button type="warning">Warning</van-button>
+<ghb-button type="primary">Primary</ghb-button>
+<ghb-button type="info">Info</ghb-button>
+<ghb-button type="default">Default</ghb-button>
+<ghb-button type="danger">Danger</ghb-button>
+<ghb-button type="warning">Warning</ghb-button>
 ```
 
 ### Plain
 
 ```html
-<van-button plain type="primary">Primary</van-button>
-<van-button plain type="info">Danger</van-button>
+<ghb-button plain type="primary">Primary</ghb-button>
+<ghb-button plain type="info">Danger</ghb-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button plain hairline type="primary">Hairline</van-button>
-<van-button plain hairline type="info">Hairline</van-button>
+<ghb-button plain hairline type="primary">Hairline</ghb-button>
+<ghb-button plain hairline type="info">Hairline</ghb-button>
 ```
 
 ### Disabled
 
 ```html
-<van-button disabled type="primary">Disabled</van-button>
-<van-button disabled type="info">Disabled</van-button>
+<ghb-button disabled type="primary">Disabled</ghb-button>
+<ghb-button disabled type="info">Disabled</ghb-button>
 ```
 
 ### Loading
 
 ```html
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="Loading..." />
+<ghb-button loading type="primary" />
+<ghb-button loading type="primary" loading-type="spinner" />
+<ghb-button loading type="info" loading-text="Loading..." />
 ```
 
 ### Shape
 
 ```html
-<van-button square type="primary">Square</van-button>
-<van-button round type="info">Round</van-button>
+<ghb-button square type="primary">Square</ghb-button>
+<ghb-button round type="info">Round</ghb-button>
 ```
 
 ### Icon
 
 ```html
-<van-button icon="plus" type="primary" />
-<van-button icon="plus" type="primary">Button</van-button>
-<van-button icon="https://img01.yzcdn.cn/vant/user-active.png" type="info">
+<ghb-button icon="plus" type="primary" />
+<ghb-button icon="plus" type="primary">Button</ghb-button>
+<ghb-button icon="https://img01.yzcdn.cn/vant/user-active.png" type="info">
   Button
-</van-button>
+</ghb-button>
 ```
 
 ### Size
 
 ```html
-<van-button type="primary" size="large">Large</van-button>
-<van-button type="primary" size="normal">Normal</van-button>
-<van-button type="primary" size="small">Small</van-button>
-<van-button type="primary" size="mini">Mini</van-button>
+<ghb-button type="primary" size="large">Large</ghb-button>
+<ghb-button type="primary" size="normal">Normal</ghb-button>
+<ghb-button type="primary" size="small">Small</ghb-button>
+<ghb-button type="primary" size="mini">Mini</ghb-button>
 ```
 
 ### Block Element
 
 ```html
-<van-button type="primary" block>Block Element</van-button>
+<ghb-button type="primary" block>Block Element</ghb-button>
 ```
 
 ### Route
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL</van-button>
-<van-button type="primary" to="index">Vue Router</van-button>
+<ghb-button type="primary" url="/vant/mobile.html">URL</ghb-button>
+<ghb-button type="primary" to="index">Vue Router</ghb-button>
 ```
 
 ### Custom Color
 
 ```html
-<van-button color="#7232dd">Pure</van-button>
-<van-button color="#7232dd" plain>Pure</van-button>
-<van-button color="linear-gradient(to right, #ff6034, #ee0a24)">
+<ghb-button color="#7232dd">Pure</ghb-button>
+<ghb-button color="#7232dd" plain>Pure</ghb-button>
+<ghb-button color="linear-gradient(to right, #ff6034, #ee0a24)">
   Gradient
-</van-button>
+</ghb-button>
 ```
 
 ## API
@@ -110,7 +110,7 @@ Vue.use(Button);
 | text | Text | _string_ | - |
 | color | Color, support linear-gradient | _string_ | - |
 | icon | Left Icon | _string_ | - |
-| icon-prefix `v2.6.0` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.6.0` | Icon className prefix | _string_ | `ghb-icon` |
 | icon-position `v2.10.7` | Icon position, can be set to `right` | _string_ | `left` |
 | tag | HTML Tag | _string_ | `button` |
 | native-type | Native Type Attribute | _string_ | `''` |

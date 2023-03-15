@@ -1,19 +1,19 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-cell is-link :title="t('basicUsage')" @click="showNotify" />
+      <ghb-cell is-link :title="t('basicUsage')" @click="showNotify" />
     </demo-block>
 
     <demo-block card :title="t('notifyType')">
-      <van-cell is-link :title="t('primary')" @click="showType('primary')" />
-      <van-cell is-link :title="t('success')" @click="showType('success')" />
-      <van-cell is-link :title="t('danger')" @click="showType('danger')" />
-      <van-cell is-link :title="t('warning')" @click="showType('warning')" />
+      <ghb-cell is-link :title="t('primary')" @click="showType('primary')" />
+      <ghb-cell is-link :title="t('success')" @click="showType('success')" />
+      <ghb-cell is-link :title="t('danger')" @click="showType('danger')" />
+      <ghb-cell is-link :title="t('warning')" @click="showType('warning')" />
     </demo-block>
 
     <demo-block card :title="t('customNotify')">
-      <van-cell is-link :title="t('customColor')" @click="showCustomColor" />
-      <van-cell
+      <ghb-cell is-link :title="t('customColor')" @click="showCustomColor" />
+      <ghb-cell
         is-link
         :title="t('customDuration')"
         @click="showCustomDuration"
@@ -21,16 +21,16 @@
     </demo-block>
 
     <demo-block card :title="t('componentCall')">
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('componentCall')"
         @click="showComponentCall"
       />
 
-      <van-notify v-model="show" type="success">
-        <van-icon name="bell" style="margin-right: 4px;" />
+      <ghb-notify v-model="show" type="success">
+        <ghb-icon name="bell" style="margin-right: 4px" />
         <span>{{ t('content') }}</span>
-      </van-notify>
+      </ghb-notify>
     </demo-block>
   </demo-section>
 </template>

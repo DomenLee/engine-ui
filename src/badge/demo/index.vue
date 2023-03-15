@@ -1,68 +1,68 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-badge content="5">
+      <ghb-badge content="5">
         <div class="child" />
-      </van-badge>
-      <van-badge content="10">
+      </ghb-badge>
+      <ghb-badge content="10">
         <div class="child" />
-      </van-badge>
-      <van-badge content="Hot">
+      </ghb-badge>
+      <ghb-badge content="Hot">
         <div class="child" />
-      </van-badge>
-      <van-badge dot>
+      </ghb-badge>
+      <ghb-badge dot>
         <div class="child" />
-      </van-badge>
+      </ghb-badge>
     </demo-block>
 
     <demo-block :title="t('max')">
-      <van-badge content="20" max="9">
+      <ghb-badge content="20" max="9">
         <div class="child" />
-      </van-badge>
-      <van-badge content="50" max="20">
+      </ghb-badge>
+      <ghb-badge content="50" max="20">
         <div class="child" />
-      </van-badge>
-      <van-badge content="200" max="99">
+      </ghb-badge>
+      <ghb-badge content="200" max="99">
         <div class="child" />
-      </van-badge>
+      </ghb-badge>
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <van-badge content="5" color="#1989fa">
+      <ghb-badge content="5" color="#1989fa">
         <div class="child" />
-      </van-badge>
-      <van-badge content="10" color="#1989fa">
+      </ghb-badge>
+      <ghb-badge content="10" color="#1989fa">
         <div class="child" />
-      </van-badge>
-      <van-badge dot color="#1989fa">
+      </ghb-badge>
+      <ghb-badge dot color="#1989fa">
         <div class="child" />
-      </van-badge>
+      </ghb-badge>
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <van-badge>
+      <ghb-badge>
         <div class="child" />
         <template #content>
-          <van-icon name="success" class="badge-icon" />
+          <ghb-icon name="success" class="badge-icon" />
         </template>
-      </van-badge>
-      <van-badge>
+      </ghb-badge>
+      <ghb-badge>
         <div class="child" />
         <template #content>
-          <van-icon name="cross" class="badge-icon" />
+          <ghb-icon name="cross" class="badge-icon" />
         </template>
-      </van-badge>
-      <van-badge>
+      </ghb-badge>
+      <ghb-badge>
         <div class="child" />
         <template #content>
-          <van-icon name="down" class="badge-icon" />
+          <ghb-icon name="down" class="badge-icon" />
         </template>
-      </van-badge>
+      </ghb-badge>
     </demo-block>
 
     <demo-block :title="t('standalone')">
-      <van-badge content="20" style="margin-left: 16px;" />
-      <van-badge content="200" max="99" style="margin-left: 12px;" />
+      <ghb-badge content="20" style="margin-left: 16px" />
+      <ghb-badge content="200" max="99" style="margin-left: 12px" />
     </demo-block>
   </demo-section>
 </template>
@@ -92,7 +92,7 @@ export default {
 .demo-badge {
   background-color: @white;
 
-  .van-badge__wrapper {
+  .ghb-badge__wrapper {
     margin-left: @padding-md;
   }
 

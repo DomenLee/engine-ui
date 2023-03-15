@@ -1,19 +1,19 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-count-down :time="time" />
+      <ghb-count-down :time="time" />
     </demo-block>
 
     <demo-block :title="t('customFormat')">
-      <van-count-down :time="time" :format="t('formatWithDay')" />
+      <ghb-count-down :time="time" :format="t('formatWithDay')" />
     </demo-block>
 
     <demo-block :title="t('millisecond')">
-      <van-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+      <ghb-count-down millisecond :time="time" format="HH:mm:ss:SS" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-count-down :time="time">
+      <ghb-count-down :time="time">
         <template #default="currentTime">
           <span class="block">{{ currentTime.hours }}</span>
           <span class="colon">:</span>
@@ -21,11 +21,11 @@
           <span class="colon">:</span>
           <span class="block">{{ currentTime.seconds }}</span>
         </template>
-      </van-count-down>
+      </ghb-count-down>
     </demo-block>
 
     <demo-block :title="t('manualControl')">
-      <van-count-down
+      <ghb-count-down
         ref="countDown"
         millisecond
         :time="3000"
@@ -33,15 +33,15 @@
         format="ss:SSS"
         @finish="$toast(t('finished'))"
       />
-      <van-grid clickable :column-num="3">
-        <van-grid-item icon="play-circle-o" :text="t('start')" @click="start" />
-        <van-grid-item
+      <ghb-grid clickable :column-num="3">
+        <ghb-grid-item icon="play-circle-o" :text="t('start')" @click="start" />
+        <ghb-grid-item
           icon="pause-circle-o"
           :text="t('pause')"
           @click="pause"
         />
-        <van-grid-item icon="replay" :text="t('reset')" @click="reset" />
-      </van-grid>
+        <ghb-grid-item icon="replay" :text="t('reset')" @click="reset" />
+      </ghb-grid>
     </demo-block>
   </demo-section>
 </template>
@@ -101,7 +101,7 @@ export default {
 .demo-count-down {
   background-color: @white;
 
-  .van-count-down {
+  .ghb-count-down {
     margin-left: @padding-md;
   }
 
@@ -121,7 +121,7 @@ export default {
     border-radius: 4px;
   }
 
-  .van-grid {
+  .ghb-grid {
     margin-top: 10px;
   }
 }

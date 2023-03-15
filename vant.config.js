@@ -1,24 +1,22 @@
 module.exports = {
-  name: 'vant',
+  name: 'ghbui',
   build: {
     skipInstall: ['lazyload'],
     site: {
-      publicPath: process.env.PUBLIC_PATH || '/vant/v2',
+      publicPath: process.env.PUBLIC_PATH || './',
     },
     vetur: {
-      tagPrefix: 'van-',
+      tagPrefix: 'ghb-',
     },
   },
   site: {
     defaultLang: 'en-US',
+    // defaultLang: 'zh-CN',
     versions: [
-      { label: 'v1', link: '/vant/v1/' },
-      { label: 'v3', link: '/vant/v3/' },
-      { label: 'v4', link: '/vant/v4/' },
+      // { label: 'v1', link: '/vant/v1/' },
+      // { label: 'v3', link: '/vant/v3/' },
+      // { label: 'v4', link: '/vant/v4/' },
     ],
-    baiduAnalytics: {
-      seed: 'af5d41bc4e446e76665dbe3ec18d55c3',
-    },
     htmlPluginOptions: {
       meta: {
         'docsearch:version': 'v2',
@@ -26,19 +24,19 @@ module.exports = {
     },
     locales: {
       'zh-CN': {
-        title: 'Vant 2',
+        title: 'GHBUI',
         description: '轻量、可靠的移动端组件库',
         logo: 'https://img01.yzcdn.cn/vant/logo.png',
         langLabel: '中文',
         links: [
-          {
-            logo: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
-            url: '/vant-weapp',
-          },
-          {
-            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/vant-ui/vant',
-          },
+          // {
+          //   logo: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
+          //   url: '/vant-weapp',
+          // },
+          // {
+          //   logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
+          //   url: 'https://github.com/vant-ui/vant',
+          // },
         ],
         nav: [
           {
@@ -424,7 +422,7 @@ module.exports = {
         ],
       },
       'en-US': {
-        title: 'Vant 2',
+        title: 'GHBUI',
         description: 'Mobile UI Components built on Vue',
         logo: 'https://img01.yzcdn.cn/vant/logo.png',
         langLabel: 'En',

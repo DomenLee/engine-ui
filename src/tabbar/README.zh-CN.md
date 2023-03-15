@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'ghbui';
 
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
@@ -17,12 +17,12 @@ Vue.use(TabbarItem);
 `v-model` 默认绑定选中标签的索引值，通过修改 `v-model` 即可切换选中的标签。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item icon="home-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">标签</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
@@ -40,12 +40,12 @@ export default {
 在标签指定 `name` 属性的情况下，`v-model` 的值为当前标签的 `name`。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">标签</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item name="home" icon="home-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item name="search" icon="search">标签</ghb-tabbar-item>
+  <ghb-tabbar-item name="friends" icon="friends-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item name="setting" icon="setting-o">标签</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
@@ -63,12 +63,12 @@ export default {
 设置 `dot` 属性后，会在图标右上角展示一个小红点；设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" badge="5">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" badge="20">标签</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item icon="home-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search" dot>标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o" badge="5">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o" badge="20">标签</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ### 自定义图标
@@ -76,16 +76,16 @@ export default {
 通过 `icon` 插槽自定义图标，可以通过 `slot-scope` 判断标签是否选中。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item badge="3">
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item badge="3">
     <span>自定义</span>
     <template #icon="props">
       <img :src="props.active ? icon.active : icon.inactive" />
     </template>
-  </van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+  </ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">标签</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
@@ -105,27 +105,27 @@ export default {
 ### 自定义颜色
 
 ```html
-<van-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
+  <ghb-tabbar-item icon="home-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">标签</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ### 监听切换事件
 
 ```html
-<van-tabbar v-model="active" @change="onChange">
-  <van-tabbar-item icon="home-o">标签1</van-tabbar-item>
-  <van-tabbar-item icon="search">标签2</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签3</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签4</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active" @change="onChange">
+  <ghb-tabbar-item icon="home-o">标签1</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">标签2</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o">标签3</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">标签4</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 export default {
   methods: {
@@ -143,10 +143,10 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item replace to="/home" icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item replace to="/search" icon="search">标签</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar route>
+  <ghb-tabbar-item replace to="/home" icon="home-o">标签</ghb-tabbar-item>
+  <ghb-tabbar-item replace to="/search" icon="search">标签</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ## API
@@ -178,7 +178,7 @@ export default {
 | --- | --- | --- | --- |
 | name | 标签名称，作为匹配的标识符 | _number \| string_ | 当前标签的索引值 |
 | icon | [图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `ghb-icon` |
 | dot | 是否显示图标右上角小红点 | _boolean_ | `false` |
 | badge `v2.5.6` | 图标右上角徽标的内容 | _number \| string_ | - |
 | info | 图标右上角徽标的内容（已废弃，请使用 badge 属性） | _number \| string_ | - |

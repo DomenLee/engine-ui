@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Sidebar, SidebarItem } from 'vant';
+import { Sidebar, SidebarItem } from 'ghbui';
 
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
@@ -15,11 +15,11 @@ Vue.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey">
+  <ghb-sidebar-item title="Title" />
+  <ghb-sidebar-item title="Title" />
+  <ghb-sidebar-item title="Title" />
+</ghb-sidebar>
 ```
 
 ```js
@@ -35,35 +35,35 @@ export default {
 ### Show Badge
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" dot />
-  <van-sidebar-item title="Title" badge="5" />
-  <van-sidebar-item title="Title" badge="99+" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey">
+  <ghb-sidebar-item title="Title" dot />
+  <ghb-sidebar-item title="Title" badge="5" />
+  <ghb-sidebar-item title="Title" badge="99+" />
+</ghb-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" disabled />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey">
+  <ghb-sidebar-item title="Title" />
+  <ghb-sidebar-item title="Title" disabled />
+  <ghb-sidebar-item title="Title" />
+</ghb-sidebar>
 ```
 
 ### Change Event
 
 ```html
-<van-sidebar v-model="activeKey" @change="onChange">
-  <van-sidebar-item title="Title1" />
-  <van-sidebar-item title="Title2" />
-  <van-sidebar-item title="Title3" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey" @change="onChange">
+  <ghb-sidebar-item title="Title1" />
+  <ghb-sidebar-item title="Title2" />
+  <ghb-sidebar-item title="Title3" />
+</ghb-sidebar>
 ```
 
 ```js
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 export default {
   data() {

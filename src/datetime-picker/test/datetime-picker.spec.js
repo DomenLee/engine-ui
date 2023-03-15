@@ -12,10 +12,10 @@ test('confirm & cancel event', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(onConfirm).toHaveBeenCalledTimes(1);
 
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.ghb-picker__cancel').trigger('click');
   expect(onCancel).toHaveBeenCalledTimes(1);
 });
 
@@ -46,5 +46,5 @@ test('should render title slot correctly', () => {
     },
   });
 
-  expect(wrapper.find('.van-picker__toolbar')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-picker__toolbar')).toMatchSnapshot();
 });

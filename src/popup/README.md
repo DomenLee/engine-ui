@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Popup } from 'vant';
+import { Popup } from 'ghbui';
 
 Vue.use(Popup);
 ```
@@ -14,8 +14,8 @@ Vue.use(Popup);
 ### Basic Usage
 
 ```html
-<van-cell is-link @click="showPopup">Show Popup</van-cell>
-<van-popup v-model="show">Content</van-popup>
+<ghb-cell is-link @click="showPopup">Show Popup</ghb-cell>
+<ghb-popup v-model="show">Content</ghb-popup>
 ```
 
 ```js
@@ -39,20 +39,20 @@ export default {
 Use `position` prop to set popup display position.
 
 ```html
-<van-popup v-model="show" position="top" :style="{ height: '30%' }" />
+<ghb-popup v-model="show" position="top" :style="{ height: '30%' }" />
 ```
 
 ### Close Icon
 
 ```html
-<van-popup
+<ghb-popup
   v-model="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- Custom Icon -->
-<van-popup
+<ghb-popup
   v-model="show"
   closeable
   close-icon="close"
@@ -60,7 +60,7 @@ Use `position` prop to set popup display position.
   :style="{ height: '30%' }"
 />
 <!-- Icon Position -->
-<van-popup
+<ghb-popup
   v-model="show"
   closeable
   close-icon-position="top-left"
@@ -72,7 +72,7 @@ Use `position` prop to set popup display position.
 ### Round Corner
 
 ```html
-<van-popup v-model="show" round position="bottom" :style="{ height: '30%' }" />
+<ghb-popup v-model="show" round position="bottom" :style="{ height: '30%' }" />
 ```
 
 ### Get Container
@@ -81,13 +81,13 @@ Use `get-container` prop to specify mount location.
 
 ```html
 <!-- mount to body -->
-<van-popup v-model="show" get-container="body" />
+<ghb-popup v-model="show" get-container="body" />
 
 <!-- mount to #app -->
-<van-popup v-model="show" get-container="#app" />
+<ghb-popup v-model="show" get-container="#app" />
 
 <!-- Specify the mount location by function -->
-<van-popup v-model="show" :get-container="getContainer" />
+<ghb-popup v-model="show" :get-container="getContainer" />
 ```
 
 ```js

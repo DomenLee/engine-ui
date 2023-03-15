@@ -1,45 +1,45 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-steps :active="active">
-        <van-step>{{ t('step1') }}</van-step>
-        <van-step>{{ t('step2') }}</van-step>
-        <van-step>{{ t('step3') }}</van-step>
-        <van-step>{{ t('step4') }}</van-step>
-      </van-steps>
+      <ghb-steps :active="active">
+        <ghb-step>{{ t('step1') }}</ghb-step>
+        <ghb-step>{{ t('step2') }}</ghb-step>
+        <ghb-step>{{ t('step3') }}</ghb-step>
+        <ghb-step>{{ t('step4') }}</ghb-step>
+      </ghb-steps>
 
-      <van-button @click="nextStep">{{ t('nextStep') }}</van-button>
+      <ghb-button @click="nextStep">{{ t('nextStep') }}</ghb-button>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-steps
+      <ghb-steps
         :active="active"
         active-icon="success"
         inactive-icon="arrow"
         active-color="#38f"
       >
-        <van-step>{{ t('step1') }}</van-step>
-        <van-step>{{ t('step2') }}</van-step>
-        <van-step>{{ t('step3') }}</van-step>
-        <van-step>{{ t('step4') }}</van-step>
-      </van-steps>
+        <ghb-step>{{ t('step1') }}</ghb-step>
+        <ghb-step>{{ t('step2') }}</ghb-step>
+        <ghb-step>{{ t('step3') }}</ghb-step>
+        <ghb-step>{{ t('step4') }}</ghb-step>
+      </ghb-steps>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <van-steps :active="0" direction="vertical">
-        <van-step>
+      <ghb-steps :active="0" direction="vertical">
+        <ghb-step>
           <h3>{{ t('status1') }}</h3>
           <p>2016-07-12 12:40</p>
-        </van-step>
-        <van-step>
+        </ghb-step>
+        <ghb-step>
           <h3>{{ t('status2') }}</h3>
           <p>2016-07-11 10:00</p>
-        </van-step>
-        <van-step>
+        </ghb-step>
+        <ghb-step>
           <h3>{{ t('status3') }}</h3>
           <p>2016-07-10 09:30</p>
-        </van-step>
-      </van-steps>
+        </ghb-step>
+      </ghb-steps>
     </demo-block>
   </demo-section>
 </template>
@@ -94,11 +94,11 @@ export default {
 
 .demo-steps {
   .steps-success,
-  .van-icon-location {
+  .ghb-icon-location {
     color: @green;
   }
 
-  .van-button {
+  .ghb-button {
     margin: @padding-md 0 0 @padding-md;
   }
 
@@ -109,7 +109,7 @@ export default {
     font-size: inherit;
   }
 
-  .van-steps__message + p {
+  .ghb-steps__message + p {
     margin-bottom: 10px;
   }
 }

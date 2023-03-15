@@ -1,7 +1,7 @@
 import { mount, later } from '../../../test';
 
 export async function submitForm(wrapper) {
-  wrapper.find('.van-button').trigger('click');
+  wrapper.find('.ghb-button').trigger('click');
   return later();
 }
 
@@ -19,11 +19,11 @@ export function getSimpleRules() {
 export function mountSimpleRulesForm(options) {
   return mountForm({
     template: `
-      <van-form ref="form" @failed="onFailed">
-        <van-field name="A" :rules="rulesA" value="" />
-        <van-field name="B" :rules="rulesB" value="" />
-        <van-button native-type="submit" />
-      </van-form>
+      <ghb-form ref="form" @failed="onFailed">
+        <ghb-field name="A" :rules="rulesA" value="" />
+        <ghb-field name="B" :rules="rulesB" value="" />
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     data: getSimpleRules,
     ...options,

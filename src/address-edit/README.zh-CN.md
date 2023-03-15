@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { AddressEdit } from 'vant';
+import { AddressEdit } from 'ghbui';
 
 Vue.use(AddressEdit);
 ```
@@ -18,7 +18,7 @@ Vue.use(AddressEdit);
 ### 基础用法
 
 ```html
-<van-address-edit
+<ghb-address-edit
   :area-list="areaList"
   show-postal
   show-delete
@@ -33,7 +33,7 @@ Vue.use(AddressEdit);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {

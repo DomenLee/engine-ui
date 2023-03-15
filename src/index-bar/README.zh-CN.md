@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { IndexBar, IndexAnchor } from 'vant';
+import { IndexBar, IndexAnchor } from 'ghbui';
 
 Vue.use(IndexBar);
 Vue.use(IndexAnchor);
@@ -17,19 +17,19 @@ Vue.use(IndexAnchor);
 点击索引栏时，会自动跳转到对应的 `IndexAnchor` 锚点位置。
 
 ```html
-<van-index-bar>
-  <van-index-anchor index="A" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+<ghb-index-bar>
+  <ghb-index-anchor index="A" />
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
 
-  <van-index-anchor index="B" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+  <ghb-index-anchor index="B" />
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
 
   ...
-</van-index-bar>
+</ghb-index-bar>
 ```
 
 ### 自定义索引列表
@@ -37,19 +37,19 @@ Vue.use(IndexAnchor);
 可以通过 `index-list` 属性自定义展示的索引字符列表。
 
 ```html
-<van-index-bar :index-list="indexList">
-  <van-index-anchor index="1">标题1</van-index-anchor>
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+<ghb-index-bar :index-list="indexList">
+  <ghb-index-anchor index="1">标题1</ghb-index-anchor>
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
 
-  <van-index-anchor index="2">标题2</van-index-anchor>
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+  <ghb-index-anchor index="2">标题2</ghb-index-anchor>
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
+  <ghb-cell title="文本" />
 
   ...
-</van-index-bar>
+</ghb-index-bar>
 ```
 
 ```js

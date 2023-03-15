@@ -1,36 +1,36 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-cell is-link @click="showImagePreview">
+      <ghb-cell is-link @click="showImagePreview">
         {{ t('showImages') }}
-      </van-cell>
+      </ghb-cell>
     </demo-block>
 
     <demo-block card :title="t('customConfig')">
-      <van-cell is-link @click="showImagePreview({ startPosition: 1 })">
+      <ghb-cell is-link @click="showImagePreview({ startPosition: 1 })">
         {{ t('startPosition') }}
-      </van-cell>
-      <van-cell is-link @click="showImagePreview({ closeable: true })">
+      </ghb-cell>
+      <ghb-cell is-link @click="showImagePreview({ closeable: true })">
         {{ t('showClose') }}
-      </van-cell>
-      <van-cell is-link @click="showImagePreview({ onClose })">
+      </ghb-cell>
+      <ghb-cell is-link @click="showImagePreview({ onClose })">
         {{ t('closeEvent') }}
-      </van-cell>
+      </ghb-cell>
     </demo-block>
 
     <demo-block card :title="t('asyncClose')">
-      <van-cell is-link @click="showImagePreview({ asyncClose: true })">
+      <ghb-cell is-link @click="showImagePreview({ asyncClose: true })">
         {{ t('asyncClose') }}
-      </van-cell>
+      </ghb-cell>
     </demo-block>
 
     <demo-block card :title="t('componentCall')">
-      <van-cell is-link @click="componentCall">
+      <ghb-cell is-link @click="componentCall">
         {{ t('componentCall') }}
-      </van-cell>
-      <van-image-preview v-model="show" :images="images" @change="onChange">
+      </ghb-cell>
+      <ghb-image-preview v-model="show" :images="images" @change="onChange">
         <template #index>{{ t('index', index) }}</template>
-      </van-image-preview>
+      </ghb-image-preview>
     </demo-block>
   </demo-section>
 </template>

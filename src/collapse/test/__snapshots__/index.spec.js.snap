@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`disable border 1`] = `
-<div class="van-collapse">
-  <div class="van-collapse-item">
-    <div role="button" tabindex="0" aria-expanded="false" class="van-cell van-cell--clickable van-collapse-item__title">
-      <div class="van-cell__title"><span>a</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+<div class="ghb-collapse">
+  <div class="ghb-collapse-item">
+    <div role="button" tabindex="0" aria-expanded="false" class="ghb-cell ghb-cell--clickable ghb-collapse-item__title">
+      <div class="ghb-cell__title"><span>a</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
-  <div class="van-collapse-item van-collapse-item--border">
-    <div role="button" tabindex="0" aria-expanded="false" class="van-cell van-cell--clickable van-collapse-item__title">
-      <div class="van-cell__title"><span>b</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+  <div class="ghb-collapse-item ghb-collapse-item--border">
+    <div role="button" tabindex="0" aria-expanded="false" class="ghb-cell ghb-cell--clickable ghb-collapse-item__title">
+      <div class="ghb-cell__title"><span>b</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
-  <div class="van-collapse-item van-collapse-item--border">
-    <div role="button" tabindex="0" aria-expanded="false" class="van-cell van-cell--clickable van-collapse-item__title">
-      <div class="van-cell__title"><span>c</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+  <div class="ghb-collapse-item ghb-collapse-item--border">
+    <div role="button" tabindex="0" aria-expanded="false" class="ghb-cell ghb-cell--clickable ghb-collapse-item__title">
+      <div class="ghb-cell__title"><span>c</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
@@ -24,30 +24,30 @@ exports[`disable border 1`] = `
 `;
 
 exports[`lazy render collapse content 1`] = `
-<div class="van-collapse van-hairline--top-bottom">
-  <div class="van-collapse-item" style="padding: 0px;">
-    <div role="button" tabindex="0" aria-expanded="false" class="van-cell van-cell--clickable van-collapse-item__title">
-      <div class="van-cell__title"><span>a</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+<div class="ghb-collapse ghb-hairline--top-bottom">
+  <div class="ghb-collapse-item" style="padding: 0px;">
+    <div role="button" tabindex="0" aria-expanded="false" class="ghb-cell ghb-cell--clickable ghb-collapse-item__title">
+      <div class="ghb-cell__title"><span>a</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
-  <div class="van-collapse-item van-collapse-item--border" style="padding: 0px;">
-    <div role="button" tabindex="0" aria-expanded="true" class="van-cell van-cell--clickable van-collapse-item__title van-collapse-item__title--expanded">
-      <div class="van-cell__title"><span>b</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+  <div class="ghb-collapse-item ghb-collapse-item--border" style="padding: 0px;">
+    <div role="button" tabindex="0" aria-expanded="true" class="ghb-cell ghb-cell--clickable ghb-collapse-item__title ghb-collapse-item__title--expanded">
+      <div class="ghb-cell__title"><span>b</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div class="van-collapse-item__wrapper">
-      <div class="van-collapse-item__content">content</div>
+    <div class="ghb-collapse-item__wrapper">
+      <div class="ghb-collapse-item__content">content</div>
     </div>
   </div>
 </div>
 `;
 
 exports[`render collapse-item slot 1`] = `
-<div class="van-collapse van-hairline--top-bottom">
-  <div class="van-collapse-item">
-    <div role="button" tabindex="0" aria-expanded="false" class="van-cell van-cell--clickable van-collapse-item__title">this is icon<div class="van-cell__title">this is title</div>
-      <div class="van-cell__value">this is value</div>this is right icon
+<div class="ghb-collapse ghb-hairline--top-bottom">
+  <div class="ghb-collapse-item">
+    <div role="button" tabindex="0" aria-expanded="false" class="ghb-cell ghb-cell--clickable ghb-collapse-item__title">this is icon<div class="ghb-cell__title">this is title</div>
+      <div class="ghb-cell__value">this is value</div>this is right icon
     </div>
   </div>
 </div>

@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'ghbui';
 
 Vue.use(Swipe);
 Vue.use(SwipeItem);
@@ -21,15 +21,15 @@ Vue.use(SwipeItem);
 每个 SwipeItem 代表一张轮播卡片，可以通过 `autoplay` 属性设置自动轮播的间隔。
 
 ```html
-<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 
 <style>
-  .my-swipe .van-swipe-item {
+  .my-swipe .ghb-swipe-item {
     color: #fff;
     font-size: 20px;
     line-height: 150px;
@@ -44,16 +44,16 @@ Vue.use(SwipeItem);
 当 Swipe 中含有图片时，可以配合 [Lazyload](#/zh-CN/lazyload) 组件实现图片懒加载。
 
 ```html
-<van-swipe :autoplay="3000">
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<ghb-swipe :autoplay="3000">
+  <ghb-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </ghb-swipe-item>
+</ghb-swipe>
 ```
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'ghbui';
 
 Vue.use(Lazyload);
 
@@ -72,16 +72,16 @@ export default {
 ### 监听 change 事件
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe @change="onChange">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -97,12 +97,12 @@ export default {
 设置 `vertical` 属性后滑块会纵向排列，此时需要指定滑块容器的高度。
 
 ```html
-<van-swipe style="height: 200px;" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe style="height: 200px;" vertical>
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 ```
 
 ### 自定义滑块大小
@@ -110,12 +110,12 @@ export default {
 滑块默认宽度为 `100%`，可以通过 `width` 属性设置单个滑块的宽度。纵向滚动模式下，可以通过 `height` 属性设置单个滑块的高度。
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<ghb-swipe :loop="false" :width="300">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
+</ghb-swipe>
 ```
 
 > 目前不支持在循环滚动模式下自定义滑块大小，因此需要将 loop 设置为 false。
@@ -125,15 +125,15 @@ export default {
 通过 `indicator` 插槽可以自定义指示器的样式。
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<ghb-swipe @change="onChange">
+  <ghb-swipe-item>1</ghb-swipe-item>
+  <ghb-swipe-item>2</ghb-swipe-item>
+  <ghb-swipe-item>3</ghb-swipe-item>
+  <ghb-swipe-item>4</ghb-swipe-item>
   <template #indicator>
     <div class="custom-indicator">{{ current + 1 }}/4</div>
   </template>
-</van-swipe>
+</ghb-swipe>
 
 <style>
   .custom-indicator {
@@ -256,15 +256,15 @@ Swipe 组件在挂载时，会获取自身的宽度，并计算出轮播图的�
 
 ```html
 <!-- Before -->
-<van-swipe v-show="show" />
+<ghb-swipe v-show="show" />
 <!-- After -->
-<van-swipe v-if="show" />
+<ghb-swipe v-if="show" />
 ```
 
 方法二，调用组件的 resize 方法来主动触发重绘：
 
 ```html
-<van-swipe v-show="show" ref="swipe" />
+<ghb-swipe v-show="show" ref="swipe" />
 ```
 
 ```js

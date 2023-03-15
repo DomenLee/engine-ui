@@ -3,10 +3,10 @@ import { mount, trigger, triggerDrag, mockScrollIntoView } from '../../../test';
 test('should allow to custom anchor text', () => {
   const wrapper = mount({
     template: `
-      <van-index-bar>
-        <van-index-anchor index="A">Title A</van-index-anchor>
-        <van-index-anchor index="B">Title B</van-index-anchor>
-      </van-index-bar>
+      <ghb-index-bar>
+        <ghb-index-anchor index="A">Title A</ghb-index-anchor>
+        <ghb-index-anchor index="B">Title B</ghb-index-anchor>
+      </ghb-index-bar>
     `,
   });
 
@@ -17,10 +17,10 @@ test('should scroll to anchor and emit select event after clicking the index-bar
   const onSelect = jest.fn();
   const wrapper = mount({
     template: `
-      <van-index-bar @select="onSelect">
-        <van-index-anchor index="A" />
-        <van-index-anchor index="B" />
-      </van-index-bar>
+      <ghb-index-bar @select="onSelect">
+        <ghb-index-anchor index="A" />
+        <ghb-index-anchor index="B" />
+      </ghb-index-bar>
     `,
     methods: {
       onSelect,
@@ -28,7 +28,7 @@ test('should scroll to anchor and emit select event after clicking the index-bar
   });
 
   const fn = mockScrollIntoView();
-  const indexes = wrapper.findAll('.van-index-bar__index');
+  const indexes = wrapper.findAll('.ghb-index-bar__index');
   indexes.at(0).trigger('click');
 
   expect(fn).toHaveBeenCalledTimes(1);
@@ -39,11 +39,11 @@ test('should scroll to anchor after touching the index-bar', () => {
   const onSelect = jest.fn();
   const wrapper = mount({
     template: `
-      <van-index-bar @select="onSelect">
-        <van-index-anchor index="A" />
-        <van-index-anchor index="B" />
-        <van-index-anchor index="XXX" />
-      </van-index-bar>
+      <ghb-index-bar @select="onSelect">
+        <ghb-index-anchor index="A" />
+        <ghb-index-anchor index="B" />
+        <ghb-index-anchor index="XXX" />
+      </ghb-index-bar>
     `,
     methods: {
       onSelect,
@@ -51,8 +51,8 @@ test('should scroll to anchor after touching the index-bar', () => {
   });
 
   const fn = mockScrollIntoView();
-  const sidebar = wrapper.find('.van-index-bar__sidebar');
-  const indexes = wrapper.findAll('.van-index-bar__index');
+  const sidebar = wrapper.find('.ghb-index-bar__sidebar');
+  const indexes = wrapper.findAll('.ghb-index-bar__index');
 
   document.elementFromPoint = function (x, y) {
     const index = y / 100;
@@ -95,14 +95,14 @@ test('should update active anchor after page scroll', () => {
 
   const wrapper = mount({
     template: `
-      <van-index-bar :sticky="sticky">
-        <van-index-anchor
+      <ghb-index-bar :sticky="sticky">
+        <ghb-index-anchor
           v-for="index in 4"
           :key="index"
           :index="index"
           :data-index="index - 1"
         />
-      </van-index-bar>
+      </ghb-index-bar>
     `,
     data() {
       return {
@@ -137,14 +137,14 @@ test('should emit change event when active index changed', () => {
 
   mount({
     template: `
-      <van-index-bar @change="onChange">
-        <van-index-anchor
+      <ghb-index-bar @change="onChange">
+        <ghb-index-anchor
           v-for="index in 4"
           :key="index"
           :index="index"
           :data-index="index - 1"
         />
-      </van-index-bar>
+      </ghb-index-bar>
     `,
     methods: {
       onChange,

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Badge } from 'vant';
+import { Badge } from 'ghbui';
 
 Vue.use(Badge);
 ```
@@ -14,18 +14,18 @@ Vue.use(Badge);
 ### Basic Usage
 
 ```html
-<van-badge :content="5">
+<ghb-badge :content="5">
   <div class="child" />
-</van-badge>
-<van-badge :content="10">
+</ghb-badge>
+<ghb-badge :content="10">
   <div class="child" />
-</van-badge>
-<van-badge content="Hot">
+</ghb-badge>
+<ghb-badge content="Hot">
   <div class="child" />
-</van-badge>
-<van-badge dot>
+</ghb-badge>
+<ghb-badge dot>
   <div class="child" />
-</van-badge>
+</ghb-badge>
 
 <style>
   .child {
@@ -40,29 +40,29 @@ Vue.use(Badge);
 ### Max
 
 ```html
-<van-badge :content="20" max="9">
+<ghb-badge :content="20" max="9">
   <div class="child" />
-</van-badge>
-<van-badge :content="50" max="20">
+</ghb-badge>
+<ghb-badge :content="50" max="20">
   <div class="child" />
-</van-badge>
-<van-badge :content="200" max="99">
+</ghb-badge>
+<ghb-badge :content="200" max="99">
   <div class="child" />
-</van-badge>
+</ghb-badge>
 ```
 
 ### Custom Color
 
 ```html
-<van-badge :content="5" color="#1989fa">
+<ghb-badge :content="5" color="#1989fa">
   <div class="child" />
-</van-badge>
-<van-badge :content="10" color="#1989fa">
+</ghb-badge>
+<ghb-badge :content="10" color="#1989fa">
   <div class="child" />
-</van-badge>
-<van-badge dot color="#1989fa">
+</ghb-badge>
+<ghb-badge dot color="#1989fa">
   <div class="child" />
-</van-badge>
+</ghb-badge>
 ```
 
 ### Custom Content
@@ -70,24 +70,24 @@ Vue.use(Badge);
 Use `content` slot to custom :content of badge.
 
 ```html
-<van-badge>
+<ghb-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="success" class="badge-icon" />
+    <ghb-icon name="success" class="badge-icon" />
   </template>
-</van-badge>
-<van-badge>
+</ghb-badge>
+<ghb-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="cross" class="badge-icon" />
+    <ghb-icon name="cross" class="badge-icon" />
   </template>
-</van-badge>
-<van-badge>
+</ghb-badge>
+<ghb-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="down" class="badge-icon" />
+    <ghb-icon name="down" class="badge-icon" />
   </template>
-</van-badge>
+</ghb-badge>
 ```
 
 ```css
@@ -101,9 +101,9 @@ Use `content` slot to custom :content of badge.
 ### Standalone
 
 ```html
-<van-badge :content="20" />
+<ghb-badge :content="20" />
 
-<van-badge :content="200" max="99" />
+<ghb-badge :content="200" max="99" />
 ```
 
 ## API

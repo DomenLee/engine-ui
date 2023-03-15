@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Grid, GridItem } from 'vant';
+import { Grid, GridItem } from 'ghbui';
 
 Vue.use(Grid);
 Vue.use(GridItem);
@@ -21,12 +21,12 @@ Vue.use(GridItem);
 通过 `icon` 属性设置格子内的图标，`text` 属性设置文字内容。
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-</van-grid>
+<ghb-grid>
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+</ghb-grid>
 ```
 
 ### 自定义列数
@@ -34,9 +34,9 @@ Vue.use(GridItem);
 默认一行展示四个格子，可以通过 `column-num` 自定义列数。
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
-</van-grid>
+<ghb-grid :column-num="3">
+  <ghb-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
+</ghb-grid>
 ```
 
 ### 自定义内容
@@ -44,17 +44,17 @@ Vue.use(GridItem);
 通过插槽可以自定义格子展示的内容。
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<ghb-grid :border="false" :column-num="3">
+  <ghb-grid-item>
+    <ghb-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
+  </ghb-grid-item>
+  <ghb-grid-item>
+    <ghb-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
+  </ghb-grid-item>
+  <ghb-grid-item>
+    <ghb-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
+  </ghb-grid-item>
+</ghb-grid>
 ```
 
 ### 正方形格子
@@ -62,9 +62,9 @@ Vue.use(GridItem);
 设置 `square` 属性后，格子的高度会和宽度保持一致。
 
 ```html
-<van-grid square>
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
-</van-grid>
+<ghb-grid square>
+  <ghb-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
+</ghb-grid>
 ```
 
 ### 格子间距
@@ -72,9 +72,9 @@ Vue.use(GridItem);
 通过 `gutter` 属性设置格子之间的距离。
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
-</van-grid>
+<ghb-grid :gutter="10">
+  <ghb-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
+</ghb-grid>
 ```
 
 ### 内容横排
@@ -82,11 +82,11 @@ Vue.use(GridItem);
 将 `direction` 属性设置为 `horizontal`，可以让宫格的内容呈横向排列。
 
 ```html
-<van-grid direction="horizontal" :column-num="2">
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-</van-grid>
+<ghb-grid direction="horizontal" :column-num="2">
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+</ghb-grid>
 ```
 
 ### 页面导航
@@ -94,10 +94,10 @@ Vue.use(GridItem);
 通过 `to` 属性设置 `vue-router` 跳转链接，通过 `url` 属性设置 URL 跳转链接。
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="路由跳转" to="/" />
-  <van-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
-</van-grid>
+<ghb-grid clickable :column-num="2">
+  <ghb-grid-item icon="home-o" text="路由跳转" to="/" />
+  <ghb-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
+</ghb-grid>
 ```
 
 ### 徽标提示
@@ -105,10 +105,10 @@ Vue.use(GridItem);
 设置 `dot` 属性后，会在图标右上角展示一个小红点。设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="文字" dot />
-  <van-grid-item icon="search" text="文字" badge="99+" />
-</van-grid>
+<ghb-grid :column-num="2">
+  <ghb-grid-item icon="home-o" text="文字" dot />
+  <ghb-grid-item icon="search" text="文字" badge="99+" />
+</ghb-grid>
 ```
 
 ## API
@@ -132,7 +132,7 @@ Vue.use(GridItem);
 | --- | --- | --- | --- |
 | text | 文字 | _string_ | - |
 | icon | [图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `ghb-icon` |
 | dot | 是否显示图标右上角小红点 | _boolean_ | `false` |
 | badge `v2.5.6` | 图标右上角徽标的内容 | _number \| string_ | - |
 | info `2.2.1` | 图标右上角徽标的内容（已废弃，请使用 badge 属性） | _number \| string_ | - |

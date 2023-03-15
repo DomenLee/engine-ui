@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Tag } from 'vant';
+import { Tag } from 'ghbui';
 
 Vue.use(Tag);
 ```
@@ -16,10 +16,10 @@ Vue.use(Tag);
 通过 `type` 属性控制标签颜色。
 
 ```html
-<van-tag type="primary">标签</van-tag>
-<van-tag type="success">标签</van-tag>
-<van-tag type="danger">标签</van-tag>
-<van-tag type="warning">标签</van-tag>
+<ghb-tag type="primary">标签</ghb-tag>
+<ghb-tag type="success">标签</ghb-tag>
+<ghb-tag type="danger">标签</ghb-tag>
+<ghb-tag type="warning">标签</ghb-tag>
 ```
 
 ### 空心样式
@@ -27,7 +27,7 @@ Vue.use(Tag);
 设置 `plain` 属性设置为空心样式。
 
 ```html
-<van-tag plain type="primary">标签</van-tag>
+<ghb-tag plain type="primary">标签</ghb-tag>
 ```
 
 ### 圆角样式
@@ -35,7 +35,7 @@ Vue.use(Tag);
 通过 `round` 设置为圆角样式。
 
 ```html
-<van-tag round type="primary">标签</van-tag>
+<ghb-tag round type="primary">标签</ghb-tag>
 ```
 
 ### 标记样式
@@ -43,7 +43,7 @@ Vue.use(Tag);
 通过 `mark` 设置为标记样式(半圆角)。
 
 ```html
-<van-tag mark type="primary">标签</van-tag>
+<ghb-tag mark type="primary">标签</ghb-tag>
 ```
 
 ### 可关闭标签
@@ -51,9 +51,9 @@ Vue.use(Tag);
 添加 `closeable` 属性表示标签是可关闭的，关闭标签时会触发 `close` 事件，在 `close` 事件中可以执行隐藏标签的逻辑。
 
 ```html
-<van-tag v-if="show" closeable size="medium" type="primary" @close="close">
+<ghb-tag v-if="show" closeable size="medium" type="primary" @close="close">
   标签
-</van-tag>
+</ghb-tag>
 ```
 
 ```js
@@ -76,9 +76,9 @@ export default {
 通过 `size` 属性调整标签大小。
 
 ```html
-<van-tag type="primary">标签</van-tag>
-<van-tag type="primary" size="medium">标签</van-tag>
-<van-tag type="primary" size="large">标签</van-tag>
+<ghb-tag type="primary">标签</ghb-tag>
+<ghb-tag type="primary" size="medium">标签</ghb-tag>
+<ghb-tag type="primary" size="large">标签</ghb-tag>
 ```
 
 ### 自定义颜色
@@ -86,9 +86,9 @@ export default {
 通过 `color` 和 `text-color` 属性设置标签颜色。
 
 ```html
-<van-tag color="#7232dd">标签</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">标签</van-tag>
-<van-tag color="#7232dd" plain>标签</van-tag>
+<ghb-tag color="#7232dd">标签</ghb-tag>
+<ghb-tag color="#ffe1e1" text-color="#ad0000">标签</ghb-tag>
+<ghb-tag color="#7232dd" plain>标签</ghb-tag>
 ```
 
 ## API

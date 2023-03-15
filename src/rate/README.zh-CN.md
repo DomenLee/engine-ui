@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Rate } from 'vant';
+import { Rate } from 'ghbui';
 
 Vue.use(Rate);
 ```
@@ -18,7 +18,7 @@ Vue.use(Rate);
 ### 基础用法
 
 ```html
-<van-rate v-model="value" />
+<ghb-rate v-model="value" />
 ```
 
 ```js
@@ -34,13 +34,13 @@ export default {
 ### 自定义图标
 
 ```html
-<van-rate v-model="value" icon="like" void-icon="like-o" />
+<ghb-rate v-model="value" icon="like" void-icon="like-o" />
 ```
 
 ### 自定义样式
 
 ```html
-<van-rate
+<ghb-rate
   v-model="value"
   :size="25"
   color="#ffd21e"
@@ -52,7 +52,7 @@ export default {
 ### 半星
 
 ```html
-<van-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
+<ghb-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
 ```
 
 ```js
@@ -68,25 +68,25 @@ export default {
 ### 自定义数量
 
 ```html
-<van-rate v-model="value" :count="6" />
+<ghb-rate v-model="value" :count="6" />
 ```
 
 ### 禁用状态
 
 ```html
-<van-rate v-model="value" disabled />
+<ghb-rate v-model="value" disabled />
 ```
 
 ### 只读状态
 
 ```html
-<van-rate v-model="value" readonly />
+<ghb-rate v-model="value" readonly />
 ```
 
 ### 监听 change 事件
 
 ```html
-<van-rate v-model="value" @change="onChange" />
+<ghb-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript
@@ -114,7 +114,7 @@ export default {
 | disabled-color | 禁用时的颜色 | _string_ | `#c8c9cc` |
 | icon | 选中时的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `star` |
 | void-icon | 未选中时的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `star-o` |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `ghb-icon` |
 | allow-half | 是否允许半选 | _boolean_ | `false` |
 | readonly | 是否为只读状态 | _boolean_ | `false` |
 | disabled | 是否禁用评分 | _boolean_ | `false` |

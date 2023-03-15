@@ -29,10 +29,10 @@ test('callback events', async () => {
     },
   });
 
-  const options = wrapper.findAll('.van-action-sheet__item');
+  const options = wrapper.findAll('.ghb-action-sheet__item');
   options.at(0).trigger('click');
   options.at(1).trigger('click');
-  wrapper.find('.van-action-sheet__cancel').trigger('click');
+  wrapper.find('.ghb-action-sheet__cancel').trigger('click');
 
   await later();
 
@@ -75,7 +75,7 @@ test('click overlay and close', async () => {
 
   await later();
 
-  div.querySelector('.van-overlay').click();
+  div.querySelector('.ghb-overlay').click();
   expect(onInput).toHaveBeenCalledWith(false);
   expect(onClickOverlay).toHaveBeenCalledTimes(1);
 });
@@ -134,7 +134,7 @@ test('close-on-click-action prop', () => {
     },
   });
 
-  const option = wrapper.find('.van-action-sheet__item');
+  const option = wrapper.find('.ghb-action-sheet__item');
   option.trigger('click');
 
   expect(onInput).toHaveBeenCalledWith(false);

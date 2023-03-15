@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { ContactCard } from 'vant';
+import { ContactCard } from 'ghbui';
 
 Vue.use(ContactCard);
 ```
@@ -18,11 +18,11 @@ Vue.use(ContactCard);
 ### 添加联系人
 
 ```html
-<van-contact-card type="add" @click="onAdd" />
+<ghb-contact-card type="add" @click="onAdd" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -36,7 +36,7 @@ export default {
 ### 编辑联系人
 
 ```html
-<van-contact-card
+<ghb-contact-card
   type="edit"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -45,7 +45,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -67,7 +67,7 @@ export default {
 ### 不可编辑
 
 ```html
-<van-contact-card type="edit" name="张三" tel="13000000000" :editable="false" />
+<ghb-contact-card type="edit" name="张三" tel="13000000000" :editable="false" />
 ```
 
 ## API

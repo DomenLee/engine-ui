@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Slider } from 'vant';
+import { Slider } from 'ghbui';
 
 Vue.use(Slider);
 ```
@@ -18,11 +18,11 @@ Vue.use(Slider);
 ### 基础用法
 
 ```html
-<van-slider v-model="value" @change="onChange" />
+<ghb-slider v-model="value" @change="onChange" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -43,11 +43,11 @@ export default {
 添加 `range` 属性就可以开启双滑块模式，确保 `value` 的值是一个数组。
 
 ```html
-<van-slider v-model="value" range @change="onChange" />
+<ghb-slider v-model="value" range @change="onChange" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -67,35 +67,35 @@ export default {
 ### 指定选择范围
 
 ```html
-<van-slider v-model="value" :min="-50" :max="50" />
+<ghb-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### 禁用
 
 ```html
-<van-slider v-model="value" disabled />
+<ghb-slider v-model="value" disabled />
 ```
 
 ### 指定步长
 
 ```html
-<van-slider v-model="value" :step="10" />
+<ghb-slider v-model="value" :step="10" />
 ```
 
 ### 自定义样式
 
 ```html
-<van-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
+<ghb-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
 ```
 
 ### 自定义按钮
 
 ```html
-<van-slider v-model="value" active-color="#ee0a24">
+<ghb-slider v-model="value" active-color="#ee0a24">
   <template #button>
     <div class="custom-button">{{ value }}</div>
   </template>
-</van-slider>
+</ghb-slider>
 
 <style>
   .custom-button {
@@ -116,8 +116,8 @@ export default {
 
 ```html
 <div :style="{ height: '150px' }">
-  <van-slider v-model="value" vertical @change="onChange" />
-  <van-slider
+  <ghb-slider v-model="value" vertical @change="onChange" />
+  <ghb-slider
     v-model="value2"
     range
     vertical
@@ -128,7 +128,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {

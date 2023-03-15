@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-field {
+.ghb-field {
   &__label {
     flex: none;
     box-sizing: border-box;
@@ -20,7 +20,7 @@
   }
 
   &--disabled {
-    .van-field__label {
+    .ghb-field__label {
       color: @field-disabled-text-color;
     }
   }
@@ -113,8 +113,8 @@
     cursor: pointer;
   }
 
-  &__left-icon .van-icon,
-  &__right-icon .van-icon {
+  &__left-icon .ghb-icon,
+  &__right-icon .ghb-icon {
     display: block;
     font-size: @field-icon-size;
     line-height: inherit;
@@ -155,7 +155,7 @@
   }
 
   &--error {
-    .van-field__control {
+    .ghb-field__control {
       &,
       &::placeholder {
         color: @field-input-error-text-color;
@@ -165,7 +165,7 @@
   }
 
   &--min-height {
-    .van-field__control {
+    .ghb-field__control {
       min-height: @field-text-area-min-height;
     }
   }

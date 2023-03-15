@@ -1,49 +1,49 @@
 <template>
   <demo-section>
-    <van-cell center :title="t('basicUsage')">
-      <van-stepper v-model="stepper1" />
-    </van-cell>
+    <ghb-cell center :title="t('basicUsage')">
+      <ghb-stepper v-model="stepper1" />
+    </ghb-cell>
 
-    <van-cell center :title="t('step')">
-      <van-stepper v-model="stepper2" step="2" />
-    </van-cell>
+    <ghb-cell center :title="t('step')">
+      <ghb-stepper v-model="stepper2" step="2" />
+    </ghb-cell>
 
-    <van-cell center :title="t('range')">
-      <van-stepper v-model="stepper3" :min="5" :max="8" />
-    </van-cell>
+    <ghb-cell center :title="t('range')">
+      <ghb-stepper v-model="stepper3" :min="5" :max="8" />
+    </ghb-cell>
 
-    <van-cell center :title="t('integer')">
-      <van-stepper v-model="stepper4" integer />
-    </van-cell>
+    <ghb-cell center :title="t('integer')">
+      <ghb-stepper v-model="stepper4" integer />
+    </ghb-cell>
 
-    <van-cell center :title="t('disabled')">
-      <van-stepper v-model="stepper5" disabled />
-    </van-cell>
+    <ghb-cell center :title="t('disabled')">
+      <ghb-stepper v-model="stepper5" disabled />
+    </ghb-cell>
 
-    <van-cell center :title="t('disableInput')">
-      <van-stepper v-model="disabledInput" disable-input />
-    </van-cell>
+    <ghb-cell center :title="t('disableInput')">
+      <ghb-stepper v-model="disabledInput" disable-input />
+    </ghb-cell>
 
-    <van-cell center :title="t('decimalLength')">
-      <van-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
-    </van-cell>
+    <ghb-cell center :title="t('decimalLength')">
+      <ghb-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
+    </ghb-cell>
 
-    <van-cell center :title="t('customSize')">
-      <van-stepper v-model="stepper7" button-size="32px" input-width="40px" />
-    </van-cell>
+    <ghb-cell center :title="t('customSize')">
+      <ghb-stepper v-model="stepper7" button-size="32px" input-width="40px" />
+    </ghb-cell>
 
-    <van-cell center :title="t('asyncChange')">
-      <van-stepper :value="stepper6" async-change @change="onChange" />
-    </van-cell>
+    <ghb-cell center :title="t('asyncChange')">
+      <ghb-stepper :value="stepper6" async-change @change="onChange" />
+    </ghb-cell>
 
-    <van-cell v-if="!isWeapp" center :title="t('roundTheme')">
-      <van-stepper
+    <ghb-cell v-if="!isWeapp" center :title="t('roundTheme')">
+      <ghb-stepper
         v-model="stepperRound"
         theme="round"
         button-size="22"
         disable-input
       />
-    </van-cell>
+    </ghb-cell>
   </demo-section>
 </template>
 

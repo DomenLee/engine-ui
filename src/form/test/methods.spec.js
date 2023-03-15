@@ -6,10 +6,10 @@ test('submit method', async () => {
 
   mountForm({
     template: `
-        <van-form ref="form" @submit="onSubmit">
-          <van-field name="A" value="bar" />
-          <van-button native-type="submit" />
-        </van-form>
+        <ghb-form ref="form" @submit="onSubmit">
+          <ghb-field name="A" value="bar" />
+          <ghb-button native-type="submit" />
+        </ghb-form>
       `,
     mounted() {
       this.$refs.form.submit();
@@ -51,11 +51,11 @@ test('validate method - validate one field and failed', (done) => {
 test('validate method - validate one field and passed', (done) => {
   mountForm({
     template: `	
-      <van-form ref="form" @failed="onFailed">	
-        <van-field name="A" :rules="rulesA" value="123" />	
-        <van-field name="B" :rules="rulesB" value="" />	
-        <van-button native-type="submit" />	
-      </van-form>	
+      <ghb-form ref="form" @failed="onFailed">	
+        <ghb-field name="A" :rules="rulesA" value="123" />	
+        <ghb-field name="B" :rules="rulesB" value="" />	
+        <ghb-button native-type="submit" />	
+      </ghb-form>	
     `,
     data: getSimpleRules,
     mounted() {
@@ -67,11 +67,11 @@ test('validate method - validate one field and passed', (done) => {
 test('validate method - validate two fields and failed', (done) => {
   mountForm({
     template: `	
-      <van-form ref="form" @failed="onFailed">	
-        <van-field name="A" :rules="rulesA" value="123" />	
-        <van-field name="B" :rules="rulesB" value="" />	
-        <van-button native-type="submit" />	
-      </van-form>	
+      <ghb-form ref="form" @failed="onFailed">	
+        <ghb-field name="A" :rules="rulesA" value="123" />	
+        <ghb-field name="B" :rules="rulesB" value="" />	
+        <ghb-button native-type="submit" />	
+      </ghb-form>	
     `,
     data: getSimpleRules,
     mounted() {
@@ -96,7 +96,7 @@ test('resetValidation method - reset all fields', (done) => {
     mounted() {
       this.$refs.form.validate().catch(() => {
         this.$refs.form.resetValidation();
-        const errors = wrapper.findAll('.van-field__error-message');
+        const errors = wrapper.findAll('.ghb-field__error-message');
         expect(errors.length).toEqual(0);
         done();
       });
@@ -109,7 +109,7 @@ test('resetValidation method - reset two fields', (done) => {
     mounted() {
       this.$refs.form.validate().catch(() => {
         this.$refs.form.resetValidation(['A', 'B']);
-        const errors = wrapper.findAll('.van-field__error-message');
+        const errors = wrapper.findAll('.ghb-field__error-message');
         expect(errors.length).toEqual(0);
         done();
       });
@@ -122,9 +122,9 @@ test('resetValidation method - reset one field', (done) => {
     mounted() {
       this.$refs.form.validate().catch(() => {
         this.$refs.form.resetValidation('A');
-        expect(wrapper.findAll('.van-field--error').length).toEqual(1);
+        expect(wrapper.findAll('.ghb-field--error').length).toEqual(1);
         this.$refs.form.resetValidation('B');
-        expect(wrapper.findAll('.van-field--error').length).toEqual(0);
+        expect(wrapper.findAll('.ghb-field--error').length).toEqual(0);
         done();
       });
     },
@@ -142,7 +142,7 @@ test('resetValidation method - reset when rule message is empty', (done) => {
     mounted() {
       this.$refs.form.validate().catch(() => {
         this.$refs.form.resetValidation('A');
-        expect(wrapper.findAll('.van-field--error').length).toEqual(1);
+        expect(wrapper.findAll('.ghb-field--error').length).toEqual(1);
         done();
       });
     },

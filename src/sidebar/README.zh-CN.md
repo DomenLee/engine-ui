@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Sidebar, SidebarItem } from 'vant';
+import { Sidebar, SidebarItem } from 'ghbui';
 
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
@@ -17,11 +17,11 @@ Vue.use(SidebarItem);
 通过 `v-model` 绑定当前选中项的索引。
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="标签名称" />
-  <van-sidebar-item title="标签名称" />
-  <van-sidebar-item title="标签名称" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey">
+  <ghb-sidebar-item title="标签名称" />
+  <ghb-sidebar-item title="标签名称" />
+  <ghb-sidebar-item title="标签名称" />
+</ghb-sidebar>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 设置 `dot` 属性后，会在右上角展示一个小红点；设置 `badge` 属性后，会在右上角展示相应的徽标。
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="标签名称" dot />
-  <van-sidebar-item title="标签名称" badge="5" />
-  <van-sidebar-item title="标签名称" badge="99+" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey">
+  <ghb-sidebar-item title="标签名称" dot />
+  <ghb-sidebar-item title="标签名称" badge="5" />
+  <ghb-sidebar-item title="标签名称" badge="99+" />
+</ghb-sidebar>
 ```
 
 ### 禁用选项
@@ -51,11 +51,11 @@ export default {
 通过 `disabled` 属性禁用选项。
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="标签名称" />
-  <van-sidebar-item title="标签名称" disabled />
-  <van-sidebar-item title="标签名称" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey">
+  <ghb-sidebar-item title="标签名称" />
+  <ghb-sidebar-item title="标签名称" disabled />
+  <ghb-sidebar-item title="标签名称" />
+</ghb-sidebar>
 ```
 
 ### 监听切换事件
@@ -63,15 +63,15 @@ export default {
 设置 `change` 方法来监听切换导航项时的事件。
 
 ```html
-<van-sidebar v-model="activeKey" @change="onChange">
-  <van-sidebar-item title="标签名1" />
-  <van-sidebar-item title="标签名2" />
-  <van-sidebar-item title="标签名3" />
-</van-sidebar>
+<ghb-sidebar v-model="activeKey" @change="onChange">
+  <ghb-sidebar-item title="标签名1" />
+  <ghb-sidebar-item title="标签名2" />
+  <ghb-sidebar-item title="标签名3" />
+</ghb-sidebar>
 ```
 
 ```js
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 export default {
   data() {

@@ -1,5 +1,8 @@
 import Picker from '..';
-import PickerColumn, { MOMENTUM_LIMIT_TIME, MOMENTUM_LIMIT_DISTANCE} from '../PickerColumn';
+import PickerColumn, {
+  MOMENTUM_LIMIT_TIME,
+  MOMENTUM_LIMIT_DISTANCE,
+} from '../PickerColumn';
 import { mount, triggerDrag, later } from '../../../test';
 import { DEFAULT_ITEM_HEIGHT } from '../shared';
 
@@ -23,8 +26,8 @@ test('simple columns confirm & cancel event', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__cancel').trigger('click');
   expect(wrapper.emitted('confirm')[0]).toEqual(['1990', 0]);
   expect(wrapper.emitted('cancel')[0]).toEqual(['1990', 0]);
   wrapper.destroy();
@@ -38,8 +41,8 @@ test('multiple columns confirm & cancel event', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__cancel').trigger('click');
 
   const params = [
     ['vip', '1990'],
@@ -95,8 +98,8 @@ test('drag columns', () => {
     },
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
 
   // 由于在极短的时间（大约几毫秒）移动 `100px`，因此再计算惯性滚动的距离时，
   // 会得到一个很大的值，导致会滚动到且选中列表的最后一项
@@ -110,8 +113,8 @@ test('drag simple columns', () => {
     },
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
 
   // 由于在极短的时间（大约几毫秒）移动 `100px`，因此再计算惯性滚动的距离时，
   // 会得到一个很大的值，导致会滚动到且选中列表的最后一项
@@ -139,9 +142,9 @@ test('column watch default index', async () => {
 test('render title slot', () => {
   const wrapper = mount({
     template: `
-      <van-picker show-toolbar>
+      <ghb-picker show-toolbar>
         <template v-slot:title>Custom title</template>
-      </van-picker>
+      </ghb-picker>
     `,
   });
 
@@ -151,10 +154,10 @@ test('render title slot', () => {
 test('render confirm/cancel slot', () => {
   const wrapper = mount({
     template: `
-      <van-picker show-toolbar>
+      <ghb-picker show-toolbar>
         <template v-slot:confirm>Custom Confirm</template>
         <template v-slot:cancel>Custom Cancel</template>
-      </van-picker>
+      </ghb-picker>
     `,
   });
 
@@ -164,9 +167,9 @@ test('render confirm/cancel slot', () => {
 test('render option slot with simple columns', () => {
   const wrapper = mount({
     template: `
-      <van-picker :columns="columns" show-toolbar>
+      <ghb-picker :columns="columns" show-toolbar>
         <template #option="item">{{ item }}</template>
-      </van-picker>
+      </ghb-picker>
     `,
     data() {
       return { columns: ['foo', 'bar'] };
@@ -179,9 +182,9 @@ test('render option slot with simple columns', () => {
 test('render option slot with object columns', () => {
   const wrapper = mount({
     template: `
-      <van-picker :columns="columns" show-toolbar>
+      <ghb-picker :columns="columns" show-toolbar>
         <template #option="item">{{ item.text }}</template>
-      </van-picker>
+      </ghb-picker>
     `,
     data() {
       return {
@@ -212,9 +215,9 @@ test('simulation finger swipe again before transitionend', () => {
     },
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -5);
-  triggerDrag(wrapper.find('.van-picker-column'), -5, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -5);
+  triggerDrag(wrapper.find('.ghb-picker-column'), -5, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
   expect(wrapper.emitted('change')[0][1]).toEqual('1995');
 });
 
@@ -231,7 +234,7 @@ test('click column item', () => {
     },
   });
 
-  wrapper.findAll('.van-picker-column__item').at(3).trigger('click');
+  wrapper.findAll('.ghb-picker-column__item').at(3).trigger('click');
   expect(wrapper.emitted('change')[0][1]).toEqual(columns[1]);
 });
 
@@ -284,7 +287,7 @@ test('watch columns change', () => {
     columns: ['2', '3'],
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0]).toEqual(['3', 1]);
 });
 
@@ -301,7 +304,7 @@ test('should not reset index when columns unchanged', () => {
     columns: ['1', '2'],
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0]).toEqual(['2', 1]);
 });
 
@@ -331,9 +334,9 @@ test('readonly prop', () => {
     },
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
-  wrapper.findAll('.van-picker-column__item').at(3).trigger('click');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
+  wrapper.findAll('.ghb-picker-column__item').at(3).trigger('click');
 
   expect(wrapper.emitted('change')).toBeFalsy();
 });
@@ -353,7 +356,7 @@ test('wheel event on columns is detected', async () => {
 });
 
 test('wheel scroll on columns', async () => {
-  const fakeScroll = (translateY, deltaY)=> {
+  const fakeScroll = (translateY, deltaY) => {
     // mock getComputedStyle
     // see: https://github.com/jsdom/jsdom/issues/2588
     const originGetComputedStyle = window.getComputedStyle;
@@ -364,25 +367,27 @@ test('wheel scroll on columns', async () => {
         transform: `matrix(1, 0, 0, 1, 0, ${translateY})`,
       };
     };
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       const wrapper = mount(Picker, {
         propsData: {
           columns: simpleColumn,
         },
       });
 
-      wrapper.find('.van-picker-column').trigger('wheel', {
+      wrapper.find('.ghb-picker-column').trigger('wheel', {
         deltaY,
       });
 
-      return later(MOMENTUM_LIMIT_TIME + 10).then(()=>{
-        wrapper.find('.van-picker-column ul').trigger('transitionend');
-        resolve(wrapper.emitted('change'));
-      }).finally(()=>{
-        window.getComputedStyle = originGetComputedStyle;
-      });
+      return later(MOMENTUM_LIMIT_TIME + 10)
+        .then(() => {
+          wrapper.find('.ghb-picker-column ul').trigger('transitionend');
+          resolve(wrapper.emitted('change'));
+        })
+        .finally(() => {
+          window.getComputedStyle = originGetComputedStyle;
+        });
     });
-  }
+  };
 
   const topToDown = await fakeScroll(110, -MOMENTUM_LIMIT_DISTANCE);
   expect(topToDown).toEqual(undefined);
@@ -396,7 +401,10 @@ test('wheel scroll on columns', async () => {
   const bottomToDown = await fakeScroll(-110, -(MOMENTUM_LIMIT_DISTANCE - 5));
   expect(bottomToDown[0][1]).toEqual('1995');
 
-  const pos1992 = simpleColumn.indexOf('1992')
-  const momentum = await fakeScroll(-110 + (pos1992 + 1) * DEFAULT_ITEM_HEIGHT, MOMENTUM_LIMIT_DISTANCE + 10);
-  expect(momentum[0][1]).toEqual(simpleColumn[pos1992+1]);
+  const pos1992 = simpleColumn.indexOf('1992');
+  const momentum = await fakeScroll(
+    -110 + (pos1992 + 1) * DEFAULT_ITEM_HEIGHT,
+    MOMENTUM_LIMIT_DISTANCE + 10
+  );
+  expect(momentum[0][1]).toEqual(simpleColumn[pos1992 + 1]);
 });

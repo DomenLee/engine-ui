@@ -8,7 +8,7 @@ The Panel component will be deprecated in version 3.0. Please use the Cell and B
 
 ```js
 import Vue from 'vue';
-import { Panel } from 'vant';
+import { Panel } from 'ghbui';
 
 Vue.use(Panel);
 ```
@@ -18,21 +18,21 @@ Vue.use(Panel);
 ### Basic Usage
 
 ```html
-<van-panel title="Title" desc="Description" status="Status">
+<ghb-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
-</van-panel>
+</ghb-panel>
 ```
 
 ### Advanced Usage
 
 ```html
-<van-panel title="Title" desc="Description" status="Status">
+<ghb-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
   <template #footer>
-    <van-button size="small">Button</van-button>
-    <van-button size="small" type="danger">Button</van-button>
+    <ghb-button size="small">Button</ghb-button>
+    <ghb-button size="small" type="danger">Button</ghb-button>
   </template>
-</van-panel>
+</ghb-panel>
 ```
 
 ## API

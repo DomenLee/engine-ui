@@ -3,45 +3,45 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-address-list">
-      <div role="radiogroup" class="van-radio-group">
-        <div class="van-address-item">
-          <div class="van-cell van-cell--borderless">
-            <div class="van-cell__value van-cell__value--alone van-address-item__value">
-              <div role="radio" tabindex="0" aria-checked="true" class="van-radio">
-                <div class="van-radio__icon van-radio__icon--round van-radio__icon--checked" style="font-size: 18px;"><i class="van-icon van-icon-success">
-                    <!----></i></div><span class="van-radio__label"><div class="van-address-item__name">张三 13000000000<span class="van-tag van-tag--round van-tag--danger van-address-item__tag">默认</span>
+    <div class="ghb-address-list">
+      <div role="radiogroup" class="ghb-radio-group">
+        <div class="ghb-address-item">
+          <div class="ghb-cell ghb-cell--borderless">
+            <div class="ghb-cell__value ghb-cell__value--alone ghb-address-item__value">
+              <div role="radio" tabindex="0" aria-checked="true" class="ghb-radio">
+                <div class="ghb-radio__icon ghb-radio__icon--round ghb-radio__icon--checked" style="font-size: 18px;"><i class="ghb-icon ghb-icon-success">
+                    <!----></i></div><span class="ghb-radio__label"><div class="ghb-address-item__name">张三 13000000000<span class="ghb-tag ghb-tag--round ghb-tag--danger ghb-address-item__tag">默认</span>
               </div>
-              <div class="van-address-item__address">浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室</div></span>
+              <div class="ghb-address-item__address">浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室</div></span>
             </div>
-          </div><i class="van-icon van-icon-edit van-address-item__edit">
+          </div><i class="ghb-icon ghb-icon-edit ghb-address-item__edit">
             <!----></i>
         </div>
       </div>
-      <div class="van-address-item">
-        <div class="van-cell van-cell--borderless">
-          <div class="van-cell__value van-cell__value--alone van-address-item__value">
-            <div role="radio" tabindex="-1" aria-checked="false" class="van-radio">
-              <div class="van-radio__icon van-radio__icon--round" style="font-size: 18px;"><i class="van-icon van-icon-success">
-                  <!----></i></div><span class="van-radio__label"><div class="van-address-item__name">李四 1310000000</div><div class="van-address-item__address">浙江省杭州市拱墅区莫干山路 50 号</div></span>
+      <div class="ghb-address-item">
+        <div class="ghb-cell ghb-cell--borderless">
+          <div class="ghb-cell__value ghb-cell__value--alone ghb-address-item__value">
+            <div role="radio" tabindex="-1" aria-checked="false" class="ghb-radio">
+              <div class="ghb-radio__icon ghb-radio__icon--round" style="font-size: 18px;"><i class="ghb-icon ghb-icon-success">
+                  <!----></i></div><span class="ghb-radio__label"><div class="ghb-address-item__name">李四 1310000000</div><div class="ghb-address-item__address">浙江省杭州市拱墅区莫干山路 50 号</div></span>
             </div>
-          </div><i class="van-icon van-icon-edit van-address-item__edit">
+          </div><i class="ghb-icon ghb-icon-edit ghb-address-item__edit">
             <!----></i>
         </div>
       </div>
     </div>
-    <div class="van-address-list__disabled-text">以下地址超出配送范围</div>
-    <div class="van-address-item van-address-item--disabled">
-      <div class="van-cell van-cell--borderless">
-        <div class="van-cell__value van-cell__value--alone van-address-item__value">
-          <div class="van-address-item__name">王五 1320000000</div>
-          <div class="van-address-item__address">浙江省杭州市滨江区江南大道 15 号</div>
-        </div><i class="van-icon van-icon-edit van-address-item__edit">
+    <div class="ghb-address-list__disabled-text">以下地址超出配送范围</div>
+    <div class="ghb-address-item ghb-address-item--disabled">
+      <div class="ghb-cell ghb-cell--borderless">
+        <div class="ghb-cell__value ghb-cell__value--alone ghb-address-item__value">
+          <div class="ghb-address-item__name">王五 1320000000</div>
+          <div class="ghb-address-item__address">浙江省杭州市滨江区江南大道 15 号</div>
+        </div><i class="ghb-icon ghb-icon-edit ghb-address-item__edit">
           <!----></i>
       </div>
     </div>
-    <div class="van-address-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-address-list__add">
-        <div class="van-button__content"><span class="van-button__text">新增地址</span></div>
+    <div class="ghb-address-list__bottom"><button class="ghb-button ghb-button--danger ghb-button--normal ghb-button--block ghb-button--round ghb-address-list__add">
+        <div class="ghb-button__content"><span class="ghb-button__text">新增地址</span></div>
       </button></div>
   </div>
 </div>

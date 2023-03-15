@@ -2,7 +2,7 @@
   <demo-section>
     <demo-block :title="t('basicUsage')">
       <div class="sku-container">
-        <van-sku
+        <ghb-sku
           v-model="showBase"
           :sku="skuData.sku"
           :quota="skuData.quota"
@@ -21,15 +21,15 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button block type="primary" @click="showBase = true">
+        <ghb-button block type="primary" @click="showBase = true">
           {{ t('basicUsage') }}
-        </van-button>
+        </ghb-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('customStepper')">
       <div class="sku-container">
-        <van-sku
+        <ghb-sku
           v-model="showStepper"
           :sku="skuData.sku"
           :quota="skuData.quota"
@@ -46,15 +46,15 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button block type="primary" @click="showStepper = true">
+        <ghb-button block type="primary" @click="showStepper = true">
           {{ t('customStepper') }}
-        </van-button>
+        </ghb-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('hideSoldoutSku')">
       <div class="sku-container">
-        <van-sku
+        <ghb-sku
           v-model="showSoldout"
           :sku="skuData.sku"
           :quota="skuData.quota"
@@ -72,15 +72,15 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button block type="primary" @click="showSoldout = true">
+        <ghb-button block type="primary" @click="showSoldout = true">
           {{ t('hideSoldoutSku') }}
-        </van-button>
+        </ghb-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('largeImageMode')">
       <div class="sku-container">
-        <van-sku
+        <ghb-sku
           v-model="showLargePicturePreview"
           :sku="skuData2.sku"
           :quota="skuData2.quota"
@@ -100,20 +100,20 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         >
-        </van-sku>
-        <van-button
+        </ghb-sku>
+        <ghb-button
           block
           type="primary"
           @click="showLargePicturePreview = true"
         >
           {{ t('largeImageMode') }}
-        </van-button>
+        </ghb-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('customBySlot')">
       <div class="sku-container">
-        <van-sku
+        <ghb-sku
           v-model="showCustom"
           :stepper-title="t('stepperTitle')"
           :sku="skuData.sku"
@@ -133,40 +133,40 @@
           @add-cart="onAddCartClicked"
         >
           <template #sku-header-price="{ price }">
-            <div class="van-sku__goods-price">
-              <span class="van-sku__price-symbol">￥</span>
-              <span class="van-sku__price-num">{{ price }}</span>
+            <div class="ghb-sku__goods-price">
+              <span class="ghb-sku__price-symbol">￥</span>
+              <span class="ghb-sku__price-num">{{ price }}</span>
             </div>
           </template>
           <template #sku-actions-top>
-            <div class="van-sku-header-item text-center">
+            <div class="ghb-sku-header-item text-center">
               {{ t('actionsTop') }}
             </div>
           </template>
           <template #sku-actions="{ skuEventBus }">
-            <div class="van-sku-actions">
-              <van-button
+            <div class="ghb-sku-actions">
+              <ghb-button
                 square
                 size="large"
                 type="warning"
                 @click="onPointClicked"
               >
                 {{ t('button1') }}
-              </van-button>
-              <van-button
+              </ghb-button>
+              <ghb-button
                 square
                 size="large"
                 type="danger"
                 @click="skuEventBus.$emit('sku:buy')"
               >
                 {{ t('button2') }}
-              </van-button>
+              </ghb-button>
             </div>
           </template>
-        </van-sku>
-        <van-button block type="primary" @click="showCustom = true">
+        </ghb-sku>
+        <ghb-button block type="primary" @click="showCustom = true">
           {{ t('customBySlot') }}
-        </van-button>
+        </ghb-button>
       </div>
     </demo-block>
   </demo-section>

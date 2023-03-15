@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { AddressList } from 'vant';
+import { AddressList } from 'ghbui';
 
 Vue.use(AddressList);
 ```
@@ -18,7 +18,7 @@ Vue.use(AddressList);
 ### 基础用法
 
 ```html
-<van-address-list
+<ghb-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"
@@ -30,7 +30,7 @@ Vue.use(AddressList);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {

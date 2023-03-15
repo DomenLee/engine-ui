@@ -21,7 +21,7 @@ test('select event when type is single', async () => {
 
   await later();
 
-  wrapper.findAll('.van-calendar__day').at(15).trigger('click');
+  wrapper.findAll('.ghb-calendar__day').at(15).trigger('click');
 
   expect(formatDate(wrapper.emitted('select')[0][0])).toEqual('2010/1/16');
 });
@@ -38,7 +38,7 @@ test('select event when type is range', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   days.at(15).trigger('click');
   days.at(16).trigger('click');
@@ -65,7 +65,7 @@ test('select event when type is multiple', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   days.at(16).trigger('click');
   days.at(17).trigger('click');
@@ -100,7 +100,7 @@ test('select event when type is multiple', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   await later();
   days.at(15).trigger('click');
@@ -119,7 +119,7 @@ test('should not trigger select event when click disabled day', async () => {
 
   await later();
 
-  wrapper.findAll('.van-calendar__day').at(1).trigger('click');
+  wrapper.findAll('.ghb-calendar__day').at(1).trigger('click');
 
   expect(formatDate(wrapper.emitted('select'))).toBeFalsy();
 });
@@ -135,11 +135,11 @@ test('confirm event when type is single', async () => {
 
   await later();
 
-  wrapper.findAll('.van-calendar__day').at(15).trigger('click');
+  wrapper.findAll('.ghb-calendar__day').at(15).trigger('click');
 
   expect(wrapper.emitted('confirm')).toBeFalsy();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2010/1/16');
 });
 
@@ -155,13 +155,13 @@ test('confirm event when type is range', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
 
   expect(wrapper.emitted('confirm')).toBeFalsy();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     '2010/1/16-2010/1/19'
   );
@@ -176,7 +176,7 @@ test('default single date', async () => {
 
   await later();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual(formatDate(now));
 });
 
@@ -190,7 +190,7 @@ test('default range date', async () => {
 
   await later();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     formatRange([now, getNextDay(now)])
   );
@@ -209,13 +209,13 @@ test('reset method', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
 
   wrapper.vm.reset();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     '2010/1/10-2010/1/11'
   );
@@ -234,7 +234,7 @@ test('set show-confirm to false', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
 
@@ -325,14 +325,14 @@ test('should reset when type changed', async () => {
 
   await later();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2010/1/10');
 
   wrapper.setProps({
     type: 'range',
     defaultDate: [minDate, getNextDay(minDate)],
   });
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[1][0])).toEqual(
     '2010/1/10-2010/1/11'
   );
@@ -350,11 +350,11 @@ test('default-date prop in single type', async () => {
 
   await later();
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2010/1/11');
 
   wrapper.setProps({ defaultDate: maxDate });
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[1][0])).toEqual('2010/1/20');
 });
 
@@ -371,13 +371,13 @@ test('default-date prop in range type', async () => {
   await later();
 
   wrapper.setProps({ defaultDate: [] });
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(wrapper.emitted('confirm')).toBeFalsy();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     '2010/1/16-2010/1/19'
   );
@@ -405,7 +405,7 @@ test('popup wrapper', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  wrapper.find('.van-popup__close-icon').trigger('click');
+  wrapper.find('.ghb-popup__close-icon').trigger('click');
   expect(wrapper.element.style.display).toEqual('none');
 });
 
@@ -421,7 +421,7 @@ test('set show-mark prop to false', async () => {
 
   await later();
 
-  expect(wrapper.find('.van-calendar__month-mark').element).toBeFalsy();
+  expect(wrapper.find('.ghb-calendar__month-mark').element).toBeFalsy();
 });
 
 test('color prop when type is single', async () => {

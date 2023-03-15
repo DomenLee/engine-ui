@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { GoodsAction, GoodsActionIcon, GoodsActionButton } from 'vant';
+import { GoodsAction, GoodsActionIcon, GoodsActionButton } from 'ghbui';
 
 Vue.use(GoodsAction);
 Vue.use(GoodsActionButton);
@@ -16,16 +16,16 @@ Vue.use(GoodsActionIcon);
 ### Basic Usage
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
-  <van-goods-action-icon icon="shop-o" text="Icon3" @click="onClickIcon" />
-  <van-goods-action-button type="danger" text="Button" @click="onClickButton" />
-</van-goods-action>
+<ghb-goods-action>
+  <ghb-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
+  <ghb-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
+  <ghb-goods-action-icon icon="shop-o" text="Icon3" @click="onClickIcon" />
+  <ghb-goods-action-button type="danger" text="Button" @click="onClickButton" />
+</ghb-goods-action>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -44,36 +44,36 @@ export default {
 Use `badge` prop to show badge in icon.
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" dot />
-  <van-goods-action-icon icon="cart-o" text="Icon2" badge="5" />
-  <van-goods-action-icon icon="shop-o" text="Icon3" badge="12" />
-  <van-goods-action-button type="warning" text="Button" />
-  <van-goods-action-button type="danger" text="Button" />
-</van-goods-action>
+<ghb-goods-action>
+  <ghb-goods-action-icon icon="chat-o" text="Icon1" dot />
+  <ghb-goods-action-icon icon="cart-o" text="Icon2" badge="5" />
+  <ghb-goods-action-icon icon="shop-o" text="Icon3" badge="12" />
+  <ghb-goods-action-button type="warning" text="Button" />
+  <ghb-goods-action-button type="danger" text="Button" />
+</ghb-goods-action>
 ```
 
 ### Custom Icon Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" color="#ee0a24" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" />
-  <van-goods-action-icon icon="star" text="Collected" color="#ff5000" />
-  <van-goods-action-button type="warning" text="Button" />
-  <van-goods-action-button type="danger" text="Button" />
-</van-goods-action>
+<ghb-goods-action>
+  <ghb-goods-action-icon icon="chat-o" text="Icon1" color="#ee0a24" />
+  <ghb-goods-action-icon icon="cart-o" text="Icon2" />
+  <ghb-goods-action-icon icon="star" text="Collected" color="#ff5000" />
+  <ghb-goods-action-button type="warning" text="Button" />
+  <ghb-goods-action-button type="danger" text="Button" />
+</ghb-goods-action>
 ```
 
 ### Custom Button Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" />
-  <van-goods-action-icon icon="shop-o" text="Icon2" />
-  <van-goods-action-button color="#be99ff" type="warning" text="Button" />
-  <van-goods-action-button color="#7232dd" type="danger" text="Button" />
-</van-goods-action>
+<ghb-goods-action>
+  <ghb-goods-action-icon icon="chat-o" text="Icon1" />
+  <ghb-goods-action-icon icon="shop-o" text="Icon2" />
+  <ghb-goods-action-button color="#be99ff" type="warning" text="Button" />
+  <ghb-goods-action-button color="#7232dd" type="danger" text="Button" />
+</ghb-goods-action>
 ```
 
 ## API

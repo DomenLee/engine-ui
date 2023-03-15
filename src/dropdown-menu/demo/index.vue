@@ -1,60 +1,60 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-dropdown-menu>
-        <van-dropdown-item v-model="value1" :options="option1" />
-        <van-dropdown-item v-model="value2" :options="option2" />
-      </van-dropdown-menu>
+      <ghb-dropdown-menu>
+        <ghb-dropdown-item v-model="value1" :options="option1" />
+        <ghb-dropdown-item v-model="value2" :options="option2" />
+      </ghb-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <van-dropdown-menu>
-        <van-dropdown-item v-model="value1" :options="option1" />
-        <van-dropdown-item :title="t('itemTitle')" ref="item">
-          <van-cell center :title="t('switchTitle1')">
+      <ghb-dropdown-menu>
+        <ghb-dropdown-item v-model="value1" :options="option1" />
+        <ghb-dropdown-item :title="t('itemTitle')" ref="item">
+          <ghb-cell center :title="t('switchTitle1')">
             <template #right-icon>
-              <van-switch v-model="switch1" size="24" :active-color="RED" />
+              <ghb-switch v-model="switch1" size="24" :active-color="RED" />
             </template>
-          </van-cell>
-          <van-cell center :title="t('switchTitle2')">
+          </ghb-cell>
+          <ghb-cell center :title="t('switchTitle2')">
             <template #right-icon>
-              <van-switch v-model="switch2" size="24" :active-color="RED" />
+              <ghb-switch v-model="switch2" size="24" :active-color="RED" />
             </template>
-          </van-cell>
-          <div style="padding: 5px 16px;">
-            <van-button
+          </ghb-cell>
+          <div style="padding: 5px 16px">
+            <ghb-button
               type="danger"
               block
               round
-              style="height: 40px;"
+              style="height: 40px"
               @click="onConfirm"
             >
               {{ t('confirm') }}
-            </van-button>
+            </ghb-button>
           </div>
-        </van-dropdown-item>
-      </van-dropdown-menu>
+        </ghb-dropdown-item>
+      </ghb-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('customActiveColor')">
-      <van-dropdown-menu active-color="#1989fa">
-        <van-dropdown-item v-model="value1" :options="option1" />
-        <van-dropdown-item v-model="value2" :options="option2" />
-      </van-dropdown-menu>
+      <ghb-dropdown-menu active-color="#1989fa">
+        <ghb-dropdown-item v-model="value1" :options="option1" />
+        <ghb-dropdown-item v-model="value2" :options="option2" />
+      </ghb-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('expandDirection')">
-      <van-dropdown-menu direction="up">
-        <van-dropdown-item v-model="value1" :options="option1" />
-        <van-dropdown-item v-model="value2" :options="option2" />
-      </van-dropdown-menu>
+      <ghb-dropdown-menu direction="up">
+        <ghb-dropdown-item v-model="value1" :options="option1" />
+        <ghb-dropdown-item v-model="value2" :options="option2" />
+      </ghb-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('disableMenu')">
-      <van-dropdown-menu>
-        <van-dropdown-item v-model="value1" disabled :options="option1" />
-        <van-dropdown-item v-model="value2" disabled :options="option2" />
-      </van-dropdown-menu>
+      <ghb-dropdown-menu>
+        <ghb-dropdown-item v-model="value1" disabled :options="option1" />
+        <ghb-dropdown-item v-model="value2" disabled :options="option2" />
+      </ghb-dropdown-menu>
     </demo-block>
   </demo-section>
 </template>

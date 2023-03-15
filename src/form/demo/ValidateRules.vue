@@ -1,33 +1,33 @@
 <template>
   <demo-block :title="t('title')">
-    <van-form validate-first @submit="onSubmit" @failed="onFailed">
-      <van-field
+    <ghb-form validate-first @submit="onSubmit" @failed="onFailed">
+      <ghb-field
         v-model="value1"
         name="pattern"
         :label="t('label')"
         :rules="[{ pattern, message: t('message') }]"
         :placeholder="t('pattern')"
       />
-      <van-field
+      <ghb-field
         v-model="value2"
         name="validator"
         :label="t('label')"
         :rules="[{ validator, message: t('message') }]"
         :placeholder="t('validator')"
       />
-      <van-field
+      <ghb-field
         v-model="value3"
         name="asyncValidator"
         :label="t('label')"
         :rules="[{ validator: asyncValidator, message: t('message') }]"
         :placeholder="t('asyncValidator')"
       />
-      <div style="margin: 16px 16px 0;">
-        <van-button round block type="info" native-type="submit">
+      <div style="margin: 16px 16px 0">
+        <ghb-button round block type="info" native-type="submit">
           {{ t('submit') }}
-        </van-button>
+        </ghb-button>
       </div>
-    </van-form>
+    </ghb-form>
   </demo-block>
 </template>
 

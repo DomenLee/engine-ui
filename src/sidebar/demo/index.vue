@@ -1,42 +1,42 @@
 <template>
   <demo-section>
-    <van-grid :column-num="2" :border="false">
-      <van-grid-item>
+    <ghb-grid :column-num="2" :border="false">
+      <ghb-grid-item>
         <h3 class="demo-sidebar-title">{{ t('basicUsage') }}</h3>
-        <van-sidebar v-model="activeKey1">
-          <van-sidebar-item :title="t('title')" />
-          <van-sidebar-item :title="t('title')" />
-          <van-sidebar-item :title="t('title')" />
-        </van-sidebar>
-      </van-grid-item>
+        <ghb-sidebar v-model="activeKey1">
+          <ghb-sidebar-item :title="t('title')" />
+          <ghb-sidebar-item :title="t('title')" />
+          <ghb-sidebar-item :title="t('title')" />
+        </ghb-sidebar>
+      </ghb-grid-item>
 
-      <van-grid-item>
+      <ghb-grid-item>
         <h3 class="demo-sidebar-title">{{ t('showBadge') }}</h3>
-        <van-sidebar v-model="activeKey2">
-          <van-sidebar-item :title="t('title')" dot />
-          <van-sidebar-item :title="t('title')" badge="5" />
-          <van-sidebar-item :title="t('title')" badge="99+" />
-        </van-sidebar>
-      </van-grid-item>
+        <ghb-sidebar v-model="activeKey2">
+          <ghb-sidebar-item :title="t('title')" dot />
+          <ghb-sidebar-item :title="t('title')" badge="5" />
+          <ghb-sidebar-item :title="t('title')" badge="99+" />
+        </ghb-sidebar>
+      </ghb-grid-item>
 
-      <van-grid-item>
+      <ghb-grid-item>
         <h3 class="demo-sidebar-title">{{ t('disabled') }}</h3>
-        <van-sidebar v-model="activeKey3">
-          <van-sidebar-item :title="t('title')" />
-          <van-sidebar-item :title="t('title')" disabled />
-          <van-sidebar-item :title="t('title')" />
-        </van-sidebar>
-      </van-grid-item>
+        <ghb-sidebar v-model="activeKey3">
+          <ghb-sidebar-item :title="t('title')" />
+          <ghb-sidebar-item :title="t('title')" disabled />
+          <ghb-sidebar-item :title="t('title')" />
+        </ghb-sidebar>
+      </ghb-grid-item>
 
-      <van-grid-item>
+      <ghb-grid-item>
         <h3 class="demo-sidebar-title">{{ t('changeEvent') }}</h3>
-        <van-sidebar v-model="activeKey4" @change="onChange">
-          <van-sidebar-item :title="t('title') + 1" />
-          <van-sidebar-item :title="t('title') + 2" />
-          <van-sidebar-item :title="t('title') + 3" />
-        </van-sidebar>
-      </van-grid-item>
-    </van-grid>
+        <ghb-sidebar v-model="activeKey4" @change="onChange">
+          <ghb-sidebar-item :title="t('title') + 1" />
+          <ghb-sidebar-item :title="t('title') + 2" />
+          <ghb-sidebar-item :title="t('title') + 3" />
+        </ghb-sidebar>
+      </ghb-grid-item>
+    </ghb-grid>
   </demo-section>
 </template>
 
@@ -84,7 +84,7 @@ export default {
 .demo-sidebar {
   background-color: @white;
 
-  .van-sidebar {
+  .ghb-sidebar {
     margin-left: @padding-md;
   }
 

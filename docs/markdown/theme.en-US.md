@@ -2,7 +2,7 @@
 
 ### Intro
 
-Vant use [Less](http://lesscss.org/) as css preprocessor，you can override the default less variables to custom theme.
+GHBUI use [Less](http://lesscss.org/) as css preprocessor，you can override the default less variables to custom theme.
 
 ### Less variables
 
@@ -95,12 +95,12 @@ module.exports = {
     [
       'import',
       {
-        libraryName: 'vant',
+        libraryName: 'ghbui',
         libraryDirectory: 'es',
         // specify less file path
         style: (name) => `${name}/style/less`,
       },
-      'vant',
+      'ghbui',
     ],
   ],
 };
@@ -110,10 +110,10 @@ module.exports = {
 
 ```js
 // import all styles
-import 'vant/lib/index.less';
+import 'ghbui/lib/index.less';
 
 // import style of single component
-import 'vant/lib/button/style/less';
+import 'ghbui/lib/button/style/less';
 ```
 
 ### Step 2: modify less variables

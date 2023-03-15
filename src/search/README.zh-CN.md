@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Search } from 'vant';
+import { Search } from 'ghbui';
 
 Vue.use(Search);
 ```
@@ -20,7 +20,7 @@ Vue.use(Search);
 `v-model` 用于控制搜索框中的文字，`background` 可以自定义搜索框外部背景色。
 
 ```html
-<van-search v-model="value" placeholder="请输入搜索关键词" />
+<ghb-search v-model="value" placeholder="请输入搜索关键词" />
 ```
 
 ```js
@@ -39,7 +39,7 @@ Search 组件提供了 `search` 和 `cancel` 事件，`search` 事件在点击�
 
 ```html
 <form action="/">
-  <van-search
+  <ghb-search
     v-model="value"
     show-action
     placeholder="请输入搜索关键词"
@@ -50,7 +50,7 @@ Search 组件提供了 `search` 和 `cancel` 事件，`search` 事件在点击�
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -69,14 +69,14 @@ export default {
 };
 ```
 
-> Tips: 在 van-search 外层增加 form 标签，且 action 不为空，即可在 iOS 输入法中显示搜索按钮。
+> Tips: 在 ghb-search 外层增加 form 标签，且 action 不为空，即可在 iOS 输入法中显示搜索按钮。
 
 ### 搜索框内容对齐
 
 通过 `input-align` 属性设置搜索框内容的对齐方式，可选值为 `center`、`right`。
 
 ```html
-<van-search
+<ghb-search
   v-model="value"
   placeholder="请输入搜索关键词"
   input-align="center"
@@ -88,7 +88,7 @@ export default {
 通过 `disabled` 属性禁用搜索框。
 
 ```html
-<van-search v-model="value" disabled placeholder="请输入搜索关键词" />
+<ghb-search v-model="value" disabled placeholder="请输入搜索关键词" />
 ```
 
 ### 自定义背景色
@@ -96,7 +96,7 @@ export default {
 通过 `background` 属性可以设置搜索框外部的背景色，通过 `shape` 属性设置搜索框的形状，可选值为 `round`。
 
 ```html
-<van-search
+<ghb-search
   v-model="value"
   shape="round"
   background="#4fc08d"
@@ -109,7 +109,7 @@ export default {
 使用 `action` 插槽可以自定义右侧按钮的内容。使用插槽后，`cancel` 事件将不再触发。
 
 ```html
-<van-search
+<ghb-search
   v-model="value"
   show-action
   label="地址"
@@ -119,7 +119,7 @@ export default {
   <template #action>
     <div @click="onSearch">搜索</div>
   </template>
-</van-search>
+</ghb-search>
 ```
 
 ## API

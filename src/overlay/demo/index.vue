@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-button
+      <ghb-button
         type="primary"
         :text="t('showOverlay')"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @click="show = true"
       />
 
-      <van-overlay :show="show" @click="show = false" />
+      <ghb-overlay :show="show" @click="show = false" />
     </demo-block>
 
     <demo-block :title="t('embeddedContent')">
-      <van-button
+      <ghb-button
         type="primary"
         :text="t('embeddedContent')"
-        style="margin-left: 16px;"
+        style="margin-left: 16px"
         @click="showEmbedded = true"
       />
 
-      <van-overlay :show="showEmbedded" @click="showEmbedded = false">
+      <ghb-overlay :show="showEmbedded" @click="showEmbedded = false">
         <div class="wrapper">
           <div class="block" />
         </div>
-      </van-overlay>
+      </ghb-overlay>
     </demo-block>
   </demo-section>
 </template>

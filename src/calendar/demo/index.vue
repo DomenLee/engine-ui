@@ -1,21 +1,21 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('selectSingle')"
         :value="formatFullDate(date.selectSingle)"
         @click="show('single', 'selectSingle')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('selectMultiple')"
         :value="formatMultiple(date.selectMultiple)"
         @click="show('multiple', 'selectMultiple')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('selectRange')"
         :value="formatRange(date.selectRange)"
@@ -24,14 +24,14 @@
     </demo-block>
 
     <demo-block card :title="t('quickSelect')">
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('selectSingle')"
         :value="formatFullDate(date.quickSelect1)"
         @click="show('single', 'quickSelect1')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('selectRange')"
         :value="formatRange(date.quickSelect2)"
@@ -40,49 +40,49 @@
     </demo-block>
 
     <demo-block card :title="t('customCalendar')">
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('customColor')"
         :value="formatRange(date.customColor)"
         @click="show('range', 'customColor')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('customRange')"
         :value="formatFullDate(date.customRange)"
         @click="show('single', 'customRange')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('customConfirm')"
         :value="formatRange(date.customConfirm)"
         @click="show('range', 'customConfirm')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('customDayText')"
         :value="formatRange(date.customDayText)"
         @click="show('range', 'customDayText')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('customPosition')"
         :value="formatFullDate(date.customPosition)"
         @click="show('single', 'customPosition')"
       />
 
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('maxRange')"
         :value="formatRange(date.maxRange)"
         @click="show('range', 'maxRange')"
       />
 
-      <van-cell
+      <ghb-cell
         v-if="!isWeapp"
         is-link
         :title="t('firstDayOfWeek')"
@@ -91,7 +91,7 @@
     </demo-block>
 
     <demo-block card :title="t('tiledDisplay')">
-      <van-calendar
+      <ghb-calendar
         :title="t('calendar')"
         :poppable="false"
         :show-confirm="false"
@@ -102,7 +102,7 @@
       />
     </demo-block>
 
-    <van-calendar
+    <ghb-calendar
       v-model="showCalendar"
       :type="type"
       :color="color"

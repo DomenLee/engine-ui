@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Stepper } from 'vant';
+import { Stepper } from 'ghbui';
 
 Vue.use(Stepper);
 ```
@@ -14,7 +14,7 @@ Vue.use(Stepper);
 ### Basic Usage
 
 ```html
-<van-stepper v-model="value" />
+<ghb-stepper v-model="value" />
 ```
 
 ```js
@@ -30,53 +30,53 @@ export default {
 ### Step
 
 ```html
-<van-stepper v-model="value" step="2" />
+<ghb-stepper v-model="value" step="2" />
 ```
 
 ### Range
 
 ```html
-<van-stepper v-model="value" min="5" max="8" />
+<ghb-stepper v-model="value" min="5" max="8" />
 ```
 
 ### Integer
 
 ```html
-<van-stepper v-model="value" integer />
+<ghb-stepper v-model="value" integer />
 ```
 
 ### Disabled
 
 ```html
-<van-stepper v-model="value" disabled />
+<ghb-stepper v-model="value" disabled />
 ```
 
 ### Disable Input
 
 ```html
-<van-stepper v-model="value" disable-input />
+<ghb-stepper v-model="value" disable-input />
 ```
 
 ### Decimal Length
 
 ```html
-<van-stepper v-model="value" step="0.2" :decimal-length="1" />
+<ghb-stepper v-model="value" step="0.2" :decimal-length="1" />
 ```
 
 ### Custom Size
 
 ```html
-<van-stepper v-model="value" input-width="40px" button-size="32px" />
+<ghb-stepper v-model="value" input-width="40px" button-size="32px" />
 ```
 
 ### Async Change
 
 ```html
-<van-stepper :value="value" async-change @change="onChange" />
+<ghb-stepper :value="value" async-change @change="onChange" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -101,7 +101,7 @@ export default {
 ### Round Theme
 
 ```html
-<van-stepper v-model="value" theme="round" button-size="22" disable-input />
+<ghb-stepper v-model="value" theme="round" button-size="22" disable-input />
 ```
 
 ## API

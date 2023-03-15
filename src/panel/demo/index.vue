@@ -1,21 +1,21 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
+      <ghb-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
         <div>{{ t('content') }}</div>
-      </van-panel>
+      </ghb-panel>
     </demo-block>
 
     <demo-block :title="t('advancedUsage')">
-      <van-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
+      <ghb-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
         <div>{{ t('content') }}</div>
         <template #footer>
-          <van-button size="small">{{ t('button') }}</van-button>
-          <van-button size="small" type="danger">
+          <ghb-button size="small">{{ t('button') }}</ghb-button>
+          <ghb-button size="small" type="danger">
             {{ t('button') }}
-          </van-button>
+          </ghb-button>
         </template>
-      </van-panel>
+      </ghb-panel>
     </demo-block>
   </demo-section>
 </template>
@@ -26,15 +26,15 @@ export default {};
 
 <style lang="less">
 .demo-panel {
-  .van-panel__footer {
+  .ghb-panel__footer {
     text-align: right;
 
-    .van-button {
+    .ghb-button {
       margin-left: 5px;
     }
   }
 
-  .van-panel__content {
+  .ghb-panel__content {
     padding: 20px;
   }
 }

@@ -3,33 +3,33 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom van-panel">
-      <div class="van-cell van-panel__header">
-        <div class="van-cell__title"><span>标题</span>
-          <div class="van-cell__label">描述信息</div>
+    <div class="ghb-cell-group ghb-hairline--top-bottom ghb-panel">
+      <div class="ghb-cell ghb-panel__header">
+        <div class="ghb-cell__title"><span>标题</span>
+          <div class="ghb-cell__label">描述信息</div>
         </div>
-        <div class="van-cell__value van-panel__header-value"><span>状态</span></div>
+        <div class="ghb-cell__value ghb-panel__header-value"><span>状态</span></div>
       </div>
-      <div class="van-panel__content">
+      <div class="ghb-panel__content">
         <div>内容</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom van-panel">
-      <div class="van-cell van-panel__header">
-        <div class="van-cell__title"><span>标题</span>
-          <div class="van-cell__label">描述信息</div>
+    <div class="ghb-cell-group ghb-hairline--top-bottom ghb-panel">
+      <div class="ghb-cell ghb-panel__header">
+        <div class="ghb-cell__title"><span>标题</span>
+          <div class="ghb-cell__label">描述信息</div>
         </div>
-        <div class="van-cell__value van-panel__header-value"><span>状态</span></div>
+        <div class="ghb-cell__value ghb-panel__header-value"><span>状态</span></div>
       </div>
-      <div class="van-panel__content">
+      <div class="ghb-panel__content">
         <div>内容</div>
       </div>
-      <div class="van-panel__footer van-hairline--top"><button class="van-button van-button--default van-button--small">
-          <div class="van-button__content"><span class="van-button__text">按钮</span></div>
-        </button> <button class="van-button van-button--danger van-button--small">
-          <div class="van-button__content"><span class="van-button__text">
+      <div class="ghb-panel__footer ghb-hairline--top"><button class="ghb-button ghb-button--default ghb-button--small">
+          <div class="ghb-button__content"><span class="ghb-button__text">按钮</span></div>
+        </button> <button class="ghb-button ghb-button--danger ghb-button--small">
+          <div class="ghb-button__content"><span class="ghb-button__text">
           按钮
         </span></div>
         </button></div>

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Tag } from 'vant';
+import { Tag } from 'ghbui';
 
 Vue.use(Tag);
 ```
@@ -14,36 +14,36 @@ Vue.use(Tag);
 ### Basic Usage
 
 ```html
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="success">Tag</van-tag>
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="warning">Tag</van-tag>
+<ghb-tag type="primary">Tag</ghb-tag>
+<ghb-tag type="success">Tag</ghb-tag>
+<ghb-tag type="danger">Tag</ghb-tag>
+<ghb-tag type="warning">Tag</ghb-tag>
 ```
 
 ### Plain style
 
 ```html
-<van-tag plain type="primary">Tag</van-tag>
+<ghb-tag plain type="primary">Tag</ghb-tag>
 ```
 
 ### Round style
 
 ```html
-<van-tag round type="primary">Tag</van-tag>
+<ghb-tag round type="primary">Tag</ghb-tag>
 ```
 
 ### Mark style
 
 ```html
-<van-tag mark type="primary">Tag</van-tag>
+<ghb-tag mark type="primary">Tag</ghb-tag>
 ```
 
 ### Closeable
 
 ```html
-<van-tag v-if="show" closeable size="medium" type="primary" @close="close">
+<ghb-tag v-if="show" closeable size="medium" type="primary" @close="close">
   Tag
-</van-tag>
+</ghb-tag>
 ```
 
 ```js
@@ -64,17 +64,17 @@ export default {
 ### Custom Size
 
 ```html
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="primary" size="medium">Tag</van-tag>
-<van-tag type="primary" size="large">Tag</van-tag>
+<ghb-tag type="primary">Tag</ghb-tag>
+<ghb-tag type="primary" size="medium">Tag</ghb-tag>
+<ghb-tag type="primary" size="large">Tag</ghb-tag>
 ```
 
 ### Custom Color
 
 ```html
-<van-tag color="#7232dd">Tag</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
-<van-tag color="#7232dd" plain>Tag</van-tag>
+<ghb-tag color="#7232dd">Tag</ghb-tag>
+<ghb-tag color="#ffe1e1" text-color="#ad0000">Tag</ghb-tag>
+<ghb-tag color="#7232dd" plain>Tag</ghb-tag>
 ```
 
 ## API

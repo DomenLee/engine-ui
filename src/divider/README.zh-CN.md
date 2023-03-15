@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Divider } from 'vant';
+import { Divider } from 'ghbui';
 
 Vue.use(Divider);
 ```
@@ -20,7 +20,7 @@ Vue.use(Divider);
 默认渲染一条水平分割线。
 
 ```html
-<van-divider />
+<ghb-divider />
 ```
 
 ### 展示文字
@@ -28,7 +28,7 @@ Vue.use(Divider);
 通过插槽在可以分割线中间插入内容。
 
 ```html
-<van-divider>文字</van-divider>
+<ghb-divider>文字</ghb-divider>
 ```
 
 ### 内容位置
@@ -36,8 +36,8 @@ Vue.use(Divider);
 通过 `content-position` 指定内容所在位置。
 
 ```html
-<van-divider content-position="left">文字</van-divider>
-<van-divider content-position="right">文字</van-divider>
+<ghb-divider content-position="left">文字</ghb-divider>
+<ghb-divider content-position="right">文字</ghb-divider>
 ```
 
 ### 虚线
@@ -45,7 +45,7 @@ Vue.use(Divider);
 添加 `dashed` 属性使分割线渲染为虚线。
 
 ```html
-<van-divider dashed>文字</van-divider>
+<ghb-divider dashed>文字</ghb-divider>
 ```
 
 ### 自定义样式
@@ -53,11 +53,11 @@ Vue.use(Divider);
 可以直接通过 `style` 属性设置分割线的样式。
 
 ```html
-<van-divider
+<ghb-divider
   :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }"
 >
   文字
-</van-divider>
+</ghb-divider>
 ```
 
 ## API

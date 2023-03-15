@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Loading } from 'vant';
+import { Loading } from 'ghbui';
 
 Vue.use(Loading);
 ```
@@ -14,37 +14,37 @@ Vue.use(Loading);
 ### Type
 
 ```html
-<van-loading />
+<ghb-loading />
 
-<van-loading type="spinner" />
+<ghb-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<van-loading color="#1989fa" />
+<ghb-loading color="#1989fa" />
 
-<van-loading type="spinner" color="#1989fa" />
+<ghb-loading type="spinner" color="#1989fa" />
 ```
 
 ### Size
 
 ```html
-<van-loading size="24" />
+<ghb-loading size="24" />
 
-<van-loading type="spinner" size="24px" />
+<ghb-loading type="spinner" size="24px" />
 ```
 
 ### Text
 
 ```html
-<van-loading size="24px">Loading...</van-loading>
+<ghb-loading size="24px">Loading...</ghb-loading>
 ```
 
 ### Vertical
 
 ```html
-<van-loading size="24px" vertical>Loading...</van-loading>
+<ghb-loading size="24px" vertical>Loading...</ghb-loading>
 ```
 
 ### Text Color
@@ -53,10 +53,10 @@ use `color` or `text-color` to change text color.
 
 ```html
 <!-- the color of text and icon will be changed -->
-<van-loading color="#0094ff" />
+<ghb-loading color="#0094ff" />
 
 <!-- only change text color -->
-<van-loading text-color="#0094ff" />
+<ghb-loading text-color="#0094ff" />
 ```
 
 ## API

@@ -4,7 +4,7 @@ import { mount, later, triggerDrag, mockScrollTop } from '../../../test';
 function createWrapper(options = {}) {
   return mount({
     template: `
-      <van-tabs
+      <ghb-tabs
         :color="color"
         :type="type"
         :sticky="sticky"
@@ -13,10 +13,10 @@ function createWrapper(options = {}) {
         @change="onChange"
       >
         ${options.extraTemplate || ''}
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+        <ghb-tab title="title1">Text</ghb-tab>
+        <ghb-tab title="title2">Text</ghb-tab>
+        <ghb-tab title="title3" disabled>Text</ghb-tab>
+      </ghb-tabs>
     `,
     data() {
       return {
@@ -35,11 +35,11 @@ test('click to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs @change="onChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+      <ghb-tabs @change="onChange">
+        <ghb-tab title="title1">Text</ghb-tab>
+        <ghb-tab title="title2">Text</ghb-tab>
+        <ghb-tab title="title3" disabled>Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onChange,
@@ -49,7 +49,7 @@ test('click to switch tab', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
   tabs.at(1).trigger('click');
   tabs.at(2).trigger('click');
   await later();
@@ -61,11 +61,11 @@ test('swipe to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs v-model="active" swipeable @change="onChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+      <ghb-tabs v-model="active" swipeable @change="onChange">
+        <ghb-tab title="title1">Text</ghb-tab>
+        <ghb-tab title="title2">Text</ghb-tab>
+        <ghb-tab title="title3" disabled>Text</ghb-tab>
+      </ghb-tabs>
     `,
     data() {
       return {
@@ -77,7 +77,7 @@ test('swipe to switch tab', async () => {
     },
   });
 
-  const content = wrapper.find('.van-tabs__content');
+  const content = wrapper.find('.ghb-tabs__content');
   await later();
   expect(wrapper).toMatchSnapshot();
 
@@ -152,10 +152,10 @@ test('click event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick" @disabled="onDisabled">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2" disabled>Text</van-tab>
-      </van-tabs>
+      <ghb-tabs @click="onClick" @disabled="onDisabled">
+        <ghb-tab title="title1">Text</ghb-tab>
+        <ghb-tab title="title2" disabled>Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onClick,
@@ -163,7 +163,7 @@ test('click event', async () => {
     },
   });
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
 
   tabs.at(0).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title1');
@@ -179,11 +179,11 @@ test('name prop', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs v-model="active" @click="onClick" @disabled="onDisabled" @change="onChange">
-        <van-tab title="title1" name="a">Text</van-tab>
-        <van-tab title="title2" name="b">Text</van-tab>
-        <van-tab title="title3" name="c" disabled>Text</van-tab>
-      </van-tabs>
+      <ghb-tabs v-model="active" @click="onClick" @disabled="onDisabled" @change="onChange">
+        <ghb-tab title="title1" name="a">Text</ghb-tab>
+        <ghb-tab title="title2" name="b">Text</ghb-tab>
+        <ghb-tab title="title3" name="c" disabled>Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onClick,
@@ -200,7 +200,7 @@ test('name prop', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
   tabs.at(1).trigger('click');
 
   expect(onClick).toHaveBeenCalledWith('b', 'title2');
@@ -217,17 +217,17 @@ test('set name to zero', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick">
-        <van-tab title="title1" :name="1">Text</van-tab>
-        <van-tab title="title2" :name="0">Text</van-tab>
-      </van-tabs>
+      <ghb-tabs @click="onClick">
+        <ghb-tab title="title1" :name="1">Text</ghb-tab>
+        <ghb-tab title="title2" :name="0">Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onClick,
     },
   });
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
   tabs.at(1).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title2');
 });
@@ -235,21 +235,21 @@ test('set name to zero', async () => {
 test('title-style prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab title="title1" title-style="color: red;">Text</van-tab>
-      </van-tabs>
+      <ghb-tabs>
+        <ghb-tab title="title1" title-style="color: red;">Text</ghb-tab>
+      </ghb-tabs>
     `,
   });
 
-  expect(wrapper.find('.van-tab').element.style.color).toEqual('red');
+  expect(wrapper.find('.ghb-tab').element.style.color).toEqual('red');
 });
 
 test('dot prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab dot>Text</van-tab>
-      </van-tabs>
+      <ghb-tabs>
+        <ghb-tab dot>Text</ghb-tab>
+      </ghb-tabs>
     `,
   });
 
@@ -259,9 +259,9 @@ test('dot prop', () => {
 test('badge prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab badge="10">Text</van-tab>
-      </van-tabs>
+      <ghb-tabs>
+        <ghb-tab badge="10">Text</ghb-tab>
+      </ghb-tabs>
     `,
   });
 
@@ -274,11 +274,11 @@ test('scrollspy prop', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs scrollspy sticky @change="onChange">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Text</van-tab>
-        <van-tab name="c" title="title3">Text</van-tab>
-      </van-tabs>
+      <ghb-tabs scrollspy sticky @change="onChange">
+        <ghb-tab name="a" title="title1">Text</ghb-tab>
+        <ghb-tab name="b" title="title2">Text</ghb-tab>
+        <ghb-tab name="c" title="title3">Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onChange,
@@ -288,7 +288,7 @@ test('scrollspy prop', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
   tabs.at(2).trigger('click');
   expect(onChange).toHaveBeenCalledWith('c', 'title3');
 
@@ -304,11 +304,11 @@ test('scrollTo method', async () => {
 
   mount({
     template: `
-      <van-tabs scrollspy sticky @change="onChange" ref="root">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Text</van-tab>
-        <van-tab name="c" title="title3">Text</van-tab>
-      </van-tabs>
+      <ghb-tabs scrollspy sticky @change="onChange" ref="root">
+        <ghb-tab name="a" title="title1">Text</ghb-tab>
+        <ghb-tab name="b" title="title2">Text</ghb-tab>
+        <ghb-tab name="c" title="title3">Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onChange,
@@ -327,10 +327,10 @@ test('rendered event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs v-model="active" @rendered="onRendered">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Title2</van-tab>
-      </van-tabs>
+      <ghb-tabs v-model="active" @rendered="onRendered">
+        <ghb-tab name="a" title="title1">Text</ghb-tab>
+        <ghb-tab name="b" title="title2">Title2</ghb-tab>
+      </ghb-tabs>
     `,
     data() {
       return {
@@ -344,9 +344,9 @@ test('rendered event', async () => {
 
   await later();
   expect(onRendered).toHaveBeenCalledWith('a', 'title1');
-  expect(wrapper.find('.van-tab__pane')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-tab__pane')).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
   tabs.at(1).trigger('click');
   tabs.at(0).trigger('click');
 
@@ -359,10 +359,10 @@ test('should not trigger rendered event when disable lazy-render', async () => {
 
   mount({
     template: `
-      <van-tabs :lazy-render="false" @rendered="onRendered">
-        <van-tab>Text</van-tab>
-        <van-tab>Title2</van-tab>
-      </van-tabs>
+      <ghb-tabs :lazy-render="false" @rendered="onRendered">
+        <ghb-tab>Text</ghb-tab>
+        <ghb-tab>Title2</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onRendered,
@@ -377,13 +377,13 @@ test('before-change prop', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs @change="onChange" :before-change="beforeChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3">Text</van-tab>
-        <van-tab title="title4">Text</van-tab>
-        <van-tab title="title5">Text</van-tab>
-      </van-tabs>
+      <ghb-tabs @change="onChange" :before-change="beforeChange">
+        <ghb-tab title="title1">Text</ghb-tab>
+        <ghb-tab title="title2">Text</ghb-tab>
+        <ghb-tab title="title3">Text</ghb-tab>
+        <ghb-tab title="title4">Text</ghb-tab>
+        <ghb-tab title="title5">Text</ghb-tab>
+      </ghb-tabs>
     `,
     methods: {
       onChange,
@@ -404,7 +404,7 @@ test('before-change prop', async () => {
 
   await later();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.ghb-tab');
   tabs.at(1).trigger('click');
   expect(onChange).toHaveBeenCalledTimes(0);
 
@@ -424,10 +424,10 @@ test('before-change prop', async () => {
 test('render empty tab', async () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab title="title1" />
-        <van-tab title="title2" />
-      </van-tabs>
+      <ghb-tabs>
+        <ghb-tab title="title1" />
+        <ghb-tab title="title2" />
+      </ghb-tabs>
     `,
   });
 

@@ -8,7 +8,7 @@ The SwitchCell component will be deprecated in version 3.0. Please use the Cell 
 
 ```js
 import Vue from 'vue';
-import { SwitchCell } from 'vant';
+import { SwitchCell } from 'ghbui';
 
 Vue.use(SwitchCell);
 ```
@@ -18,9 +18,9 @@ Vue.use(SwitchCell);
 ### Basic Usage
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" title="Title" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-switch-cell v-model="checked" title="Title" />
+</ghb-cell-group>
 ```
 
 ```js
@@ -38,9 +38,9 @@ export default {
 Use `disabled` property to disable the component.
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" disabled title="Title" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-switch-cell v-model="checked" disabled title="Title" />
+</ghb-cell-group>
 ```
 
 ### Loading
@@ -48,9 +48,9 @@ Use `disabled` property to disable the component.
 Use `loading` property to keep component in loading state.
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" loading title="Title" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-switch-cell v-model="checked" loading title="Title" />
+</ghb-cell-group>
 ```
 
 ## API

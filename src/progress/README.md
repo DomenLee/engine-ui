@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Progress } from 'vant';
+import { Progress } from 'ghbui';
 
 Vue.use(Progress);
 ```
@@ -16,19 +16,19 @@ Vue.use(Progress);
 Use `percentage` prop to set current progress.
 
 ```html
-<van-progress :percentage="50" />
+<ghb-progress :percentage="50" />
 ```
 
 ### Stroke Width
 
 ```html
-<van-progress :percentage="50" stroke-width="8" />
+<ghb-progress :percentage="50" stroke-width="8" />
 ```
 
 ### Inactive
 
 ```html
-<van-progress inactive :percentage="50" />
+<ghb-progress inactive :percentage="50" />
 ```
 
 ### Custom Style
@@ -36,9 +36,9 @@ Use `percentage` prop to set current progress.
 Use `pivot-text` to custom text，use `color` to custom bar color.
 
 ```html
-<van-progress pivot-text="Orange" color="#f2826a" :percentage="25" />
-<van-progress pivot-text="Red" color="#ee0a24" :percentage="50" />
-<van-progress
+<ghb-progress pivot-text="Orange" color="#f2826a" :percentage="25" />
+<ghb-progress pivot-text="Red" color="#ee0a24" :percentage="50" />
+<ghb-progress
   :percentage="75"
   pivot-text="Purple"
   pivot-color="#7232dd"

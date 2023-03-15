@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-field
+      <ghb-field
         v-model="base.result"
         is-link
         readonly
@@ -9,25 +9,25 @@
         :placeholder="t('selectArea')"
         @click="base.show = true"
       />
-      <van-popup
+      <ghb-popup
         v-model="base.show"
         round
         position="bottom"
         get-container="body"
         safe-area-inset-bottom
       >
-        <van-cascader
+        <ghb-cascader
           v-model="base.value"
           :title="t('selectArea')"
           :options="t('options')"
           @close="base.show = false"
           @finish="onFinish('base', $event)"
         />
-      </van-popup>
+      </ghb-popup>
     </demo-block>
 
     <demo-block card :title="t('customColor')">
-      <van-field
+      <ghb-field
         v-model="customColor.result"
         is-link
         readonly
@@ -35,14 +35,14 @@
         :placeholder="t('selectArea')"
         @click="customColor.show = true"
       />
-      <van-popup
+      <ghb-popup
         v-model="customColor.show"
         round
         position="bottom"
         get-container="body"
         safe-area-inset-bottom
       >
-        <van-cascader
+        <ghb-cascader
           v-model="customColor.value"
           :title="t('selectArea')"
           :options="t('options')"
@@ -50,11 +50,11 @@
           @close="customColor.show = false"
           @finish="onFinish('customColor', $event)"
         />
-      </van-popup>
+      </ghb-popup>
     </demo-block>
 
     <demo-block card :title="t('asyncOptions')">
-      <van-field
+      <ghb-field
         v-model="async.result"
         is-link
         readonly
@@ -62,14 +62,14 @@
         :placeholder="t('selectArea')"
         @click="async.show = true"
       />
-      <van-popup
+      <ghb-popup
         v-model="async.show"
         round
         position="bottom"
         get-container="body"
         safe-area-inset-bottom
       >
-        <van-cascader
+        <ghb-cascader
           v-model="async.value"
           :title="t('selectArea')"
           :options="async.options"
@@ -77,11 +77,11 @@
           @change="loadDynamicOptions"
           @finish="onFinish('async', $event)"
         />
-      </van-popup>
+      </ghb-popup>
     </demo-block>
 
     <demo-block card :title="t('customFieldNames')">
-      <van-field
+      <ghb-field
         v-model="customFieldNames.result"
         is-link
         readonly
@@ -89,14 +89,14 @@
         :placeholder="t('selectArea')"
         @click="customFieldNames.show = true"
       />
-      <van-popup
+      <ghb-popup
         v-model="customFieldNames.show"
         round
         position="bottom"
         get-container="body"
         safe-area-inset-bottom
       >
-        <van-cascader
+        <ghb-cascader
           v-model="customFieldNames.value"
           :title="t('selectArea')"
           :options="customFieldOptions"
@@ -104,7 +104,7 @@
           @close="customFieldNames.show = false"
           @finish="onFinish('customFieldNames', $event)"
         />
-      </van-popup>
+      </ghb-popup>
     </demo-block>
   </demo-section>
 </template>

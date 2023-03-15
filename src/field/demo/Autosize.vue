@@ -1,6 +1,6 @@
 <template>
   <demo-block :title="t('autosize')">
-    <van-field
+    <ghb-field
       v-model="value"
       autosize
       rows="1"

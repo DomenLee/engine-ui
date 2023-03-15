@@ -2,15 +2,15 @@
 
 exports[`renders demo correctly 1`] = `
 <div>
-  <div><button class="van-button van-button--primary van-button--normal" style="margin-left: 16px;">
-      <div class="van-button__content"><span class="van-button__text">显示遮罩层</span></div>
+  <div><button class="ghb-button ghb-button--primary ghb-button--normal" style="margin-left: 16px;">
+      <div class="ghb-button__content"><span class="ghb-button__text">显示遮罩层</span></div>
     </button>
-    <div class="van-overlay" style="display: none;" name="van-fade"></div>
+    <div class="ghb-overlay" style="display: none;" name="ghb-fade"></div>
   </div>
-  <div><button class="van-button van-button--primary van-button--normal" style="margin-left: 16px;">
-      <div class="van-button__content"><span class="van-button__text">嵌入内容</span></div>
+  <div><button class="ghb-button ghb-button--primary ghb-button--normal" style="margin-left: 16px;">
+      <div class="ghb-button__content"><span class="ghb-button__text">嵌入内容</span></div>
     </button>
-    <div class="van-overlay" style="display: none;" name="van-fade">
+    <div class="ghb-overlay" style="display: none;" name="ghb-fade">
       <div class="wrapper">
         <div class="block"></div>
       </div>

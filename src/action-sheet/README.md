@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { ActionSheet } from 'vant';
+import { ActionSheet } from 'ghbui';
 
 Vue.use(ActionSheet);
 ```
@@ -16,12 +16,12 @@ Vue.use(ActionSheet);
 Use `actions` prop to set options of action-sheet.
 
 ```html
-<van-cell is-link title="Basic Usage" @click="show = true" />
-<van-action-sheet v-model="show" :actions="actions" @select="onSelect" />
+<ghb-cell is-link title="Basic Usage" @click="show = true" />
+<ghb-action-sheet v-model="show" :actions="actions" @select="onSelect" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -46,7 +46,7 @@ export default {
 ### Show Cancel Button
 
 ```html
-<van-action-sheet
+<ghb-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -56,7 +56,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -80,7 +80,7 @@ export default {
 ### Show Description
 
 ```html
-<van-action-sheet
+<ghb-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -107,7 +107,7 @@ export default {
 ### Option Status
 
 ```html
-<van-action-sheet
+<ghb-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -133,9 +133,9 @@ export default {
 ### Custom Panel
 
 ```html
-<van-action-sheet v-model="show" title="Title">
+<ghb-action-sheet v-model="show" title="Title">
   <div class="content">Content</div>
-</van-action-sheet>
+</ghb-action-sheet>
 
 <style>
   .content {

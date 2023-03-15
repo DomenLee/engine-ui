@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { CountDown } from 'vant';
+import { CountDown } from 'ghbui';
 
 Vue.use(CountDown);
 ```
@@ -14,7 +14,7 @@ Vue.use(CountDown);
 ### Basic Usage
 
 ```html
-<van-count-down :time="time" />
+<ghb-count-down :time="time" />
 ```
 
 ```js
@@ -30,19 +30,19 @@ export default {
 ### Custom Format
 
 ```html
-<van-count-down :time="time" format="DD Day, HH:mm:ss" />
+<ghb-count-down :time="time" format="DD Day, HH:mm:ss" />
 ```
 
 ### Millisecond
 
 ```html
-<van-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+<ghb-count-down millisecond :time="time" format="HH:mm:ss:SS" />
 ```
 
 ### Custom Style
 
 ```html
-<van-count-down :time="time">
+<ghb-count-down :time="time">
   <template #default="timeData">
     <span class="block">{{ timeData.hours }}</span>
     <span class="colon">:</span>
@@ -50,7 +50,7 @@ export default {
     <span class="colon">:</span>
     <span class="block">{{ timeData.seconds }}</span>
   </template>
-</van-count-down>
+</ghb-count-down>
 
 <style>
   .colon {
@@ -72,7 +72,7 @@ export default {
 ### Manual Control
 
 ```html
-<van-count-down
+<ghb-count-down
   ref="countDown"
   millisecond
   :time="3000"
@@ -80,15 +80,15 @@ export default {
   format="ss:SSS"
   @finish="finish"
 />
-<van-grid clickable :column-num="3">
-  <van-grid-item text="Start" icon="play-circle-o" @click="start" />
-  <van-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
-  <van-grid-item text="Reset" icon="replay" @click="reset" />
-</van-grid>
+<ghb-grid clickable :column-num="3">
+  <ghb-grid-item text="Start" icon="play-circle-o" @click="start" />
+  <ghb-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
+  <ghb-grid-item text="Reset" icon="replay" @click="reset" />
+</ghb-grid>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {

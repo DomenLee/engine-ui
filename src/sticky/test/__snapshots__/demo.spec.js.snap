@@ -4,8 +4,8 @@ exports[`renders demo correctly 1`] = `
 <div>
   <div>
     <div>
-      <div class="van-sticky"><button class="van-button van-button--primary van-button--normal" style="margin-left: 15px;">
-          <div class="van-button__content"><span class="van-button__text">
+      <div class="ghb-sticky"><button class="ghb-button ghb-button--primary ghb-button--normal" style="margin-left: 15px;">
+          <div class="ghb-button__content"><span class="ghb-button__text">
         基础用法
       </span></div>
         </button></div>
@@ -13,8 +13,8 @@ exports[`renders demo correctly 1`] = `
   </div>
   <div>
     <div style="height: 0px;">
-      <div class="van-sticky van-sticky--fixed" style="top: 50px;"><button class="van-button van-button--info van-button--normal" style="margin-left: 115px;">
-          <div class="van-button__content"><span class="van-button__text">
+      <div class="ghb-sticky ghb-sticky--fixed" style="top: 50px;"><button class="ghb-button ghb-button--info ghb-button--normal" style="margin-left: 115px;">
+          <div class="ghb-button__content"><span class="ghb-button__text">
         吸顶距离
       </span></div>
         </button></div>
@@ -23,8 +23,8 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div style="height: 150px; background-color: rgb(255, 255, 255);">
       <div>
-        <div class="van-sticky"><button class="van-button van-button--warning van-button--normal" style="margin-left: 215px;">
-            <div class="van-button__content"><span class="van-button__text">
+        <div class="ghb-sticky"><button class="ghb-button ghb-button--warning ghb-button--normal" style="margin-left: 215px;">
+            <div class="ghb-button__content"><span class="ghb-button__text">
           指定容器
         </span></div>
           </button></div>

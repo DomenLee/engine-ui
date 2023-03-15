@@ -9,7 +9,7 @@
 ImagePreview 是一个函数，调用函数后会直接在页面中展示图片预览界面。
 
 ```js
-import { ImagePreview } from 'vant';
+import { ImagePreview } from 'ghbui';
 
 ImagePreview(['https://img01.yzcdn.cn/vant/apple-1.jpg']);
 ```
@@ -20,7 +20,7 @@ ImagePreview(['https://img01.yzcdn.cn/vant/apple-1.jpg']);
 
 ```js
 import Vue from 'vue';
-import { ImagePreview } from 'vant';
+import { ImagePreview } from 'ghbui';
 
 // 全局注册
 Vue.use(ImagePreview);
@@ -79,7 +79,7 @@ ImagePreview({
 通过 `onClose` 选项监听图片预览的关闭事件。
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 ImagePreview({
   images: [
@@ -115,9 +115,9 @@ setTimeout(() => {
 如果需要在图片预览内嵌入组件或其他自定义内容，可以使用组件调用的方式，调用前需要通过 `Vue.use` 注册组件。
 
 ```html
-<van-image-preview v-model="show" :images="images" @change="onChange">
+<ghb-image-preview v-model="show" :images="images" @change="onChange">
   <template v-slot:index>第{{ index }}页</template>
-</van-image-preview>
+</ghb-image-preview>
 ```
 
 ```js
@@ -165,7 +165,7 @@ export default {
 | closeable `v2.5.0` | 是否显示关闭图标 | _boolean_ | `false` |
 | closeIcon `v2.5.0` | 关闭图标名称或图片链接 | _string_ | `clear` |
 | closeIconPosition `v2.5.0` | 关闭图标位置，可选值为`top-left`<br>`bottom-left` `bottom-right` | _string_ | `top-right` |
-| transition `v2.12.8` | 动画类名，等价于 [transition](https://cn.vuejs.org/v2/api/index.html#transition) 的 `name` 属性 | _string_ | `van-fade` |
+| transition `v2.12.8` | 动画类名，等价于 [transition](https://cn.vuejs.org/v2/api/index.html#transition) 的 `name` 属性 | _string_ | `ghb-fade` |
 | overlayStyle `v2.12.37` | 自定义遮罩层样式 | _object_ | - |
 | getContainer | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | _string \| () => Element_ | - |
 
@@ -189,7 +189,7 @@ export default {
 | closeable `v2.5.0` | 是否显示关闭图标 | _boolean_ | `false` |
 | close-icon `v2.5.0` | 关闭图标名称或图片链接 | _string_ | `clear` |
 | close-icon-position `v2.5.0` | 关闭图标位置，可选值为`top-left`<br>`bottom-left` `bottom-right` | _string_ | `top-right` |
-| transition `v2.12.8` | 动画类名，等价于 [transition](https://cn.vuejs.org/v2/api/index.html#transition) 的 `name` 属性 | _string_ | `van-fade` |
+| transition `v2.12.8` | 动画类名，等价于 [transition](https://cn.vuejs.org/v2/api/index.html#transition) 的 `name` 属性 | _string_ | `ghb-fade` |
 | overlay-style `v2.12.37` | 自定义遮罩层样式 | _object_ | - |
 | get-container | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | _string \| () => Element_ | - |
 

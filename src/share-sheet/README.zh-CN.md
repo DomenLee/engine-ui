@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { ShareSheet } from 'vant';
+import { ShareSheet } from 'ghbui';
 
 Vue.use(ShareSheet);
 ```
@@ -20,8 +20,8 @@ Vue.use(ShareSheet);
 分享面板通过 `options` 属性来定义分享选项，数组的每一项是一个对象，对象格式见文档下方表格。
 
 ```html
-<van-cell title="显示分享面板" @click="showShare = true" />
-<van-share-sheet
+<ghb-cell title="显示分享面板" @click="showShare = true" />
+<ghb-share-sheet
   v-model="showShare"
   title="立即分享给好友"
   :options="options"
@@ -30,7 +30,7 @@ Vue.use(ShareSheet);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -59,7 +59,7 @@ export default {
 当分享选项的数量较多时，可以将 `options` 定义为数组嵌套的格式，每个子数组会作为一行选项展示。
 
 ```html
-<van-share-sheet
+<ghb-share-sheet
   v-model="showShare"
   title="立即分享给好友"
   :options="options"
@@ -95,7 +95,7 @@ export default {
 除了使用内置的几种图标外，可以直接在 `icon` 中传入图片 URL 来使用自定义的图标。
 
 ```html
-<van-share-sheet v-model="showShare" :options="options" />
+<ghb-share-sheet v-model="showShare" :options="options" />
 ```
 
 ```js
@@ -127,7 +127,7 @@ export default {
 通过 `description` 属性可以设置标题下方的描述文字, 在 `options` 内设置 `description` 属性可以添加分享选项描述。
 
 ```html
-<van-share-sheet
+<ghb-share-sheet
   v-model="showShare"
   :options="options"
   title="立即分享给好友"

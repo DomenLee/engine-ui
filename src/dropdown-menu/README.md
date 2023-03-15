@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'ghbui';
 
 Vue.use(DropdownMenu);
 Vue.use(DropdownItem);
@@ -15,10 +15,10 @@ Vue.use(DropdownItem);
 ### Basic Usage
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<ghb-dropdown-menu>
+  <ghb-dropdown-item v-model="value1" :options="option1" />
+  <ghb-dropdown-item v-model="value2" :options="option2" />
+</ghb-dropdown-menu>
 ```
 
 ```js
@@ -45,26 +45,26 @@ export default {
 ### Custom Content
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value" :options="option" />
-  <van-dropdown-item title="Title" ref="item">
-    <van-cell center title="Title">
+<ghb-dropdown-menu>
+  <ghb-dropdown-item v-model="value" :options="option" />
+  <ghb-dropdown-item title="Title" ref="item">
+    <ghb-cell center title="Title">
       <template #right-icon>
-        <van-switch v-model="switch1" size="24" active-color="#ee0a24" />
+        <ghb-switch v-model="switch1" size="24" active-color="#ee0a24" />
       </template>
-    </van-cell>
-    <van-cell center title="Title">
+    </ghb-cell>
+    <ghb-cell center title="Title">
       <template #right-icon>
-        <van-switch v-model="switch2" size="24" active-color="#ee0a24" />
+        <ghb-switch v-model="switch2" size="24" active-color="#ee0a24" />
       </template>
-    </van-cell>
+    </ghb-cell>
     <div style="padding: 5px 16px;">
-      <van-button type="danger" block round @click="onConfirm">
+      <ghb-button type="danger" block round @click="onConfirm">
         Confirm
-      </van-button>
+      </ghb-button>
     </div>
-  </van-dropdown-item>
-</van-dropdown-menu>
+  </ghb-dropdown-item>
+</ghb-dropdown-menu>
 ```
 
 ```js
@@ -94,28 +94,28 @@ export default {
 Use `active-color` prop to custom active color of the title and options.
 
 ```html
-<van-dropdown-menu active-color="#1989fa">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<ghb-dropdown-menu active-color="#1989fa">
+  <ghb-dropdown-item v-model="value1" :options="option1" />
+  <ghb-dropdown-item v-model="value2" :options="option2" />
+</ghb-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<ghb-dropdown-menu direction="up">
+  <ghb-dropdown-item v-model="value1" :options="option1" />
+  <ghb-dropdown-item v-model="value2" :options="option2" />
+</ghb-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<ghb-dropdown-menu>
+  <ghb-dropdown-item v-model="value1" disabled :options="option1" />
+  <ghb-dropdown-item v-model="value2" disabled :options="option2" />
+</ghb-dropdown-menu>
 ```
 
 ## API

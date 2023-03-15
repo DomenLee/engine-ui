@@ -13,7 +13,7 @@ test('Dialog function call', async () => {
   await later();
 
   const callback = jest.fn();
-  const dialog = document.querySelector('.van-dialog');
+  const dialog = document.querySelector('.ghb-dialog');
 
   expect(dialog.style.display).toEqual('');
   Dialog.close();
@@ -21,12 +21,12 @@ test('Dialog function call', async () => {
   await later();
   expect(dialog.style.display).toEqual('none');
   Dialog.confirm().catch(callback);
-  document.querySelector('.van-dialog__cancel').click();
+  document.querySelector('.ghb-dialog__cancel').click();
 
   await later();
   expect(callback).toHaveBeenCalledWith('cancel');
   Dialog.confirm().then(callback);
-  document.querySelector('.van-dialog__confirm').click();
+  document.querySelector('.ghb-dialog__confirm').click();
 
   await later();
   expect(callback).toHaveBeenNthCalledWith(2, 'confirm');
@@ -42,7 +42,7 @@ test('before close', () => {
     },
   });
 
-  const cancel = wrapper.find('.van-dialog__cancel');
+  const cancel = wrapper.find('.ghb-dialog__cancel');
 
   cancel.trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
@@ -55,7 +55,7 @@ test('before close', () => {
     },
   });
 
-  const overlay = document.querySelector('.van-overlay');
+  const overlay = document.querySelector('.ghb-overlay');
   trigger(overlay, 'click');
   expect(wrapper.emitted('input')).toBeFalsy();
 
@@ -135,7 +135,7 @@ test('allow-html prop', () => {
       allowHtml: false,
     },
   });
-  expect(wrapper.find('.van-dialog__message')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-dialog__message')).toMatchSnapshot();
 });
 
 test('open & close event', () => {

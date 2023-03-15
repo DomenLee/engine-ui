@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`failed event 1`] = `
-<form class="van-form">
-  <div class="van-cell van-field van-field--error">
-    <div class="van-cell__value van-cell__value--alone van-field__value">
-      <div class="van-field__body"><input type="text" name="A" class="van-field__control"></div>
-      <div class="van-field__error-message">A failed</div>
+<form class="ghb-form">
+  <div class="ghb-cell ghb-field ghb-field--error">
+    <div class="ghb-cell__value ghb-cell__value--alone ghb-field__value">
+      <div class="ghb-field__body"><input type="text" name="A" class="ghb-field__control"></div>
+      <div class="ghb-field__error-message">A failed</div>
     </div>
   </div>
-  <div class="van-cell van-field van-field--error">
-    <div class="van-cell__value van-cell__value--alone van-field__value">
-      <div class="van-field__body"><input type="text" name="B" class="van-field__control"></div>
-      <div class="van-field__error-message">B failed</div>
+  <div class="ghb-cell ghb-field ghb-field--error">
+    <div class="ghb-cell__value ghb-cell__value--alone ghb-field__value">
+      <div class="ghb-field__body"><input type="text" name="B" class="ghb-field__control"></div>
+      <div class="ghb-field__error-message">B failed</div>
     </div>
-  </div> <button type="submit" class="van-button van-button--default van-button--normal">
-    <div class="van-button__content"></div>
+  </div> <button type="submit" class="ghb-button ghb-button--default ghb-button--normal">
+    <div class="ghb-button__content"></div>
   </button>
 </form>
 `;

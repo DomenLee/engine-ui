@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Empty } from 'vant';
+import { Empty } from 'ghbui';
 
 Vue.use(Empty);
 ```
@@ -18,7 +18,7 @@ Vue.use(Empty);
 ### 基础用法
 
 ```html
-<van-empty description="描述文字" />
+<ghb-empty description="描述文字" />
 ```
 
 ### 图片类型
@@ -27,11 +27,11 @@ Empty 组件内置了多种占位图片类型，可以在不同业务场景下�
 
 ```html
 <!-- 通用错误 -->
-<van-empty image="error" description="描述文字" />
+<ghb-empty image="error" description="描述文字" />
 <!-- 网络错误 -->
-<van-empty image="network" description="描述文字" />
+<ghb-empty image="network" description="描述文字" />
 <!-- 搜索提示 -->
-<van-empty image="search" description="描述文字" />
+<ghb-empty image="search" description="描述文字" />
 ```
 
 ### 自定义图片
@@ -39,14 +39,14 @@ Empty 组件内置了多种占位图片类型，可以在不同业务场景下�
 需要自定义图片时，可以在 image 属性中传入任意图片 URL。
 
 ```html
-<van-empty
+<ghb-empty
   class="custom-image"
   image="https://img01.yzcdn.cn/vant/custom-empty-image.png"
   description="描述文字"
 />
 
 <style>
-  .custom-image .van-empty__image {
+  .custom-image .ghb-empty__image {
     width: 90px;
     height: 90px;
   }
@@ -58,9 +58,9 @@ Empty 组件内置了多种占位图片类型，可以在不同业务场景下�
 通过默认插槽可以在 Empty 组件的下方插入内容。
 
 ```html
-<van-empty description="描述文字">
-  <van-button round type="danger" class="bottom-button">按钮</van-button>
-</van-empty>
+<ghb-empty description="描述文字">
+  <ghb-button round type="danger" class="bottom-button">按钮</ghb-button>
+</ghb-empty>
 
 <style>
   .bottom-button {

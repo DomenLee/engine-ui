@@ -32,7 +32,7 @@ export default createComponent({
     },
     transition: {
       type: String,
-      default: 'van-fade',
+      default: 'ghb-fade',
     },
     lockScroll: {
       type: Boolean,

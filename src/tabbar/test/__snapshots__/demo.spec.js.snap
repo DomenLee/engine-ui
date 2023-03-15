@@ -3,198 +3,198 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-      <div class="van-tabbar-item van-tabbar-item--active">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-home-o">
+    <div class="ghb-hairline--top-bottom ghb-tabbar ghb-tabbar--fixed">
+      <div class="ghb-tabbar-item ghb-tabbar-item--active">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-home-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-search">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-search">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-friends-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-friends-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-setting-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-setting-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-      <div class="van-tabbar-item van-tabbar-item--active">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-home-o">
+    <div class="ghb-hairline--top-bottom ghb-tabbar ghb-tabbar--fixed">
+      <div class="ghb-tabbar-item ghb-tabbar-item--active">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-home-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">
+        <div class="ghb-tabbar-item__text">
           标签
         </div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-search">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-search">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">
+        <div class="ghb-tabbar-item__text">
           标签
         </div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-friends-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-friends-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">
+        <div class="ghb-tabbar-item__text">
           标签
         </div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-setting-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-setting-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">
-          标签
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-      <div class="van-tabbar-item van-tabbar-item--active">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-home-o">
-            <!----></i>
-          <!---->
-        </div>
-        <div class="van-tabbar-item__text">标签</div>
-      </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-search">
-            <!----></i>
-          <div class="van-info van-info--dot"></div>
-        </div>
-        <div class="van-tabbar-item__text">标签</div>
-      </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-friends-o">
-            <!----></i>
-          <div class="van-info">5</div>
-        </div>
-        <div class="van-tabbar-item__text">
-          标签
-        </div>
-      </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-setting-o">
-            <!----></i>
-          <div class="van-info">20</div>
-        </div>
-        <div class="van-tabbar-item__text">
+        <div class="ghb-tabbar-item__text">
           标签
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-      <div class="van-tabbar-item van-tabbar-item--active">
-        <div class="van-tabbar-item__icon"><img src="https://img01.yzcdn.cn/vant/user-active.png">
-          <div class="van-info">3</div>
-        </div>
-        <div class="van-tabbar-item__text"><span>自定义</span></div>
-      </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-search">
+    <div class="ghb-hairline--top-bottom ghb-tabbar ghb-tabbar--fixed">
+      <div class="ghb-tabbar-item ghb-tabbar-item--active">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-home-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-setting-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-search">
             <!----></i>
-          <!---->
+          <div class="ghb-info ghb-info--dot"></div>
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-      <div class="van-tabbar-item van-tabbar-item--active" style="color: rgb(238, 10, 36);">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-home-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-friends-o">
             <!----></i>
-          <!---->
+          <div class="ghb-info">5</div>
         </div>
-        <div class="van-tabbar-item__text">标签</div>
+        <div class="ghb-tabbar-item__text">
+          标签
+        </div>
       </div>
-      <div class="van-tabbar-item" style="color: rgb(0, 0, 0);">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-search">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-setting-o">
             <!----></i>
-          <!---->
+          <div class="ghb-info">20</div>
         </div>
-        <div class="van-tabbar-item__text">标签</div>
-      </div>
-      <div class="van-tabbar-item" style="color: rgb(0, 0, 0);">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-friends-o">
-            <!----></i>
-          <!---->
+        <div class="ghb-tabbar-item__text">
+          标签
         </div>
-        <div class="van-tabbar-item__text">标签</div>
-      </div>
-      <div class="van-tabbar-item" style="color: rgb(0, 0, 0);">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-setting-o">
-            <!----></i>
-          <!---->
-        </div>
-        <div class="van-tabbar-item__text">标签</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-      <div class="van-tabbar-item van-tabbar-item--active">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-home-o">
-            <!----></i>
-          <!---->
+    <div class="ghb-hairline--top-bottom ghb-tabbar ghb-tabbar--fixed">
+      <div class="ghb-tabbar-item ghb-tabbar-item--active">
+        <div class="ghb-tabbar-item__icon"><img src="https://img01.yzcdn.cn/vant/user-active.png">
+          <div class="ghb-info">3</div>
         </div>
-        <div class="van-tabbar-item__text">标签1</div>
+        <div class="ghb-tabbar-item__text"><span>自定义</span></div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-search">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-search">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签2</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-friends-o">
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-setting-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签3</div>
+        <div class="ghb-tabbar-item__text">标签</div>
       </div>
-      <div class="van-tabbar-item">
-        <div class="van-tabbar-item__icon"><i class="van-icon van-icon-setting-o">
+    </div>
+  </div>
+  <div>
+    <div class="ghb-hairline--top-bottom ghb-tabbar ghb-tabbar--fixed">
+      <div class="ghb-tabbar-item ghb-tabbar-item--active" style="color: rgb(238, 10, 36);">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-home-o">
             <!----></i>
           <!---->
         </div>
-        <div class="van-tabbar-item__text">标签4</div>
+        <div class="ghb-tabbar-item__text">标签</div>
+      </div>
+      <div class="ghb-tabbar-item" style="color: rgb(0, 0, 0);">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-search">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签</div>
+      </div>
+      <div class="ghb-tabbar-item" style="color: rgb(0, 0, 0);">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-friends-o">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签</div>
+      </div>
+      <div class="ghb-tabbar-item" style="color: rgb(0, 0, 0);">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-setting-o">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="ghb-hairline--top-bottom ghb-tabbar ghb-tabbar--fixed">
+      <div class="ghb-tabbar-item ghb-tabbar-item--active">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-home-o">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签1</div>
+      </div>
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-search">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签2</div>
+      </div>
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-friends-o">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签3</div>
+      </div>
+      <div class="ghb-tabbar-item">
+        <div class="ghb-tabbar-item__icon"><i class="ghb-icon ghb-icon-setting-o">
+            <!----></i>
+          <!---->
+        </div>
+        <div class="ghb-tabbar-item__text">标签4</div>
       </div>
     </div>
   </div>

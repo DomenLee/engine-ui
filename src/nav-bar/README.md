@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { NavBar } from 'vant';
+import { NavBar } from 'ghbui';
 
 Vue.use(NavBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### Basic Usage
 
 ```html
-<van-nav-bar
+<ghb-nav-bar
   title="Title"
   left-text="Back"
   right-text="Button"
@@ -25,7 +25,7 @@ Vue.use(NavBar);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -42,11 +42,11 @@ export default {
 ### Use Slot
 
 ```html
-<van-nav-bar title="Title" left-text="Back" left-arrow>
+<ghb-nav-bar title="Title" left-text="Back" left-arrow>
   <template #right>
-    <van-icon name="search" />
+    <ghb-icon name="search" />
   </template>
-</van-nav-bar>
+</ghb-nav-bar>
 ```
 
 ## API

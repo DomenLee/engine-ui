@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-contact-list
+      <ghb-contact-list
         v-model="chosenContactId"
         :list="t('list')"
         :default-tag-text="t('defaultTagText')"
@@ -80,7 +80,7 @@ export default {
 @import '../../style/var';
 
 .demo-contact-card {
-  .van-popup {
+  .ghb-popup {
     height: 100%;
     background-color: @background-color;
   }

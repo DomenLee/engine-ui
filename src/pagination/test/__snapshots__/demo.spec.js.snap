@@ -3,43 +3,43 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <ul class="van-pagination">
-      <li class="van-pagination__item van-pagination__item--disabled van-pagination__prev van-hairline">上一页</li>
-      <li class="van-pagination__item van-pagination__item--active van-pagination__page van-hairline">1</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">2</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">3</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">4</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">5</li>
-      <li class="van-pagination__item van-pagination__next van-hairline">下一页</li>
+    <ul class="ghb-pagination">
+      <li class="ghb-pagination__item ghb-pagination__item--disabled ghb-pagination__prev ghb-hairline">上一页</li>
+      <li class="ghb-pagination__item ghb-pagination__item--active ghb-pagination__page ghb-hairline">1</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">2</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">3</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">4</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">5</li>
+      <li class="ghb-pagination__item ghb-pagination__next ghb-hairline">下一页</li>
     </ul>
   </div>
   <div>
-    <ul class="van-pagination van-pagination--simple" size="small">
-      <li class="van-pagination__item van-pagination__item--disabled van-pagination__prev van-hairline">上一页</li>
-      <li class="van-pagination__page-desc">1/12</li>
-      <li class="van-pagination__item van-pagination__next van-hairline">下一页</li>
+    <ul class="ghb-pagination ghb-pagination--simple" size="small">
+      <li class="ghb-pagination__item ghb-pagination__item--disabled ghb-pagination__prev ghb-hairline">上一页</li>
+      <li class="ghb-pagination__page-desc">1/12</li>
+      <li class="ghb-pagination__item ghb-pagination__next ghb-hairline">下一页</li>
     </ul>
   </div>
   <div>
-    <ul class="van-pagination">
-      <li class="van-pagination__item van-pagination__item--disabled van-pagination__prev van-hairline">上一页</li>
-      <li class="van-pagination__item van-pagination__item--active van-pagination__page van-hairline">1</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">2</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">3</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">...</li>
-      <li class="van-pagination__item van-pagination__next van-hairline">下一页</li>
+    <ul class="ghb-pagination">
+      <li class="ghb-pagination__item ghb-pagination__item--disabled ghb-pagination__prev ghb-hairline">上一页</li>
+      <li class="ghb-pagination__item ghb-pagination__item--active ghb-pagination__page ghb-hairline">1</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">2</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">3</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">...</li>
+      <li class="ghb-pagination__item ghb-pagination__next ghb-hairline">下一页</li>
     </ul>
   </div>
   <div>
-    <ul class="van-pagination">
-      <li class="van-pagination__item van-pagination__item--disabled van-pagination__prev van-hairline"><i class="van-icon van-icon-arrow-left">
+    <ul class="ghb-pagination">
+      <li class="ghb-pagination__item ghb-pagination__item--disabled ghb-pagination__prev ghb-hairline"><i class="ghb-icon ghb-icon-arrow-left">
           <!----></i></li>
-      <li class="van-pagination__item van-pagination__item--active van-pagination__page van-hairline">1</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">2</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">3</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">4</li>
-      <li class="van-pagination__item van-pagination__page van-hairline">5</li>
-      <li class="van-pagination__item van-pagination__next van-hairline"><i class="van-icon van-icon-arrow">
+      <li class="ghb-pagination__item ghb-pagination__item--active ghb-pagination__page ghb-hairline">1</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">2</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">3</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">4</li>
+      <li class="ghb-pagination__item ghb-pagination__page ghb-hairline">5</li>
+      <li class="ghb-pagination__item ghb-pagination__next ghb-hairline"><i class="ghb-icon ghb-icon-arrow">
           <!----></i></li>
     </ul>
   </div>

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Empty } from 'vant';
+import { Empty } from 'ghbui';
 
 Vue.use(Empty);
 ```
@@ -14,7 +14,7 @@ Vue.use(Empty);
 ### Basic Usage
 
 ```html
-<van-empty description="Description" />
+<ghb-empty description="Description" />
 ```
 
 ### Image Type
@@ -23,17 +23,17 @@ Use the image prop to display different placeholder images.
 
 ```html
 <!-- Error -->
-<van-empty image="error" description="Description" />
+<ghb-empty image="error" description="Description" />
 <!-- Network -->
-<van-empty image="network" description="Description" />
+<ghb-empty image="network" description="Description" />
 <!-- Search -->
-<van-empty image="search" description="Description" />
+<ghb-empty image="search" description="Description" />
 ```
 
 ### Custom Image
 
 ```html
-<van-empty
+<ghb-empty
   class="custom-image"
   image="https://img01.yzcdn.cn/vant/leaf.jpg"
   description="Description"
@@ -49,9 +49,9 @@ Use the image prop to display different placeholder images.
 ### Bottom Content
 
 ```html
-<van-empty description="Description">
-  <van-button round type="danger" class="bottom-button">Button</van-button>
-</van-empty>
+<ghb-empty description="Description">
+  <ghb-button round type="danger" class="bottom-button">Button</ghb-button>
+</ghb-empty>
 
 <style>
   .bottom-button {

@@ -2,7 +2,7 @@
 @import '../style/mixins/clearfix';
 @import '../style/mixins/hairline';
 
-.van-sku {
+.ghb-sku {
   &-container {
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
     padding-top: @padding-sm;
 
     &--hide-soldout {
-      .van-sku-row__item--disabled {
+      .ghb-sku-row__item--disabled {
         display: none;
       }
     }
@@ -170,7 +170,7 @@
         background: @active-color;
         cursor: not-allowed;
 
-        .van-sku-row__item-img {
+        .ghb-sku-row__item-img {
           opacity: 0.3;
         }
       }
@@ -324,7 +324,7 @@
     padding-bottom: @padding-xl;
 
     &__image-cell {
-      .van-cell__title {
+      .ghb-cell__title {
         max-width: @field-label-width;
         margin-right: @field-label-margin-right;
         color: @field-label-color;
@@ -332,7 +332,7 @@
         word-wrap: break-word;
       }
 
-      .van-cell__value {
+      .ghb-cell__value {
         overflow: visible;
         text-align: left;
       }
@@ -370,7 +370,7 @@
     flex-shrink: 0;
     padding: @padding-xs @padding-md;
 
-    .van-button {
+    .ghb-button {
       height: 40px;
       font-weight: @font-weight-bold;
       font-size: @font-size-md;

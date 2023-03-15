@@ -88,7 +88,7 @@ export default createComponent({
                 {this.genLeft()}
               </div>
             )}
-            <div class={[bem('title'), 'van-ellipsis']}>
+            <div class={[bem('title'), 'ghb-ellipsis']}>
               {this.slots('title') || this.title}
             </div>
             {this.hasRight() && (

@@ -14,7 +14,7 @@ test('click number key', () => {
     },
   });
 
-  clickKey(wrapper.findAll('.van-key').at(0));
+  clickKey(wrapper.findAll('.ghb-key').at(0));
   expect(wrapper.emitted('input')[0][0]).toEqual(1);
 
   wrapper.destroy();
@@ -23,18 +23,18 @@ test('click number key', () => {
 test('click delete key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  clickKey(wrapper.findAll('.van-key').at(11));
+  clickKey(wrapper.findAll('.ghb-key').at(11));
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
 
 test('click collapse key', () => {
   const wrapper = mount(NumberKeyboard);
-  clickKey(wrapper.findAll('.van-key').at(9));
+  clickKey(wrapper.findAll('.ghb-key').at(9));
   expect(wrapper.emitted('input')).toBeFalsy();
   expect(wrapper.emitted('blur')).toBeFalsy();
 
   wrapper.setProps({ show: true });
-  clickKey(wrapper.findAll('.van-key').at(9));
+  clickKey(wrapper.findAll('.ghb-key').at(9));
   expect(wrapper.emitted('blur')).toBeTruthy();
 });
 
@@ -46,7 +46,7 @@ test('click close button', () => {
     },
   });
 
-  clickKey(wrapper.findAll('.van-key').at(12));
+  clickKey(wrapper.findAll('.ghb-key').at(12));
   expect(wrapper.emitted('close')).toBeTruthy();
 });
 
@@ -139,7 +139,7 @@ test('disable hideOnClickOutside', () => {
 test('focus on key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  const key = wrapper.find('.van-key');
+  const key = wrapper.find('.ghb-key');
   trigger(key, 'touchstart');
   expect(wrapper).toMatchSnapshot();
   trigger(key, 'touchend');
@@ -149,7 +149,7 @@ test('focus on key', () => {
 test('move and blur key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  const key = wrapper.find('.van-key');
+  const key = wrapper.find('.ghb-key');
   trigger(key, 'touchstart');
   expect(wrapper).toMatchSnapshot();
   trigger(key, 'touchmove', 0, 0);
@@ -172,7 +172,7 @@ test('bind value', () => {
     },
   });
 
-  const keys = wrapper.findAll('.van-key');
+  const keys = wrapper.findAll('.ghb-key');
   clickKey(keys.at(0));
   clickKey(keys.at(1));
 
@@ -197,7 +197,7 @@ test('maxlength', () => {
     },
   });
 
-  const keys = wrapper.findAll('.van-key');
+  const keys = wrapper.findAll('.ghb-key');
   clickKey(keys.at(0));
   clickKey(keys.at(1));
 
@@ -212,19 +212,19 @@ test('show-delete-key prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-key--delete')).toBeTruthy();
+  expect(wrapper.contains('.ghb-key--delete')).toBeTruthy();
 
   wrapper.setData({ showDeleteKey: false });
-  expect(wrapper.contains('.van-key--delete')).toBeFalsy();
+  expect(wrapper.contains('.ghb-key--delete')).toBeFalsy();
 
   wrapper.setData({
     theme: 'custom',
     showDeleteKey: true,
   });
-  expect(wrapper.contains('.van-key--delete')).toBeTruthy();
+  expect(wrapper.contains('.ghb-key--delete')).toBeTruthy();
 
   wrapper.setData({ showDeleteKey: false });
-  expect(wrapper.contains('.van-key--delete')).toBeFalsy();
+  expect(wrapper.contains('.ghb-key--delete')).toBeFalsy();
 });
 
 test('close-button-loading prop', () => {
@@ -236,7 +236,7 @@ test('close-button-loading prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-key__loading-icon')).toBeTruthy();
+  expect(wrapper.contains('.ghb-key__loading-icon')).toBeTruthy();
 });
 test('random-key-order prop', () => {
   const wrapper = mount(NumberKeyboard, {
@@ -251,7 +251,7 @@ test('random-key-order prop', () => {
   for (let i = 0; i < 9; i++) {
     keys.push(i + 1);
 
-    clickKey(wrapper.findAll('.van-key').at(i));
+    clickKey(wrapper.findAll('.ghb-key').at(i));
     clickKeys.push(wrapper.emitted('input')[i][0]);
   }
 

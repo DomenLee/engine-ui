@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { SwipeCell } from 'vant';
+import { SwipeCell } from 'ghbui';
 
 Vue.use(SwipeCell);
 ```
@@ -14,23 +14,23 @@ Vue.use(SwipeCell);
 ### Basic Usage
 
 ```html
-<van-swipe-cell>
+<ghb-swipe-cell>
   <template #left>
-    <van-button square type="primary" text="Select" />
+    <ghb-button square type="primary" text="Select" />
   </template>
-  <van-cell :border="false" title="Cell" value="Cell Content" />
+  <ghb-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <van-button square type="danger" text="Delete" />
-    <van-button square type="primary" text="Collect" />
+    <ghb-button square type="danger" text="Delete" />
+    <ghb-button square type="primary" text="Collect" />
   </template>
-</van-swipe-cell>
+</ghb-swipe-cell>
 ```
 
 ### Custom Content
 
 ```html
-<van-swipe-cell>
-  <van-card
+<ghb-swipe-cell>
+  <ghb-card
     num="2"
     price="2.00"
     desc="Description"
@@ -39,9 +39,9 @@ Vue.use(SwipeCell);
     thumb="https://img01.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <van-button square text="Delete" type="danger" class="delete-button" />
+    <ghb-button square text="Delete" type="danger" class="delete-button" />
   </template>
-</van-swipe-cell>
+</ghb-swipe-cell>
 
 <style>
   .goods-card {
@@ -58,15 +58,15 @@ Vue.use(SwipeCell);
 ### Before Close
 
 ```html
-<van-swipe-cell :before-close="beforeClose">
+<ghb-swipe-cell :before-close="beforeClose">
   <template #left>
-    <van-button square type="primary" text="Select" />
+    <ghb-button square type="primary" text="Select" />
   </template>
-  <van-cell :border="false" title="Cell" value="Cell Content" />
+  <ghb-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <van-button square type="danger" text="Delete" />
+    <ghb-button square type="danger" text="Delete" />
   </template>
-</van-swipe-cell>
+</ghb-swipe-cell>
 ```
 
 ```js

@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`click option 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">B</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">B</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">B</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">B</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-overlay" style="z-index: 2013; animation-duration: 0.2s; position: absolute;" name="van-fade"></div>
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s; display: none; z-index: 2014;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>A</span></div>
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-overlay" style="z-index: 2013; animation-duration: 0.2s; position: absolute;" name="ghb-fade"></div>
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s; display: none; z-index: 2014;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>A</span></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>B</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>B</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -30,27 +30,27 @@ exports[`click option 1`] = `
 `;
 
 exports[`close-on-click-outside 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s; display: none;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s; display: none;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -58,13 +58,13 @@ exports[`close-on-click-outside 1`] = `
 `;
 
 exports[`destroy one item 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <!---->
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -72,18 +72,18 @@ exports[`destroy one item 1`] = `
 `;
 
 exports[`didn\`t find matched option 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis"></div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis"></div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis"></div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis"></div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -91,18 +91,18 @@ exports[`didn\`t find matched option 1`] = `
 `;
 
 exports[`direction up 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--up" style="bottom: 0px; display: none;">
       <!---->
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--up" style="bottom: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -110,27 +110,27 @@ exports[`direction up 1`] = `
 `;
 
 exports[`direction up 2`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--active"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--active"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 1000px;">
-      <div class="van-popup van-popup--bottom van-dropdown-item__content" style="transition-duration: 0.2s;" name="van-popup-slide-bottom">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--up" style="bottom: 1000px;">
+      <div class="ghb-popup ghb-popup--bottom ghb-dropdown-item__content" style="transition-duration: 0.2s;" name="ghb-popup-slide-bottom">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 1000px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--up" style="bottom: 1000px; display: none;">
       <!---->
     </div>
   </div>
@@ -138,27 +138,27 @@ exports[`direction up 2`] = `
 `;
 
 exports[`disable close-on-click-outside 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--active van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--active ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -166,12 +166,12 @@ exports[`disable close-on-click-outside 1`] = `
 `;
 
 exports[`disable dropdown item 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar">
-    <div role="button" tabindex="-1" class="van-dropdown-menu__item van-dropdown-menu__item--disabled"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar">
+    <div role="button" tabindex="-1" class="ghb-dropdown-menu__item ghb-dropdown-menu__item--disabled"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -179,29 +179,29 @@ exports[`disable dropdown item 1`] = `
 `;
 
 exports[`render option icon 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--active van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--active ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active"><i class="van-icon van-icon-success van-cell__left-icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active"><i class="ghb-icon ghb-icon-success ghb-cell__left-icon">
             <!----></i>
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option"><i class="van-icon van-icon-success van-cell__left-icon">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option"><i class="ghb-icon ghb-icon-success ghb-cell__left-icon">
             <!----></i>
-          <div class="van-cell__title"><span>B</span></div>
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -209,27 +209,27 @@ exports[`render option icon 1`] = `
 `;
 
 exports[`show dropdown item 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--active van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--active ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -237,35 +237,35 @@ exports[`show dropdown item 1`] = `
 `;
 
 exports[`show dropdown item 2`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--active van-dropdown-menu__title--down"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--active ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0s; display: none;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0s; display: none;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
@@ -274,35 +274,35 @@ exports[`show dropdown item 2`] = `
 `;
 
 exports[`show dropdown item 3`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar van-dropdown-menu__bar--opened">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">A</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar ghb-dropdown-menu__bar--opened">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">A</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0s; display: none;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0s; display: none;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px;">
-      <div class="van-popup van-popup--top van-dropdown-item__content" style="transition-duration: 0.2s; display: none;" name="van-popup-slide-top">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option van-dropdown-item__option--active">
-          <div class="van-cell__title"><span>A</span></div>
-          <div class="van-cell__value"><i class="van-icon van-icon-success van-dropdown-item__icon">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px;">
+      <div class="ghb-popup ghb-popup--top ghb-dropdown-item__content" style="transition-duration: 0.2s; display: none;" name="ghb-popup-slide-top">
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option ghb-dropdown-item__option--active">
+          <div class="ghb-cell__title"><span>A</span></div>
+          <div class="ghb-cell__value"><i class="ghb-icon ghb-icon-success ghb-dropdown-item__icon">
               <!----></i></div>
         </div>
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-dropdown-item__option">
-          <div class="van-cell__title"><span>B</span></div>
+        <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-dropdown-item__option">
+          <div class="ghb-cell__title"><span>B</span></div>
         </div>
       </div>
     </div>
@@ -311,18 +311,18 @@ exports[`show dropdown item 3`] = `
 `;
 
 exports[`title prop 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">Title</div></span></div>
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">Title</div></span></div>
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">Title</div></span></div>
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">Title</div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>
@@ -330,14 +330,14 @@ exports[`title prop 1`] = `
 `;
 
 exports[`title slot 1`] = `
-<div class="van-dropdown-menu">
-  <div class="van-dropdown-menu__bar">
-    <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">
+<div class="ghb-dropdown-menu">
+  <div class="ghb-dropdown-menu__bar">
+    <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">
             Custom Title
           </div></span></div>
   </div>
   <div>
-    <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+    <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
       <!---->
     </div>
   </div>

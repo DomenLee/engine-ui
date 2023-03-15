@@ -3,9 +3,9 @@ import { mount, mockScrollTop } from '../../../test';
 test('sticky to top', () => {
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;">
+      <ghb-sticky style="height: 10px;">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
   });
 
@@ -18,9 +18,9 @@ test('sticky to top', () => {
 test('z-index prop', () => {
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" :z-index="0">
+      <ghb-sticky style="height: 10px;" :z-index="0">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
   });
 
@@ -32,9 +32,9 @@ test('z-index prop', () => {
 test('offset-top prop', () => {
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" :offset-top="10">
+      <ghb-sticky style="height: 10px;" :offset-top="10">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
   });
 
@@ -50,9 +50,9 @@ test('offset-top with rem unit', () => {
 
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" offset-top="1rem">
+      <ghb-sticky style="height: 10px;" offset-top="1rem">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
   });
 
@@ -68,9 +68,9 @@ test('offset-top with vw unit', () => {
 
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" offset-top="10vw">
+      <ghb-sticky style="height: 10px;" offset-top="10vw">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
   });
 
@@ -83,9 +83,9 @@ test('should not trigger scroll event when hidden', () => {
   const scroll = jest.fn();
   mount({
     template: `
-      <van-sticky style="height: 10px; display: none;" @scroll="scroll">
+      <ghb-sticky style="height: 10px; display: none;" @scroll="scroll">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
     methods: {
       scroll,
@@ -99,9 +99,9 @@ test('container prop', () => {
   const wrapper = mount({
     template: `
       <div ref="container" style="height: 20px;">
-        <van-sticky ref="sticky" style="height: 10px;" :container="container">
+        <ghb-sticky ref="sticky" style="height: 10px;" :container="container">
           Content
-        </van-sticky>
+        </ghb-sticky>
       </div>
     `,
     data() {
@@ -146,9 +146,9 @@ test('trigger scroll when visibility changed', () => {
 
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" @scroll="scroll">
+      <ghb-sticky style="height: 10px;" @scroll="scroll">
         Content
-      </van-sticky>
+      </ghb-sticky>
     `,
     methods: {
       scroll,

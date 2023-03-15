@@ -1,12 +1,12 @@
 <template>
   <demo-block v-if="!isWeapp" :title="t('formatValue')">
-    <van-field
+    <ghb-field
       v-model="value1"
       :label="t('text')"
       :formatter="formatter"
       :placeholder="t('formatOnChange')"
     />
-    <van-field
+    <ghb-field
       v-model="value2"
       :label="t('text')"
       :formatter="formatter"

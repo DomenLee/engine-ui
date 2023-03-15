@@ -3,90 +3,90 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-dropdown-menu">
-      <div class="van-dropdown-menu__bar">
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">默认排序</div></span></div>
+    <div class="ghb-dropdown-menu">
+      <div class="ghb-dropdown-menu__bar">
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">全部商品</div></span></div>
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">默认排序</div></span></div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-dropdown-menu">
-      <div class="van-dropdown-menu__bar">
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">筛选</div></span></div>
-      </div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-menu">
-      <div class="van-dropdown-menu__bar">
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">默认排序</div></span></div>
+    <div class="ghb-dropdown-menu">
+      <div class="ghb-dropdown-menu__bar">
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">全部商品</div></span></div>
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">筛选</div></span></div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-dropdown-menu">
-      <div class="van-dropdown-menu__bar">
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">全部商品</div></span></div>
-        <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">默认排序</div></span></div>
-      </div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 0px; display: none;">
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-menu">
-      <div class="van-dropdown-menu__bar">
-        <div role="button" tabindex="-1" class="van-dropdown-menu__item van-dropdown-menu__item--disabled"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-        <div role="button" tabindex="-1" class="van-dropdown-menu__item van-dropdown-menu__item--disabled"><span class="van-dropdown-menu__title"><div class="van-ellipsis">默认排序</div></span></div>
+    <div class="ghb-dropdown-menu">
+      <div class="ghb-dropdown-menu__bar">
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">全部商品</div></span></div>
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">默认排序</div></span></div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="ghb-dropdown-menu">
+      <div class="ghb-dropdown-menu__bar">
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">全部商品</div></span></div>
+        <div role="button" tabindex="0" class="ghb-dropdown-menu__item"><span class="ghb-dropdown-menu__title ghb-dropdown-menu__title--down"><div class="ghb-ellipsis">默认排序</div></span></div>
+      </div>
+      <div>
+        <div class="ghb-dropdown-item ghb-dropdown-item--up" style="bottom: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+      <div>
+        <div class="ghb-dropdown-item ghb-dropdown-item--up" style="bottom: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="ghb-dropdown-menu">
+      <div class="ghb-dropdown-menu__bar">
+        <div role="button" tabindex="-1" class="ghb-dropdown-menu__item ghb-dropdown-menu__item--disabled"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">全部商品</div></span></div>
+        <div role="button" tabindex="-1" class="ghb-dropdown-menu__item ghb-dropdown-menu__item--disabled"><span class="ghb-dropdown-menu__title"><div class="ghb-ellipsis">默认排序</div></span></div>
+      </div>
+      <div>
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+      <div>
+        <div class="ghb-dropdown-item ghb-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>

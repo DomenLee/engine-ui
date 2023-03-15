@@ -9,7 +9,7 @@
 Notify 是一个函数，调用后会直接在页面中弹出相应的消息提示。
 
 ```js
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 Notify('通知内容');
 ```
@@ -20,7 +20,7 @@ Notify('通知内容');
 
 ```js
 import Vue from 'vue';
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 // 全局注册
 Vue.use(Notify);
@@ -93,11 +93,11 @@ export default {
 如果需要在 Notify 内嵌入组件或其他自定义内容，可以使用组件调用的方式。
 
 ```html
-<van-button type="primary" text="组件调用" @click="showNotify" />
-<van-notify v-model="show" type="success">
-  <van-icon name="bell" style="margin-right: 4px;" />
+<ghb-button type="primary" text="组件调用" @click="showNotify" />
+<ghb-notify v-model="show" type="success">
+  <ghb-icon name="bell" style="margin-right: 4px;" />
   <span>通知内容</span>
-</van-notify>
+</ghb-notify>
 ```
 
 ```js

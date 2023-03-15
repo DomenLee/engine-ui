@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'ghbui';
 
 Vue.use(PullRefresh);
 ```
@@ -16,13 +16,13 @@ Vue.use(PullRefresh);
 The `refresh` event will be Emitted when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<ghb-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</ghb-pull-refresh>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -48,13 +48,13 @@ export default {
 Use `success-text` to set the success prompt after the refresh is successful
 
 ```html
-<van-pull-refresh
+<ghb-pull-refresh
   v-model="isLoading"
   success-text="Refresh success"
   @refresh="onRefresh"
 >
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</ghb-pull-refresh>
 ```
 
 ### Custom Tips
@@ -62,7 +62,7 @@ Use `success-text` to set the success prompt after the refresh is successful
 Use slots to custom tips.
 
 ```html
-<van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<ghb-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <template #pulling="props">
     <img
       class="doge"
@@ -79,7 +79,7 @@ Use slots to custom tips.
     <img class="doge" src="https://img01.yzcdn.cn/vant/doge-fire.jpg" />
   </template>
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</ghb-pull-refresh>
 
 <style>
   .doge {

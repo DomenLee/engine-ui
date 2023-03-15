@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Checkbox, CheckboxGroup } from 'vant';
+import { Checkbox, CheckboxGroup } from 'ghbui';
 
 Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
@@ -21,7 +21,7 @@ Vue.use(CheckboxGroup);
 通过 `v-model` 绑定复选框的勾选状态。
 
 ```html
-<van-checkbox v-model="checked">复选框</van-checkbox>
+<ghb-checkbox v-model="checked">复选框</ghb-checkbox>
 ```
 
 ```js
@@ -39,7 +39,7 @@ export default {
 通过设置 `disabled` 属性可以禁用复选框。
 
 ```html
-<van-checkbox v-model="checked" disabled>复选框</van-checkbox>
+<ghb-checkbox v-model="checked" disabled>复选框</ghb-checkbox>
 ```
 
 ### 自定义形状
@@ -47,7 +47,7 @@ export default {
 将 `shape` 属性设置为 `square`，复选框的形状会变成方形。
 
 ```html
-<van-checkbox v-model="checked" shape="square">复选框</van-checkbox>
+<ghb-checkbox v-model="checked" shape="square">复选框</ghb-checkbox>
 ```
 
 ### 自定义颜色
@@ -55,7 +55,7 @@ export default {
 通过 `checked-color` 属性设置选中状态的图标颜色。
 
 ```html
-<van-checkbox v-model="checked" checked-color="#ee0a24">复选框</van-checkbox>
+<ghb-checkbox v-model="checked" checked-color="#ee0a24">复选框</ghb-checkbox>
 ```
 
 ### 自定义大小
@@ -63,7 +63,7 @@ export default {
 通过 `icon-size` 属性可以自定义图标的大小。
 
 ```html
-<van-checkbox v-model="checked" icon-size="24px">复选框</van-checkbox>
+<ghb-checkbox v-model="checked" icon-size="24px">复选框</ghb-checkbox>
 ```
 
 ### 自定义图标
@@ -71,12 +71,12 @@ export default {
 通过 `icon` 插槽自定义图标，可以通过 `slotProps` 判断是否为选中状态.
 
 ```html
-<van-checkbox v-model="checked">
+<ghb-checkbox v-model="checked">
   自定义图标
   <template #icon="props">
     <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
   </template>
-</van-checkbox>
+</ghb-checkbox>
 
 <style>
   .img-icon {
@@ -102,7 +102,7 @@ export default {
 设置 `label-disabled` 属性后，点击图标以外的内容不会触发复选框切换。
 
 ```html
-<van-checkbox v-model="checked" label-disabled>复选框</van-checkbox>
+<ghb-checkbox v-model="checked" label-disabled>复选框</ghb-checkbox>
 ```
 
 ### 复选框组
@@ -110,10 +110,10 @@ export default {
 复选框可以与复选框组一起使用，复选框组通过 `v-model` 数组绑定复选框的勾选状态。
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result">
+  <ghb-checkbox name="a">复选框 a</ghb-checkbox>
+  <ghb-checkbox name="b">复选框 b</ghb-checkbox>
+</ghb-checkbox-group>
 ```
 
 ```js
@@ -131,10 +131,10 @@ export default {
 将 `direction` 属性设置为 `horizontal` 后，复选框组会变成水平排列。
 
 ```html
-<van-checkbox-group v-model="result" direction="horizontal">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result" direction="horizontal">
+  <ghb-checkbox name="a">复选框 a</ghb-checkbox>
+  <ghb-checkbox name="b">复选框 b</ghb-checkbox>
+</ghb-checkbox-group>
 ```
 
 ```js
@@ -152,11 +152,11 @@ export default {
 通过 `max` 属性可以限制复选框组的最大可选数。
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-  <van-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result" :max="2">
+  <ghb-checkbox name="a">复选框 a</ghb-checkbox>
+  <ghb-checkbox name="b">复选框 b</ghb-checkbox>
+  <ghb-checkbox name="c">复选框 c</ghb-checkbox>
+</ghb-checkbox-group>
 ```
 
 ### 全选与反选
@@ -164,14 +164,14 @@ export default {
 通过 `CheckboxGroup` 实例上的 `toggleAll` 方法可以实现全选与反选。
 
 ```html
-<van-checkbox-group v-model="result" ref="checkboxGroup">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-  <van-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<ghb-checkbox-group v-model="result" ref="checkboxGroup">
+  <ghb-checkbox name="a">复选框 a</ghb-checkbox>
+  <ghb-checkbox name="b">复选框 b</ghb-checkbox>
+  <ghb-checkbox name="c">复选框 c</ghb-checkbox>
+</ghb-checkbox-group>
 
-<van-button type="primary" @click="checkAll">全选</van-button>
-<van-button type="info" @click="toggleAll">反选</van-button>
+<ghb-button type="primary" @click="checkAll">全选</ghb-button>
+<ghb-button type="info" @click="toggleAll">反选</ghb-button>
 ```
 
 ```js
@@ -197,9 +197,9 @@ export default {
 此时你需要再引入 `Cell` 和 `CellGroup` 组件，并通过 `Checkbox` 实例上的 toggle 方法触发切换。
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-cell-group>
-    <van-cell
+<ghb-checkbox-group v-model="result">
+  <ghb-cell-group>
+    <ghb-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -207,11 +207,11 @@ export default {
       @click="toggle(index)"
     >
       <template #right-icon>
-        <van-checkbox :name="item" ref="checkboxes" />
+        <ghb-checkbox :name="item" ref="checkboxes" />
       </template>
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </ghb-cell>
+  </ghb-cell-group>
+</ghb-checkbox-group>
 ```
 
 ```js

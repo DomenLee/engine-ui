@@ -3,71 +3,71 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed">5</div>
+      <div class="ghb-badge ghb-badge--fixed">5</div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed">10</div>
+      <div class="ghb-badge ghb-badge--fixed">10</div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed">Hot</div>
+      <div class="ghb-badge ghb-badge--fixed">Hot</div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--dot van-badge--fixed"></div>
-    </div>
-  </div>
-  <div>
-    <div class="van-badge__wrapper">
-      <div class="child"></div>
-      <div class="van-badge van-badge--fixed">9+</div>
-    </div>
-    <div class="van-badge__wrapper">
-      <div class="child"></div>
-      <div class="van-badge van-badge--fixed">20+</div>
-    </div>
-    <div class="van-badge__wrapper">
-      <div class="child"></div>
-      <div class="van-badge van-badge--fixed">99+</div>
+      <div class="ghb-badge ghb-badge--dot ghb-badge--fixed"></div>
     </div>
   </div>
   <div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed" style="background: rgb(25, 137, 250);">5</div>
+      <div class="ghb-badge ghb-badge--fixed">9+</div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed" style="background: rgb(25, 137, 250);">10</div>
+      <div class="ghb-badge ghb-badge--fixed">20+</div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--dot van-badge--fixed" style="background: rgb(25, 137, 250);"></div>
+      <div class="ghb-badge ghb-badge--fixed">99+</div>
     </div>
   </div>
   <div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed"><i class="badge-icon van-icon van-icon-success">
+      <div class="ghb-badge ghb-badge--fixed" style="background: rgb(25, 137, 250);">5</div>
+    </div>
+    <div class="ghb-badge__wrapper">
+      <div class="child"></div>
+      <div class="ghb-badge ghb-badge--fixed" style="background: rgb(25, 137, 250);">10</div>
+    </div>
+    <div class="ghb-badge__wrapper">
+      <div class="child"></div>
+      <div class="ghb-badge ghb-badge--dot ghb-badge--fixed" style="background: rgb(25, 137, 250);"></div>
+    </div>
+  </div>
+  <div>
+    <div class="ghb-badge__wrapper">
+      <div class="child"></div>
+      <div class="ghb-badge ghb-badge--fixed"><i class="badge-icon ghb-icon ghb-icon-success">
           <!----></i></div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed"><i class="badge-icon van-icon van-icon-cross">
+      <div class="ghb-badge ghb-badge--fixed"><i class="badge-icon ghb-icon ghb-icon-cross">
           <!----></i></div>
     </div>
-    <div class="van-badge__wrapper">
+    <div class="ghb-badge__wrapper">
       <div class="child"></div>
-      <div class="van-badge van-badge--fixed"><i class="badge-icon van-icon van-icon-down">
+      <div class="ghb-badge ghb-badge--fixed"><i class="badge-icon ghb-icon ghb-icon-down">
           <!----></i></div>
     </div>
   </div>
   <div>
-    <div class="van-badge" style="margin-left: 16px;">20</div>
-    <div class="van-badge" style="margin-left: 12px;">99+</div>
+    <div class="ghb-badge" style="margin-left: 16px;">20</div>
+    <div class="ghb-badge" style="margin-left: 12px;">99+</div>
   </div>
 </div>
 `;

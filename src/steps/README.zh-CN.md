@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Step, Steps } from 'vant';
+import { Step, Steps } from 'ghbui';
 
 Vue.use(Step);
 Vue.use(Steps);
@@ -21,12 +21,12 @@ Vue.use(Steps);
 `active` 属性表示当前步骤的索引，从 0 起计。
 
 ```html
-<van-steps :active="active">
-  <van-step>买家下单</van-step>
-  <van-step>商家接单</van-step>
-  <van-step>买家提货</van-step>
-  <van-step>交易完成</van-step>
-</van-steps>
+<ghb-steps :active="active">
+  <ghb-step>买家下单</ghb-step>
+  <ghb-step>商家接单</ghb-step>
+  <ghb-step>买家提货</ghb-step>
+  <ghb-step>交易完成</ghb-step>
+</ghb-steps>
 ```
 
 ```js
@@ -44,12 +44,12 @@ export default {
 可以通过 `active-icon` 和 `active-color` 属性设置激活状态下的图标和颜色。
 
 ```html
-<van-steps :active="active" active-icon="success" active-color="#38f">
-  <van-step>买家下单</van-step>
-  <van-step>商家接单</van-step>
-  <van-step>买家提货</van-step>
-  <van-step>交易完成</van-step>
-</van-steps>
+<ghb-steps :active="active" active-icon="success" active-color="#38f">
+  <ghb-step>买家下单</ghb-step>
+  <ghb-step>商家接单</ghb-step>
+  <ghb-step>买家提货</ghb-step>
+  <ghb-step>交易完成</ghb-step>
+</ghb-steps>
 ```
 
 ### 竖向步骤条
@@ -57,20 +57,20 @@ export default {
 可以通过设置 `direction` 属性来改变步骤条的显示方向。
 
 ```html
-<van-steps direction="vertical" :active="0">
-  <van-step>
+<ghb-steps direction="vertical" :active="0">
+  <ghb-step>
     <h3>【城市】物流状态1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <van-step>
+  </ghb-step>
+  <ghb-step>
     <h3>【城市】物流状态2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <van-step>
+  </ghb-step>
+  <ghb-step>
     <h3>快件已发货</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </ghb-step>
+</ghb-steps>
 ```
 
 ## API
@@ -86,8 +86,8 @@ export default {
 | active-icon | 激活状态底部图标，可选值见 [Icon 组件](#/zh-CN/icon) | _string_ | `checked` |
 | inactive-icon | 未激活状态底部图标，可选值见 [Icon 组件](#/zh-CN/icon) | _string_ | - |
 | finish-icon `v2.12.7` | 已完成步骤对应的底部图标，优先级高于 `inactive-icon`，可选值见 [Icon 组件](#/zh-CN/icon) | _string_ | - |
-| icon-prefix `v2.12.15` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
-| center | 是否进行居中对齐，仅在竖向展示时有效 |  _boolean_ | `false` |
+| icon-prefix `v2.12.15` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `ghb-icon` |
+| center | 是否进行居中对齐，仅在竖向展示时有效 | _boolean_ | `false` |
 
 ### Step Slots
 

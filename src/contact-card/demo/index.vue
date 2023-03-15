@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="t('addContact')">
-      <van-contact-card type="add" @click="onAdd" />
+      <ghb-contact-card type="add" @click="onAdd" />
     </demo-block>
 
     <demo-block :title="t('editContact')">
-      <van-contact-card
+      <ghb-contact-card
         type="edit"
         :name="currentContact.name"
         :tel="currentContact.tel"
@@ -14,7 +14,7 @@
     </demo-block>
 
     <demo-block :title="t('uneditable')">
-      <van-contact-card
+      <ghb-contact-card
         type="edit"
         :name="currentContact.name"
         :tel="currentContact.tel"

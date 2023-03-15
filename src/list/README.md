@@ -8,7 +8,7 @@ A list component to show items and control loading status.
 
 ```js
 import Vue from 'vue';
-import { List } from 'vant';
+import { List } from 'ghbui';
 
 Vue.use(List);
 ```
@@ -18,14 +18,14 @@ Vue.use(List);
 ### Basic Usage
 
 ```html
-<van-list
+<ghb-list
   v-model="loading"
   :finished="finished"
   finished-text="Finished"
   @load="onLoad"
 >
-  <van-cell v-for="item in list" :key="item" :title="item" />
-</van-list>
+  <ghb-cell v-for="item in list" :key="item" :title="item" />
+</ghb-list>
 ```
 
 ```js
@@ -57,14 +57,14 @@ export default {
 ### Error Info
 
 ```html
-<van-list
+<ghb-list
   v-model="loading"
   :error.sync="error"
   error-text="Request failed. Click to reload"
   @load="onLoad"
 >
-  <van-cell v-for="item in list" :key="item" :title="item" />
-</van-list>
+  <ghb-cell v-for="item in list" :key="item" :title="item" />
+</ghb-list>
 ```
 
 ```js
@@ -89,16 +89,16 @@ export default {
 ### PullRefresh
 
 ```html
-<van-pull-refresh v-model="refreshing" @refresh="onRefresh">
-  <van-list
+<ghb-pull-refresh v-model="refreshing" @refresh="onRefresh">
+  <ghb-list
     v-model="loading"
     :finished="finished"
     finished-text="Finished"
     @load="onLoad"
   >
-    <van-cell v-for="item in list" :key="item" :title="item" />
-  </van-list>
-</van-pull-refresh>
+    <ghb-cell v-for="item in list" :key="item" :title="item" />
+  </ghb-list>
+</ghb-pull-refresh>
 ```
 
 ```js
@@ -181,8 +181,8 @@ Use [ref](https://vuejs.org/v2/api/#ref) to get List instance and call instance 
 
 How to use: [Custom Theme](#/en-US/theme).
 
-| Name                    | Default Value   | Description |
-| ----------------------- | --------------- | ----------- |
-| @list-text-color        | `@gray-6`       | -           |
-| @list-text-font-size    | `@font-size-md` | -           |
-| @list-text-line-height  | `50px`          | -           |
+| Name                   | Default Value   | Description |
+| ---------------------- | --------------- | ----------- |
+| @list-text-color       | `@gray-6`       | -           |
+| @list-text-font-size   | `@font-size-md` | -           |
+| @list-text-line-height | `50px`          | -           |

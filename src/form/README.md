@@ -8,8 +8,8 @@ Used for data entry and verification, and supports input boxes, radio buttons, c
 
 ```js
 import Vue from 'vue';
-import { Form } from 'vant';
-import { Field } from 'vant';
+import { Form } from 'ghbui';
+import { Field } from 'ghbui';
 
 Vue.use(Form);
 Vue.use(Field);
@@ -20,15 +20,15 @@ Vue.use(Field);
 ### Basic Usage
 
 ```html
-<van-form @submit="onSubmit">
-  <van-field
+<ghb-form @submit="onSubmit">
+  <ghb-field
     v-model="username"
     name="Username"
     label="Username"
     placeholder="Username"
     :rules="[{ required: true, message: 'Username is required' }]"
   />
-  <van-field
+  <ghb-field
     v-model="password"
     type="password"
     name="Password"
@@ -37,11 +37,11 @@ Vue.use(Field);
     :rules="[{ required: true, message: 'Password is required' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">
+    <ghb-button round block type="info" native-type="submit">
       Submit
-    </van-button>
+    </ghb-button>
   </div>
-</van-form>
+</ghb-form>
 ```
 
 ```js
@@ -63,35 +63,35 @@ export default {
 ### Validate Rules
 
 ```html
-<van-form validate-first @failed="onFailed">
-  <van-field
+<ghb-form validate-first @failed="onFailed">
+  <ghb-field
     v-model="value1"
     name="pattern"
     placeholder="USe pattern"
     :rules="[{ pattern, message: 'Error message' }]"
   />
-  <van-field
+  <ghb-field
     v-model="value2"
     name="validator"
     placeholder="Use validator"
     :rules="[{ validator, message: 'Error message' }]"
   />
-  <van-field
+  <ghb-field
     v-model="value3"
     name="asyncValidator"
     placeholder="Use async validator"
     :rules="[{ validator: asyncValidator, message: 'Error message' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">
+    <ghb-button round block type="info" native-type="submit">
       Submit
-    </van-button>
+    </ghb-button>
   </div>
-</van-form>
+</ghb-form>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -126,11 +126,11 @@ export default {
 ### Field Type - Switch
 
 ```html
-<van-field name="switch" label="Switch">
+<ghb-field name="switch" label="Switch">
   <template #input>
-    <van-switch v-model="switchChecked" size="20" />
+    <ghb-switch v-model="switchChecked" size="20" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -146,19 +146,19 @@ export default {
 ### Field Type - Checkbox
 
 ```html
-<van-field name="checkbox" label="Checkbox">
+<ghb-field name="checkbox" label="Checkbox">
   <template #input>
-    <van-checkbox v-model="checkbox" shape="square" />
+    <ghb-checkbox v-model="checkbox" shape="square" />
   </template>
-</van-field>
-<van-field name="checkboxGroup" label="CheckboxGroup">
+</ghb-field>
+<ghb-field name="checkboxGroup" label="CheckboxGroup">
   <template #input>
-    <van-checkbox-group v-model="checkboxGroup" direction="horizontal">
-      <van-checkbox name="1" shape="square">Checkbox 1</van-checkbox>
-      <van-checkbox name="2" shape="square">Checkbox 2</van-checkbox>
-    </van-checkbox-group>
+    <ghb-checkbox-group v-model="checkboxGroup" direction="horizontal">
+      <ghb-checkbox name="1" shape="square">Checkbox 1</ghb-checkbox>
+      <ghb-checkbox name="2" shape="square">Checkbox 2</ghb-checkbox>
+    </ghb-checkbox-group>
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -175,14 +175,14 @@ export default {
 ### Field Type - Radio
 
 ```html
-<van-field name="radio" label="Radio">
+<ghb-field name="radio" label="Radio">
   <template #input>
-    <van-radio-group v-model="radio" direction="horizontal">
-      <van-radio name="1">Radio 1</van-radio>
-      <van-radio name="2">Radio 2</van-radio>
-    </van-radio-group>
+    <ghb-radio-group v-model="radio" direction="horizontal">
+      <ghb-radio name="1">Radio 1</ghb-radio>
+      <ghb-radio name="2">Radio 2</ghb-radio>
+    </ghb-radio-group>
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -198,11 +198,11 @@ export default {
 ### Field Type - Stepper
 
 ```html
-<van-field name="stepper" label="Stepper">
+<ghb-field name="stepper" label="Stepper">
   <template #input>
-    <van-stepper v-model="stepper" />
+    <ghb-stepper v-model="stepper" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -218,11 +218,11 @@ export default {
 ### Field Type - Rate
 
 ```html
-<van-field name="rate" label="Rate">
+<ghb-field name="rate" label="Rate">
   <template #input>
-    <van-rate v-model="rate" />
+    <ghb-rate v-model="rate" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -238,11 +238,11 @@ export default {
 ### Field Type - Slider
 
 ```html
-<van-field name="slider" label="Slider">
+<ghb-field name="slider" label="Slider">
   <template #input>
-    <van-slider v-model="slider" />
+    <ghb-slider v-model="slider" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -258,11 +258,11 @@ export default {
 ### Field Type - Uploader
 
 ```html
-<van-field name="uploader" label="Uploader">
+<ghb-field name="uploader" label="Uploader">
   <template #input>
-    <van-uploader v-model="uploader" />
+    <ghb-uploader v-model="uploader" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -278,7 +278,7 @@ export default {
 ### Field Type - Picker
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="picker"
@@ -287,14 +287,14 @@ export default {
   placeholder="Select city"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-picker
+<ghb-popup v-model="showPicker" position="bottom">
+  <ghb-picker
     show-toolbar
     :columns="columns"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -318,7 +318,7 @@ export default {
 ### Field Type - DatetimePicker
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="datetimePicker"
@@ -327,13 +327,13 @@ export default {
   placeholder="Select time"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-datetime-picker
+<ghb-popup v-model="showPicker" position="bottom">
+  <ghb-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -356,7 +356,7 @@ export default {
 ### Field Type - Area
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="area"
@@ -365,13 +365,13 @@ export default {
   placeholder="Select area"
   @click="showArea = true"
 />
-<van-popup v-model="showArea" position="bottom">
-  <van-area
+<ghb-popup v-model="showArea" position="bottom">
+  <ghb-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="showArea = false"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -398,7 +398,7 @@ export default {
 ### Field Type - Calendar
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="calendar"
@@ -407,7 +407,7 @@ export default {
   placeholder="Select date"
   @click="showCalendar = true"
 />
-<van-calendar v-model="showCalendar" @confirm="onConfirm" />
+<ghb-calendar v-model="showCalendar" @confirm="onConfirm" />
 ```
 
 ```js

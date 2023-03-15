@@ -3,84 +3,84 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-card">
-      <div class="van-card__header"><a class="van-card__thumb">
-          <div class="van-image" style="width: 100%; height: 100%;"><img src="https://img01.yzcdn.cn/vant/ipad.jpeg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo van-image__loading-icon">
+    <div class="ghb-card">
+      <div class="ghb-card__header"><a class="ghb-card__thumb">
+          <div class="ghb-image" style="width: 100%; height: 100%;"><img src="https://img01.yzcdn.cn/vant/ipad.jpeg" class="ghb-image__img" style="object-fit: cover;">
+            <div class="ghb-image__loading"><i class="ghb-icon ghb-icon-photo ghb-image__loading-icon">
                 <!----></i></div>
           </div>
         </a>
-        <div class="van-card__content">
+        <div class="ghb-card__content">
           <div>
-            <div class="van-card__title van-multi-ellipsis--l2">商品名称</div>
-            <div class="van-card__desc van-ellipsis">描述信息</div>
+            <div class="ghb-card__title ghb-multi-ellipsis--l2">商品名称</div>
+            <div class="ghb-card__desc ghb-ellipsis">描述信息</div>
           </div>
-          <div class="van-card__bottom">
-            <div class="van-card__price">
-              <div><span class="van-card__price-currency">¥</span><span class="van-card__price-integer">2</span>.<span class="van-card__price-decimal">00</span></div>
+          <div class="ghb-card__bottom">
+            <div class="ghb-card__price">
+              <div><span class="ghb-card__price-currency">¥</span><span class="ghb-card__price-integer">2</span>.<span class="ghb-card__price-decimal">00</span></div>
             </div>
-            <div class="van-card__num">x2</div>
+            <div class="ghb-card__num">x2</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-card">
-      <div class="van-card__header"><a class="van-card__thumb">
-          <div class="van-image" style="width: 100%; height: 100%;"><img src="https://img01.yzcdn.cn/vant/ipad.jpeg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo van-image__loading-icon">
+    <div class="ghb-card">
+      <div class="ghb-card__header"><a class="ghb-card__thumb">
+          <div class="ghb-image" style="width: 100%; height: 100%;"><img src="https://img01.yzcdn.cn/vant/ipad.jpeg" class="ghb-image__img" style="object-fit: cover;">
+            <div class="ghb-image__loading"><i class="ghb-icon ghb-icon-photo ghb-image__loading-icon">
                 <!----></i></div>
           </div>
-          <div class="van-card__tag"><span class="van-tag van-tag--mark van-tag--danger">标签</span></div>
+          <div class="ghb-card__tag"><span class="ghb-tag ghb-tag--mark ghb-tag--danger">标签</span></div>
         </a>
-        <div class="van-card__content">
+        <div class="ghb-card__content">
           <div>
-            <div class="van-card__title van-multi-ellipsis--l2">商品名称</div>
-            <div class="van-card__desc van-ellipsis">描述信息</div>
+            <div class="ghb-card__title ghb-multi-ellipsis--l2">商品名称</div>
+            <div class="ghb-card__desc ghb-ellipsis">描述信息</div>
           </div>
-          <div class="van-card__bottom">
-            <div class="van-card__price">
-              <div><span class="van-card__price-currency">¥</span><span class="van-card__price-integer">2</span>.<span class="van-card__price-decimal">00</span></div>
+          <div class="ghb-card__bottom">
+            <div class="ghb-card__price">
+              <div><span class="ghb-card__price-currency">¥</span><span class="ghb-card__price-integer">2</span>.<span class="ghb-card__price-decimal">00</span></div>
             </div>
-            <div class="van-card__origin-price">¥ 10.00</div>
-            <div class="van-card__num">x2</div>
+            <div class="ghb-card__origin-price">¥ 10.00</div>
+            <div class="ghb-card__num">x2</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-card">
-      <div class="van-card__header"><a class="van-card__thumb">
-          <div class="van-image" style="width: 100%; height: 100%;"><img src="https://img01.yzcdn.cn/vant/ipad.jpeg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo van-image__loading-icon">
+    <div class="ghb-card">
+      <div class="ghb-card__header"><a class="ghb-card__thumb">
+          <div class="ghb-image" style="width: 100%; height: 100%;"><img src="https://img01.yzcdn.cn/vant/ipad.jpeg" class="ghb-image__img" style="object-fit: cover;">
+            <div class="ghb-image__loading"><i class="ghb-icon ghb-icon-photo ghb-image__loading-icon">
                 <!----></i></div>
           </div>
         </a>
-        <div class="van-card__content">
+        <div class="ghb-card__content">
           <div>
-            <div class="van-card__title van-multi-ellipsis--l2">商品名称</div>
-            <div class="van-card__desc van-ellipsis">描述信息</div>
-            <div><span class="van-tag van-tag--plain van-tag--danger" style="margin-right: 5px;">
+            <div class="ghb-card__title ghb-multi-ellipsis--l2">商品名称</div>
+            <div class="ghb-card__desc ghb-ellipsis">描述信息</div>
+            <div><span class="ghb-tag ghb-tag--plain ghb-tag--danger" style="margin-right: 5px;">
             标签
-          </span> <span class="van-tag van-tag--plain van-tag--danger">标签</span></div>
+          </span> <span class="ghb-tag ghb-tag--plain ghb-tag--danger">标签</span></div>
           </div>
-          <div class="van-card__bottom">
-            <div class="van-card__price">
-              <div><span class="van-card__price-currency">¥</span><span class="van-card__price-integer">2</span>.<span class="van-card__price-decimal">00</span></div>
+          <div class="ghb-card__bottom">
+            <div class="ghb-card__price">
+              <div><span class="ghb-card__price-currency">¥</span><span class="ghb-card__price-integer">2</span>.<span class="ghb-card__price-decimal">00</span></div>
             </div>
-            <div class="van-card__num">x2</div>
+            <div class="ghb-card__num">x2</div>
           </div>
         </div>
       </div>
-      <div class="van-card__footer">
-        <div><button class="van-button van-button--default van-button--mini van-button--round">
-            <div class="van-button__content"><span class="van-button__text">
+      <div class="ghb-card__footer">
+        <div><button class="ghb-button ghb-button--default ghb-button--mini ghb-button--round">
+            <div class="ghb-button__content"><span class="ghb-button__text">
             按钮
           </span></div>
-          </button> <button class="van-button van-button--default van-button--mini van-button--round">
-            <div class="van-button__content"><span class="van-button__text">
+          </button> <button class="ghb-button ghb-button--default ghb-button--mini ghb-button--round">
+            <div class="ghb-button__content"><span class="ghb-button__text">
             按钮
           </span></div>
           </button></div>

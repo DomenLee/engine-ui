@@ -74,8 +74,8 @@ export default {
     border-radius: 12px;
   }
 
-  .van-doc-demo-block__title,
-  .van-doc-demo-section__title {
+  .ghb-doc-demo-block__title,
+  .ghb-doc-demo-section__title {
     padding-left: 0;
   }
 }

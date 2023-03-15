@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Search } from 'vant';
+import { Search } from 'ghbui';
 
 Vue.use(Search);
 ```
@@ -14,7 +14,7 @@ Vue.use(Search);
 ### Basic Usage
 
 ```html
-<van-search v-model="value" placeholder="Placeholder" />
+<ghb-search v-model="value" placeholder="Placeholder" />
 ```
 
 ```js
@@ -33,7 +33,7 @@ export default {
 
 ```html
 <form action="/">
-  <van-search
+  <ghb-search
     v-model="value"
     show-action
     placeholder="Placeholder"
@@ -44,7 +44,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -68,19 +68,19 @@ export default {
 ### Input Align
 
 ```html
-<van-search v-model="value" input-align="center" placeholder="Placeholder" />
+<ghb-search v-model="value" input-align="center" placeholder="Placeholder" />
 ```
 
 ### Disabled
 
 ```html
-<van-search v-model="value" disabled placeholder="Placeholder" />
+<ghb-search v-model="value" disabled placeholder="Placeholder" />
 ```
 
 ### Custom Background Color
 
 ```html
-<van-search
+<ghb-search
   v-model="value"
   shape="round"
   background="#4fc08d"
@@ -93,7 +93,7 @@ export default {
 Use `action` slot to custom right button, `cancel` event will no longer be Emitted when use this slot.
 
 ```html
-<van-search
+<ghb-search
   v-model="value"
   show-action
   label="Address"
@@ -103,7 +103,7 @@ Use `action` slot to custom right button, `cancel` event will no longer be Emitt
   <template #action>
     <div @click="onSearch">Search</div>
   </template>
-</van-search>
+</ghb-search>
 ```
 
 ## API

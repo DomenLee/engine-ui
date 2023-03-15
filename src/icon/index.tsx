@@ -60,7 +60,8 @@ function Icon(
     <props.tag
       class={[
         props.classPrefix,
-        imageIcon ? '' : `${props.classPrefix}-${name}`,
+        'van-icon',
+        imageIcon ? '' : `van-icon-${name}`,
       ]}
       style={{
         color: props.color,

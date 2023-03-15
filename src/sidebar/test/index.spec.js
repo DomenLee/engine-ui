@@ -6,10 +6,10 @@ test('click event & change event', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-sidebar @change="onChange">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item @click="onClick">Text</van-sidebar-item>
-      </van-sidebar>
+      <ghb-sidebar @change="onChange">
+        <ghb-sidebar-item>Text</ghb-sidebar-item>
+        <ghb-sidebar-item @click="onClick">Text</ghb-sidebar-item>
+      </ghb-sidebar>
     `,
     methods: {
       onClick,
@@ -17,7 +17,7 @@ test('click event & change event', () => {
     },
   });
 
-  wrapper.findAll('.van-sidebar-item').at(1).trigger('click');
+  wrapper.findAll('.ghb-sidebar-item').at(1).trigger('click');
   expect(onClick).toHaveBeenCalledWith(1);
   expect(onChange).toHaveBeenCalledWith(1);
   wrapper.vm.$destroy();
@@ -27,10 +27,10 @@ test('v-model', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active" @change="onChange">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item>Text</van-sidebar-item>
-      </van-sidebar>
+      <ghb-sidebar v-model="active" @change="onChange">
+        <ghb-sidebar-item>Text</ghb-sidebar-item>
+        <ghb-sidebar-item>Text</ghb-sidebar-item>
+      </ghb-sidebar>
     `,
     data() {
       return {
@@ -42,7 +42,7 @@ test('v-model', () => {
     },
   });
 
-  wrapper.findAll('.van-sidebar-item').at(1).trigger('click');
+  wrapper.findAll('.ghb-sidebar-item').at(1).trigger('click');
   expect(wrapper.vm.active).toEqual(1);
   expect(onChange).toHaveBeenCalledWith(1);
 });
@@ -50,10 +50,10 @@ test('v-model', () => {
 test('disabled prop', () => {
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item disabled>Text</van-sidebar-item>
-      </van-sidebar>
+      <ghb-sidebar v-model="active">
+        <ghb-sidebar-item>Text</ghb-sidebar-item>
+        <ghb-sidebar-item disabled>Text</ghb-sidebar-item>
+      </ghb-sidebar>
     `,
     data() {
       return {
@@ -62,7 +62,7 @@ test('disabled prop', () => {
     },
   });
 
-  wrapper.findAll('.van-sidebar-item').at(1).trigger('click');
+  wrapper.findAll('.ghb-sidebar-item').at(1).trigger('click');
   expect(wrapper.vm.active).toEqual(0);
 });
 
@@ -80,11 +80,11 @@ test('without parent', () => {
 test('title slot', () => {
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active">
-        <van-sidebar-item>
+      <ghb-sidebar v-model="active">
+        <ghb-sidebar-item>
           <template #title>Title Slot</template>
-        </van-sidebar-item>
-      </van-sidebar>
+        </ghb-sidebar-item>
+      </ghb-sidebar>
     `,
     data() {
       return {

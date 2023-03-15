@@ -62,7 +62,7 @@ function Tag(
   );
 
   return (
-    <transition name={props.closeable ? 'van-fade' : null}>
+    <transition name={props.closeable ? 'ghb-fade' : null}>
       <span
         key="content"
         style={style}

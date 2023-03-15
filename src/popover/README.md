@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Popover } from 'vant';
+import { Popover } from 'ghbui';
 
 Vue.use(Popover);
 ```
@@ -14,20 +14,20 @@ Vue.use(Popover);
 ### Basic Usage
 
 ```html
-<van-popover
+<ghb-popover
   v-model="showPopover"
   trigger="click"
   :actions="actions"
   @select="onSelect"
 >
   <template #reference>
-    <van-button type="primary">Light Theme</van-button>
+    <ghb-button type="primary">Light Theme</ghb-button>
   </template>
-</van-popover>
+</ghb-popover>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -53,16 +53,16 @@ export default {
 Using the `theme` prop to change the style of Popover.
 
 ```html
-<van-popover
+<ghb-popover
   v-model="showPopover"
   theme="dark"
   trigger="click"
   :actions="actions"
 >
   <template #reference>
-    <van-button type="primary">Dark Theme</van-button>
+    <ghb-button type="primary">Dark Theme</ghb-button>
   </template>
-</van-popover>
+</ghb-popover>
 ```
 
 ```js
@@ -83,7 +83,7 @@ export default {
 ### Placement
 
 ```html
-<van-popover placement="top" />
+<ghb-popover placement="top" />
 ```
 
 `placement` supports the following values:
@@ -106,11 +106,11 @@ bottom-end    # Bottom right
 ### Show Icon
 
 ```html
-<van-popover v-model="showPopover" trigger="click" :actions="actions">
+<ghb-popover v-model="showPopover" trigger="click" :actions="actions">
   <template #reference>
-    <van-button type="primary">Show Icon</van-button>
+    <ghb-button type="primary">Show Icon</ghb-button>
   </template>
-</van-popover>
+</ghb-popover>
 ```
 
 ```js
@@ -133,11 +133,11 @@ export default {
 Using the `disabled` option to disable an action.
 
 ```html
-<van-popover v-model="showPopover" trigger="click" :actions="actions">
+<ghb-popover v-model="showPopover" trigger="click" :actions="actions">
   <template #reference>
-    <van-button type="primary">Disable Action</van-button>
+    <ghb-button type="primary">Disable Action</ghb-button>
   </template>
-</van-popover>
+</ghb-popover>
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { SubmitBar } from 'vant';
+import { SubmitBar } from 'ghbui';
 
 Vue.use(SubmitBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(SubmitBar);
 ### Basic Usage
 
 ```html
-<van-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
+<ghb-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ### Disabled
@@ -22,7 +22,7 @@ Vue.use(SubmitBar);
 `submit` event will not triggered when disabled.
 
 ```html
-<van-submit-bar
+<ghb-submit-bar
   disabled
   :price="3050"
   button-text="Submit"
@@ -37,7 +37,7 @@ Vue.use(SubmitBar);
 `submit` event will not triggered when loading.
 
 ```html
-<van-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
+<ghb-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ### Advanced Usage
@@ -45,12 +45,12 @@ Vue.use(SubmitBar);
 Use slot to add custom contents.
 
 ```html
-<van-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
-  <van-checkbox v-model="checked">Check</van-checkbox>
+<ghb-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
+  <ghb-checkbox v-model="checked">Check</ghb-checkbox>
   <template #tip>
     Some tips, <span @click="onClickEditAddress">Link</span>
   </template>
-</van-submit-bar>
+</ghb-submit-bar>
 ```
 
 ## API

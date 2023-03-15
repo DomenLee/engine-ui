@@ -38,14 +38,14 @@ test('cascade columns', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A1', 'B1', 'C1']);
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
   expect(wrapper.emitted('change')[0][1]).toEqual(['A2', 'B3', 'C5']);
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(['A2', 'B3', 'C5']);
 });
 
@@ -58,11 +58,11 @@ test('setColumnValue of cascade columns', () => {
   });
 
   wrapper.vm.setColumnValue(0, 'A2');
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B3', 'C5']);
 
   wrapper.vm.setColumnValue(1, 'B4');
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(['A2', 'B4', 'C7']);
 });
 
@@ -75,7 +75,7 @@ test('setValues of cascade columns', () => {
   });
 
   wrapper.vm.setValues(['A2', 'B4', 'C8']);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B4', 'C8']);
 });
 
@@ -88,11 +88,11 @@ test('setColumnIndex of cascade columns', () => {
   });
 
   wrapper.vm.setColumnIndex(0, 1);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B3', 'C5']);
 
   wrapper.vm.setColumnIndex(1, 1);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(['A2', 'B4', 'C7']);
 });
 
@@ -105,7 +105,7 @@ test('setIndexes of cascade columns', () => {
   });
 
   wrapper.vm.setIndexes([1, 0, 1]);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B3', 'C6']);
 });
 
@@ -123,7 +123,7 @@ test('disabled in cascade', () => {
     },
   });
 
-  expect(wrapper.find('.van-picker-column__item--disabled')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-picker-column__item--disabled')).toMatchSnapshot();
 });
 
 test('should move to next option when default option is disabled', () => {

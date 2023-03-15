@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { NavBar } from 'vant';
+import { NavBar } from 'ghbui';
 
 Vue.use(NavBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### 基础用法
 
 ```html
-<van-nav-bar
+<ghb-nav-bar
   title="标题"
   left-text="返回"
   right-text="按钮"
@@ -25,7 +25,7 @@ Vue.use(NavBar);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -44,11 +44,11 @@ export default {
 通过插槽自定义导航栏两侧的内容。
 
 ```html
-<van-nav-bar title="标题" left-text="返回" left-arrow>
+<ghb-nav-bar title="标题" left-text="返回" left-arrow>
   <template #right>
-    <van-icon name="search" size="18" />
+    <ghb-icon name="search" size="18" />
   </template>
-</van-nav-bar>
+</ghb-nav-bar>
 ```
 
 ## API

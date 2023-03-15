@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Image as VanImage } from 'vant';
+import { Image as VanImage } from 'ghbui';
 
 Vue.use(VanImage);
 ```
@@ -14,7 +14,7 @@ Vue.use(VanImage);
 ### Basic Usage
 
 ```html
-<van-image
+<ghb-image
   width="100"
   height="100"
   src="https://img01.yzcdn.cn/vant/cat.jpeg"
@@ -24,7 +24,7 @@ Vue.use(VanImage);
 ### Fit Mode
 
 ```html
-<van-image
+<ghb-image
   width="10rem"
   height="10rem"
   fit="contain"
@@ -37,7 +37,7 @@ Vue.use(VanImage);
 Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 
 ```html
-<van-image
+<ghb-image
   round
   width="10rem"
   height="10rem"
@@ -48,7 +48,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 ### Lazy Load
 
 ```html
-<van-image
+<ghb-image
   width="100"
   height="100"
   lazy-load
@@ -58,7 +58,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'ghbui';
 
 Vue.use(Lazyload);
 ```
@@ -81,7 +81,7 @@ Vue.use(Lazyload);
 | show-loading | Whether to show loading placeholder | _boolean_ | `true` |
 | error-icon | Error icon | _string_ | `photo-fail` |
 | loading-icon | Loading icon | _string_ | `photo` |
-| icon-prefix `v2.10.12` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.10.12` | Icon className prefix | _string_ | `ghb-icon` |
 
 ### fit optional value
 

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { CouponCell, CouponList } from 'vant';
+import { CouponCell, CouponList } from 'ghbui';
 
 Vue.use(CouponCell);
 Vue.use(CouponList);
@@ -16,26 +16,26 @@ Vue.use(CouponList);
 
 ```html
 <!-- 优惠券单元格 -->
-<van-coupon-cell
+<ghb-coupon-cell
   :coupons="coupons"
   :chosen-coupon="chosenCoupon"
   @click="showList = true"
 />
 <!-- 优惠券列表 -->
-<van-popup
+<ghb-popup
   v-model="showList"
   round
   position="bottom"
   style="height: 90%; padding-top: 4px;"
 >
-  <van-coupon-list
+  <ghb-coupon-list
     :coupons="coupons"
     :chosen-coupon="chosenCoupon"
     :disabled-coupons="disabledCoupons"
     @change="onChange"
     @exchange="onExchange"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js

@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-switch {
+.ghb-switch {
   position: relative;
   display: inline-block;
   box-sizing: content-box;
@@ -19,7 +19,7 @@
     left: 0;
     width: @switch-node-size;
     height: @switch-node-size;
-    // https://github.com/vant-ui/vant/issues/9839
+    // https://github.com/ghbui-ui/vant/issues/9839
     font-size: inherit;
     background-color: @switch-node-background-color;
     border-radius: 100%;
@@ -39,11 +39,11 @@
   &--on {
     background-color: @switch-on-background-color;
 
-    .van-switch__node {
+    .ghb-switch__node {
       transform: translateX(@switch-width - @switch-node-size);
     }
 
-    .van-switch__loading {
+    .ghb-switch__loading {
       color: @switch-on-background-color;
     }
   }

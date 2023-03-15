@@ -46,7 +46,7 @@ test('render image', async () => {
 
   await later();
 
-  const swipe = wrapper.find('.van-swipe-item');
+  const swipe = wrapper.find('.ghb-swipe-item');
   triggerDrag(swipe, 500, 0);
   expect(wrapper.emitted('input')).toBeFalsy();
   expect(wrapper.emitted('change')[0][0]).toEqual(2);
@@ -65,7 +65,7 @@ test('closeable prop', () => {
     },
   });
 
-  wrapper.find('.van-image-preview__close-icon').trigger('click');
+  wrapper.find('.ghb-image-preview__close-icon').trigger('click');
   expect(wrapper.emitted('input')[0][0]).toEqual(false);
 });
 
@@ -108,7 +108,7 @@ test('async close prop', async () => {
     },
   });
 
-  const swipe = wrapper.find('.van-swipe__track');
+  const swipe = wrapper.find('.ghb-swipe__track');
 
   // should not emit input or close event when tapped
   triggerDrag(swipe, 0, 0);
@@ -125,8 +125,8 @@ test('function call', (done) => {
   ImagePreview(images);
   ImagePreview(images.slice(0, 1));
   Vue.nextTick(() => {
-    const wrapper = document.querySelector('.van-image-preview');
-    const swipe = wrapper.querySelector('.van-swipe__track');
+    const wrapper = document.querySelector('.ghb-image-preview');
+    const swipe = wrapper.querySelector('.ghb-swipe__track');
     triggerDrag(swipe, 0, 0);
 
     expect(wrapper.querySelectorAll('img').length).toEqual(1);
@@ -147,7 +147,7 @@ test('double click', async () => {
   });
 
   await later();
-  const swipe = wrapper.find('.van-swipe-item');
+  const swipe = wrapper.find('.ghb-swipe-item');
   triggerDrag(swipe, 0, 0);
   triggerDrag(swipe, 0, 0);
   expect(onScale).toHaveBeenCalledWith({
@@ -191,7 +191,7 @@ test('onChange option', async (done) => {
     },
   });
 
-  const swipe = instance.$el.querySelector('.van-swipe__track');
+  const swipe = instance.$el.querySelector('.ghb-swipe__track');
   triggerDrag(swipe, 1000, 0);
 });
 
@@ -236,12 +236,12 @@ test('zoom in and drag image to move', async () => {
 
   // drag image before load
   triggerDrag(image, 300, 300);
-  expect(wrapper.find('.van-image')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-image')).toMatchSnapshot();
 
   // drag image after load
   image.trigger('load');
   triggerDrag(image, 300, 300);
-  expect(wrapper.find('.van-image')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-image')).toMatchSnapshot();
 
   restore();
 });
@@ -258,7 +258,7 @@ test('zoom out', async () => {
   });
 
   await later();
-  const image = wrapper.find('.van-image');
+  const image = wrapper.find('.ghb-image');
   triggerZoom(image, 300, 300, 'out');
 
   expect(onScale).toHaveBeenLastCalledWith({ index: 0, scale: 1 });
@@ -280,9 +280,9 @@ test('set show-index prop to false', () => {
 test('index slot', () => {
   const wrapper = mount({
     template: `
-      <van-image-preview :value="true">
+      <ghb-image-preview :value="true">
         <template #index>Custom Index</template>
-      </van-image-preview>
+      </ghb-image-preview>
     `,
   });
 
@@ -292,9 +292,9 @@ test('index slot', () => {
 test('cover slot', () => {
   const wrapper = mount({
     template: `
-      <van-image-preview :value="true">
+      <ghb-image-preview :value="true">
         <template #cover>Custom Cover Content</template>
-      </van-image-preview>
+      </ghb-image-preview>
     `,
   });
 
@@ -332,14 +332,14 @@ test('get container with function call ', async (done) => {
   ImagePreview({ images, getContainer: () => element });
 
   await Vue.nextTick();
-  const wrapperDiv = document.querySelector('.van-image-preview');
+  const wrapperDiv = document.querySelector('.ghb-image-preview');
   expect(wrapperDiv.parentNode).toEqual(element);
   document.body.removeChild(element);
 
   ImagePreview(images);
 
   await Vue.nextTick();
-  const wrapperBody = document.querySelector('.van-image-preview');
+  const wrapperBody = document.querySelector('.ghb-image-preview');
   expect(wrapperBody.parentNode).toEqual(document.body);
 
   done();
@@ -351,8 +351,8 @@ test('get container with component call', () => {
   const wrapper = mount({
     template: `
     <div>
-      <van-image-preview :value="true" :get-container="getContainer">
-      </van-image-preview>
+      <ghb-image-preview :value="true" :get-container="getContainer">
+      </ghb-image-preview>
     </div>
     `,
     data() {
@@ -361,7 +361,7 @@ test('get container with component call', () => {
       };
     },
   });
-  const imageView = wrapper.find('.van-image-preview').element;
+  const imageView = wrapper.find('.ghb-image-preview').element;
 
   expect(imageView.parentNode).toEqual(div1);
   wrapper.vm.getContainer = () => div2;
@@ -374,8 +374,8 @@ test('swipeTo method', async () => {
   const wrapper = mount({
     template: `
     <div>
-      <van-image-preview ref="imagePreview" :value="true" :images="images">
-      </van-image-preview>
+      <ghb-image-preview ref="imagePreview" :value="true" :images="images">
+      </ghb-image-preview>
     </div>
     `,
     data() {

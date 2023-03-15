@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Sku } from 'vant';
+import { Sku } from 'ghbui';
 
 Vue.use(Sku);
 ```
@@ -14,7 +14,7 @@ Vue.use(Sku);
 ### 基础用法
 
 ```html
-<van-sku
+<ghb-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -50,7 +50,7 @@ export default {
 ### 自定义步进器
 
 ```html
-<van-sku
+<ghb-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -67,7 +67,7 @@ export default {
 ### 通过插槽定制
 
 ```html
-<van-sku
+<ghb-sku
   v-model="show"
   stepper-title="我要买"
   :sku="sku"
@@ -84,30 +84,30 @@ export default {
 >
   <!-- 自定义 sku-header-price -->
   <template #sku-header-price="props">
-    <div class="van-sku__goods-price">
-      <span class="van-sku__price-symbol">￥</span
-      ><span class="van-sku__price-num">{{ props.price }}</span>
+    <div class="ghb-sku__goods-price">
+      <span class="ghb-sku__price-symbol">￥</span
+      ><span class="ghb-sku__price-num">{{ props.price }}</span>
     </div>
   </template>
 
   <!-- 自定义 sku actions -->
   <template #sku-actions="props">
-    <div class="van-sku-actions">
-      <van-button square size="large" type="warning" @click="onPointClicked">
+    <div class="ghb-sku-actions">
+      <ghb-button square size="large" type="warning" @click="onPointClicked">
         积分兑换
-      </van-button>
+      </ghb-button>
       <!-- 直接触发 sku 内部事件，通过内部事件执行 onBuyClicked 回调 -->
-      <van-button
+      <ghb-button
         square
         size="large"
         type="danger"
         @click="props.skuEventBus.$emit('sku:buy')"
       >
         买买买
-      </van-button>
+      </ghb-button>
     </div>
   </template>
-</van-sku>
+</ghb-sku>
 ```
 
 ## API

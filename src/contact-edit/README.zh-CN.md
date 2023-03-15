@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { ContactEdit } from 'vant';
+import { ContactEdit } from 'ghbui';
 
 Vue.use(ContactEdit);
 ```
@@ -18,7 +18,7 @@ Vue.use(ContactEdit);
 ### 基础用法
 
 ```html
-<van-contact-edit
+<ghb-contact-edit
   is-edit
   show-set-default
   :contact-info="editingContact"
@@ -29,7 +29,7 @@ Vue.use(ContactEdit);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {

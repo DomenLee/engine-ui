@@ -185,7 +185,7 @@ export default createComponent({
           class={bem([this.theme])}
           overlay={this.overlay}
           position={null}
-          transition="van-popover-zoom"
+          transition="ghb-popover-zoom"
           lockScroll={false}
           getContainer={this.getContainer}
           onOpen={this.onOpen}

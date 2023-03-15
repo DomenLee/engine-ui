@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Collapse, CollapseItem } from 'vant';
+import { Collapse, CollapseItem } from 'ghbui';
 
 Vue.use(Collapse);
 Vue.use(CollapseItem);
@@ -17,11 +17,11 @@ Vue.use(CollapseItem);
 Use `v-model` to control the name of active panels.
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <van-collapse-item title="Title2" name="2">Content</van-collapse-item>
-  <van-collapse-item title="Title3" name="3">Content</van-collapse-item>
-</van-collapse>
+<ghb-collapse v-model="activeNames">
+  <ghb-collapse-item title="Title1" name="1">Content</ghb-collapse-item>
+  <ghb-collapse-item title="Title2" name="2">Content</ghb-collapse-item>
+  <ghb-collapse-item title="Title3" name="3">Content</ghb-collapse-item>
+</ghb-collapse>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 In accordion mode, only one panel can be expanded at the same time.
 
 ```html
-<van-collapse v-model="activeName" accordion>
-  <van-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <van-collapse-item title="Title2" name="2">Content</van-collapse-item>
-  <van-collapse-item title="Title3" name="3">Content</van-collapse-item>
-</van-collapse>
+<ghb-collapse v-model="activeName" accordion>
+  <ghb-collapse-item title="Title1" name="1">Content</ghb-collapse-item>
+  <ghb-collapse-item title="Title2" name="2">Content</ghb-collapse-item>
+  <ghb-collapse-item title="Title3" name="3">Content</ghb-collapse-item>
+</ghb-collapse>
 ```
 
 ```js
@@ -61,31 +61,31 @@ export default {
 Use the `disabled` prop to disable CollapseItem.
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <van-collapse-item title="Title2" name="2" disabled>
+<ghb-collapse v-model="activeNames">
+  <ghb-collapse-item title="Title1" name="1">Content</ghb-collapse-item>
+  <ghb-collapse-item title="Title2" name="2" disabled>
     Content
-  </van-collapse-item>
-  <van-collapse-item title="Title3" name="3" disabled>
+  </ghb-collapse-item>
+  <ghb-collapse-item title="Title3" name="3" disabled>
     Content
-  </van-collapse-item>
-</van-collapse>
+  </ghb-collapse-item>
+</ghb-collapse>
 ```
 
 ### Custom title
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item name="1">
+<ghb-collapse v-model="activeNames">
+  <ghb-collapse-item name="1">
     <template #title>
-      <div>Title1 <van-icon name="question-o" /></div>
+      <div>Title1 <ghb-icon name="question-o" /></div>
     </template>
     Content
-  </van-collapse-item>
-  <van-collapse-item title="Title2" name="2" icon="shop-o">
+  </ghb-collapse-item>
+  <ghb-collapse-item title="Title2" name="2" icon="shop-o">
     Content
-  </van-collapse-item>
-</van-collapse>
+  </ghb-collapse-item>
+</ghb-collapse>
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { ContactList } from 'vant';
+import { ContactList } from 'ghbui';
 
 Vue.use(ContactList);
 ```
@@ -14,7 +14,7 @@ Vue.use(ContactList);
 ### Basic Usage
 
 ```html
-<van-contact-list
+<ghb-contact-list
   v-model="chosenContactId"
   :list="list"
   default-tag-text="default"
@@ -25,7 +25,7 @@ Vue.use(ContactList);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {

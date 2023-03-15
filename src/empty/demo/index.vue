@@ -1,25 +1,25 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-empty :description="t('description')" />
+      <ghb-empty :description="t('description')" />
     </demo-block>
 
     <demo-block :title="t('imageType')">
-      <van-tabs v-model="active">
-        <van-tab name="error" :title="t('error')">
-          <van-empty image="error" :description="t('description')" />
-        </van-tab>
-        <van-tab name="network" :title="t('network')">
-          <van-empty image="network" :description="t('description')" />
-        </van-tab>
-        <van-tab name="search" :title="t('search')">
-          <van-empty image="search" :description="t('description')" />
-        </van-tab>
-      </van-tabs>
+      <ghb-tabs v-model="active">
+        <ghb-tab name="error" :title="t('error')">
+          <ghb-empty image="error" :description="t('description')" />
+        </ghb-tab>
+        <ghb-tab name="network" :title="t('network')">
+          <ghb-empty image="network" :description="t('description')" />
+        </ghb-tab>
+        <ghb-tab name="search" :title="t('search')">
+          <ghb-empty image="search" :description="t('description')" />
+        </ghb-tab>
+      </ghb-tabs>
     </demo-block>
 
     <demo-block :title="t('customImage')">
-      <van-empty
+      <ghb-empty
         class="custom-image"
         image="https://img01.yzcdn.cn/vant/custom-empty-image.png"
         :description="t('description')"
@@ -27,11 +27,11 @@
     </demo-block>
 
     <demo-block :title="t('bottomContent')">
-      <van-empty :description="t('description')">
-        <van-button round type="danger" class="bottom-button">
+      <ghb-empty :description="t('description')">
+        <ghb-button round type="danger" class="bottom-button">
           {{ t('button') }}
-        </van-button>
-      </van-empty>
+        </ghb-button>
+      </ghb-empty>
     </demo-block>
   </demo-section>
 </template>
@@ -74,7 +74,7 @@ export default {
   background: @white;
 
   .custom-image {
-    .van-empty__image {
+    .ghb-empty__image {
       width: 90px;
       height: 90px;
     }

@@ -55,8 +55,8 @@ test('formatter prop', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker-column ul').trigger('transitionend');
   await later();
 
   expect(wrapper.emitted('change')[0][0].getValues()).toEqual([
@@ -72,15 +72,15 @@ test('confirm event', () => {
     },
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('23:00');
 });
 
 test('cancel event', () => {
   const wrapper = mount(TimePicker);
 
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.ghb-picker__cancel').trigger('click');
   expect(wrapper.emitted('cancel')).toBeTruthy();
 });
 
@@ -88,9 +88,9 @@ test('dynamic set value', () => {
   const wrapper = mount(TimePicker);
 
   wrapper.setProps({ value: '00:00' });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   wrapper.setProps({ value: '22:30' });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
 
   expect(wrapper.emitted('confirm')[0][0]).toEqual('00:00');
   expect(wrapper.emitted('confirm')[1][0]).toEqual('22:30');
@@ -107,14 +107,14 @@ test('change min-minute and emit correct value', async () => {
   await later();
 
   wrapper.setProps({ minMinute: 30 });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('12:30');
 });
 
 test('set min-minute dynamically', async () => {
   const wrapper = mount({
     template: `
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="currentTime"
         type="time"
         :min-minute="currentTime.split(':')[0] > 12 ? 0 : 30"
@@ -130,15 +130,15 @@ test('set min-minute dynamically', async () => {
     },
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.ghb-picker-column'), 0, -100);
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('13:00');
 });
 
 test('dynamic set min-hour & min-minute then emit correct value', async () => {
   const wrapper = mount({
     template: `
-    <van-datetime-picker
+    <ghb-datetime-picker
       v-model="time"
       type="time"
       :min-hour="minHour"
@@ -151,23 +151,23 @@ test('dynamic set min-hour & min-minute then emit correct value', async () => {
         time: '10:30',
         minHour: 1,
         minMinute: 20,
-      }
+      };
     },
     mounted() {
       this.minHour = 11;
       this.minMinute = 40;
     },
-  })
+  });
 
   await later();
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('11:40');
 });
 
 test('dynamic set max-hour & max-minute then emit correct value', async () => {
   const wrapper = mount({
     template: `
-      <van-datetime-picker
+      <ghb-datetime-picker
         v-model="time"
         type="time"
         :max-hour="maxHour"
@@ -183,11 +183,11 @@ test('dynamic set max-hour & max-minute then emit correct value', async () => {
         minMinute: 1,
         maxHour: 20,
         maxMinute: 59,
-      }
+      };
     },
-  })
+  });
 
-  const confirm = wrapper.find('.van-picker__confirm');
+  const confirm = wrapper.find('.ghb-picker__confirm');
 
   await later();
   confirm.trigger('click');
@@ -212,6 +212,6 @@ test('dynamic set max-hour & max-minute then emit correct value', async () => {
   wrapper.setData({ maxHour: 14 });
   await later();
   wrapper.setData({ maxMinute: 25 });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.ghb-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[4][0]).toEqual('11:20');
 });

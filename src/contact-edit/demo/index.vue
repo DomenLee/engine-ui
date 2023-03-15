@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-contact-edit
+      <ghb-contact-edit
         is-edit
         show-set-default
         :contact-info="editingContact"
@@ -43,7 +43,7 @@ export default {
 
 <style lang="less">
 .demo-contact-edit {
-  .van-doc-demo-block__title {
+  .ghb-doc-demo-block__title {
     padding-bottom: 0;
   }
 }

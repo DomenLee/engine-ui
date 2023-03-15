@@ -14,7 +14,7 @@ test('close event', () => {
       mode: 'closeable',
     },
   });
-  const close = wrapper.find('.van-notice-bar__right-icon');
+  const close = wrapper.find('.ghb-notice-bar__right-icon');
 
   close.trigger('click');
   expect(wrapper.emitted('close')[0][0]).toBeTruthy();
@@ -44,7 +44,7 @@ test('replay event', async () => {
     },
   });
 
-  wrapper.find('.van-notice-bar__content').trigger('transitionend');
+  wrapper.find('.ghb-notice-bar__content').trigger('transitionend');
   await later(80);
   expect(wrapper.emitted('replay')).toBeTruthy();
 });
@@ -57,8 +57,8 @@ test('should scroll when content width > wrap width ', async () => {
     },
   });
 
-  const wrap = wrapper.find('.van-notice-bar__wrap');
-  const content = wrapper.find('.van-notice-bar__content');
+  const wrap = wrapper.find('.ghb-notice-bar__wrap');
+  const content = wrapper.find('.ghb-notice-bar__content');
 
   wrap.element.getBoundingClientRect = () => ({
     width: 50,
@@ -80,8 +80,8 @@ test('should not scroll when content width > wrap width ', async () => {
     },
   });
 
-  const wrap = wrapper.find('.van-notice-bar__wrap');
-  const content = wrapper.find('.van-notice-bar__content');
+  const wrap = wrapper.find('.ghb-notice-bar__wrap');
+  const content = wrapper.find('.ghb-notice-bar__content');
 
   wrap.element.getBoundingClientRect = () => ({
     width: 200,

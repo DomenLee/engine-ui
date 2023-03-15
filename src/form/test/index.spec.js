@@ -4,15 +4,15 @@ test('dynamic add/remove fileds', async () => {
   const onSubmit = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @submit="onSubmit">
-        <van-field
+      <ghb-form @submit="onSubmit">
+        <ghb-field
           v-for="item in list"
           :key="item"
           :name="item"
           value=""
         />
-        <van-button native-type="submit" />
-      </van-form>
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     data() {
       return { list: ['A'] };
@@ -40,20 +40,20 @@ test('dynamic add fileds when validate-first', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form validate-first @failed="onFailed">
-        <van-field
+      <ghb-form validate-first @failed="onFailed">
+        <ghb-field
           v-if="show"
           name="A"
           value=""
           :rules="[{ required: true, message: 'A' }]"
         />
-        <van-field
+        <ghb-field
           name="B"
           value=""
           :rules="[{ required: true, message: 'B' }]"
         />
-        <van-button native-type="submit" />
-      </van-form>
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     data() {
       return {

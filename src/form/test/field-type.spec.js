@@ -6,12 +6,12 @@ function mountFormWithChild({ template, data }) {
 
   const wrapper = mountForm({
     template: `
-      <van-form @submit="onSubmit" @failed="onFailed">
-        <van-field name="A" :rules="[{ required: true, message: 'foo' }]">
+      <ghb-form @submit="onSubmit" @failed="onFailed">
+        <ghb-field name="A" :rules="[{ required: true, message: 'foo' }]">
           <template #input>${template}</template>
-        </van-field>
-        <van-button native-type="submit" />
-      </van-form>
+        </ghb-field>
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     data,
     methods: {
@@ -29,7 +29,7 @@ function mountFormWithChild({ template, data }) {
 
 test('use switch', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<van-switch v-model="value" />',
+    template: '<ghb-switch v-model="value" />',
     data() {
       return { value: false };
     },
@@ -49,7 +49,7 @@ test('use switch', async () => {
 
 test('use checkbox', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<van-checkbox v-model="value" />',
+    template: '<ghb-checkbox v-model="value" />',
     data() {
       return { value: false };
     },
@@ -70,10 +70,10 @@ test('use checkbox', async () => {
 test('use checkbox-group', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
     template: `
-      <van-checkbox-group v-model="checkboxGroup">
-        <van-checkbox name="1">1</van-checkbox>
-        <van-checkbox name="2">2</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="checkboxGroup">
+        <ghb-checkbox name="1">1</ghb-checkbox>
+        <ghb-checkbox name="2">2</ghb-checkbox>
+      </ghb-checkbox-group>
     `,
     data() {
       return { checkboxGroup: [] };
@@ -95,10 +95,10 @@ test('use checkbox-group', async () => {
 test('use radio', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
     template: `
-      <van-radio-group v-model="radio">
-        <van-radio name="1">1</van-radio>
-        <van-radio name="2">2</van-radio>
-      </van-radio-group>
+      <ghb-radio-group v-model="radio">
+        <ghb-radio name="1">1</ghb-radio>
+        <ghb-radio name="2">2</ghb-radio>
+      </ghb-radio-group>
     `,
     data() {
       return { radio: '' };
@@ -119,7 +119,7 @@ test('use radio', async () => {
 
 test('use stepper', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<van-stepper v-model="value" :min="0" />',
+    template: '<ghb-stepper v-model="value" :min="0" />',
     data() {
       return { value: 0 };
     },
@@ -136,7 +136,7 @@ test('use stepper', async () => {
 
 test('use rate', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<van-rate v-model="value" />',
+    template: '<ghb-rate v-model="value" />',
     data() {
       return { value: 0 };
     },
@@ -153,7 +153,7 @@ test('use rate', async () => {
 
 test('use slider', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<van-slider v-model="value" />',
+    template: '<ghb-slider v-model="value" />',
     data() {
       return { value: 0 };
     },
@@ -170,7 +170,7 @@ test('use slider', async () => {
 
 test('use uploader', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<van-uploader v-model="value" />',
+    template: '<ghb-uploader v-model="value" />',
     data() {
       return { value: [] };
     },
@@ -193,14 +193,14 @@ test('should not get formValue from button slot', async () => {
 
   const wrapper = mountForm({
     template: `
-      <van-form @submit="onSubmit">
-        <van-field name="A" value="foo" :rules="[{ required: true, message: 'foo' }]">
+      <ghb-form @submit="onSubmit">
+        <ghb-field name="A" value="foo" :rules="[{ required: true, message: 'foo' }]">
           <template #button>
-            <van-checkbox :value="false" />
+            <ghb-checkbox :value="false" />
           </template>
-        </van-field>
-        <van-button native-type="submit" />
-      </van-form>
+        </ghb-field>
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     methods: {
       onSubmit,

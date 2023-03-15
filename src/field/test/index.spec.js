@@ -31,7 +31,7 @@ test('click-input event when using input slot', () => {
     },
   });
 
-  wrapper.find('.van-field__control').trigger('click');
+  wrapper.find('.ghb-field__control').trigger('click');
   expect(wrapper.emitted('click-input')[0][0]).toBeTruthy();
 });
 
@@ -44,8 +44,8 @@ test('click-icon event', () => {
     },
   });
 
-  wrapper.find('.van-field__left-icon').trigger('click');
-  wrapper.find('.van-field__right-icon').trigger('click');
+  wrapper.find('.ghb-field__left-icon').trigger('click');
+  wrapper.find('.ghb-field__right-icon').trigger('click');
   expect(wrapper.emitted('click').length).toEqual(2);
   expect(wrapper.emitted('click-left-icon')[0][0]).toBeTruthy();
   expect(wrapper.emitted('click-right-icon')[0][0]).toBeTruthy();
@@ -118,7 +118,7 @@ test('autosize textarea field', () => {
   });
 
   const value = '1'.repeat(20);
-  const textarea = wrapper.find('.van-field__control');
+  const textarea = wrapper.find('.ghb-field__control');
 
   wrapper.setProps({ value });
   expect(textarea.element.value).toEqual(value);
@@ -135,7 +135,7 @@ test('autosize object', async () => {
     },
   });
 
-  const textarea = wrapper.find('.van-field__control');
+  const textarea = wrapper.find('.ghb-field__control');
 
   await later();
   expect(textarea.element.style.height).toEqual('50px');
@@ -205,7 +205,7 @@ test('clearable prop', () => {
   input.trigger('focus');
   expect(wrapper).toMatchSnapshot();
 
-  wrapper.find('.van-field__clear').trigger('touchstart');
+  wrapper.find('.ghb-field__clear').trigger('touchstart');
   expect(wrapper.emitted('input')[0][0]).toEqual('');
   expect(wrapper.emitted('clear')[0][0]).toBeTruthy();
 });
@@ -219,7 +219,7 @@ test('clear-trigger prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-field__clear')).toBeTruthy();
+  expect(wrapper.contains('.ghb-field__clear')).toBeTruthy();
 });
 
 test('render input slot', () => {

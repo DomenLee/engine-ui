@@ -8,7 +8,7 @@ The PasswordInput component is usually used with [NumberKeyboard](#/en-US/number
 
 ```js
 import Vue from 'vue';
-import { PasswordInput, NumberKeyboard } from 'vant';
+import { PasswordInput, NumberKeyboard } from 'ghbui';
 
 Vue.use(PasswordInput);
 Vue.use(NumberKeyboard);
@@ -19,12 +19,12 @@ Vue.use(NumberKeyboard);
 ### Basic Usage
 
 ```html
-<van-password-input
+<ghb-password-input
   :value="value"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
-<van-number-keyboard
+<ghb-number-keyboard
   v-model="value"
   :show="showKeyboard"
   @blur="showKeyboard = false"
@@ -45,7 +45,7 @@ export default {
 ### Custom Length
 
 ```html
-<van-password-input
+<ghb-password-input
   :value="value"
   :gutter="15"
   :focused="showKeyboard"
@@ -56,7 +56,7 @@ export default {
 ### Add Gutter
 
 ```html
-<van-password-input
+<ghb-password-input
   :value="value"
   :gutter="10"
   :focused="showKeyboard"
@@ -67,7 +67,7 @@ export default {
 ### Without Mask
 
 ```html
-<van-password-input
+<ghb-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"
@@ -80,14 +80,14 @@ export default {
 Use `info` to set info message, use `error-info` prop to set error message.
 
 ```html
-<van-password-input
+<ghb-password-input
   :value="value"
   info="Some tips"
   :error-info="errorInfo"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
-<van-number-keyboard
+<ghb-number-keyboard
   v-model="value"
   :show="showKeyboard"
   @blur="showKeyboard = false"

@@ -8,7 +8,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 
 ```js
 import Vue from 'vue';
-import { Picker } from 'vant';
+import { Picker } from 'ghbui';
 
 Vue.use(Picker);
 ```
@@ -18,7 +18,7 @@ Vue.use(Picker);
 ### Basic Usage
 
 ```html
-<van-picker
+<ghb-picker
   show-toolbar
   title="Title"
   :columns="columns"
@@ -29,7 +29,7 @@ Vue.use(Picker);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -54,13 +54,13 @@ export default {
 ### Default Index
 
 ```html
-<van-picker show-toolbar title="Title" :columns="columns" :default-index="2" />
+<ghb-picker show-toolbar title="Title" :columns="columns" :default-index="2" />
 ```
 
 ### Multiple Columns
 
 ```html
-<van-picker show-toolbar title="Title" :columns="columns" />
+<ghb-picker show-toolbar title="Title" :columns="columns" />
 ```
 
 ```js
@@ -85,7 +85,7 @@ export default {
 ### Cascade
 
 ```html
-<van-picker show-toolbar title="Title" :columns="columns" />
+<ghb-picker show-toolbar title="Title" :columns="columns" />
 ```
 
 ```js
@@ -128,7 +128,7 @@ export default {
 ### Disable option
 
 ```html
-<van-picker show-toolbar :columns="columns" />
+<ghb-picker show-toolbar :columns="columns" />
 ```
 
 ```js
@@ -148,7 +148,7 @@ export default {
 ### Set Column Values
 
 ```html
-<van-picker show-toolbar title="Title" :columns="columns" @change="onChange" />
+<ghb-picker show-toolbar title="Title" :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -176,7 +176,7 @@ export default {
 When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt.
 
 ```html
-<van-picker show-toolbar title="Title" :columns="columns" :loading="loading" />
+<ghb-picker show-toolbar title="Title" :columns="columns" :loading="loading" />
 ```
 
 ```js
@@ -199,7 +199,7 @@ export default {
 ### With Popup
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   label="City"
@@ -207,15 +207,15 @@ export default {
   placeholder="Choose City"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" round position="bottom">
-  <van-picker
+<ghb-popup v-model="showPicker" round position="bottom">
+  <ghb-picker
     title="Title"
     show-toolbar
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js

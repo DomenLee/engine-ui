@@ -40,13 +40,13 @@ export default createComponent({
     return (
       <span
         class={[
-          'van-sku-row__item',
-          { 'van-sku-row__item--active': this.choosed },
-          { 'van-sku-row__item--disabled': this.disabled },
+          'ghb-sku-row__item',
+          { 'ghb-sku-row__item--active': this.choosed },
+          { 'ghb-sku-row__item--disabled': this.disabled },
         ]}
         onClick={this.onSelect}
       >
-        <span class="van-sku-row__item-name">{this.skuValue.name}</span>
+        <span class="ghb-sku-row__item-name">{this.skuValue.name}</span>
       </span>
     );
   },

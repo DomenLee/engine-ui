@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Cascader } from 'vant';
+import { Cascader } from 'ghbui';
 
 Vue.use(Cascader);
 ```
@@ -14,7 +14,7 @@ Vue.use(Cascader);
 ### Basic Usage
 
 ```html
-<van-field
+<ghb-field
   v-model="fieldValue"
   is-link
   readonly
@@ -22,15 +22,15 @@ Vue.use(Cascader);
   placeholder="Select Area"
   @click="show = true"
 />
-<van-popup v-model="show" round position="bottom">
-  <van-cascader
+<ghb-popup v-model="show" round position="bottom">
+  <ghb-cascader
     v-model="cascaderValue"
     title="Select Area"
     :options="options"
     @close="show = false"
     @finish="onFinish"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -66,7 +66,7 @@ export default {
 ### Custom Color
 
 ```html
-<van-cascader
+<ghb-cascader
   v-model="cascaderValue"
   title="Select Area"
   :options="options"
@@ -79,7 +79,7 @@ export default {
 ### Async Options
 
 ```html
-<van-field
+<ghb-field
   v-model="fieldValue"
   is-link
   readonly
@@ -87,8 +87,8 @@ export default {
   placeholder="Select Area"
   @click="show = true"
 />
-<van-popup v-model="show" round position="bottom">
-  <van-cascader
+<ghb-popup v-model="show" round position="bottom">
+  <ghb-cascader
     v-model="cascaderValue"
     title="Select Area"
     :options="options"
@@ -96,7 +96,7 @@ export default {
     @change="onChange"
     @finish="onFinish"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -137,7 +137,7 @@ export default {
 ### Custom Field Names
 
 ```html
-<van-cascader
+<ghb-cascader
   v-model="cascaderValue"
   title="Select Area"
   :options="options"

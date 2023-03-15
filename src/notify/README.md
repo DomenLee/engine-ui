@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 Vue.use(Notify);
 ```
@@ -56,11 +56,11 @@ export default {
 ### Component Call
 
 ```html
-<van-button type="primary" text="Component Call" @click="showNotify" />
-<van-notify v-model="show" type="success">
-  <van-icon name="bell" style="margin-right: 4px;" />
+<ghb-button type="primary" text="Component Call" @click="showNotify" />
+<ghb-notify v-model="show" type="success">
+  <ghb-icon name="bell" style="margin-right: 4px;" />
   <span>Content</span>
-</van-notify>
+</ghb-notify>
 ```
 
 ```js

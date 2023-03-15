@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { ActionSheet } from 'vant';
+import { ActionSheet } from 'ghbui';
 
 Vue.use(ActionSheet);
 ```
@@ -20,12 +20,12 @@ Vue.use(ActionSheet);
 动作面板通过 `actions` 属性来定义选项，`actions` 属性是一个由对象构成的数组，数组中的每个对象配置一列，对象格式见文档下方表格。
 
 ```html
-<van-cell is-link title="基础用法" @click="show = true" />
-<van-action-sheet v-model="show" :actions="actions" @select="onSelect" />
+<ghb-cell is-link title="基础用法" @click="show = true" />
+<ghb-action-sheet v-model="show" :actions="actions" @select="onSelect" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -50,7 +50,7 @@ export default {
 设置 `cancel-text` 属性后，会在底部展示取消按钮，点击后关闭当前面板并触发 `cancel` 事件。
 
 ```html
-<van-action-sheet
+<ghb-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="取消"
@@ -60,7 +60,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -82,7 +82,7 @@ export default {
 通过 `description` 可以在菜单顶部显示描述信息，通过选项的 `subname` 属性可以在选项文字的右侧展示描述信息。
 
 ```html
-<van-action-sheet
+<ghb-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="取消"
@@ -111,7 +111,7 @@ export default {
 可以通过 `loading` 和 `disabled` 将选项设置为加载状态或禁用状态，或者通过`color`设置选项的颜色
 
 ```html
-<van-action-sheet
+<ghb-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="取消"
@@ -139,9 +139,9 @@ export default {
 通过插槽可以自定义面板的展示内容，同时可以使用`title`属性展示标题栏
 
 ```html
-<van-action-sheet v-model="show" title="标题">
+<ghb-action-sheet v-model="show" title="标题">
   <div class="content">内容</div>
-</van-action-sheet>
+</ghb-action-sheet>
 
 <style>
   .content {

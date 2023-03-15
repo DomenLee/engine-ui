@@ -2,7 +2,7 @@
 
 ### 介绍
 
-本页面提供 Vant 的设计资源下载。
+本页面提供 GHBUI 的设计资源下载。
 
 ## 设计稿
 
@@ -34,7 +34,7 @@
 
 #### 在线资源
 
-Vant 的所有图标都托管在 **iconfont.cn** 上，点此查看：[Vant 图标库](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=31945)。
+GHBUI 的所有图标都托管在 **iconfont.cn** 上，点此查看：[GHBUI 图标库](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=31945)。
 
 ### Axure 元件库
 

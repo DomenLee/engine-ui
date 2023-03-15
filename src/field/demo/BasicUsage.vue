@@ -1,12 +1,12 @@
 <template>
   <demo-block :title="t('basicUsage')">
-    <van-cell-group>
-      <van-field
+    <ghb-cell-group>
+      <ghb-field
         v-model="value"
         :label="t('label')"
         :placeholder="t('placeholder')"
       />
-    </van-cell-group>
+    </ghb-cell-group>
   </demo-block>
 </template>
 

@@ -1,4 +1,4 @@
-const prefix = 'van-empty-network-';
+const prefix = 'ghb-empty-network-';
 
 export default {
   render() {

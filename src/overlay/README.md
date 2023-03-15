@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Overlay } from 'vant';
+import { Overlay } from 'ghbui';
 
 Vue.use(Overlay);
 ```
@@ -14,8 +14,8 @@ Vue.use(Overlay);
 ### Basic Usage
 
 ```html
-<van-button type="primary" text="Show Overlay" @click="show = true" />
-<van-overlay :show="show" @click="show = false" />
+<ghb-button type="primary" text="Show Overlay" @click="show = true" />
+<ghb-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -31,11 +31,11 @@ export default {
 ### Embedded Content
 
 ```html
-<van-overlay :show="show" @click="show = false">
+<ghb-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</van-overlay>
+</ghb-overlay>
 
 <style>
   .wrapper {

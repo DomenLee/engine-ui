@@ -16,7 +16,7 @@ test('max-range prop when type is range and showConfirm is false', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(12).trigger('click');
   days.at(18).trigger('click');
 
@@ -40,7 +40,7 @@ test('max-range prop when type is range and showConfirm is true', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(12).trigger('click');
   days.at(18).trigger('click');
 
@@ -65,7 +65,7 @@ test('max-range prop when type is multiple', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(13).trigger('click');
   days.at(14).trigger('click');
 
@@ -79,9 +79,9 @@ test('show-title prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-calendar__header-title')).toBeTruthy();
+  expect(wrapper.contains('.ghb-calendar__header-title')).toBeTruthy();
   wrapper.setProps({ showTitle: false });
-  expect(wrapper.contains('.van-calendar__header-title')).toBeFalsy();
+  expect(wrapper.contains('.ghb-calendar__header-title')).toBeFalsy();
 });
 
 test('show-subtitle prop', () => {
@@ -91,9 +91,9 @@ test('show-subtitle prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-calendar__header-subtitle')).toBeTruthy();
+  expect(wrapper.contains('.ghb-calendar__header-subtitle')).toBeTruthy();
   wrapper.setProps({ showSubtitle: false });
-  expect(wrapper.contains('.van-calendar__header-subtitle')).toBeFalsy();
+  expect(wrapper.contains('.ghb-calendar__header-subtitle')).toBeFalsy();
 });
 
 test('hide close icon when there is no title', () => {
@@ -103,13 +103,13 @@ test('hide close icon when there is no title', () => {
     },
   });
 
-  expect(wrapper.contains('.van-popup__close-icon')).toBeTruthy();
+  expect(wrapper.contains('.ghb-popup__close-icon')).toBeTruthy();
 
   wrapper.setProps({
     showTitle: false,
     showSubtitle: false,
   });
-  expect(wrapper.contains('.van-popup__close-icon')).toBeFalsy();
+  expect(wrapper.contains('.ghb-popup__close-icon')).toBeFalsy();
 });
 
 test('allow-same-day prop', async () => {
@@ -128,7 +128,7 @@ test('allow-same-day prop', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(9).trigger('click');
   days.at(9).trigger('click');
 
@@ -151,7 +151,7 @@ test('min-date after current time', () => {
     },
   });
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2200/1/1');
 });
 
@@ -164,7 +164,7 @@ test('min-date before current time', () => {
     },
   });
 
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.ghb-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('1800/1/2');
 });
 
@@ -205,10 +205,10 @@ test('first day of week', async () => {
 
   await later();
 
-  expect(wrapper.find('.van-calendar__weekdays').text()[0]).toEqual('二');
+  expect(wrapper.find('.ghb-calendar__weekdays').text()[0]).toEqual('二');
 
   const day = wrapper.find(
-    '.van-calendar__month:first-of-type .van-calendar__day'
+    '.ghb-calendar__month:first-of-type .ghb-calendar__day'
   );
   expect(day.text()).toEqual('1');
   expect(day.attributes('style')).toContain(`margin-left: ${(100 * 4) / 7}%`);
@@ -227,7 +227,7 @@ test('readonly prop', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.ghb-calendar__day');
   days.at(13).trigger('click');
   expect(wrapper.emitted('select')).toBeFalsy();
 

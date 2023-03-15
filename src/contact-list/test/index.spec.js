@@ -28,7 +28,7 @@ test('should emit select event after clicking the radio', () => {
     },
   });
 
-  wrapper.find('.van-radio__icon').trigger('click');
+  wrapper.find('.ghb-radio__icon').trigger('click');
 
   expect(onSelect).toHaveBeenCalled();
 });

@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { SwipeCell } from 'vant';
+import { SwipeCell } from 'ghbui';
 
 Vue.use(SwipeCell);
 ```
@@ -20,16 +20,16 @@ Vue.use(SwipeCell);
 `SwipeCell` 组件提供了 `left` 和 `right` 两个插槽，用于定义两侧滑动区域的内容。
 
 ```html
-<van-swipe-cell>
+<ghb-swipe-cell>
   <template #left>
-    <van-button square type="primary" text="选择" />
+    <ghb-button square type="primary" text="选择" />
   </template>
-  <van-cell :border="false" title="单元格" value="内容" />
+  <ghb-cell :border="false" title="单元格" value="内容" />
   <template #right>
-    <van-button square type="danger" text="删除" />
-    <van-button square type="primary" text="收藏" />
+    <ghb-button square type="danger" text="删除" />
+    <ghb-button square type="primary" text="收藏" />
   </template>
-</van-swipe-cell>
+</ghb-swipe-cell>
 ```
 
 ### 自定义内容
@@ -37,8 +37,8 @@ Vue.use(SwipeCell);
 `SwipeCell` 可以嵌套任意内容，比如嵌套一个商品卡片。
 
 ```html
-<van-swipe-cell>
-  <van-card
+<ghb-swipe-cell>
+  <ghb-card
     num="2"
     price="2.00"
     desc="描述信息"
@@ -47,9 +47,9 @@ Vue.use(SwipeCell);
     thumb="https://img01.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <van-button square text="删除" type="danger" class="delete-button" />
+    <ghb-button square text="删除" type="danger" class="delete-button" />
   </template>
-</van-swipe-cell>
+</ghb-swipe-cell>
 
 <style>
   .goods-card {
@@ -68,15 +68,15 @@ Vue.use(SwipeCell);
 通过传入 `before-close` 回调函数，可以自定义两侧滑动内容关闭时的行为。
 
 ```html
-<van-swipe-cell :before-close="beforeClose">
+<ghb-swipe-cell :before-close="beforeClose">
   <template #left>
-    <van-button square type="primary" text="选择" />
+    <ghb-button square type="primary" text="选择" />
   </template>
-  <van-cell :border="false" title="单元格" value="内容" />
+  <ghb-cell :border="false" title="单元格" value="内容" />
   <template #right>
-    <van-button square type="danger" text="删除" />
+    <ghb-button square type="danger" text="删除" />
   </template>
-</van-swipe-cell>
+</ghb-swipe-cell>
 ```
 
 ```js

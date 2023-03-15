@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Card } from 'vant';
+import { Card } from 'ghbui';
 
 Vue.use(Card);
 ```
@@ -14,7 +14,7 @@ Vue.use(Card);
 ### Basic Usage
 
 ```html
-<van-card
+<ghb-card
   num="2"
   price="2.00"
   title="Title"
@@ -26,7 +26,7 @@ Vue.use(Card);
 ### Discount Info
 
 ```html
-<van-card
+<ghb-card
   num="2"
   tag="Tag"
   price="2.00"
@@ -42,7 +42,7 @@ Vue.use(Card);
 Use slot to custom content.
 
 ```html
-<van-card
+<ghb-card
   num="2"
   title="Title"
   desc="Description"
@@ -50,14 +50,14 @@ Use slot to custom content.
   thumb="https://img01.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <van-tag plain type="danger">Tag</van-tag>
-    <van-tag plain type="danger">Tag</van-tag>
+    <ghb-tag plain type="danger">Tag</ghb-tag>
+    <ghb-tag plain type="danger">Tag</ghb-tag>
   </template>
   <template #footer>
-    <van-button size="mini">Button</van-button>
-    <van-button size="mini">Button</van-button>
+    <ghb-button size="mini">Button</ghb-button>
+    <ghb-button size="mini">Button</ghb-button>
   </template>
-</van-card>
+</ghb-card>
 ```
 
 ## API

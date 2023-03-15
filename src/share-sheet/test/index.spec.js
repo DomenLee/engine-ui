@@ -9,10 +9,10 @@ test('cancel-text prop', () => {
     },
   });
 
-  expect(wrapper.find('.van-share-sheet__cancel')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-share-sheet__cancel')).toMatchSnapshot();
 
   wrapper.setProps({ cancelText: '' });
-  expect(wrapper.contains('.van-share-sheet__cancel')).toBeFalsy();
+  expect(wrapper.contains('.ghb-share-sheet__cancel')).toBeFalsy();
 });
 
 test('description prop', () => {
@@ -23,10 +23,10 @@ test('description prop', () => {
     },
   });
 
-  expect(wrapper.find('.van-share-sheet__description')).toMatchSnapshot();
+  expect(wrapper.find('.ghb-share-sheet__description')).toMatchSnapshot();
 
   wrapper.setProps({ description: '' });
-  expect(wrapper.contains('.van-share-sheet__description')).toBeFalsy();
+  expect(wrapper.contains('.ghb-share-sheet__description')).toBeFalsy();
 });
 
 test('option className', () => {
@@ -37,7 +37,7 @@ test('option className', () => {
     },
   });
 
-  const option = wrapper.find('.van-share-sheet__option').element;
+  const option = wrapper.find('.ghb-share-sheet__option').element;
 
   expect(option.className.includes('foo')).toBeTruthy();
 });
@@ -50,7 +50,7 @@ test('select event', () => {
     },
   });
 
-  wrapper.find('.van-share-sheet__option').trigger('click');
+  wrapper.find('.ghb-share-sheet__option').trigger('click');
   expect(wrapper.emitted('select')[0]).toEqual([
     { icon: 'wechat', name: 'wechat' },
     0,
@@ -64,7 +64,7 @@ test('cancel event', () => {
     },
   });
 
-  wrapper.find('.van-share-sheet__cancel').trigger('click');
+  wrapper.find('.ghb-share-sheet__cancel').trigger('click');
 
   expect(wrapper.emitted('input')[0][0]).toEqual(false);
   expect(wrapper.emitted('cancel')[0]).toBeTruthy();
@@ -95,7 +95,7 @@ test('click-overlay event', async () => {
 
   await later();
 
-  const overlay = root.querySelector('.van-overlay');
+  const overlay = root.querySelector('.ghb-overlay');
   trigger(overlay, 'click');
   expect(wrapper.emitted('click-overlay')).toBeTruthy();
 });

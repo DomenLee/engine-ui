@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-popover {
+.ghb-popover {
   position: absolute;
   overflow: visible;
   background-color: transparent;
@@ -37,7 +37,7 @@
     cursor: pointer;
 
     &:last-child {
-      .van-popover__action-text::after {
+      .ghb-popover__action-text::after {
         display: none;
       }
     }
@@ -56,14 +56,14 @@
     }
 
     &--with-icon {
-      .van-popover__action-text {
+      .ghb-popover__action-text {
         justify-content: flex-start;
       }
     }
   }
 
   &[data-popper-placement^='top'] {
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       bottom: 0;
       border-top-color: currentColor;
       border-bottom-width: 0;
@@ -74,7 +74,7 @@
   &[data-popper-placement='top'] {
     transform-origin: 50% 100%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       left: 50%;
     }
   }
@@ -82,7 +82,7 @@
   &[data-popper-placement='top-start'] {
     transform-origin: 0 100%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       left: @padding-md;
     }
   }
@@ -90,13 +90,13 @@
   &[data-popper-placement='top-end'] {
     transform-origin: 100% 100%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       right: @padding-md;
     }
   }
 
   &[data-popper-placement^='left'] {
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       right: 0;
       border-right-width: 0;
       border-left-color: currentColor;
@@ -107,7 +107,7 @@
   &[data-popper-placement='left'] {
     transform-origin: 100% 50%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       top: 50%;
     }
   }
@@ -115,7 +115,7 @@
   &[data-popper-placement='left-start'] {
     transform-origin: 100% 0;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       top: @padding-md;
     }
   }
@@ -123,13 +123,13 @@
   &[data-popper-placement='left-end'] {
     transform-origin: 100% 100%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       bottom: @padding-md;
     }
   }
 
   &[data-popper-placement^='right'] {
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       left: 0;
       border-right-color: currentColor;
       border-left-width: 0;
@@ -140,7 +140,7 @@
   &[data-popper-placement='right'] {
     transform-origin: 0 50%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       top: 50%;
     }
   }
@@ -148,7 +148,7 @@
   &[data-popper-placement='right-start'] {
     transform-origin: 0 0;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       top: @padding-md;
     }
   }
@@ -156,13 +156,13 @@
   &[data-popper-placement='right-end'] {
     transform-origin: 0 100%;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       bottom: @padding-md;
     }
   }
 
   &[data-popper-placement^='bottom'] {
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       top: 0;
       border-top-width: 0;
       border-bottom-color: currentColor;
@@ -173,7 +173,7 @@
   &[data-popper-placement='bottom'] {
     transform-origin: 50% 0;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       left: 50%;
     }
   }
@@ -181,7 +181,7 @@
   &[data-popper-placement='bottom-start'] {
     transform-origin: 0 0;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       left: @padding-md;
     }
   }
@@ -189,7 +189,7 @@
   &[data-popper-placement='bottom-end'] {
     transform-origin: 100% 0;
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       right: @padding-md;
     }
   }
@@ -197,16 +197,16 @@
   &--light {
     color: @popover-light-text-color;
 
-    .van-popover__content {
+    .ghb-popover__content {
       background-color: @popover-light-background-color;
       box-shadow: 0 2px 12px rgba(50, 50, 51, 0.12);
     }
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       color: @popover-light-background-color;
     }
 
-    .van-popover__action {
+    .ghb-popover__action {
       &:active {
         background-color: @active-color;
       }
@@ -225,15 +225,15 @@
   &--dark {
     color: @popover-dark-text-color;
 
-    .van-popover__content {
+    .ghb-popover__content {
       background-color: @popover-dark-background-color;
     }
 
-    .van-popover__arrow {
+    .ghb-popover__arrow {
       color: @popover-dark-background-color;
     }
 
-    .van-popover__action {
+    .ghb-popover__action {
       &:active {
         background-color: rgba(0, 0, 0, 0.2);
       }
@@ -247,7 +247,7 @@
       }
     }
 
-    .van-popover__action-text {
+    .ghb-popover__action-text {
       &::after {
         border-color: @gray-7;
       }

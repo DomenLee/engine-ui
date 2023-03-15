@@ -2,13 +2,13 @@
 
 ### Intro
 
-Quickly and easily create layouts with `van-row` and `van-col`.
+Quickly and easily create layouts with `ghb-row` and `ghb-col`.
 
 ### Install
 
 ```js
 import Vue from 'vue';
-import { Col, Row } from 'vant';
+import { Col, Row } from 'ghbui';
 
 Vue.use(Col);
 Vue.use(Row);
@@ -21,21 +21,21 @@ Vue.use(Row);
 Layout are based on 24-column. The attribute `span` in `Col` means the number of column the grid spans. Of course, You can use `offset` attribute to set number of spacing on the left side of the grid.
 
 ```html
-<van-row>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+<ghb-row>
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+</ghb-row>
 
-<van-row>
-  <van-col span="4">span: 4</van-col>
-  <van-col span="10" offset="4">offset: 4, span: 10</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row>
+  <ghb-col span="4">span: 4</ghb-col>
+  <ghb-col span="10" offset="4">offset: 4, span: 10</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
-<van-row>
-  <van-col offset="12" span="12">offset: 12, span: 12</van-col>
-</van-row>
+<ghb-row>
+  <ghb-col offset="12" span="12">offset: 12, span: 12</ghb-col>
+</ghb-row>
 ```
 
 ### Column Spacing
@@ -43,11 +43,11 @@ Layout are based on 24-column. The attribute `span` in `Col` means the number of
 Set grid spacing using `gutter` attribute. The default value is 0.
 
 ```html
-<van-row gutter="20">
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+<ghb-row gutter="20">
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+</ghb-row>
 ```
 
 ### Flex Layout
@@ -55,35 +55,35 @@ Set grid spacing using `gutter` attribute. The default value is 0.
 Setting `type` to `flex` to enable flex layout.
 
 ```html
-<van-row type="flex">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
-<van-row type="flex" justify="center">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="center">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
-<van-row type="flex" justify="end">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="end">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
-<van-row type="flex" justify="space-between">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="space-between">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
-<van-row type="flex" justify="space-around">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="space-around">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 ```
 
 ## API

@@ -2,13 +2,13 @@
 
 ### 介绍
 
-Layout 提供了 `van-row` 和 `van-col` 两个组件来进行行列布局。
+Layout 提供了 `ghb-row` 和 `ghb-col` 两个组件来进行行列布局。
 
 ### 引入
 
 ```js
 import Vue from 'vue';
-import { Col, Row } from 'vant';
+import { Col, Row } from 'ghbui';
 
 Vue.use(Col);
 Vue.use(Row);
@@ -21,20 +21,20 @@ Vue.use(Row);
 Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性设置列所占的宽度百分比。此外，添加 `offset` 属性可以设置列的偏移宽度，计算方式与 span 相同。
 
 ```html
-<van-row>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+<ghb-row>
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+</ghb-row>
 
-<van-row>
-  <van-col span="4">span: 4</van-col>
-  <van-col span="10" offset="4">offset: 4, span: 10</van-col>
-</van-row>
+<ghb-row>
+  <ghb-col span="4">span: 4</ghb-col>
+  <ghb-col span="10" offset="4">offset: 4, span: 10</ghb-col>
+</ghb-row>
 
-<van-row>
-  <van-col offset="12" span="12">offset: 12, span: 12</van-col>
-</van-row>
+<ghb-row>
+  <ghb-col offset="12" span="12">offset: 12, span: 12</ghb-col>
+</ghb-row>
 ```
 
 ### 设置列元素间距
@@ -42,11 +42,11 @@ Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性�
 通过 `gutter` 属性可以设置列元素之间的间距，默认间距为 0。
 
 ```html
-<van-row gutter="20">
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+<ghb-row gutter="20">
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+  <ghb-col span="8">span: 8</ghb-col>
+</ghb-row>
 ```
 
 ### Flex 布局
@@ -55,39 +55,39 @@ Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性�
 
 ```html
 <!-- 左对齐 -->
-<van-row type="flex">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
 <!-- 居中 -->
-<van-row type="flex" justify="center">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="center">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
 <!-- 右对齐 -->
-<van-row type="flex" justify="end">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="end">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
 <!-- 两端对齐 -->
-<van-row type="flex" justify="space-between">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="space-between">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 
 <!-- 每个元素的两侧间隔相等 -->
-<van-row type="flex" justify="space-around">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<ghb-row type="flex" justify="space-around">
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+  <ghb-col span="6">span: 6</ghb-col>
+</ghb-row>
 ```
 
 ## API

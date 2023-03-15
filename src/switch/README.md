@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Switch } from 'vant';
+import { Switch } from 'ghbui';
 
 Vue.use(Switch);
 ```
@@ -14,7 +14,7 @@ Vue.use(Switch);
 ### Basic Usage
 
 ```html
-<van-switch v-model="checked" />
+<ghb-switch v-model="checked" />
 ```
 
 ```js
@@ -30,31 +30,31 @@ export default {
 ### Disabled
 
 ```html
-<van-switch v-model="checked" disabled />
+<ghb-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<van-switch v-model="checked" loading />
+<ghb-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<van-switch v-model="checked" size="24px" />
+<ghb-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<van-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0" />
+<ghb-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0" />
 ```
 
 ### Async Control
 
 ```html
-<van-switch :value="checked" @input="onInput" />
+<ghb-switch :value="checked" @input="onInput" />
 ```
 
 ```js
@@ -80,11 +80,11 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-cell center title="Title">
+<ghb-cell center title="Title">
   <template #right-icon>
-    <van-switch v-model="checked" size="24" />
+    <ghb-switch v-model="checked" size="24" />
   </template>
-</van-cell>
+</ghb-cell>
 ```
 
 ## API

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Divider } from 'vant';
+import { Divider } from 'ghbui';
 
 Vue.use(Divider);
 ```
@@ -14,36 +14,36 @@ Vue.use(Divider);
 ### Basic Usage
 
 ```html
-<van-divider />
+<ghb-divider />
 ```
 
 ### With Text
 
 ```html
-<van-divider>Text</van-divider>
+<ghb-divider>Text</ghb-divider>
 ```
 
 ### Content Position
 
 ```html
-<van-divider content-position="left">Text</van-divider>
-<van-divider content-position="right">Text</van-divider>
+<ghb-divider content-position="left">Text</ghb-divider>
+<ghb-divider content-position="right">Text</ghb-divider>
 ```
 
 ### Dashed
 
 ```html
-<van-divider dashed>Text</van-divider>
+<ghb-divider dashed>Text</ghb-divider>
 ```
 
 ### Custom Style
 
 ```html
-<van-divider
+<ghb-divider
   :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }"
 >
   Text
-</van-divider>
+</ghb-divider>
 ```
 
 ## API

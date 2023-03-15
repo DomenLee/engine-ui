@@ -2,21 +2,21 @@
   <div>
     <demo-section>
       <demo-block :title="t('basicUsage')">
-        <van-swipe-cell>
+        <ghb-swipe-cell>
           <template #left>
-            <van-button square type="primary" :text="t('select')" />
+            <ghb-button square type="primary" :text="t('select')" />
           </template>
-          <van-cell :border="false" :title="t('title')" :value="t('content')" />
+          <ghb-cell :border="false" :title="t('title')" :value="t('content')" />
           <template #right>
-            <van-button square type="danger" :text="t('delete')" />
-            <van-button square type="primary" :text="t('collect')" />
+            <ghb-button square type="danger" :text="t('delete')" />
+            <ghb-button square type="primary" :text="t('collect')" />
           </template>
-        </van-swipe-cell>
+        </ghb-swipe-cell>
       </demo-block>
 
       <demo-block :title="t('customContent')">
-        <van-swipe-cell>
-          <van-card
+        <ghb-swipe-cell>
+          <ghb-card
             num="2"
             price="2.00"
             :desc="t('desc')"
@@ -24,26 +24,26 @@
             :thumb="imageURL"
           />
           <template #right>
-            <van-button
+            <ghb-button
               square
               type="danger"
               class="delete-button"
               :text="t('delete')"
             />
           </template>
-        </van-swipe-cell>
+        </ghb-swipe-cell>
       </demo-block>
 
       <demo-block :title="t('beforeClose')">
-        <van-swipe-cell :before-close="beforeClose">
+        <ghb-swipe-cell :before-close="beforeClose">
           <template #left>
-            <van-button square type="primary" :text="t('select')" />
+            <ghb-button square type="primary" :text="t('select')" />
           </template>
-          <van-cell :border="false" :title="t('title')" :value="t('content')" />
+          <ghb-cell :border="false" :title="t('title')" :value="t('content')" />
           <template #right>
-            <van-button square type="danger" :text="t('delete')" />
+            <ghb-button square type="danger" :text="t('delete')" />
           </template>
-        </van-swipe-cell>
+        </ghb-swipe-cell>
       </demo-block>
     </demo-section>
   </div>
@@ -109,7 +109,7 @@ export default {
 .demo-swipe-cell {
   user-select: none;
 
-  .van-card {
+  .ghb-card {
     margin: 0;
     background-color: @white;
   }

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { ShareSheet } from 'vant';
+import { ShareSheet } from 'ghbui';
 
 Vue.use(ShareSheet);
 ```
@@ -14,8 +14,8 @@ Vue.use(ShareSheet);
 ### Basic Usage
 
 ```html
-<van-cell title="Show ShareSheet" @click="showShare = true" />
-<van-share-sheet
+<ghb-cell title="Show ShareSheet" @click="showShare = true" />
+<ghb-share-sheet
   v-model="showShare"
   title="Share"
   :options="options"
@@ -24,7 +24,7 @@ Vue.use(ShareSheet);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -51,7 +51,7 @@ export default {
 ### Multi Line
 
 ```html
-<van-share-sheet v-model="showShare" title="Share" :options="options" />
+<ghb-share-sheet v-model="showShare" title="Share" :options="options" />
 ```
 
 ```js
@@ -81,7 +81,7 @@ export default {
 ### Show Description
 
 ```html
-<van-share-sheet
+<ghb-share-sheet
   v-model="showShare"
   :options="options"
   title="Share"

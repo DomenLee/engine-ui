@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`title slot 1`] = `
-<div class="van-sidebar"><a class="van-sidebar-item van-sidebar-item--select">
-    <div class="van-sidebar-item__text">Title Slot
+<div class="ghb-sidebar"><a class="ghb-sidebar-item ghb-sidebar-item--select">
+    <div class="ghb-sidebar-item__text">Title Slot
       <!---->
     </div>
   </a></div>

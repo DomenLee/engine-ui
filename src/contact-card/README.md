@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { ContactCard } from 'vant';
+import { ContactCard } from 'ghbui';
 
 Vue.use(ContactCard);
 ```
@@ -14,11 +14,11 @@ Vue.use(ContactCard);
 ### Add Contact
 
 ```html
-<van-contact-card type="add" @click="onAdd" />
+<ghb-contact-card type="add" @click="onAdd" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -32,7 +32,7 @@ export default {
 ### Edit Contact
 
 ```html
-<van-contact-card
+<ghb-contact-card
   type="edit"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -41,7 +41,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -63,7 +63,7 @@ export default {
 ### Uneditable
 
 ```html
-<van-contact-card
+<ghb-contact-card
   type="edit"
   name="John Snow"
   tel="13000000000"

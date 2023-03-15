@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'ghbui';
 
 Vue.use(Lazyload);
 

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Grid, GridItem } from 'vant';
+import { Grid, GridItem } from 'ghbui';
 
 Vue.use(Grid);
 Vue.use(GridItem);
@@ -15,80 +15,80 @@ Vue.use(GridItem);
 ### Basic Usage
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-</van-grid>
+<ghb-grid>
+  <ghb-grid-item icon="photo-o" text="Text" />
+  <ghb-grid-item icon="photo-o" text="Text" />
+  <ghb-grid-item icon="photo-o" text="Text" />
+  <ghb-grid-item icon="photo-o" text="Text" />
+</ghb-grid>
 ```
 
 ### Column Num
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item v-for="value in 6" :key="value" icon="photo-o" text="Text" />
-</van-grid>
+<ghb-grid :column-num="3">
+  <ghb-grid-item v-for="value in 6" :key="value" icon="photo-o" text="Text" />
+</ghb-grid>
 ```
 
 ### Custom Content
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<ghb-grid :border="false" :column-num="3">
+  <ghb-grid-item>
+    <ghb-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
+  </ghb-grid-item>
+  <ghb-grid-item>
+    <ghb-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
+  </ghb-grid-item>
+  <ghb-grid-item>
+    <ghb-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
+  </ghb-grid-item>
+</ghb-grid>
 ```
 
 ### Square
 
 ```html
-<van-grid square>
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
-</van-grid>
+<ghb-grid square>
+  <ghb-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
+</ghb-grid>
 ```
 
 ### Gutter
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
-</van-grid>
+<ghb-grid :gutter="10">
+  <ghb-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
+</ghb-grid>
 ```
 
 ### Horizontal
 
 ```html
-<van-grid direction="horizontal" :column-num="2">
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-</van-grid>
+<ghb-grid direction="horizontal" :column-num="2">
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+  <ghb-grid-item icon="photo-o" text="文字" />
+</ghb-grid>
 ```
 
 ### Route
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="Vue Router" to="/" />
-  <van-grid-item icon="search" text="URL" url="/vant/mobile.html" />
-</van-grid>
+<ghb-grid clickable :column-num="2">
+  <ghb-grid-item icon="home-o" text="Vue Router" to="/" />
+  <ghb-grid-item icon="search" text="URL" url="/vant/mobile.html" />
+</ghb-grid>
 ```
 
 ### Show Badge
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="Text" dot />
-  <van-grid-item icon="search" text="Text" badge="99+" />
-</van-grid>
+<ghb-grid :column-num="2">
+  <ghb-grid-item icon="home-o" text="Text" dot />
+  <ghb-grid-item icon="search" text="Text" badge="99+" />
+</ghb-grid>
 ```
 
 ## API
@@ -112,7 +112,7 @@ Vue.use(GridItem);
 | --- | --- | --- | --- |
 | text | Text | _string_ | - |
 | icon | Icon name or URL | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `ghb-icon` |
 | dot | Whether to show red dot | _boolean_ | `false` |
 | badge `v2.5.6` | Content of the badge | _number \| string_ | - |
 | url | Link URL | _string_ | - |

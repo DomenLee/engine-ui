@@ -1,5 +1,5 @@
 <template>
-  <van-field
+  <ghb-field
     readonly
     clickable
     name="datetimePicker"
@@ -9,20 +9,20 @@
     @click="showPicker = true"
   >
     <template #extra>
-      <van-popup
+      <ghb-popup
         v-model="showPicker"
         round
         position="bottom"
         get-container="body"
       >
-        <van-datetime-picker
+        <ghb-datetime-picker
           type="time"
           @confirm="onConfirm"
           @cancel="onCancel"
         />
-      </van-popup>
+      </ghb-popup>
     </template>
-  </van-field>
+  </ghb-field>
 </template>
 
 <script>

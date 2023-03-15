@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Sticky } from 'vant';
+import { Sticky } from 'ghbui';
 
 Vue.use(Sticky);
 ```
@@ -14,26 +14,26 @@ Vue.use(Sticky);
 ### Basic Usage
 
 ```html
-<van-sticky>
-  <van-button type="primary">Basic Usage</van-button>
-</van-sticky>
+<ghb-sticky>
+  <ghb-button type="primary">Basic Usage</ghb-button>
+</ghb-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="info">Offset Top</van-button>
-</van-sticky>
+<ghb-sticky :offset-top="50">
+  <ghb-button type="info">Offset Top</ghb-button>
+</ghb-sticky>
 ```
 
 ### Set Container
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">Set Container</van-button>
-  </van-sticky>
+  <ghb-sticky :container="container">
+    <ghb-button type="warning">Set Container</ghb-button>
+  </ghb-sticky>
 </div>
 ```
 

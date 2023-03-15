@@ -2,44 +2,44 @@
   <demo-section>
     <demo-block :title="t('type')">
       <div class="demo-button-row">
-        <van-button type="primary">{{ t('primary') }}</van-button>
-        <van-button type="info">{{ t('info') }}</van-button>
-        <van-button type="default">{{ t('default') }}</van-button>
+        <ghb-button type="primary">{{ t('primary') }}</ghb-button>
+        <ghb-button type="info">{{ t('info') }}</ghb-button>
+        <ghb-button type="default">{{ t('default') }}</ghb-button>
       </div>
-      <van-button type="danger">{{ t('danger') }}</van-button>
-      <van-button type="warning">{{ t('warning') }}</van-button>
+      <ghb-button type="danger">{{ t('danger') }}</ghb-button>
+      <ghb-button type="warning">{{ t('warning') }}</ghb-button>
     </demo-block>
 
     <demo-block :title="t('plain')">
-      <van-button plain type="primary" :text="t('plain')" />
-      <van-button plain type="info" :text="t('plain')" />
+      <ghb-button plain type="primary" :text="t('plain')" />
+      <ghb-button plain type="info" :text="t('plain')" />
     </demo-block>
 
     <demo-block :title="t('hairline')">
-      <van-button plain hairline type="primary" :text="t('hairlineButton')" />
-      <van-button plain hairline type="info" :text="t('hairlineButton')" />
+      <ghb-button plain hairline type="primary" :text="t('hairlineButton')" />
+      <ghb-button plain hairline type="info" :text="t('hairlineButton')" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-button disabled type="primary" :text="t('disabled')" />
-      <van-button disabled type="info" :text="t('disabled')" />
+      <ghb-button disabled type="primary" :text="t('disabled')" />
+      <ghb-button disabled type="info" :text="t('disabled')" />
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <van-button loading type="primary" />
-      <van-button loading type="primary" loading-type="spinner" />
-      <van-button loading :loading-text="t('loadingText')" type="info" />
+      <ghb-button loading type="primary" />
+      <ghb-button loading type="primary" loading-type="spinner" />
+      <ghb-button loading :loading-text="t('loadingText')" type="info" />
     </demo-block>
 
     <demo-block :title="t('shape')">
-      <van-button type="primary" square :text="t('square')" />
-      <van-button type="info" round :text="t('round')" />
+      <ghb-button type="primary" square :text="t('square')" />
+      <ghb-button type="info" round :text="t('round')" />
     </demo-block>
 
     <demo-block :title="t('icon')">
-      <van-button type="primary" icon="plus" />
-      <van-button type="primary" icon="plus" :text="t('button')" />
-      <van-button
+      <ghb-button type="primary" icon="plus" />
+      <ghb-button type="primary" icon="plus" :text="t('button')" />
+      <ghb-button
         plain
         type="info"
         icon="https://img01.yzcdn.cn/vant/user-active.png"
@@ -48,29 +48,29 @@
     </demo-block>
 
     <demo-block :title="t('size')">
-      <van-button type="primary" size="large">{{ t('large') }}</van-button>
-      <van-button type="primary" size="normal">{{ t('normal') }}</van-button>
-      <van-button type="primary" size="small">{{ t('small') }}</van-button>
-      <van-button type="primary" size="mini">{{ t('mini') }}</van-button>
+      <ghb-button type="primary" size="large">{{ t('large') }}</ghb-button>
+      <ghb-button type="primary" size="normal">{{ t('normal') }}</ghb-button>
+      <ghb-button type="primary" size="small">{{ t('small') }}</ghb-button>
+      <ghb-button type="primary" size="mini">{{ t('mini') }}</ghb-button>
     </demo-block>
 
     <demo-block :title="t('blockElement')">
-      <van-button type="primary" block>{{ t('blockElement') }}</van-button>
+      <ghb-button type="primary" block>{{ t('blockElement') }}</ghb-button>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('router')">
-      <van-button
+      <ghb-button
         :text="t('urlRoute')"
         type="primary"
         url="/vant/mobile.html"
       />
-      <van-button :text="t('vueRoute')" type="primary" to="index" />
+      <ghb-button :text="t('vueRoute')" type="primary" to="index" />
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <van-button color="#7232dd" :text="t('pure')" />
-      <van-button plain color="#7232dd" :text="t('pure')" />
-      <van-button
+      <ghb-button color="#7232dd" :text="t('pure')" />
+      <ghb-button plain color="#7232dd" :text="t('pure')" />
+      <ghb-button
         color="linear-gradient(to right, #ff6034, #ee0a24)"
         :text="t('gradient')"
       />
@@ -147,7 +147,7 @@ export default {
 @import '../../style/var';
 
 .demo-button {
-  .van-button {
+  .ghb-button {
     &--large {
       margin-bottom: @padding-md;
     }
@@ -158,11 +158,11 @@ export default {
     }
   }
 
-  .van-doc-demo-block {
+  .ghb-doc-demo-block {
     padding: 0 @padding-md;
   }
 
-  .van-doc-demo-block__title {
+  .ghb-doc-demo-block__title {
     padding-left: 0;
   }
 

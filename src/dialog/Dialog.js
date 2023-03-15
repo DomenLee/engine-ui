@@ -34,7 +34,7 @@ export default createComponent({
     },
     transition: {
       type: String,
-      default: 'van-dialog-bounce',
+      default: 'ghb-dialog-bounce',
     },
     showConfirmButton: {
       type: Boolean,

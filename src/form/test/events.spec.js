@@ -4,10 +4,10 @@ test('submit event', async () => {
   const onSubmit = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @submit="onSubmit">
-        <van-field name="A" value="bar" />
-        <van-button native-type="submit" />
-      </van-form>
+      <ghb-form @submit="onSubmit">
+        <ghb-field name="A" value="bar" />
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     methods: {
       onSubmit,
@@ -43,10 +43,10 @@ test('failed event when rule message is empty', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form ref="form" @failed="onFailed">
-        <van-field name="A" :rules="rulesA" value="" />
-        <van-button native-type="submit" />
-      </van-form>
+      <ghb-form ref="form" @failed="onFailed">
+        <ghb-field name="A" :rules="rulesA" value="" />
+        <ghb-button native-type="submit" />
+      </ghb-form>
     `,
     data() {
       return {

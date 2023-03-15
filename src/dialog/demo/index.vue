@@ -1,30 +1,30 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-cell is-link :title="t('alert1')" @click="onClickAlert" />
-      <van-cell is-link :title="t('alert2')" @click="onClickAlert2" />
-      <van-cell is-link :title="t('confirm')" @click="onClickConfirm" />
+      <ghb-cell is-link :title="t('alert1')" @click="onClickAlert" />
+      <ghb-cell is-link :title="t('alert2')" @click="onClickAlert2" />
+      <ghb-cell is-link :title="t('confirm')" @click="onClickConfirm" />
     </demo-block>
 
     <demo-block card :title="t('roundButton')">
-      <van-cell is-link :title="t('alert1')" @click="onClickRound" />
-      <van-cell is-link :title="t('alert2')" @click="onClickRound2" />
+      <ghb-cell is-link :title="t('alert1')" @click="onClickRound" />
+      <ghb-cell is-link :title="t('alert2')" @click="onClickRound2" />
     </demo-block>
 
     <demo-block card :title="t('asyncClose')">
-      <van-cell is-link :title="t('asyncClose')" @click="onClickAsyncClose" />
+      <ghb-cell is-link :title="t('asyncClose')" @click="onClickAsyncClose" />
     </demo-block>
 
     <demo-block card :title="t('componentCall')">
-      <van-cell is-link :title="t('componentCall')" @click="show = true" />
-      <van-dialog
+      <ghb-cell is-link :title="t('componentCall')" @click="show = true" />
+      <ghb-dialog
         v-model="show"
         :title="t('title')"
         show-cancel-button
         :lazy-render="false"
       >
         <img :src="image" />
-      </van-dialog>
+      </ghb-dialog>
     </demo-block>
   </demo-section>
 </template>

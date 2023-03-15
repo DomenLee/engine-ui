@@ -13,8 +13,8 @@ const createComponent = () => {
     },
   });
 
-  const button = wrapper.find('.van-button');
-  const field = wrapper.findAll('.van-field__control');
+  const button = wrapper.find('.ghb-button');
+  const field = wrapper.findAll('.ghb-field__control');
   const { errorInfo, data } = wrapper.vm;
   return {
     wrapper,
@@ -66,11 +66,11 @@ test('should allow deleting contact', async () => {
     },
   });
 
-  const deleteButton = wrapper.findAll('.van-button').at(1);
+  const deleteButton = wrapper.findAll('.ghb-button').at(1);
   deleteButton.trigger('click');
 
   await later();
-  document.querySelector('.van-dialog__confirm').click();
+  document.querySelector('.ghb-dialog__confirm').click();
 
   await later();
   expect(wrapper.emitted('delete')).toBeTruthy();

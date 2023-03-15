@@ -13,11 +13,11 @@ function mockPageHidden() {
 
 const Component = {
   template: `
-    <van-swipe ref="swipe" v-bind="$props" v-on="$listeners">
-      <van-swipe-item :style="style">1</van-swipe-item>
-      <van-swipe-item :style="style">2</van-swipe-item>
-      <van-swipe-item :style="style">3</van-swipe-item>
-    </van-swipe>
+    <ghb-swipe ref="swipe" v-bind="$props" v-on="$listeners">
+      <ghb-swipe-item :style="style">1</ghb-swipe-item>
+      <ghb-swipe-item :style="style">2</ghb-swipe-item>
+      <ghb-swipe-item :style="style">3</ghb-swipe-item>
+    </ghb-swipe>
   `,
   props: {
     vertical: Boolean,
@@ -97,7 +97,7 @@ test('vertical swipe', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.ghb-swipe__track');
 
   triggerDrag(track, 0, -100);
   expect(swipe.active).toEqual(1);
@@ -110,7 +110,7 @@ test('untouchable', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.ghb-swipe__track');
 
   triggerDrag(track, 100, 0);
   expect(swipe.active).toEqual(0);
@@ -119,7 +119,7 @@ test('untouchable', () => {
 test('loop', () => {
   const wrapper = mount(Component);
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.ghb-swipe__track');
 
   triggerDrag(track, -100, 0);
   expect(swipe.active).toEqual(1);
@@ -158,13 +158,13 @@ test('should pause auto play when page hidden', async () => {
 test('lazy-render prop', async () => {
   const wrapper = mount({
     template: `
-      <van-swipe :initial-swipe="active" lazy-render>
-        <van-swipe-item><span>1</span></van-swipe-item>
-        <van-swipe-item><span>2</span></van-swipe-item>
-        <van-swipe-item><span>3</span></van-swipe-item>
-        <van-swipe-item><span>4</span></van-swipe-item>
-        <van-swipe-item><span>5</span></van-swipe-item>
-      </van-swipe>
+      <ghb-swipe :initial-swipe="active" lazy-render>
+        <ghb-swipe-item><span>1</span></ghb-swipe-item>
+        <ghb-swipe-item><span>2</span></ghb-swipe-item>
+        <ghb-swipe-item><span>3</span></ghb-swipe-item>
+        <ghb-swipe-item><span>4</span></ghb-swipe-item>
+        <ghb-swipe-item><span>5</span></ghb-swipe-item>
+      </ghb-swipe>
     `,
     data() {
       return {
@@ -174,7 +174,7 @@ test('lazy-render prop', async () => {
   });
 
   await later();
-  const items = wrapper.findAll('.van-swipe-item');
+  const items = wrapper.findAll('.ghb-swipe-item');
 
   const expectRender = (results) => {
     results.forEach((result, index) => {
@@ -194,12 +194,12 @@ test('lazy-render prop', async () => {
 test('lazy-render prop when loop is false', async () => {
   const wrapper = mount({
     template: `
-      <van-swipe :initial-swipe="active" :loop="false" lazy-render>
-        <van-swipe-item><span>1</span></van-swipe-item>
-        <van-swipe-item><span>2</span></van-swipe-item>
-        <van-swipe-item><span>3</span></van-swipe-item>
-        <van-swipe-item><span>4</span></van-swipe-item>
-      </van-swipe>
+      <ghb-swipe :initial-swipe="active" :loop="false" lazy-render>
+        <ghb-swipe-item><span>1</span></ghb-swipe-item>
+        <ghb-swipe-item><span>2</span></ghb-swipe-item>
+        <ghb-swipe-item><span>3</span></ghb-swipe-item>
+        <ghb-swipe-item><span>4</span></ghb-swipe-item>
+      </ghb-swipe>
     `,
     data() {
       return {
@@ -209,7 +209,7 @@ test('lazy-render prop when loop is false', async () => {
   });
 
   await later();
-  const items = wrapper.findAll('.van-swipe-item');
+  const items = wrapper.findAll('.ghb-swipe-item');
 
   const expectRender = (results) => {
     results.forEach((result, index) => {

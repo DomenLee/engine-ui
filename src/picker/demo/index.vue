@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-picker
+      <ghb-picker
         show-toolbar
         :title="t('title')"
         :columns="t('textColumns')"
@@ -10,7 +10,7 @@
     </demo-block>
 
     <demo-block card :title="t('defaultIndex')">
-      <van-picker
+      <ghb-picker
         show-toolbar
         :title="t('title')"
         :columns="t('textColumns')"
@@ -20,7 +20,7 @@
     </demo-block>
 
     <demo-block card :title="t('multipleColumns')">
-      <van-picker
+      <ghb-picker
         show-toolbar
         :title="t('title')"
         :columns="t('dateColumns')"
@@ -30,7 +30,7 @@
     </demo-block>
 
     <demo-block card v-if="!isWeapp" :title="t('cascade')">
-      <van-picker
+      <ghb-picker
         show-toolbar
         :title="t('title')"
         :columns="t('cascadeColumns')"
@@ -40,7 +40,7 @@
     </demo-block>
 
     <demo-block card :title="t('disableOption')">
-      <van-picker
+      <ghb-picker
         show-toolbar
         :title="t('title')"
         :columns="t('disabledColumns')"
@@ -48,7 +48,7 @@
     </demo-block>
 
     <demo-block card :title="t('setColumnValues')">
-      <van-picker
+      <ghb-picker
         show-toolbar
         :title="t('title')"
         :columns="columns"
@@ -57,11 +57,11 @@
     </demo-block>
 
     <demo-block card :title="t('loadingStatus')">
-      <van-picker loading show-toolbar :title="t('title')" :columns="columns" />
+      <ghb-picker loading show-toolbar :title="t('title')" :columns="columns" />
     </demo-block>
 
     <demo-block card v-if="!isWeapp" :title="t('withPopup')">
-      <van-field
+      <ghb-field
         readonly
         clickable
         :label="t('city')"
@@ -69,15 +69,15 @@
         :placeholder="t('chooseCity')"
         @click="onClickField"
       />
-      <van-popup v-model="showPicker" round position="bottom">
-        <van-picker
+      <ghb-popup v-model="showPicker" round position="bottom">
+        <ghb-picker
           show-toolbar
           :title="t('title')"
           :columns="t('textColumns')"
           @cancel="onCancel2"
           @confirm="onConfirm2"
         />
-      </van-popup>
+      </ghb-popup>
     </demo-block>
   </demo-section>
 </template>

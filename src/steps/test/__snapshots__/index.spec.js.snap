@@ -1,46 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`icon slot 1`] = `
-<div class="van-steps van-steps--horizontal">
-  <div class="van-steps__items">
-    <div class="van-hairline van-step van-step--horizontal van-step--finish">
-      <div class="van-step__title">
+<div class="ghb-steps ghb-steps--horizontal">
+  <div class="ghb-steps__items">
+    <div class="ghb-hairline ghb-step ghb-step--horizontal ghb-step--finish">
+      <div class="ghb-step__title">
         A
       </div>
-      <div class="van-step__circle-container">Custim Inactive Icon</div>
-      <div class="van-step__line"></div>
+      <div class="ghb-step__circle-container">Custim Inactive Icon</div>
+      <div class="ghb-step__line"></div>
     </div>
-    <div class="van-hairline van-step van-step--horizontal van-step--process">
-      <div class="van-step__title van-step__title--active">
+    <div class="ghb-hairline ghb-step ghb-step--horizontal ghb-step--process">
+      <div class="ghb-step__title ghb-step__title--active">
         B
       </div>
-      <div class="van-step__circle-container">Custim Active Icon</div>
-      <div class="van-step__line"></div>
+      <div class="ghb-step__circle-container">Custim Active Icon</div>
+      <div class="ghb-step__line"></div>
     </div>
-    <div class="van-hairline van-step van-step--horizontal">
-      <div class="van-step__title">
+    <div class="ghb-hairline ghb-step ghb-step--horizontal">
+      <div class="ghb-step__title">
         C
       </div>
-      <div class="van-step__circle-container">Custim Inactive Icon</div>
-      <div class="van-step__line"></div>
+      <div class="ghb-step__circle-container">Custim Inactive Icon</div>
+      <div class="ghb-step__line"></div>
     </div>
   </div>
 </div>
 `;
 
 exports[`inactive-color prop 1`] = `
-<div class="van-steps van-steps--horizontal">
-  <div class="van-steps__items">
-    <div class="van-hairline van-step van-step--horizontal van-step--process">
-      <div class="van-step__title van-step__title--active">A</div>
-      <div class="van-step__circle-container"><i class="van-icon van-icon-checked van-step__icon van-step__icon--active">
+<div class="ghb-steps ghb-steps--horizontal">
+  <div class="ghb-steps__items">
+    <div class="ghb-hairline ghb-step ghb-step--horizontal ghb-step--process">
+      <div class="ghb-step__title ghb-step__title--active">A</div>
+      <div class="ghb-step__circle-container"><i class="ghb-icon ghb-icon-checked ghb-step__icon ghb-step__icon--active">
           <!----></i></div>
-      <div class="van-step__line" style="background: red;"></div>
+      <div class="ghb-step__line" style="background: red;"></div>
     </div>
-    <div class="van-hairline van-step van-step--horizontal">
-      <div class="van-step__title" style="color: red;">B</div>
-      <div class="van-step__circle-container"><i class="van-step__circle" style="background: red;"></i></div>
-      <div class="van-step__line" style="background: red;"></div>
+    <div class="ghb-hairline ghb-step ghb-step--horizontal">
+      <div class="ghb-step__title" style="color: red;">B</div>
+      <div class="ghb-step__circle-container"><i class="ghb-step__circle" style="background: red;"></i></div>
+      <div class="ghb-step__line" style="background: red;"></div>
     </div>
   </div>
 </div>

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { SubmitBar } from 'vant';
+import { SubmitBar } from 'ghbui';
 
 Vue.use(SubmitBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(SubmitBar);
 ### 基础用法
 
 ```html
-<van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
+<ghb-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
 ```
 
 ### 禁用状态
@@ -22,7 +22,7 @@ Vue.use(SubmitBar);
 禁用状态下不会触发 `submit` 事件。
 
 ```html
-<van-submit-bar
+<ghb-submit-bar
   disabled
   :price="3050"
   button-text="提交订单"
@@ -37,7 +37,7 @@ Vue.use(SubmitBar);
 加载状态下不会触发 `submit` 事件。
 
 ```html
-<van-submit-bar
+<ghb-submit-bar
   loading
   :price="3050"
   button-text="提交订单"
@@ -50,12 +50,12 @@ Vue.use(SubmitBar);
 通过插槽插入自定义内容。
 
 ```html
-<van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
-  <van-checkbox v-model="checked">全选</van-checkbox>
+<ghb-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
+  <ghb-checkbox v-model="checked">全选</ghb-checkbox>
   <template #tip>
     你的收货地址不支持同城送, <span @click="onClickEditAddress">修改地址</span>
   </template>
-</van-submit-bar>
+</ghb-submit-bar>
 ```
 
 ## API

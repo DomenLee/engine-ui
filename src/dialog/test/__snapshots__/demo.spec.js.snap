@@ -3,47 +3,47 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>提示弹窗</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>提示弹窗</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>提示弹窗（无标题）</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>提示弹窗（无标题）</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>确认弹窗</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
-        <!----></i>
-    </div>
-  </div>
-  <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>提示弹窗</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
-        <!----></i>
-    </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>提示弹窗（无标题）</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>确认弹窗</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>异步关闭</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>提示弹窗</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
+        <!----></i>
+    </div>
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>提示弹窗（无标题）</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>组件调用</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>异步关闭</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div role="dialog" aria-labelledby="标题" tabindex="0" class="van-dialog" style="display: none;" name="van-dialog-bounce">
-      <div class="van-dialog__header">标题</div>
-      <div class="van-dialog__content"><img src="https://img01.yzcdn.cn/vant/apple-3.jpg"></div>
-      <div class="van-hairline--top van-dialog__footer"><button type="button" class="van-button van-button--default van-button--large van-dialog__cancel">
-          <div class="van-button__content"><span class="van-button__text">取消</span></div>
-        </button><button type="button" class="van-button van-button--default van-button--large van-dialog__confirm van-hairline--left">
-          <div class="van-button__content"><span class="van-button__text">确认弹窗</span></div>
+  </div>
+  <div>
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>组件调用</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
+        <!----></i>
+    </div>
+    <div role="dialog" aria-labelledby="标题" tabindex="0" class="ghb-dialog" style="display: none;" name="ghb-dialog-bounce">
+      <div class="ghb-dialog__header">标题</div>
+      <div class="ghb-dialog__content"><img src="https://img01.yzcdn.cn/vant/apple-3.jpg"></div>
+      <div class="ghb-hairline--top ghb-dialog__footer"><button type="button" class="ghb-button ghb-button--default ghb-button--large ghb-dialog__cancel">
+          <div class="ghb-button__content"><span class="ghb-button__text">取消</span></div>
+        </button><button type="button" class="ghb-button ghb-button--default ghb-button--large ghb-dialog__confirm ghb-hairline--left">
+          <div class="ghb-button__content"><span class="ghb-button__text">确认弹窗</span></div>
         </button></div>
     </div>
   </div>

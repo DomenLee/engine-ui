@@ -1,13 +1,13 @@
 <template>
   <demo-block :title="t('errorInfo')">
-    <van-field
+    <ghb-field
       v-model="username"
       error
       required
       :label="t('username')"
       :placeholder="t('usernamePlaceholder')"
     />
-    <van-field
+    <ghb-field
       v-model="phone"
       required
       :label="t('phone')"

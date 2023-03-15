@@ -1,24 +1,24 @@
 <template>
   <demo-section name="pull-refresh">
-    <van-tabs>
-      <van-tab :title="t('basicUsage')">
-        <van-pull-refresh v-model="isLoading" @refresh="onRefresh(true)">
+    <ghb-tabs>
+      <ghb-tab :title="t('basicUsage')">
+        <ghb-pull-refresh v-model="isLoading" @refresh="onRefresh(true)">
           <p>{{ tips }}</p>
-        </van-pull-refresh>
-      </van-tab>
+        </ghb-pull-refresh>
+      </ghb-tab>
 
-      <van-tab :title="t('successTip')">
-        <van-pull-refresh
+      <ghb-tab :title="t('successTip')">
+        <ghb-pull-refresh
           v-model="isLoading"
           :success-text="t('success')"
           @refresh="onRefresh(false)"
         >
           <p>{{ tips }}</p>
-        </van-pull-refresh>
-      </van-tab>
+        </ghb-pull-refresh>
+      </ghb-tab>
 
-      <van-tab :title="t('customTips')">
-        <van-pull-refresh
+      <ghb-tab :title="t('customTips')">
+        <ghb-pull-refresh
           v-model="isLoading"
           head-height="80"
           @refresh="onRefresh(true)"
@@ -37,9 +37,9 @@
             <img src="https://b.yzcdn.cn/vant/doge-fire.jpg" class="doge" />
           </template>
           <p>{{ tips }}</p>
-        </van-pull-refresh>
-      </van-tab>
-    </van-tabs>
+        </ghb-pull-refresh>
+      </ghb-tab>
+    </ghb-tabs>
   </demo-section>
 </template>
 
@@ -113,7 +113,7 @@ export default {
 .demo-pull-refresh {
   background-color: @white;
 
-  .van-pull-refresh {
+  .ghb-pull-refresh {
     height: calc(100vh - 50px);
   }
 

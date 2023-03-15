@@ -8,7 +8,7 @@ Used to select time, support date and time dimensions, usually used with the [Po
 
 ```js
 import Vue from 'vue';
-import { DatetimePicker } from 'vant';
+import { DatetimePicker } from 'ghbui';
 
 Vue.use(DatetimePicker);
 ```
@@ -18,7 +18,7 @@ Vue.use(DatetimePicker);
 ### Choose Date
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentDate"
   type="date"
   title="Choose Date"
@@ -42,7 +42,7 @@ export default {
 ### Choose Year-Month
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentDate"
   type="year-month"
   title="Choose Year-Month"
@@ -77,7 +77,7 @@ export default {
 ### Choose Month-Day
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentDate"
   type="month-day"
   title="Choose Month-Day"
@@ -112,7 +112,7 @@ export default {
 ### Choose Time
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentTime"
   type="time"
   title="Choose Time"
@@ -134,7 +134,7 @@ export default {
 ### Choose DateTime
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentDate"
   type="datetime"
   title="Choose DateTime"
@@ -158,7 +158,7 @@ export default {
 ### Choose DateHour
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentDate"
   type="datehour"
   title="Choose DateTime"
@@ -182,7 +182,7 @@ export default {
 ### Option Filter
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentTime"
   type="time"
   title="Option Filter"
@@ -211,7 +211,7 @@ export default {
 ### Columns Order
 
 ```html
-<van-datetime-picker
+<ghb-datetime-picker
   v-model="currentDate"
   type="date"
   title="Columns Order"

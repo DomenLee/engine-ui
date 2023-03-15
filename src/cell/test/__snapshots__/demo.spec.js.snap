@@ -3,121 +3,121 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell">
-        <div class="van-cell__title"><span>单元格</span></div>
-        <div class="van-cell__value"><span>内容</span></div>
+    <div class="ghb-cell-group ghb-hairline--top-bottom">
+      <div class="ghb-cell">
+        <div class="ghb-cell__title"><span>单元格</span></div>
+        <div class="ghb-cell__value"><span>内容</span></div>
       </div>
-      <div class="van-cell">
-        <div class="van-cell__title"><span>单元格</span>
-          <div class="van-cell__label">描述信息</div>
+      <div class="ghb-cell">
+        <div class="ghb-cell__title"><span>单元格</span>
+          <div class="ghb-cell__label">描述信息</div>
         </div>
-        <div class="van-cell__value"><span>内容</span></div>
+        <div class="ghb-cell__value"><span>内容</span></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-cell-group--inset van-hairline--top-bottom">
-      <div class="van-cell">
-        <div class="van-cell__title"><span>单元格</span></div>
-        <div class="van-cell__value"><span>内容</span></div>
+    <div class="ghb-cell-group ghb-cell-group--inset ghb-hairline--top-bottom">
+      <div class="ghb-cell">
+        <div class="ghb-cell__title"><span>单元格</span></div>
+        <div class="ghb-cell__value"><span>内容</span></div>
       </div>
-      <div class="van-cell">
-        <div class="van-cell__title"><span>单元格</span>
-          <div class="van-cell__label">描述信息</div>
+      <div class="ghb-cell">
+        <div class="ghb-cell__title"><span>单元格</span>
+          <div class="ghb-cell__label">描述信息</div>
         </div>
-        <div class="van-cell__value"><span>内容</span></div>
+        <div class="ghb-cell__value"><span>内容</span></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell van-cell--large">
-      <div class="van-cell__title"><span>单元格</span></div>
-      <div class="van-cell__value"><span>内容</span></div>
+    <div class="ghb-cell ghb-cell--large">
+      <div class="ghb-cell__title"><span>单元格</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div>
     </div>
-    <div class="van-cell van-cell--large">
-      <div class="van-cell__title"><span>单元格</span>
-        <div class="van-cell__label">描述信息</div>
+    <div class="ghb-cell ghb-cell--large">
+      <div class="ghb-cell__title"><span>单元格</span>
+        <div class="ghb-cell__label">描述信息</div>
       </div>
-      <div class="van-cell__value"><span>内容</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div>
     </div>
   </div>
   <div>
-    <div class="van-cell"><i class="van-icon van-icon-location-o van-cell__left-icon">
+    <div class="ghb-cell"><i class="ghb-icon ghb-icon-location-o ghb-cell__left-icon">
         <!----></i>
-      <div class="van-cell__title"><span>单元格</span></div>
-      <div class="van-cell__value"><span>内容</span></div>
+      <div class="ghb-cell__title"><span>单元格</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div>
     </div>
   </div>
   <div>
-    <div class="van-cell">
-      <div class="van-cell__value van-cell__value--alone"><span>内容</span></div>
+    <div class="ghb-cell">
+      <div class="ghb-cell__value ghb-cell__value--alone"><span>内容</span></div>
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>单元格</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>单元格</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>单元格</span></div>
-      <div class="van-cell__value"><span>内容</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>单元格</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>单元格</span></div>
-      <div class="van-cell__value"><span>内容</span></div><i class="van-icon van-icon-arrow-down van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>单元格</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div><i class="ghb-icon ghb-icon-arrow-down ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>URL 跳转</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>URL 跳转</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>路由跳转</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>路由跳转</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
   </div>
   <div>
     <div>
-      <div class="van-cell-group__title">分组 1</div>
-      <div class="van-cell-group van-hairline--top-bottom">
-        <div class="van-cell">
-          <div class="van-cell__title"><span>单元格</span></div>
-          <div class="van-cell__value"><span>内容</span></div>
+      <div class="ghb-cell-group__title">分组 1</div>
+      <div class="ghb-cell-group ghb-hairline--top-bottom">
+        <div class="ghb-cell">
+          <div class="ghb-cell__title"><span>单元格</span></div>
+          <div class="ghb-cell__value"><span>内容</span></div>
         </div>
       </div>
     </div>
     <div>
-      <div class="van-cell-group__title">分组 2</div>
-      <div class="van-cell-group van-hairline--top-bottom">
-        <div class="van-cell">
-          <div class="van-cell__title"><span>单元格</span></div>
-          <div class="van-cell__value"><span>内容</span></div>
+      <div class="ghb-cell-group__title">分组 2</div>
+      <div class="ghb-cell-group ghb-hairline--top-bottom">
+        <div class="ghb-cell">
+          <div class="ghb-cell__title"><span>单元格</span></div>
+          <div class="ghb-cell__value"><span>内容</span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span class="custom-title">单元格</span> <span class="van-tag van-tag--danger">标签</span></div>
-      <div class="van-cell__value"><span>内容</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span class="custom-title">单元格</span> <span class="ghb-tag ghb-tag--danger">标签</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
-    <div class="van-cell"><i class="van-icon van-icon-shop-o van-cell__left-icon">
+    <div class="ghb-cell"><i class="ghb-icon ghb-icon-shop-o ghb-cell__left-icon">
         <!----></i>
-      <div class="van-cell__title"><span>单元格</span></div><i class="search-icon van-icon van-icon-search">
+      <div class="ghb-cell__title"><span>单元格</span></div><i class="search-icon ghb-icon ghb-icon-search">
         <!----></i>
     </div>
   </div>
   <div>
-    <div class="van-cell van-cell--center">
-      <div class="van-cell__title"><span>单元格</span>
-        <div class="van-cell__label">描述信息</div>
+    <div class="ghb-cell ghb-cell--center">
+      <div class="ghb-cell__title"><span>单元格</span>
+        <div class="ghb-cell__label">描述信息</div>
       </div>
-      <div class="van-cell__value"><span>内容</span></div>
+      <div class="ghb-cell__value"><span>内容</span></div>
     </div>
   </div>
 </div>

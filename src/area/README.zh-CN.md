@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Area } from 'vant';
+import { Area } from 'ghbui';
 
 Vue.use(Area);
 ```
@@ -20,7 +20,7 @@ Vue.use(Area);
 初始化省市区组件时，需要通过 `area-list` 属性传入省市区数据。
 
 ```html
-<van-area title="标题" :area-list="areaList" />
+<ghb-area title="标题" :area-list="areaList" />
 ```
 
 ### areaList 格式
@@ -49,16 +49,16 @@ const areaList = {
 };
 ```
 
-### @vant/area-data
+### @ghbui/area-data
 
-Vant 官方提供了一份默认的省市区数据，可以通过 [@vant/area-data](https://github.com/vant-ui/vant/tree/dev/packages/vant-area-data) 引入：
+Vant 官方提供了一份默认的省市区数据，可以通过 [@ghbui/area-data](https://github.com/ghbui-ui/vant/tree/dev/packages/ghbui-area-data) 引入：
 
 ```bash
-yarn add @vant/area-data
+yarn add @ghbui/area-data
 ```
 
 ```ts
-import { areaList } from '@vant/area-data';
+import { areaList } from '@ghbui/area-data';
 
 export default {
   data() {
@@ -72,7 +72,7 @@ export default {
 如果想选中某个省市区，需要传入一个 `value` 属性，绑定对应的省市区 `code`。
 
 ```html
-<van-area title="标题" :area-list="areaList" value="110101" />
+<ghb-area title="标题" :area-list="areaList" value="110101" />
 ```
 
 ### 配置显示列
@@ -80,7 +80,7 @@ export default {
 可以通过 `columns-num` 属性配置省市区显示的列数，默认情况下会显示省市区，当你设置为 `2`，则只会显示省市选择。
 
 ```html
-<van-area title="标题" :area-list="areaList" :columns-num="2" />
+<ghb-area title="标题" :area-list="areaList" :columns-num="2" />
 ```
 
 ### 配置列占位提示文字
@@ -88,7 +88,7 @@ export default {
 可以通过 `columns-placeholder` 属性配置每一列的占位提示文字。
 
 ```html
-<van-area
+<ghb-area
   title="标题"
   :area-list="areaList"
   :columns-placeholder="['请选择', '请选择', '请选择']"

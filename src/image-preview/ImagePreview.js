@@ -51,7 +51,7 @@ export default createComponent({
     },
     transition: {
       type: String,
-      default: 'van-fade',
+      default: 'ghb-fade',
     },
     showIndex: {
       type: Boolean,

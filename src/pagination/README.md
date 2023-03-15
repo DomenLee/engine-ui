@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Pagination } from 'vant';
+import { Pagination } from 'ghbui';
 
 Vue.use(Pagination);
 ```
@@ -14,7 +14,7 @@ Vue.use(Pagination);
 ### Basic Usage
 
 ```html
-<van-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
+<ghb-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
 ```
 
 ```js
@@ -30,13 +30,13 @@ export default {
 ### Simple mode
 
 ```html
-<van-pagination v-model="currentPage" :page-count="12" mode="simple" />
+<ghb-pagination v-model="currentPage" :page-count="12" mode="simple" />
 ```
 
 ### Show ellipses
 
 ```html
-<van-pagination
+<ghb-pagination
   v-model="currentPage"
   :total-items="125"
   :show-page-size="3"
@@ -47,15 +47,15 @@ export default {
 ### Custom Button
 
 ```html
-<van-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
+<ghb-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
   <template #prev-text>
-    <van-icon name="arrow-left" />
+    <ghb-icon name="arrow-left" />
   </template>
   <template #next-text>
-    <van-icon name="arrow" />
+    <ghb-icon name="arrow" />
   </template>
   <template #page="{ text }">{{ text }}</template>
-</van-pagination>
+</ghb-pagination>
 ```
 
 ## API

@@ -1,61 +1,61 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-row>
-        <van-image width="100" height="100" :src="image" />
-      </van-row>
+      <ghb-row>
+        <ghb-image width="100" height="100" :src="image" />
+      </ghb-row>
     </demo-block>
 
     <demo-block :title="t('fitMode')">
-      <van-row gutter="20">
-        <van-col v-for="fit in fits" span="8" :key="fit">
-          <van-image :fit="fit" width="100%" height="27vw" :src="image" />
+      <ghb-row gutter="20">
+        <ghb-col v-for="fit in fits" span="8" :key="fit">
+          <ghb-image :fit="fit" width="100%" height="27vw" :src="image" />
           <div class="text">{{ fit }}</div>
-        </van-col>
-      </van-row>
+        </ghb-col>
+      </ghb-row>
     </demo-block>
 
     <demo-block :title="t('round')">
-      <van-row gutter="20">
-        <van-col v-for="fit in fits" span="8" :key="fit">
-          <van-image round :fit="fit" width="100%" height="27vw" :src="image" />
+      <ghb-row gutter="20">
+        <ghb-col v-for="fit in fits" span="8" :key="fit">
+          <ghb-image round :fit="fit" width="100%" height="27vw" :src="image" />
           <div class="text">{{ fit }}</div>
-        </van-col>
-      </van-row>
+        </ghb-col>
+      </ghb-row>
     </demo-block>
 
     <demo-block :title="t('loading')">
-      <van-row gutter="20">
-        <van-col span="8">
-          <van-image width="100%" height="27vw" />
+      <ghb-row gutter="20">
+        <ghb-col span="8">
+          <ghb-image width="100%" height="27vw" />
           <div class="text">{{ t('defaultTip') }}</div>
-        </van-col>
+        </ghb-col>
 
-        <van-col span="8">
-          <van-image width="100%" height="27vw">
+        <ghb-col span="8">
+          <ghb-image width="100%" height="27vw">
             <template #loading>
-              <van-loading type="spinner" size="20" />
+              <ghb-loading type="spinner" size="20" />
             </template>
-          </van-image>
+          </ghb-image>
           <div class="text">{{ t('customTip') }}</div>
-        </van-col>
-      </van-row>
+        </ghb-col>
+      </ghb-row>
     </demo-block>
 
     <demo-block :title="t('error')">
-      <van-row gutter="20">
-        <van-col span="8">
-          <van-image width="100%" height="27vw" src="x" />
+      <ghb-row gutter="20">
+        <ghb-col span="8">
+          <ghb-image width="100%" height="27vw" src="x" />
           <div class="text">{{ t('defaultTip') }}</div>
-        </van-col>
+        </ghb-col>
 
-        <van-col span="8">
-          <van-image width="100%" height="27vw" src="x">
+        <ghb-col span="8">
+          <ghb-image width="100%" height="27vw" src="x">
             <template #error>{{ t('loadFail') }}</template>
-          </van-image>
+          </ghb-image>
           <div class="text">{{ t('customTip') }}</div>
-        </van-col>
-      </van-row>
+        </ghb-col>
+      </ghb-row>
     </demo-block>
   </demo-section>
 </template>
@@ -99,11 +99,11 @@ export default {
   overflow-x: hidden;
   background-color: @white;
 
-  .van-row {
+  .ghb-row {
     padding: 0 @padding-md;
   }
 
-  .van-col {
+  .ghb-col {
     margin-bottom: 20px;
   }
 

@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block ref="basicUsage" :title="t('basicUsage')">
-      <van-password-input
+      <ghb-password-input
         :value="value.basicUsage"
         :focused="current === 'basicUsage'"
         @focus="current = 'basicUsage'"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block ref="customLength" :title="t('customLength')">
-      <van-password-input
+      <ghb-password-input
         :value="value.customLength"
         :length="4"
         :focused="current === 'customLength'"
@@ -18,7 +18,7 @@
     </demo-block>
 
     <demo-block ref="addGutter" :title="t('addGutter')">
-      <van-password-input
+      <ghb-password-input
         :value="value.addGutter"
         :gutter="10"
         :focused="current === 'addGutter'"
@@ -27,7 +27,7 @@
     </demo-block>
 
     <demo-block ref="removeMask" :title="t('removeMask')">
-      <van-password-input
+      <ghb-password-input
         :mask="false"
         :value="value.removeMask"
         :focused="current === 'removeMask'"
@@ -36,7 +36,7 @@
     </demo-block>
 
     <demo-block ref="showInfo" :title="t('showInfo')">
-      <van-password-input
+      <ghb-password-input
         :info="t('info')"
         :value="value.showInfo"
         :error-info="errorInfo"
@@ -45,7 +45,7 @@
       />
     </demo-block>
 
-    <van-number-keyboard
+    <ghb-number-keyboard
       :show="!!current"
       @blur="current = ''"
       @input="onInput"

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Sku } from 'vant';
+import { Sku } from 'ghbui';
 
 Vue.use(Sku);
 ```
@@ -14,7 +14,7 @@ Vue.use(Sku);
 ### Basic Usage
 
 ```html
-<van-sku
+<ghb-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -47,7 +47,7 @@ export default {
 ### Custom Stepper
 
 ```html
-<van-sku
+<ghb-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -64,7 +64,7 @@ export default {
 ### Custom By Slot
 
 ```html
-<van-sku
+<ghb-sku
   v-model="show"
   stepper-title="Stepper title"
   :sku="sku"
@@ -81,30 +81,30 @@ export default {
 >
   <!-- custom sku-header-price -->
   <template #sku-header-price="props">
-    <div class="van-sku__goods-price">
-      <span class="van-sku__price-symbol">￥</span
-      ><span class="van-sku__price-num">{{ props.price }}</span>
+    <div class="ghb-sku__goods-price">
+      <span class="ghb-sku__price-symbol">￥</span
+      ><span class="ghb-sku__price-num">{{ props.price }}</span>
     </div>
   </template>
 
   <!-- custom sku actions -->
   <template #sku-actions="props">
-    <div class="van-sku-actions">
-      <van-button square size="large" type="warning" @click="onPointClicked">
+    <div class="ghb-sku-actions">
+      <ghb-button square size="large" type="warning" @click="onPointClicked">
         Button
-      </van-button>
+      </ghb-button>
       <!-- trigger sku inner event -->
-      <van-button
+      <ghb-button
         square
         size="large"
         type="danger"
         @click="props.skuEventBus.$emit('sku:buy')"
       >
         Button
-      </van-button>
+      </ghb-button>
     </div>
   </template>
-</van-sku>
+</ghb-sku>
 ```
 
 ## API

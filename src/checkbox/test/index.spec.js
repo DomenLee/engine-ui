@@ -8,7 +8,7 @@ test('switch checkbox', async () => {
     wrapper.setData({ value });
   });
 
-  const icon = wrapper.find('.van-checkbox__icon');
+  const icon = wrapper.find('.ghb-checkbox__icon');
   icon.trigger('click');
   await later();
   icon.trigger('click');
@@ -24,7 +24,7 @@ test('disabled', () => {
     },
   });
 
-  wrapper.find('.van-checkbox__icon').trigger('click');
+  wrapper.find('.ghb-checkbox__icon').trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
 });
 
@@ -38,7 +38,7 @@ test('label disabled', () => {
     },
   });
 
-  wrapper.find('.van-checkbox__label').trigger('click');
+  wrapper.find('.ghb-checkbox__label').trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
   expect(wrapper).toMatchSnapshot();
 });
@@ -46,11 +46,11 @@ test('label disabled', () => {
 test('checkbox group', async () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group v-model="result" :max="2">
-        <van-checkbox name="a" />
-        <van-checkbox name="b" />
-        <van-checkbox name="c" />
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="result" :max="2">
+        <ghb-checkbox name="a" />
+        <ghb-checkbox name="b" />
+        <ghb-checkbox name="c" />
+      </ghb-checkbox-group>
     `,
     data() {
       return {
@@ -59,7 +59,7 @@ test('checkbox group', async () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-checkbox__icon');
+  const icons = wrapper.findAll('.ghb-checkbox__icon');
   icons.at(0).trigger('click');
   await later();
   icons.at(1).trigger('click');
@@ -85,7 +85,7 @@ test('click event', async () => {
   await later();
   expect(onClick).toHaveBeenCalledTimes(1);
 
-  const icon = wrapper.find('.van-checkbox__icon');
+  const icon = wrapper.find('.ghb-checkbox__icon');
   icon.trigger('click');
   await later();
   expect(onClick).toHaveBeenCalledTimes(2);
@@ -107,10 +107,10 @@ test('label-position prop', () => {
 test('icon-size prop', () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group icon-size="10rem">
-        <van-checkbox>label</van-checkbox>
-        <van-checkbox icon-size="5rem">label</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group icon-size="10rem">
+        <ghb-checkbox>label</ghb-checkbox>
+        <ghb-checkbox icon-size="5rem">label</ghb-checkbox>
+      </ghb-checkbox-group>
     `,
   });
 
@@ -120,10 +120,10 @@ test('icon-size prop', () => {
 test('checked-color prop', () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group :value="['a', 'b']" checked-color="black">
-        <van-checkbox name="a" :value="true">label</van-checkbox>
-        <van-checkbox name="b" :value="true" checked-color="white">label</van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group :value="['a', 'b']" checked-color="black">
+        <ghb-checkbox name="a" :value="true">label</ghb-checkbox>
+        <ghb-checkbox name="b" :value="true" checked-color="white">label</ghb-checkbox>
+      </ghb-checkbox-group>
     `,
   });
 
@@ -133,10 +133,10 @@ test('checked-color prop', () => {
 test('bind-group prop', async () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group v-model="result">
-        <van-checkbox v-model="value" :bind-group="false" />
-        <van-checkbox v-for="item in list" :key="item" :name="item"></van-checkbox>
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="result">
+        <ghb-checkbox v-model="value" :bind-group="false" />
+        <ghb-checkbox v-for="item in list" :key="item" :name="item"></ghb-checkbox>
+      </ghb-checkbox-group>
     `,
     data() {
       return {
@@ -147,7 +147,7 @@ test('bind-group prop', async () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-checkbox__icon');
+  const icons = wrapper.findAll('.ghb-checkbox__icon');
   icons.at(0).trigger('click');
   await later();
   expect(wrapper.vm.result).toEqual([]);
@@ -157,11 +157,11 @@ test('bind-group prop', async () => {
 test('toggleAll method', async () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group v-model="result" ref="group">
-        <van-checkbox name="a" />
-        <van-checkbox name="b" />
-        <van-checkbox name="c" disabled />
-      </van-checkbox-group>
+      <ghb-checkbox-group v-model="result" ref="group">
+        <ghb-checkbox name="a" />
+        <ghb-checkbox name="b" />
+        <ghb-checkbox name="c" disabled />
+      </ghb-checkbox-group>
     `,
     data() {
       return {

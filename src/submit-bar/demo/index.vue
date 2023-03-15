@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-submit-bar
+      <ghb-submit-bar
         :price="3050"
         :button-text="t('submit')"
         @submit="onClickButton"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-submit-bar
+      <ghb-submit-bar
         disabled
         :price="3050"
         :button-text="t('submit')"
@@ -20,7 +20,7 @@
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <van-submit-bar
+      <ghb-submit-bar
         loading
         :price="3050"
         :button-text="t('submit')"
@@ -29,19 +29,19 @@
     </demo-block>
 
     <demo-block :title="t('advancedUsage')">
-      <van-submit-bar
+      <ghb-submit-bar
         :price="3050"
         :button-text="t('submit')"
         @submit="onClickButton"
       >
-        <van-checkbox v-model="checked">{{ t('check') }}</van-checkbox>
+        <ghb-checkbox v-model="checked">{{ t('check') }}</ghb-checkbox>
         <template #tip>
           {{ t('tip2') }}
           <span class="edit-address" @click="onClickLink">
             {{ t('tip3') }}
           </span>
         </template>
-      </van-submit-bar>
+      </ghb-submit-bar>
     </demo-block>
   </demo-section>
 </template>
@@ -90,7 +90,7 @@ export default {
 @import '../../style/var';
 
 .demo-submit-bar {
-  .van-submit-bar {
+  .ghb-submit-bar {
     position: relative;
     padding-bottom: 0;
   }
@@ -99,7 +99,7 @@ export default {
     color: @blue;
   }
 
-  .van-checkbox {
+  .ghb-checkbox {
     margin-right: @padding-sm;
   }
 }

@@ -1,41 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`checked-color prop 1`] = `
-<div class="van-checkbox-group">
-  <div role="checkbox" tabindex="0" aria-checked="true" class="van-checkbox">
-    <div class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked"><i class="van-icon van-icon-success" style="border-color: black; background-color: black;">
-        <!----></i></div><span class="van-checkbox__label">label</span>
+<div class="ghb-checkbox-group">
+  <div role="checkbox" tabindex="0" aria-checked="true" class="ghb-checkbox">
+    <div class="ghb-checkbox__icon ghb-checkbox__icon--round ghb-checkbox__icon--checked"><i class="ghb-icon ghb-icon-success" style="border-color: black; background-color: black;">
+        <!----></i></div><span class="ghb-checkbox__label">label</span>
   </div>
-  <div role="checkbox" tabindex="0" aria-checked="true" class="van-checkbox">
-    <div class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked"><i class="van-icon van-icon-success" style="border-color: white; background-color: white;">
-        <!----></i></div><span class="van-checkbox__label">label</span>
+  <div role="checkbox" tabindex="0" aria-checked="true" class="ghb-checkbox">
+    <div class="ghb-checkbox__icon ghb-checkbox__icon--round ghb-checkbox__icon--checked"><i class="ghb-icon ghb-icon-success" style="border-color: white; background-color: white;">
+        <!----></i></div><span class="ghb-checkbox__label">label</span>
   </div>
 </div>
 `;
 
 exports[`icon-size prop 1`] = `
-<div class="van-checkbox-group">
-  <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox">
-    <div class="van-checkbox__icon van-checkbox__icon--round" style="font-size: 10rem;"><i class="van-icon van-icon-success">
-        <!----></i></div><span class="van-checkbox__label">label</span>
+<div class="ghb-checkbox-group">
+  <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox">
+    <div class="ghb-checkbox__icon ghb-checkbox__icon--round" style="font-size: 10rem;"><i class="ghb-icon ghb-icon-success">
+        <!----></i></div><span class="ghb-checkbox__label">label</span>
   </div>
-  <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox">
-    <div class="van-checkbox__icon van-checkbox__icon--round" style="font-size: 5rem;"><i class="van-icon van-icon-success">
-        <!----></i></div><span class="van-checkbox__label">label</span>
+  <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox">
+    <div class="ghb-checkbox__icon ghb-checkbox__icon--round" style="font-size: 5rem;"><i class="ghb-icon ghb-icon-success">
+        <!----></i></div><span class="ghb-checkbox__label">label</span>
   </div>
 </div>
 `;
 
 exports[`label disabled 1`] = `
-<div role="checkbox" tabindex="0" aria-checked="undefined" class="van-checkbox van-checkbox--label-disabled">
-  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
-      <!----></i></div><span class="van-checkbox__label">Label</span>
+<div role="checkbox" tabindex="0" aria-checked="undefined" class="ghb-checkbox ghb-checkbox--label-disabled">
+  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
+      <!----></i></div><span class="ghb-checkbox__label">Label</span>
 </div>
 `;
 
 exports[`label-position prop 1`] = `
-<div role="checkbox" tabindex="0" aria-checked="undefined" class="van-checkbox"><span class="van-checkbox__label van-checkbox__label--left">Label</span>
-  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
+<div role="checkbox" tabindex="0" aria-checked="undefined" class="ghb-checkbox"><span class="ghb-checkbox__label ghb-checkbox__label--left">Label</span>
+  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
       <!----></i></div>
 </div>
 `;

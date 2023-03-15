@@ -76,7 +76,7 @@ test('lock-scroll prop', () => {
   const wrapper = mount({
     template: `
       <div @touchmove="onTouchMove">
-        <van-overlay :lock-scroll="lockScroll" />
+        <ghb-overlay :lock-scroll="lockScroll" />
       </div>
     `,
     data() {
@@ -89,10 +89,10 @@ test('lock-scroll prop', () => {
     },
   });
 
-  wrapper.find('.van-overlay').trigger('touchmove');
+  wrapper.find('.ghb-overlay').trigger('touchmove');
   expect(onTouchMove).toHaveBeenCalledTimes(0);
 
   wrapper.setData({ lockScroll: false });
-  wrapper.find('.van-overlay').trigger('touchmove');
+  wrapper.find('.ghb-overlay').trigger('touchmove');
   expect(onTouchMove).toHaveBeenCalledTimes(1);
 });

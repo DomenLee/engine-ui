@@ -2,15 +2,15 @@
 
 ### 介绍
 
-Vant 提供了一套默认主题，CSS 命名采用 BEM 的风格，方便使用者覆盖样式。如果你想完全替换主题色或者其他样式，可以按照本文档进行主题定制。
+GHBUI 提供了一套默认主题，CSS 命名采用 BEM 的风格，方便使用者覆盖样式。如果你想完全替换主题色或者其他样式，可以按照本文档进行主题定制。
 
 ### 示例工程
 
-我们提供了一个基于 Vue Cli 3 的示例工程，仓库地址为 [Vant Demo](https://github.com/vant-ui/vant-demo)，其中包含了定制主题的基本配置，可以作为参考。
+我们提供了一个基于 Vue Cli 3 的示例工程，仓库地址为 [GHBUI Demo](https://github.com/vant-ui/vant-demo)，其中包含了定制主题的基本配置，可以作为参考。
 
 ### 样式变量
 
-Vant 使用了 [Less](http://lesscss.org/) 对样式进行预处理，并内置了一些样式变量，通过替换样式变量即可定制你自己需要的主题。
+GHBUI 使用了 [Less](http://lesscss.org/) 对样式进行预处理，并内置了一些样式变量，通过替换样式变量即可定制你自己需要的主题。
 
 下面是所有的基础样式变量，组件的颜色变量请参考各个组件的文档或[配置文件](https://github.com/vant-ui/vant/blob/2.x/src/style/var.less)。
 
@@ -101,12 +101,12 @@ module.exports = {
     [
       'import',
       {
-        libraryName: 'vant',
+        libraryName: 'ghbui',
         libraryDirectory: 'es',
         // 指定样式路径
         style: (name) => `${name}/style/less`,
       },
-      'vant',
+      'ghbui',
     ],
   ],
 };
@@ -116,10 +116,10 @@ module.exports = {
 
 ```js
 // 引入全部样式
-import 'vant/lib/index.less';
+import 'ghbui/lib/index.less';
 
 // 引入单个组件样式
-import 'vant/lib/button/style/less';
+import 'ghbui/lib/button/style/less';
 ```
 
 ### 步骤二 修改样式变量

@@ -1,5 +1,5 @@
 <template>
-  <van-field
+  <ghb-field
     readonly
     clickable
     name="picker"
@@ -9,21 +9,21 @@
     @click="showPicker = true"
   >
     <template #extra>
-      <van-popup
+      <ghb-popup
         v-model="showPicker"
         round
         position="bottom"
         get-container="body"
       >
-        <van-picker
+        <ghb-picker
           show-toolbar
           :columns="t('textColumns')"
           @confirm="onConfirm"
           @cancel="onCancel"
         />
-      </van-popup>
+      </ghb-popup>
     </template>
-  </van-field>
+  </ghb-field>
 </template>
 
 <script>

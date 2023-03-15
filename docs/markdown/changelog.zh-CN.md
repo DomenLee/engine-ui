@@ -2,11 +2,11 @@
 
 ### 提示
 
-当前文档为 Vant 2 的更新日志，如需查询 Vant 3 的更新内容，请访问 [Vant 3 更新日志](https://vant-ui.github.io/vant/v3/#/zh-CN/changelog)。
+当前文档为 GHBUI 2 的更新日志，如需查询 GHBUI 3 的更新内容，请访问 [GHBUI 3 更新日志](https://vant-ui.github.io/vant/v3/#/zh-CN/changelog)。
 
 ### 介绍
 
-Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
+GHBUI 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 **发布节奏**
 
@@ -14,9 +14,9 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 - 次版本号：每隔一至二个月发布，包含新特性和较大的功能更新，向下兼容。
 - 主版本号：无固定发布时间，包含不兼容更新。
 
-**Vant 2 维护提示**
+**GHBUI 2 维护提示**
 
-目前 Vant 3 已经发布超过 18 个月。对于 Vant 2，我们会将维护投入降低至最小范围，这意味着：
+目前 GHBUI 3 已经发布超过 18 个月。对于 GHBUI 2，我们会将维护投入降低至最小范围，这意味着：
 
 - 不再主动迭代新的功能。
 - 致命 bug 依然会被处理和修复。
@@ -145,7 +145,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 **Feature**
 
-- Vant 2 对应的 npm tag 切换为 `latest-v2` [d84d2d](https://github.com/vant-ui/vant/commit/d84d2d68345bb619ab2544136ca3c763611c729d)
+- GHBUI 2 对应的 npm tag 切换为 `latest-v2` [d84d2d](https://github.com/vant-ui/vant/commit/d84d2d68345bb619ab2544136ca3c763611c729d)
 
 ### [v2.12.39](https://github.com/vant-ui/vant/compare/v2.12.38...v2.12.39)
 
@@ -793,7 +793,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 - Locale: 新增德语语言包 [#7245](https://github.com/vant-ui/vant/issues/7245)
 - CollapseItem: 新增 toggle 方法，用于主动控制面板展开或收起 [#7281](https://github.com/vant-ui/vant/issues/7281)
 - Pagination: 新增 page、prev-text、next-text 插槽 [#7222](https://github.com/vant-ui/vant/issues/7222)
-- Tab: 当标签页内容为空时，不再渲染空的 `van-tab-pane` 节点 [#7238](https://github.com/vant-ui/vant/issues/7238)
+- Tab: 当标签页内容为空时，不再渲染空的 `ghb-tab-pane` 节点 [#7238](https://github.com/vant-ui/vant/issues/7238)
 
 **Bug Fixes**
 
@@ -2664,15 +2664,15 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 #### 样式定制
 
-移动端 UI 风格多变，对组件的可定制性要求较高。从 2.0 版本开始，Vant 中的所有组件都支持通过 <b>Less 变量</b>进行样式定制。同时我们新增了较多样式相关的 Props，便于快速定制组件风格。
+移动端 UI 风格多变，对组件的可定制性要求较高。从 2.0 版本开始，GHBUI 中的所有组件都支持通过 <b>Less 变量</b>进行样式定制。同时我们新增了较多样式相关的 Props，便于快速定制组件风格。
 
 ![](https://img01.yzcdn.cn/public_files/2019/06/11/9a066c1a212264c7ae56065e1f13d317.png)
 
 #### 更轻量
 
-轻量化是 Vant 的核心开发理念之一。在过去一年多时间里，我们新增了若干个组件和数百项功能，而<b>代码包体积从 1.0 版本的 169kb 降低到了 2.0 版本的 161kb</b>（45kb gzipped），平均每个组件体积下降 13%，这主要得益于组件内部逻辑的重构和复用。
+轻量化是 GHBUI 的核心开发理念之一。在过去一年多时间里，我们新增了若干个组件和数百项功能，而<b>代码包体积从 1.0 版本的 169kb 降低到了 2.0 版本的 161kb</b>（45kb gzipped），平均每个组件体积下降 13%，这主要得益于组件内部逻辑的重构和复用。
 
-在未来的 Vue 3.0 版本中，会提供 Function-based API 这一更优的逻辑复用方式，预计能帮助 Vant 进一步优化代码包体积。
+在未来的 Vue 3.0 版本中，会提供 Function-based API 这一更优的逻辑复用方式，预计能帮助 GHBUI 进一步优化代码包体积。
 
 #### 不兼容更新
 
@@ -2921,10 +2921,10 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 #### 后续计划
 
-我们计划在今年下半年推出 <b>VantWeapp 1.0 版本</b>，目标是对标 Vant 2.0 版本，将大部分新组件和新功能同步到小程序端。
+我们计划在今年下半年推出 <b>GHBUIWeapp 1.0 版本</b>，目标是对标 GHBUI 2.0 版本，将大部分新组件和新功能同步到小程序端。
 
-同时，Vant 3.0 版本也在酝酿当中，不出意外的话，<b>3.0 版本会基于 Vue 3.0 实现，并争取和 Vue 3.0 同期发布</b>。
+同时，GHBUI 3.0 版本也在酝酿当中，不出意外的话，<b>3.0 版本会基于 Vue 3.0 实现，并争取和 Vue 3.0 同期发布</b>。
 
-对于 Vant v1 版本，后续会进入维护期，跟进问题修复，但不再引入功能性改动。
+对于 GHBUI v1 版本，后续会进入维护期，跟进问题修复，但不再引入功能性改动。
 
 ![](https://img01.yzcdn.cn/public_files/2019/06/11/4e7202acbfc399622e428eb1485e1591.png)

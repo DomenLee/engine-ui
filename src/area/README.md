@@ -8,7 +8,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 
 ```js
 import Vue from 'vue';
-import { Area } from 'vant';
+import { Area } from 'ghbui';
 
 Vue.use(Area);
 ```
@@ -20,7 +20,7 @@ Vue.use(Area);
 To initialize `Area` component, `area-list` property is required.
 
 ```html
-<van-area title="Title" :area-list="areaList" />
+<ghb-area title="Title" :area-list="areaList" />
 ```
 
 ### areaList Data Structure
@@ -47,16 +47,16 @@ export default {
 };
 ```
 
-### @vant/area-data
+### @ghbui/area-data
 
-Vant officially provides a default area data, which can be imported through [@vant/area-data](https://github.com/vant-ui/vant/tree/dev/packages/vant-area-data):
+Vant officially provides a default area data, which can be imported through [@ghbui/area-data](https://github.com/ghbui-ui/vant/tree/dev/packages/ghbui-area-data):
 
 ```bash
-yarn add @vant/area-data
+yarn add @ghbui/area-data
 ```
 
 ```ts
-import { areaList } from '@vant/area-data';
+import { areaList } from '@ghbui/area-data';
 
 export default {
   setup() {
@@ -70,7 +70,7 @@ export default {
 To have a selected value，simply pass the `code` of target area to `value` property.
 
 ```html
-<van-area title="Title" :area-list="areaList" value="110101" />
+<ghb-area title="Title" :area-list="areaList" value="110101" />
 ```
 
 ### Columns Number
@@ -78,7 +78,7 @@ To have a selected value，simply pass the `code` of target area to `value` prop
 `columns-num` property is used to config number of columns to be displayed. This component has 3 columns corresponding to a 3 level picker by default. Set `columns-num` with 2, you'll have a 2 level picker.
 
 ```html
-<van-area title="Title" :area-list="areaList" :columns-num="2" />
+<ghb-area title="Title" :area-list="areaList" :columns-num="2" />
 ```
 
 ### Columns Placeholder
@@ -86,7 +86,7 @@ To have a selected value，simply pass the `code` of target area to `value` prop
 `columns-placeholder` property is used to config placeholder of columns.
 
 ```html
-<van-area
+<ghb-area
   title="Title"
   :area-list="areaList"
   :columns-placeholder="['Choose', 'Choose', 'Choose']"

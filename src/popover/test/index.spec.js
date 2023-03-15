@@ -33,7 +33,7 @@ test('should emit select event when clicking the action', () => {
     },
   });
 
-  wrapper.find('.van-popover__action').trigger('click');
+  wrapper.find('.ghb-popover__action').trigger('click');
   expect(wrapper.emitted('select')[0]).toEqual([baseActions[0], 0]);
 });
 
@@ -45,7 +45,7 @@ test('should not emit select event when the action is disabled', () => {
     },
   });
 
-  wrapper.find('.van-popover__action').trigger('click');
+  wrapper.find('.ghb-popover__action').trigger('click');
   expect(wrapper.emitted('select')).toBeFalsy();
 });
 
@@ -57,11 +57,11 @@ test('should close popover when clicking the action', () => {
     },
   });
 
-  wrapper.find('.van-popover__action').trigger('click');
+  wrapper.find('.ghb-popover__action').trigger('click');
   expect(wrapper.emitted('input')[0][0]).toEqual(false);
 
   wrapper.setProps({ closeOnClickAction: false });
-  wrapper.find('.van-popover__action').trigger('click');
+  wrapper.find('.ghb-popover__action').trigger('click');
   expect(wrapper.emitted('input').length).toEqual(1);
 });
 
@@ -73,7 +73,7 @@ test('should allow to custom the className of action', () => {
     },
   });
 
-  expect(wrapper.find('.van-popover__action').html()).toMatchSnapshot();
+  expect(wrapper.find('.ghb-popover__action').html()).toMatchSnapshot();
 });
 
 test('should not init popper.js instance before showed', async () => {
@@ -139,7 +139,7 @@ test('should close popover when touch outside content', async () => {
     },
   });
 
-  const popover = root.querySelector('.van-popover');
+  const popover = root.querySelector('.ghb-popover');
   trigger(popover, 'touchstart');
   expect(wrapper.emitted('input')).toBeFalsy();
 

@@ -17,7 +17,7 @@ const defaultConfig = {
   closeable: false,
   closeIcon: 'clear',
   asyncClose: false,
-  transition: 'van-fade',
+  transition: 'ghb-fade',
   getContainer: 'body',
   overlayStyle: null,
   startPosition: 0,

@@ -1,5 +1,5 @@
 <template>
-  <van-field
+  <ghb-field
     readonly
     clickable
     name="area"
@@ -9,20 +9,20 @@
     @click="showArea = true"
   >
     <template #extra>
-      <van-popup
+      <ghb-popup
         v-model="showArea"
         round
         position="bottom"
         get-container="body"
       >
-        <van-area
+        <ghb-area
           :area-list="t('areaList')"
           @confirm="onConfirm"
           @cancel="onCancel"
         />
-      </van-popup>
+      </ghb-popup>
     </template>
-  </van-field>
+  </ghb-field>
 </template>
 
 <script>

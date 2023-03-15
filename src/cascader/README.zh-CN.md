@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Cascader } from 'vant';
+import { Cascader } from 'ghbui';
 
 Vue.use(Cascader);
 ```
@@ -20,7 +20,7 @@ Vue.use(Cascader);
 级联选择组件可以搭配 Field 和 Popup 组件使用，示例如下：
 
 ```html
-<van-field
+<ghb-field
   v-model="fieldValue"
   is-link
   readonly
@@ -28,15 +28,15 @@ Vue.use(Cascader);
   placeholder="请选择所在地区"
   @click="show = true"
 />
-<van-popup v-model="show" round position="bottom">
-  <van-cascader
+<ghb-popup v-model="show" round position="bottom">
+  <ghb-cascader
     v-model="cascaderValue"
     title="请选择所在地区"
     :options="options"
     @close="show = false"
     @finish="onFinish"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -76,7 +76,7 @@ export default {
 通过 `active-color` 属性来设置选中状态的高亮颜色。
 
 ```html
-<van-cascader
+<ghb-cascader
   v-model="cascaderValue"
   title="请选择所在地区"
   :options="options"
@@ -91,7 +91,7 @@ export default {
 可以监听 `change` 事件并动态设置 `options`，实现异步加载选项。
 
 ```html
-<van-field
+<ghb-field
   v-model="fieldValue"
   is-link
   readonly
@@ -99,8 +99,8 @@ export default {
   placeholder="请选择所在地区"
   @click="show = true"
 />
-<van-popup v-model="show" round position="bottom">
-  <van-cascader
+<ghb-popup v-model="show" round position="bottom">
+  <ghb-cascader
     v-model="cascaderValue"
     title="请选择所在地区"
     :options="options"
@@ -108,7 +108,7 @@ export default {
     @change="onChange"
     @finish="onFinish"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -151,7 +151,7 @@ export default {
 通过 `field-names` 属性可以自定义 `options` 里的字段名称。
 
 ```html
-<van-cascader
+<ghb-cascader
   v-model="cascaderValue"
   title="请选择所在地区"
   :options="options"

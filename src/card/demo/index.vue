@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-card
+      <ghb-card
         num="2"
         price="2.00"
         :desc="t('desc')"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block :title="t('discountInfo')">
-      <van-card
+      <ghb-card
         num="2"
         price="2.00"
         origin-price="10.00"
@@ -23,7 +23,7 @@
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <van-card
+      <ghb-card
         num="2"
         price="2.00"
         :desc="t('desc')"
@@ -32,24 +32,24 @@
       >
         <template #tags>
           <div>
-            <van-tag plain type="danger" style="margin-right: 5px">
+            <ghb-tag plain type="danger" style="margin-right: 5px">
               标签
-            </van-tag>
-            <van-tag plain type="danger">标签</van-tag>
+            </ghb-tag>
+            <ghb-tag plain type="danger">标签</ghb-tag>
           </div>
         </template>
 
         <template #footer>
           <div>
-            <van-button round size="mini">
+            <ghb-button round size="mini">
               {{ t('button') }}
-            </van-button>
-            <van-button round size="mini">
+            </ghb-button>
+            <ghb-button round size="mini">
               {{ t('button') }}
-            </van-button>
+            </ghb-button>
           </div>
         </template>
-      </van-card>
+      </ghb-card>
     </demo-block>
   </demo-section>
 </template>

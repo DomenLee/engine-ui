@@ -1,8 +1,8 @@
 <template>
   <demo-section>
     <demo-block card :title="t('basicUsage')">
-      <van-cell is-link :title="t('showSheet')" @click="show.basic = true" />
-      <van-share-sheet
+      <ghb-cell is-link :title="t('showSheet')" @click="show.basic = true" />
+      <ghb-share-sheet
         v-model="show.basic"
         :title="t('title')"
         :options="options"
@@ -11,12 +11,12 @@
     </demo-block>
 
     <demo-block card :title="t('multiLine')">
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('showSheet')"
         @click="show.multiLine = true"
       />
-      <van-share-sheet
+      <ghb-share-sheet
         v-model="show.multiLine"
         :title="t('title')"
         :options="multiLineOptions"
@@ -25,12 +25,12 @@
     </demo-block>
 
     <demo-block card :title="t('customIcon')">
-      <van-cell
+      <ghb-cell
         is-link
         :title="t('showSheet')"
         @click="show.customIcon = true"
       />
-      <van-share-sheet
+      <ghb-share-sheet
         v-model="show.customIcon"
         :options="customIconOptions"
         @select="onSelect"
@@ -38,8 +38,8 @@
     </demo-block>
 
     <demo-block card :title="t('withDesc')">
-      <van-cell is-link :title="t('showSheet')" @click="show.withDesc = true" />
-      <van-share-sheet
+      <ghb-cell is-link :title="t('showSheet')" @click="show.withDesc = true" />
+      <ghb-share-sheet
         v-model="show.withDesc"
         :title="t('title')"
         :options="optionsWithDesc"

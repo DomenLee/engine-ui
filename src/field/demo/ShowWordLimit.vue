@@ -1,6 +1,6 @@
 <template>
   <demo-block v-if="!isWeapp" :title="t('showWordLimit')">
-    <van-field
+    <ghb-field
       v-model="value"
       autosize
       show-word-limit

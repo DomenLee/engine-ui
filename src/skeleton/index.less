@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-skeleton {
+.ghb-skeleton {
   display: flex;
   padding: 0 @padding-md;
 
@@ -46,19 +46,19 @@
   }
 
   &--animate {
-    animation: van-skeleton-blink @skeleton-animation-duration ease-in-out
+    animation: ghb-skeleton-blink @skeleton-animation-duration ease-in-out
       infinite;
   }
 
   &--round {
-    .van-skeleton__row,
-    .van-skeleton__title {
+    .ghb-skeleton__row,
+    .ghb-skeleton__title {
       border-radius: @border-radius-max;
     }
   }
 }
 
-@keyframes van-skeleton-blink {
+@keyframes ghb-skeleton-blink {
   50% {
     opacity: 0.6;
   }

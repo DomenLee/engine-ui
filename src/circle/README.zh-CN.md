@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Circle } from 'vant';
+import { Circle } from 'ghbui';
 
 Vue.use(Circle);
 ```
@@ -20,7 +20,7 @@ Vue.use(Circle);
 `rate` 属性表示进度条的目标进度，`v-model` 表示动画过程中的实时进度。当 `rate` 发生变化时，`v-model` 会以 `speed` 的速度变化，直至达到 `rate` 设定的值。
 
 ```html
-<van-circle v-model="currentRate" :rate="30" :speed="100" :text="text" />
+<ghb-circle v-model="currentRate" :rate="30" :speed="100" :text="text" />
 ```
 
 ```js
@@ -43,7 +43,7 @@ export default {
 通过 `stroke-width` 属性来控制进度条宽度。
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   :stroke-width="60"
@@ -56,7 +56,7 @@ export default {
 通过 `color` 属性来控制进度条颜色，`layer-color` 属性来控制轨道颜色。
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   layer-color="#ebedf0"
@@ -69,7 +69,7 @@ export default {
 `color` 属性支持传入对象格式来定义渐变色。
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   :color="gradientColor"
@@ -96,7 +96,7 @@ export default {
 将 `clockwise` 设置为 `false`，进度会从逆时针方向开始。
 
 ```html
-<van-circle
+<ghb-circle
   v-model="currentRate"
   :rate="rate"
   :clockwise="false"
@@ -109,7 +109,7 @@ export default {
 通过 `size` 属性设置圆环直径。
 
 ```html
-<van-circle v-model="currentRate" :rate="rate" size="120px" text="大小定制" />
+<ghb-circle v-model="currentRate" :rate="rate" size="120px" text="大小定制" />
 ```
 
 ## API

@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-uploader :after-read="afterRead" />
+      <ghb-uploader :after-read="afterRead" />
     </demo-block>
 
     <demo-block :title="t('preview')">
-      <van-uploader v-model="fileList" multiple accept="*" />
+      <ghb-uploader v-model="fileList" multiple accept="*" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('status')">
-      <van-uploader v-model="statusFileList" :after-read="afterReadFailed" />
+      <ghb-uploader v-model="statusFileList" :after-read="afterReadFailed" />
     </demo-block>
 
     <demo-block :title="t('maxCount')">
-      <van-uploader v-model="fileList2" multiple :max-count="2" />
+      <ghb-uploader v-model="fileList2" multiple :max-count="2" />
     </demo-block>
 
     <demo-block :title="t('maxSize')">
-      <van-uploader
+      <ghb-uploader
         v-model="fileList4"
         multiple
         :max-size="500 * 1024"
@@ -26,31 +26,31 @@
     </demo-block>
 
     <demo-block :title="t('customUpload')">
-      <van-uploader>
-        <van-button type="primary" icon="plus">
+      <ghb-uploader>
+        <ghb-button type="primary" icon="plus">
           {{ t('upload') }}
-        </van-button>
-      </van-uploader>
+        </ghb-button>
+      </ghb-uploader>
     </demo-block>
 
     <demo-block :title="t('previewCover')">
-      <van-uploader v-model="previewCoverFiles">
+      <ghb-uploader v-model="previewCoverFiles">
         <template #preview-cover="{ file }">
-          <div class="preview-cover van-ellipsis">{{ file.name }}</div>
+          <div class="preview-cover ghb-ellipsis">{{ file.name }}</div>
         </template>
-      </van-uploader>
+      </ghb-uploader>
     </demo-block>
 
     <demo-block :title="t('beforeRead')">
-      <van-uploader v-model="fileList3" :before-read="beforeRead" />
+      <ghb-uploader v-model="fileList3" :before-read="beforeRead" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-uploader :after-read="afterRead" disabled />
+      <ghb-uploader :after-read="afterRead" disabled />
     </demo-block>
 
     <demo-block :title="t('customPreviewImage')">
-      <van-uploader
+      <ghb-uploader
         v-model="fileList5"
         multiple
         accept="*"
@@ -191,7 +191,7 @@ export default {
 .demo-uploader {
   background-color: @white;
 
-  .van-uploader {
+  .ghb-uploader {
     margin-left: @padding-md;
   }
 

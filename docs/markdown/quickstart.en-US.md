@@ -5,23 +5,20 @@
 ### npm
 
 ```bash
-# Install latest Vant for Vue 3 project
+# Install latest GHBUI for Vue 3 project
 npm i vant -S
 
-# Install Vant 2 for Vue 2 project
+# Install GHBUI 2 for Vue 2 project
 npm i vant@latest-v2 -S
 ```
 
 ### CDN
 
-The easiest way to use Vant is to include a CDN link in the html file, after which you can access all components via the global variable `vant`.
+The easiest way to use GHBUI is to include a CDN link in the html file, after which you can access all components via the global variable `vant`.
 
 ```html
 <!-- import style -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/vant@2.12/lib/index.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css" />
 
 <!-- import script -->
 <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
@@ -31,7 +28,7 @@ The easiest way to use Vant is to include a CDN link in the html file, after whi
   // Render the Button component
   new Vue({
     el: '#app',
-    template: `<van-button>Button</van-button>`,
+    template: `<ghb-button>Button</ghb-button>`,
   });
 
   // Call function component
@@ -44,7 +41,7 @@ The easiest way to use Vant is to include a CDN link in the html file, after whi
 
 #### Free CDN
 
-You can use Vant through these free CDN services:
+You can use GHBUI through these free CDN services:
 
 - [jsdelivr](https://www.jsdelivr.com/package/npm/vant)
 - [cdnjs](https://cdnjs.com/libraries/vant)
@@ -104,17 +101,17 @@ npm i babel-plugin-import -D
 module.exports = {
   plugins: [
     ['import', {
-      libraryName: 'vant',
+      libraryName: 'ghbui',
       libraryDirectory: 'es',
       style: true
-    }, 'vant']
+    }, 'ghbui']
   ]
 };
 ```
 
 ```js
 // Then you can import components from vant
-import { Button } from 'vant';
+import { Button } from 'ghbui';
 ```
 
 > If you are using TypeScript，please use [ts-import-plugin](https://github.com/Brooooooklyn/ts-import-plugin) instead.
@@ -122,18 +119,18 @@ import { Button } from 'vant';
 ### 2. Manually import
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/button/style';
+import Button from 'ghbui/lib/button';
+import 'ghbui/lib/button/style';
 ```
 
 ### 3. Import all components
 
 ```js
 import Vue from 'vue';
-import Vant from 'vant';
-import 'vant/lib/index.css';
+import GHBUI from 'ghbui';
+import 'ghbui/lib/index.css';
 
-Vue.use(Vant);
+Vue.use(GHBUI);
 ```
 
 > If you configured babel-plugin-import, you won't be allowed to import all components.

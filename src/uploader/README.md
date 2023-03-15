@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Uploader } from 'vant';
+import { Uploader } from 'ghbui';
 
 Vue.use(Uploader);
 ```
@@ -14,7 +14,7 @@ Vue.use(Uploader);
 ### Basic Usage
 
 ```html
-<van-uploader :after-read="afterRead" />
+<ghb-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -30,7 +30,7 @@ export default {
 ### Preview File
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<ghb-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -46,7 +46,7 @@ export default {
 ### Upload Status
 
 ```html
-<van-uploader v-model="fileList" :after-read="afterRead" />
+<ghb-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -84,7 +84,7 @@ export default {
 ### Max Count
 
 ```html
-<van-uploader v-model="fileList" multiple :max-count="2" />
+<ghb-uploader v-model="fileList" multiple :max-count="2" />
 ```
 
 ```js
@@ -100,11 +100,11 @@ export default {
 ### Max Size
 
 ```html
-<van-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
+<ghb-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -119,11 +119,11 @@ export default {
 If you need to make different size limits for different types of files, you can pass a function to the `max-size` props.
 
 ```html
-<van-uploader multiple :max-size="isOverSize" />
+<ghb-uploader multiple :max-size="isOverSize" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -138,19 +138,19 @@ export default {
 ### Custom Upload Area
 
 ```html
-<van-uploader>
-  <van-button icon="plus" type="primary">Upload Image</van-button>
-</van-uploader>
+<ghb-uploader>
+  <ghb-button icon="plus" type="primary">Upload Image</ghb-button>
+</ghb-uploader>
 ```
 
 ### Preview Cover
 
 ```html
-<van-uploader v-model="fileList">
+<ghb-uploader v-model="fileList">
   <template #preview-cover="{ file }">
-    <div class="preview-cover van-ellipsis">{{ file.name }}</div>
+    <div class="preview-cover ghb-ellipsis">{{ file.name }}</div>
   </template>
-</van-uploader>
+</ghb-uploader>
 
 <style>
   .preview-cover {
@@ -170,11 +170,11 @@ export default {
 ### Before Read
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<ghb-uploader :before-read="beforeRead" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   methods: {
@@ -207,17 +207,17 @@ export default {
 Use `disabled` prop to disable uploader.
 
 ```html
-<van-uploader disabled />
+<ghb-uploader disabled />
 ```
 
 ### Customize Single Preview Image Style
 
 ```html
-<van-uploader v-model="fileList" :deletable="false" />
+<ghb-uploader v-model="fileList" :deletable="false" />
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {

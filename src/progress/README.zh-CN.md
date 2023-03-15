@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Progress } from 'vant';
+import { Progress } from 'ghbui';
 
 Vue.use(Progress);
 ```
@@ -20,7 +20,7 @@ Vue.use(Progress);
 进度条默认为蓝色，使用 `percentage` 属性来设置当前进度。
 
 ```html
-<van-progress :percentage="50" />
+<ghb-progress :percentage="50" />
 ```
 
 ### 线条粗细
@@ -28,7 +28,7 @@ Vue.use(Progress);
 通过 `stroke-width` 可以设置进度条的粗细。
 
 ```html
-<van-progress :percentage="50" stroke-width="8" />
+<ghb-progress :percentage="50" stroke-width="8" />
 ```
 
 ### 置灰
@@ -36,7 +36,7 @@ Vue.use(Progress);
 设置 `inactive` 属性后进度条将置灰。
 
 ```html
-<van-progress inactive :percentage="50" />
+<ghb-progress inactive :percentage="50" />
 ```
 
 ### 样式定制
@@ -44,9 +44,9 @@ Vue.use(Progress);
 可以使用 `pivot-text` 属性自定义文字，`color` 属性自定义进度条颜色。
 
 ```html
-<van-progress pivot-text="橙色" color="#f2826a" :percentage="25" />
-<van-progress pivot-text="红色" color="#ee0a24" :percentage="50" />
-<van-progress
+<ghb-progress pivot-text="橙色" color="#f2826a" :percentage="25" />
+<ghb-progress pivot-text="红色" color="#ee0a24" :percentage="50" />
+<ghb-progress
   :percentage="75"
   pivot-text="紫色"
   pivot-color="#7232dd"
@@ -105,15 +105,15 @@ Progress 组件在挂载时，会获取自身的宽度，并计算出进度条�
 
 ```html
 <!-- Before -->
-<van-progress v-show="show" />
+<ghb-progress v-show="show" />
 <!-- After -->
-<van-progress v-if="show" />
+<ghb-progress v-if="show" />
 ```
 
 方法二，调用组件的 resize 方法来主动触发重绘：
 
 ```html
-<van-progress v-show="show" ref="progress" />
+<ghb-progress v-show="show" ref="progress" />
 ```
 
 ```js

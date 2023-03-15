@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`cancel-text prop 1`] = `<button type="button" class="van-share-sheet__cancel">foo</button>`;
+exports[`cancel-text prop 1`] = `<button type="button" class="ghb-share-sheet__cancel">foo</button>`;
 
-exports[`description prop 1`] = `<span class="van-share-sheet__description">foo</span>`;
+exports[`description prop 1`] = `<span class="ghb-share-sheet__description">foo</span>`;
 
 exports[`title & description slot 1`] = `
-<div class="van-popup van-popup--round van-popup--bottom van-popup--safe-area-inset-bottom van-share-sheet" name="van-popup-slide-bottom">
-  <div class="van-share-sheet__header">
-    <h2 class="van-share-sheet__title">Custom Title</h2><span class="van-share-sheet__description">Custom Description</span>
+<div class="ghb-popup ghb-popup--round ghb-popup--bottom ghb-popup--safe-area-inset-bottom ghb-share-sheet" name="ghb-popup-slide-bottom">
+  <div class="ghb-share-sheet__header">
+    <h2 class="ghb-share-sheet__title">Custom Title</h2><span class="ghb-share-sheet__description">Custom Description</span>
   </div>
-  <div class="van-share-sheet__options"></div><button type="button" class="van-share-sheet__cancel">取消</button>
+  <div class="ghb-share-sheet__options"></div><button type="button" class="ghb-share-sheet__cancel">取消</button>
 </div>
 `;

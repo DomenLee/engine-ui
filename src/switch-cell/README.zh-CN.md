@@ -5,18 +5,18 @@
 <b>SwitchCell 组件将在 3.0 版本中废弃</b>，请直接使用 Cell 和 Switch 组件代替，替换写法如下：
 
 ```html
-<van-cell center title="标题">
+<ghb-cell center title="标题">
   <template #right-icon>
-    <van-switch v-model="checked" size="24" />
+    <ghb-switch v-model="checked" size="24" />
   </template>
-</van-cell>
+</ghb-cell>
 ```
 
 ### 引入
 
 ```js
 import Vue from 'vue';
-import { SwitchCell } from 'vant';
+import { SwitchCell } from 'ghbui';
 
 Vue.use(SwitchCell);
 ```
@@ -26,9 +26,9 @@ Vue.use(SwitchCell);
 ### 基础用法
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" title="标题" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-switch-cell v-model="checked" title="标题" />
+</ghb-cell-group>
 ```
 
 ```js
@@ -46,9 +46,9 @@ export default {
 通过 `disabled` 属性可以将组件设置为禁用状态。
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" disabled title="标题" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-switch-cell v-model="checked" disabled title="标题" />
+</ghb-cell-group>
 ```
 
 ### 加载状态
@@ -56,9 +56,9 @@ export default {
 通过 `loading` 属性可以将组件设置为加载状态。
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" loading title="标题" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-switch-cell v-model="checked" loading title="标题" />
+</ghb-cell-group>
 ```
 
 ## API

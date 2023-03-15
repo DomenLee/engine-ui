@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Field } from 'vant';
+import { Field } from 'ghbui';
 
 Vue.use(Field);
 ```
@@ -16,9 +16,9 @@ Vue.use(Field);
 The value of field is bound with v-model.
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" label="Label" placeholder="Text" />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-field v-model="value" label="Label" placeholder="Text" />
+</ghb-cell-group>
 ```
 
 ```js
@@ -36,11 +36,11 @@ export default {
 Use `type` prop to custom different type fields.
 
 ```html
-<van-field v-model="text" label="Text" />
-<van-field v-model="tel" type="tel" label="Phone" />
-<van-field v-model="digit" type="digit" label="Digit" />
-<van-field v-model="number" type="number" label="Number" />
-<van-field v-model="password" type="password" label="Password" />
+<ghb-field v-model="text" label="Text" />
+<ghb-field v-model="tel" type="tel" label="Phone" />
+<ghb-field v-model="digit" type="digit" label="Digit" />
+<ghb-field v-model="number" type="number" label="Number" />
+<ghb-field v-model="password" type="password" label="Password" />
 ```
 
 ```js
@@ -60,31 +60,31 @@ export default {
 ### Disabled
 
 ```html
-<van-cell-group>
-  <van-field label="Text" value="Input Readonly" readonly />
-  <van-field label="Text" value="Input Disabled" disabled />
-</van-cell-group>
+<ghb-cell-group>
+  <ghb-field label="Text" value="Input Readonly" readonly />
+  <ghb-field label="Text" value="Input Disabled" disabled />
+</ghb-cell-group>
 ```
 
 ### Show Icon
 
 ```html
-<van-cell-group>
-  <van-field
+<ghb-cell-group>
+  <ghb-field
     v-model="value1"
     label="Text"
     left-icon="smile-o"
     right-icon="warning-o"
     placeholder="Show Icon"
   />
-  <van-field
+  <ghb-field
     v-model="value2"
     clearable
     label="Text"
     left-icon="music-o"
     placeholder="Show Clear Icon"
   />
-</van-cell-group>
+</ghb-cell-group>
 ```
 
 ```js
@@ -103,22 +103,22 @@ export default {
 Use `error` or `error-message` to show error info.
 
 ```html
-<van-cell-group>
-  <van-field
+<ghb-cell-group>
+  <ghb-field
     v-model="username"
     error
     required
     label="Username"
     placeholder="Username"
   />
-  <van-field
+  <ghb-field
     v-model="phone"
     required
     label="Phone"
     placeholder="Phone"
     error-message="Invalid phone"
   />
-</van-cell-group>
+</ghb-cell-group>
 ```
 
 ### Insert Button
@@ -126,11 +126,11 @@ Use `error` or `error-message` to show error info.
 Use button slot to insert button.
 
 ```html
-<van-field v-model="sms" center clearable label="SMS" placeholder="SMS">
+<ghb-field v-model="sms" center clearable label="SMS" placeholder="SMS">
   <template #button>
-    <van-button size="small" type="primary">Send SMS</van-button>
+    <ghb-button size="small" type="primary">Send SMS</ghb-button>
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ### Format Value
@@ -138,13 +138,13 @@ Use button slot to insert button.
 Use `formatter` prop to format the input value.
 
 ```html
-<van-field
+<ghb-field
   v-model="value1"
   label="Text"
   :formatter="formatter"
   placeholder="Format On Change"
 />
-<van-field
+<ghb-field
   v-model="value2"
   label="Text"
   :formatter="formatter"
@@ -174,7 +174,7 @@ export default {
 Textarea Field can be auto resize when has `autosize` prop.
 
 ```html
-<van-field
+<ghb-field
   v-model="message"
   label="Message"
   type="textarea"
@@ -187,7 +187,7 @@ Textarea Field can be auto resize when has `autosize` prop.
 ### Show Word Limit
 
 ```html
-<van-field
+<ghb-field
   v-model="message"
   rows="2"
   autosize
@@ -204,7 +204,7 @@ Textarea Field can be auto resize when has `autosize` prop.
 Use `input-align` prop to align the input value.
 
 ```html
-<van-field
+<ghb-field
   v-model="value"
   label="Text"
   placeholder="Input Align Right"
@@ -250,7 +250,7 @@ Use `input-align` prop to align the input value.
 | autosize | Textarea auto resize，can accept an object,<br>e.g. { maxHeight: 100, minHeight: 50 } | _boolean \| object_ | `false` |
 | left-icon | Left side icon name | _string_ | - |
 | right-icon | Right side icon name | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `ghb-icon` |
 | rules `v2.5.0` | Form validation rules | _Rule[]_ | - |
 | autocomplete | [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute of native input element | _string_ | - |
 

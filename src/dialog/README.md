@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Dialog } from 'vant';
+import { Dialog } from 'ghbui';
 
 Vue.use(Dialog);
 ```
@@ -105,9 +105,9 @@ export default {
 If you need to render vue components within a dialog, you can use dialog component.
 
 ```html
-<van-dialog v-model="show" title="Title" show-cancel-button>
+<ghb-dialog v-model="show" title="Title" show-cancel-button>
   <img src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
-</van-dialog>
+</ghb-dialog>
 ```
 
 ```js

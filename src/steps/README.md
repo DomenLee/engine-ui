@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Step, Steps } from 'vant';
+import { Step, Steps } from 'ghbui';
 
 Vue.use(Step);
 Vue.use(Steps);
@@ -15,12 +15,12 @@ Vue.use(Steps);
 ### Basic Usage
 
 ```html
-<van-steps :active="active">
-  <van-step>Step1</van-step>
-  <van-step>Step2</van-step>
-  <van-step>Step3</van-step>
-  <van-step>Step4</van-step>
-</van-steps>
+<ghb-steps :active="active">
+  <ghb-step>Step1</ghb-step>
+  <ghb-step>Step2</ghb-step>
+  <ghb-step>Step3</ghb-step>
+  <ghb-step>Step4</ghb-step>
+</ghb-steps>
 ```
 
 ```js
@@ -36,31 +36,31 @@ export default {
 ### Custom Style
 
 ```html
-<van-steps :active="active" active-icon="success" active-color="#38f">
-  <van-step>Step1</van-step>
-  <van-step>Step2</van-step>
-  <van-step>Step3</van-step>
-  <van-step>Step4</van-step>
-</van-steps>
+<ghb-steps :active="active" active-icon="success" active-color="#38f">
+  <ghb-step>Step1</ghb-step>
+  <ghb-step>Step2</ghb-step>
+  <ghb-step>Step3</ghb-step>
+  <ghb-step>Step4</ghb-step>
+</ghb-steps>
 ```
 
 ### Vertical Steps
 
 ```html
-<van-steps direction="vertical" :active="0">
-  <van-step>
+<ghb-steps direction="vertical" :active="0">
+  <ghb-step>
     <h3>【City】Status1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <van-step>
+  </ghb-step>
+  <ghb-step>
     <h3>【City】Status2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <van-step>
+  </ghb-step>
+  <ghb-step>
     <h3>【City】Status3</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </ghb-step>
+</ghb-steps>
 ```
 
 ## API
@@ -76,7 +76,7 @@ export default {
 | active-icon | Active icon name | _string_ | `checked` |
 | inactive-icon | Inactive icon name | _string_ | - |
 | finish-icon `v2.12.7` | Finish icon name | _string_ | - |
-| icon-prefix `v2.12.15` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.12.15` | Icon className prefix | _string_ | `ghb-icon` |
 | center | Whether to center content when direction is vertical | _boolean_ | `false` |
 
 ### Step Slots

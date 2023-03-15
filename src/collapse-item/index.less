@@ -1,7 +1,7 @@
 @import '../style/var';
 @import '../style/mixins/hairline';
 
-.van-collapse-item {
+.ghb-collapse-item {
   position: relative;
 
   &--border {
@@ -11,9 +11,9 @@
   }
 
   &__title {
-    .van-cell__right-icon::before {
+    .ghb-cell__right-icon::before {
       // using translateZ to fix safari rendering issues
-      // see: https://github.com/vant-ui/vant/issues/8608
+      // see: https://github.com/ghbui-ui/vant/issues/8608
       transform: rotate(90deg) translateZ(0);
       transition: transform @collapse-item-transition-duration;
     }
@@ -24,7 +24,7 @@
     }
 
     &--expanded {
-      .van-cell__right-icon::before {
+      .ghb-cell__right-icon::before {
         transform: rotate(-90deg);
       }
 
@@ -43,7 +43,7 @@
       cursor: not-allowed;
 
       &,
-      & .van-cell__right-icon {
+      & .ghb-cell__right-icon {
         color: @collapse-item-title-disabled-color;
       }
 

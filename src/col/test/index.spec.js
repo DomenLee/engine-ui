@@ -19,28 +19,28 @@ test('Row click event', () => {
 test('gutter prop', () => {
   const wrapper = mount({
     template: `
-      <van-row gutter="24">
-        <van-col span="24">24</van-col>
+      <ghb-row gutter="24">
+        <ghb-col span="24">24</ghb-col>
 
-        <van-col span="12">12</van-col>
-        <van-col span="12">12</van-col>
+        <ghb-col span="12">12</ghb-col>
+        <ghb-col span="12">12</ghb-col>
 
-        <van-col span="8">8</van-col>
-        <van-col span="8">8</van-col>
-        <van-col span="8">8</van-col>
+        <ghb-col span="8">8</ghb-col>
+        <ghb-col span="8">8</ghb-col>
+        <ghb-col span="8">8</ghb-col>
 
-        <van-col span="6">6</van-col>
-        <van-col span="6">6</van-col>
-        <van-col span="6">6</van-col>
-        <van-col span="6">6</van-col>
+        <ghb-col span="6">6</ghb-col>
+        <ghb-col span="6">6</ghb-col>
+        <ghb-col span="6">6</ghb-col>
+        <ghb-col span="6">6</ghb-col>
         
-        <van-col span="7">7</van-col>
-        <van-col span="6">6</van-col>
-        <van-col span="5">5</van-col>
-        <van-col span="4">4</van-col>
-        <van-col span="3">3</van-col>
-        <van-col span="2">2</van-col>
-      </van-row>
+        <ghb-col span="7">7</ghb-col>
+        <ghb-col span="6">6</ghb-col>
+        <ghb-col span="5">5</ghb-col>
+        <ghb-col span="4">4</ghb-col>
+        <ghb-col span="3">3</ghb-col>
+        <ghb-col span="2">2</ghb-col>
+      </ghb-row>
     `,
   });
 

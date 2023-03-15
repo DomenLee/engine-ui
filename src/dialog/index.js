@@ -54,7 +54,7 @@ Dialog.defaultOptions = {
   className: '',
   allowHtml: true,
   lockScroll: true,
-  transition: 'van-dialog-bounce',
+  transition: 'ghb-dialog-bounce',
   beforeClose: null,
   overlayClass: '',
   overlayStyle: null,

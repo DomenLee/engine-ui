@@ -1,25 +1,25 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-notice-bar :text="t('text')" scrollable left-icon="volume-o" />
+      <ghb-notice-bar :text="t('text')" scrollable left-icon="volume-o" />
     </demo-block>
 
     <demo-block :title="t('scrollable')">
-      <van-notice-bar scrollable :text="t('shortText')" />
-      <van-notice-bar :scrollable="false" :text="t('text')" />
+      <ghb-notice-bar scrollable :text="t('shortText')" />
+      <ghb-notice-bar :scrollable="false" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('wrapable')">
-      <van-notice-bar wrapable :scrollable="false" :text="t('text')" />
+      <ghb-notice-bar wrapable :scrollable="false" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('mode')">
-      <van-notice-bar mode="closeable" :text="t('shortText')" />
-      <van-notice-bar mode="link" :text="t('shortText')" />
+      <ghb-notice-bar mode="closeable" :text="t('shortText')" />
+      <ghb-notice-bar mode="link" :text="t('shortText')" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-notice-bar
+      <ghb-notice-bar
         :text="t('shortText')"
         color="#1989fa"
         background="#ecf9ff"
@@ -28,18 +28,18 @@
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('verticalScroll')">
-      <van-notice-bar left-icon="volume-o" :scrollable="false">
-        <van-swipe
+      <ghb-notice-bar left-icon="volume-o" :scrollable="false">
+        <ghb-swipe
           vertical
           class="notice-swipe"
           :autoplay="3000"
           :show-indicators="false"
         >
-          <van-swipe-item>{{ t('content') }} 1</van-swipe-item>
-          <van-swipe-item>{{ t('content') }} 2</van-swipe-item>
-          <van-swipe-item>{{ t('content') }} 3</van-swipe-item>
-        </van-swipe>
-      </van-notice-bar>
+          <ghb-swipe-item>{{ t('content') }} 1</ghb-swipe-item>
+          <ghb-swipe-item>{{ t('content') }} 2</ghb-swipe-item>
+          <ghb-swipe-item>{{ t('content') }} 3</ghb-swipe-item>
+        </ghb-swipe>
+      </ghb-notice-bar>
     </demo-block>
   </demo-section>
 </template>
@@ -77,11 +77,11 @@ export default {
 .demo-notice-bar {
   background: @white;
 
-  .van-notice-bar:not(:first-of-type) {
+  .ghb-notice-bar:not(:first-of-type) {
     margin-top: 4px;
   }
 
-  .van-doc-demo-block__title {
+  .ghb-doc-demo-block__title {
     padding-top: 24px;
   }
 

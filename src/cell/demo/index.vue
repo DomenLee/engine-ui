@@ -1,22 +1,22 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-cell-group>
-        <van-cell :title="t('cell')" :value="t('content')" />
-        <van-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
-      </van-cell-group>
+      <ghb-cell-group>
+        <ghb-cell :title="t('cell')" :value="t('content')" />
+        <ghb-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
+      </ghb-cell-group>
     </demo-block>
 
     <demo-block :title="t('insetGrouped')">
-      <van-cell-group inset>
-        <van-cell :title="t('cell')" :value="t('content')" />
-        <van-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
-      </van-cell-group>
+      <ghb-cell-group inset>
+        <ghb-cell :title="t('cell')" :value="t('content')" />
+        <ghb-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
+      </ghb-cell-group>
     </demo-block>
 
     <demo-block :title="t('largeSize')">
-      <van-cell :title="t('cell')" :value="t('content')" size="large" />
-      <van-cell
+      <ghb-cell :title="t('cell')" :value="t('content')" size="large" />
+      <ghb-cell
         :title="t('cell')"
         :value="t('content')"
         size="large"
@@ -25,17 +25,17 @@
     </demo-block>
 
     <demo-block :title="t('showIcon')">
-      <van-cell :title="t('cell')" :value="t('content')" icon="location-o" />
+      <ghb-cell :title="t('cell')" :value="t('content')" icon="location-o" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('valueOnly')">
-      <van-cell :value="t('content')" />
+      <ghb-cell :value="t('content')" />
     </demo-block>
 
     <demo-block :title="t('showArrow')">
-      <van-cell :title="t('cell')" is-link />
-      <van-cell :title="t('cell')" is-link :value="t('content')" />
-      <van-cell
+      <ghb-cell :title="t('cell')" is-link />
+      <ghb-cell :title="t('cell')" is-link :value="t('content')" />
+      <ghb-cell
         :title="t('cell')"
         is-link
         arrow-direction="down"
@@ -44,36 +44,36 @@
     </demo-block>
 
     <demo-block :title="t('router')">
-      <van-cell :title="t('urlRoute')" is-link url="/vant/mobile.html" />
-      <van-cell :title="t('vueRoute')" is-link to="index" />
+      <ghb-cell :title="t('urlRoute')" is-link url="/vant/mobile.html" />
+      <ghb-cell :title="t('vueRoute')" is-link to="index" />
     </demo-block>
 
     <demo-block :title="t('groupTitle')">
-      <van-cell-group :title="`${t('group')} 1`">
-        <van-cell :title="t('cell')" :value="t('content')" />
-      </van-cell-group>
-      <van-cell-group :title="`${t('group')} 2`">
-        <van-cell :title="t('cell')" :value="t('content')" />
-      </van-cell-group>
+      <ghb-cell-group :title="`${t('group')} 1`">
+        <ghb-cell :title="t('cell')" :value="t('content')" />
+      </ghb-cell-group>
+      <ghb-cell-group :title="`${t('group')} 2`">
+        <ghb-cell :title="t('cell')" :value="t('content')" />
+      </ghb-cell-group>
     </demo-block>
 
     <demo-block :title="t('useSlots')">
-      <van-cell :value="t('content')" is-link>
+      <ghb-cell :value="t('content')" is-link>
         <template #title>
           <span class="custom-title">{{ t('cell') }}</span>
-          <van-tag type="danger">{{ t('tag') }}</van-tag>
+          <ghb-tag type="danger">{{ t('tag') }}</ghb-tag>
         </template>
-      </van-cell>
+      </ghb-cell>
 
-      <van-cell icon="shop-o" :title="t('cell')">
+      <ghb-cell icon="shop-o" :title="t('cell')">
         <template #right-icon>
-          <van-icon name="search" class="search-icon" />
+          <ghb-icon name="search" class="search-icon" />
         </template>
-      </van-cell>
+      </ghb-cell>
     </demo-block>
 
     <demo-block :title="t('verticalCenter')">
-      <van-cell
+      <ghb-cell
         center
         :title="t('cell')"
         :value="t('content')"

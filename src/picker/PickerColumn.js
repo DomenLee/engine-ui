@@ -346,7 +346,7 @@ export default createComponent({
         };
 
         const childData = {
-          class: 'van-ellipsis',
+          class: 'ghb-ellipsis',
           domProps: {
             [this.allowHtml ? 'innerHTML' : 'textContent']: text,
           },

@@ -1,183 +1,183 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`empty-image prop 1`] = `
-<div class="van-coupon-list">
-  <div class="van-coupon-list__exchange-bar">
-    <div class="van-cell van-cell--borderless van-field van-coupon-list__field">
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="text" placeholder="请输入优惠码" class="van-field__control"></div>
+<div class="ghb-coupon-list">
+  <div class="ghb-coupon-list__exchange-bar">
+    <div class="ghb-cell ghb-cell--borderless ghb-field ghb-coupon-list__field">
+      <div class="ghb-cell__value ghb-cell__value--alone ghb-field__value">
+        <div class="ghb-field__body"><input type="text" placeholder="请输入优惠码" class="ghb-field__control"></div>
       </div>
-    </div><button disabled="disabled" class="van-button van-button--danger van-button--normal van-button--plain van-button--disabled van-coupon-list__exchange">
-      <div class="van-button__content"><span class="van-button__text">兑换</span></div>
+    </div><button disabled="disabled" class="ghb-button ghb-button--danger ghb-button--normal ghb-button--plain ghb-button--disabled ghb-coupon-list__exchange">
+      <div class="ghb-button__content"><span class="ghb-button__text">兑换</span></div>
     </button>
   </div>
-  <div class="van-tabs van-tabs--line van-coupon-list__tab">
-    <div class="van-tabs__wrap">
-      <div role="tablist" class="van-tabs__nav van-tabs__nav--line">
-        <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span class="van-tab__text van-tab__text--ellipsis">可用 (0)</span></div>
-        <div role="tab" class="van-tab"><span class="van-tab__text van-tab__text--ellipsis">不可用 (0)</span></div>
-        <div class="van-tabs__line"></div>
+  <div class="ghb-tabs ghb-tabs--line ghb-coupon-list__tab">
+    <div class="ghb-tabs__wrap">
+      <div role="tablist" class="ghb-tabs__nav ghb-tabs__nav--line">
+        <div role="tab" aria-selected="true" class="ghb-tab ghb-tab--active"><span class="ghb-tab__text ghb-tab__text--ellipsis">可用 (0)</span></div>
+        <div role="tab" class="ghb-tab"><span class="ghb-tab__text ghb-tab__text--ellipsis">不可用 (0)</span></div>
+        <div class="ghb-tabs__line"></div>
       </div>
     </div>
-    <div class="van-tabs__content">
-      <div role="tabpanel" class="van-tab__pane">
-        <div class="van-coupon-list__list van-coupon-list__list--with-bottom" style="height: 628px;">
-          <div class="van-coupon-list__empty"><img src="https://img.yzcdn.com/xxx.png">
+    <div class="ghb-tabs__content">
+      <div role="tabpanel" class="ghb-tab__pane">
+        <div class="ghb-coupon-list__list ghb-coupon-list__list--with-bottom" style="height: 628px;">
+          <div class="ghb-coupon-list__empty"><img src="https://img.yzcdn.com/xxx.png">
             <p>暂无优惠券</p>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="van-tab__pane" style="display: none;">
+      <div role="tabpanel" class="ghb-tab__pane" style="display: none;">
         <!---->
       </div>
     </div>
   </div>
-  <div class="van-coupon-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-coupon-list__close">
-      <div class="van-button__content"><span class="van-button__text">不使用优惠券</span></div>
+  <div class="ghb-coupon-list__bottom"><button class="ghb-button ghb-button--danger ghb-button--normal ghb-button--block ghb-button--round ghb-coupon-list__close">
+      <div class="ghb-button__content"><span class="ghb-button__text">不使用优惠券</span></div>
     </button></div>
 </div>
 `;
 
 exports[`render coupon cell 1`] = `
-<div role="button" tabindex="0" class="van-cell van-cell--clickable van-coupon-cell">
-  <div class="van-cell__title"><span>优惠券</span></div>
-  <div class="van-cell__value van-coupon-cell__value"><span>暂无可用</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+<div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-coupon-cell">
+  <div class="ghb-cell__title"><span>优惠券</span></div>
+  <div class="ghb-cell__value ghb-coupon-cell__value"><span>暂无可用</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
     <!----></i>
 </div>
 `;
 
 exports[`render coupon cell with coupon 1`] = `
-<div role="button" tabindex="0" class="van-cell van-cell--clickable van-coupon-cell">
-  <div class="van-cell__title"><span>优惠券</span></div>
-  <div class="van-cell__value van-coupon-cell__value van-coupon-cell__value--selected"><span>-¥ 1.00</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+<div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-coupon-cell">
+  <div class="ghb-cell__title"><span>优惠券</span></div>
+  <div class="ghb-cell__value ghb-coupon-cell__value ghb-coupon-cell__value--selected"><span>-¥ 1.00</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
     <!----></i>
 </div>
 `;
 
 exports[`render coupon cell with zero discount 1`] = `
-<div role="button" tabindex="0" class="van-cell van-cell--clickable van-coupon-cell">
-  <div class="van-cell__title"><span>优惠券</span></div>
-  <div class="van-cell__value van-coupon-cell__value van-coupon-cell__value--selected"><span>-¥ 0.00</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+<div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable ghb-coupon-cell">
+  <div class="ghb-cell__title"><span>优惠券</span></div>
+  <div class="ghb-cell__value ghb-coupon-cell__value ghb-coupon-cell__value--selected"><span>-¥ 0.00</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
     <!----></i>
 </div>
 `;
 
 exports[`render coupon list 1`] = `
-<div class="van-coupon-list">
-  <div class="van-coupon-list__exchange-bar">
-    <div class="van-cell van-cell--borderless van-field van-coupon-list__field">
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="text" placeholder="请输入优惠码" class="van-field__control"></div>
+<div class="ghb-coupon-list">
+  <div class="ghb-coupon-list__exchange-bar">
+    <div class="ghb-cell ghb-cell--borderless ghb-field ghb-coupon-list__field">
+      <div class="ghb-cell__value ghb-cell__value--alone ghb-field__value">
+        <div class="ghb-field__body"><input type="text" placeholder="请输入优惠码" class="ghb-field__control"></div>
       </div>
-    </div><button disabled="disabled" class="van-button van-button--danger van-button--normal van-button--plain van-button--disabled van-coupon-list__exchange">
-      <div class="van-button__content"><span class="van-button__text">兑换</span></div>
+    </div><button disabled="disabled" class="ghb-button ghb-button--danger ghb-button--normal ghb-button--plain ghb-button--disabled ghb-coupon-list__exchange">
+      <div class="ghb-button__content"><span class="ghb-button__text">兑换</span></div>
     </button>
   </div>
-  <div class="van-tabs van-tabs--line van-coupon-list__tab">
-    <div class="van-tabs__wrap">
-      <div role="tablist" class="van-tabs__nav van-tabs__nav--line">
-        <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span class="van-tab__text van-tab__text--ellipsis">可用 (6)</span></div>
-        <div role="tab" class="van-tab"><span class="van-tab__text van-tab__text--ellipsis">不可用 (2)</span></div>
-        <div class="van-tabs__line"></div>
+  <div class="ghb-tabs ghb-tabs--line ghb-coupon-list__tab">
+    <div class="ghb-tabs__wrap">
+      <div role="tablist" class="ghb-tabs__nav ghb-tabs__nav--line">
+        <div role="tab" aria-selected="true" class="ghb-tab ghb-tab--active"><span class="ghb-tab__text ghb-tab__text--ellipsis">可用 (6)</span></div>
+        <div role="tab" class="ghb-tab"><span class="ghb-tab__text ghb-tab__text--ellipsis">不可用 (2)</span></div>
+        <div class="ghb-tabs__line"></div>
       </div>
     </div>
-    <div class="van-tabs__content">
-      <div role="tabpanel" class="van-tab__pane">
-        <div class="van-coupon-list__list van-coupon-list__list--with-bottom" style="height: 628px;">
-          <div class="van-coupon">
-            <div class="van-coupon__content">
-              <div class="van-coupon__head">
-                <h2 class="van-coupon__amount"></h2>
-                <p class="van-coupon__condition">无使用门槛</p>
+    <div class="ghb-tabs__content">
+      <div role="tabpanel" class="ghb-tab__pane">
+        <div class="ghb-coupon-list__list ghb-coupon-list__list--with-bottom" style="height: 628px;">
+          <div class="ghb-coupon">
+            <div class="ghb-coupon__content">
+              <div class="ghb-coupon__head">
+                <h2 class="ghb-coupon__amount"></h2>
+                <p class="ghb-coupon__condition">无使用门槛</p>
               </div>
-              <div class="van-coupon__body">
-                <p class="van-coupon__name"></p>
-                <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
-                <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox van-coupon__corner" size="18">
-                  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
+              <div class="ghb-coupon__body">
+                <p class="ghb-coupon__name"></p>
+                <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox ghb-coupon__corner" size="18">
+                  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
                       <!----></i></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="van-coupon">
-            <div class="van-coupon__content">
-              <div class="van-coupon__head">
-                <h2 class="van-coupon__amount"><span>¥</span> 1.5</h2>
-                <p class="van-coupon__condition">无使用门槛</p>
+          <div class="ghb-coupon">
+            <div class="ghb-coupon__content">
+              <div class="ghb-coupon__head">
+                <h2 class="ghb-coupon__amount"><span>¥</span> 1.5</h2>
+                <p class="ghb-coupon__condition">无使用门槛</p>
               </div>
-              <div class="van-coupon__body">
-                <p class="van-coupon__name">name</p>
-                <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
-                <div role="checkbox" tabindex="0" aria-checked="true" class="van-checkbox van-coupon__corner" size="18">
-                  <div class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked"><i class="van-icon van-icon-success" style="border-color: #ee0a24; background-color: rgb(238, 10, 36);">
+              <div class="ghb-coupon__body">
+                <p class="ghb-coupon__name">name</p>
+                <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
+                <div role="checkbox" tabindex="0" aria-checked="true" class="ghb-checkbox ghb-coupon__corner" size="18">
+                  <div class="ghb-checkbox__icon ghb-checkbox__icon--round ghb-checkbox__icon--checked"><i class="ghb-icon ghb-icon-success" style="border-color: #ee0a24; background-color: rgb(238, 10, 36);">
                       <!----></i></div>
                 </div>
               </div>
             </div>
-            <p class="van-coupon__description">description</p>
+            <p class="ghb-coupon__description">description</p>
           </div>
-          <div class="van-coupon">
-            <div class="van-coupon__content">
-              <div class="van-coupon__head">
-                <h2 class="van-coupon__amount"><span>¥</span> 1</h2>
-                <p class="van-coupon__condition">无使用门槛</p>
+          <div class="ghb-coupon">
+            <div class="ghb-coupon__content">
+              <div class="ghb-coupon__head">
+                <h2 class="ghb-coupon__amount"><span>¥</span> 1</h2>
+                <p class="ghb-coupon__condition">无使用门槛</p>
               </div>
-              <div class="van-coupon__body">
-                <p class="van-coupon__name">name</p>
-                <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
-                <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox van-coupon__corner" size="18">
-                  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
+              <div class="ghb-coupon__body">
+                <p class="ghb-coupon__name">name</p>
+                <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox ghb-coupon__corner" size="18">
+                  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
                       <!----></i></div>
                 </div>
               </div>
             </div>
-            <p class="van-coupon__description">description</p>
+            <p class="ghb-coupon__description">description</p>
           </div>
-          <div class="van-coupon">
-            <div class="van-coupon__content">
-              <div class="van-coupon__head">
-                <h2 class="van-coupon__amount"><span>¥</span> 1.23</h2>
-                <p class="van-coupon__condition">无使用门槛</p>
+          <div class="ghb-coupon">
+            <div class="ghb-coupon__content">
+              <div class="ghb-coupon__head">
+                <h2 class="ghb-coupon__amount"><span>¥</span> 1.23</h2>
+                <p class="ghb-coupon__condition">无使用门槛</p>
               </div>
-              <div class="van-coupon__body">
-                <p class="van-coupon__name">name</p>
-                <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
-                <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox van-coupon__corner" size="18">
-                  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
+              <div class="ghb-coupon__body">
+                <p class="ghb-coupon__name">name</p>
+                <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox ghb-coupon__corner" size="18">
+                  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
                       <!----></i></div>
                 </div>
               </div>
             </div>
-            <p class="van-coupon__description">description</p>
+            <p class="ghb-coupon__description">description</p>
           </div>
-          <div class="van-coupon">
-            <div class="van-coupon__content">
-              <div class="van-coupon__head">
-                <h2 class="van-coupon__amount">8.8折</h2>
-                <p class="van-coupon__condition">满0.5元可用</p>
+          <div class="ghb-coupon">
+            <div class="ghb-coupon__content">
+              <div class="ghb-coupon__head">
+                <h2 class="ghb-coupon__amount">8.8折</h2>
+                <p class="ghb-coupon__condition">满0.5元可用</p>
               </div>
-              <div class="van-coupon__body">
-                <p class="van-coupon__name">name</p>
-                <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
-                <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox van-coupon__corner" size="18">
-                  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
+              <div class="ghb-coupon__body">
+                <p class="ghb-coupon__name">name</p>
+                <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox ghb-coupon__corner" size="18">
+                  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
                       <!----></i></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="van-coupon">
-            <div class="van-coupon__content">
-              <div class="van-coupon__head">
-                <h2 class="van-coupon__amount">9折</h2>
-                <p class="van-coupon__condition">满0.5元可用</p>
+          <div class="ghb-coupon">
+            <div class="ghb-coupon__content">
+              <div class="ghb-coupon__head">
+                <h2 class="ghb-coupon__amount">9折</h2>
+                <p class="ghb-coupon__condition">满0.5元可用</p>
               </div>
-              <div class="van-coupon__body">
-                <p class="van-coupon__name">name</p>
-                <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
-                <div role="checkbox" tabindex="0" aria-checked="false" class="van-checkbox van-coupon__corner" size="18">
-                  <div class="van-checkbox__icon van-checkbox__icon--round"><i class="van-icon van-icon-success">
+              <div class="ghb-coupon__body">
+                <p class="ghb-coupon__name">name</p>
+                <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ghb-checkbox ghb-coupon__corner" size="18">
+                  <div class="ghb-checkbox__icon ghb-checkbox__icon--round"><i class="ghb-icon ghb-icon-success">
                       <!----></i></div>
                 </div>
               </div>
@@ -185,71 +185,71 @@ exports[`render coupon list 1`] = `
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="van-tab__pane" style="display: none;">
+      <div role="tabpanel" class="ghb-tab__pane" style="display: none;">
         <!---->
       </div>
     </div>
   </div>
-  <div class="van-coupon-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-coupon-list__close">
-      <div class="van-button__content"><span class="van-button__text">不使用优惠券</span></div>
+  <div class="ghb-coupon-list__bottom"><button class="ghb-button ghb-button--danger ghb-button--normal ghb-button--block ghb-button--round ghb-coupon-list__close">
+      <div class="ghb-button__content"><span class="ghb-button__text">不使用优惠券</span></div>
     </button></div>
 </div>
 `;
 
 exports[`render disabled coupon 1`] = `
-<div class="van-coupon van-coupon--disabled">
-  <div class="van-coupon__content">
-    <div class="van-coupon__head">
-      <h2 class="van-coupon__amount"><span>¥</span> 1.5</h2>
-      <p class="van-coupon__condition">无使用门槛</p>
+<div class="ghb-coupon ghb-coupon--disabled">
+  <div class="ghb-coupon__content">
+    <div class="ghb-coupon__head">
+      <h2 class="ghb-coupon__amount"><span>¥</span> 1.5</h2>
+      <p class="ghb-coupon__condition">无使用门槛</p>
     </div>
-    <div class="van-coupon__body">
-      <p class="van-coupon__name">name</p>
-      <p class="van-coupon__valid">2017.03.10 - 2017.12.30</p>
+    <div class="ghb-coupon__body">
+      <p class="ghb-coupon__name">name</p>
+      <p class="ghb-coupon__valid">2017.03.10 - 2017.12.30</p>
     </div>
   </div>
-  <p class="van-coupon__description">reason</p>
+  <p class="ghb-coupon__description">reason</p>
 </div>
 `;
 
 exports[`render empty coupon list 1`] = `
-<div class="van-coupon-list">
-  <div class="van-coupon-list__exchange-bar">
-    <div class="van-cell van-cell--borderless van-field van-coupon-list__field">
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="text" placeholder="请输入优惠码" class="van-field__control"></div>
+<div class="ghb-coupon-list">
+  <div class="ghb-coupon-list__exchange-bar">
+    <div class="ghb-cell ghb-cell--borderless ghb-field ghb-coupon-list__field">
+      <div class="ghb-cell__value ghb-cell__value--alone ghb-field__value">
+        <div class="ghb-field__body"><input type="text" placeholder="请输入优惠码" class="ghb-field__control"></div>
       </div>
-    </div><button disabled="disabled" class="van-button van-button--danger van-button--normal van-button--plain van-button--disabled van-coupon-list__exchange">
-      <div class="van-button__content"><span class="van-button__text">兑换</span></div>
+    </div><button disabled="disabled" class="ghb-button ghb-button--danger ghb-button--normal ghb-button--plain ghb-button--disabled ghb-coupon-list__exchange">
+      <div class="ghb-button__content"><span class="ghb-button__text">兑换</span></div>
     </button>
   </div>
-  <div class="van-tabs van-tabs--line van-coupon-list__tab">
-    <div class="van-tabs__wrap">
-      <div role="tablist" class="van-tabs__nav van-tabs__nav--line">
-        <div role="tab" class="van-tab"><span class="van-tab__text van-tab__text--ellipsis">可用 (0)</span></div>
-        <div role="tab" class="van-tab van-tab--active" aria-selected="true"><span class="van-tab__text van-tab__text--ellipsis">不可用 (0)</span></div>
-        <div class="van-tabs__line"></div>
+  <div class="ghb-tabs ghb-tabs--line ghb-coupon-list__tab">
+    <div class="ghb-tabs__wrap">
+      <div role="tablist" class="ghb-tabs__nav ghb-tabs__nav--line">
+        <div role="tab" class="ghb-tab"><span class="ghb-tab__text ghb-tab__text--ellipsis">可用 (0)</span></div>
+        <div role="tab" class="ghb-tab ghb-tab--active" aria-selected="true"><span class="ghb-tab__text ghb-tab__text--ellipsis">不可用 (0)</span></div>
+        <div class="ghb-tabs__line"></div>
       </div>
     </div>
-    <div class="van-tabs__content">
-      <div role="tabpanel" class="van-tab__pane" style="display: none;">
-        <div class="van-coupon-list__list van-coupon-list__list--with-bottom" style="height: 628px;">
-          <div class="van-coupon-list__empty"><img src="https://img01.yzcdn.cn/vant/coupon-empty.png">
+    <div class="ghb-tabs__content">
+      <div role="tabpanel" class="ghb-tab__pane" style="display: none;">
+        <div class="ghb-coupon-list__list ghb-coupon-list__list--with-bottom" style="height: 628px;">
+          <div class="ghb-coupon-list__empty"><img src="https://img01.yzcdn.cn/vant/coupon-empty.png">
             <p>暂无优惠券</p>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="van-tab__pane" style="">
-        <div class="van-coupon-list__list van-coupon-list__list--with-bottom" style="height: 628px;">
-          <div class="van-coupon-list__empty"><img src="https://img01.yzcdn.cn/vant/coupon-empty.png">
+      <div role="tabpanel" class="ghb-tab__pane" style="">
+        <div class="ghb-coupon-list__list ghb-coupon-list__list--with-bottom" style="height: 628px;">
+          <div class="ghb-coupon-list__empty"><img src="https://img01.yzcdn.cn/vant/coupon-empty.png">
             <p>暂无优惠券</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="van-coupon-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-coupon-list__close">
-      <div class="van-button__content"><span class="van-button__text">不使用优惠券</span></div>
+  <div class="ghb-coupon-list__bottom"><button class="ghb-button ghb-button--danger ghb-button--normal ghb-button--block ghb-button--round ghb-coupon-list__close">
+      <div class="ghb-button__content"><span class="ghb-button__text">不使用优惠券</span></div>
     </button></div>
 </div>
 `;

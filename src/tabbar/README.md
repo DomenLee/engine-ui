@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'ghbui';
 
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
@@ -15,12 +15,12 @@ Vue.use(TabbarItem);
 ### Basic Usage
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item icon="home-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">Tab</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
@@ -36,12 +36,12 @@ export default {
 ### Match by name
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item name="home" icon="home-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item name="search" icon="search">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item name="friends" icon="friends-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item name="setting" icon="setting-o">Tab</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
@@ -57,12 +57,12 @@ export default {
 ### Show Badge
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" badge="5">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" badge="20">Tab</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item icon="home-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search" dot>Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o" badge="5">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o" badge="20">Tab</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ### Custom Icon
@@ -70,16 +70,16 @@ export default {
 Use `icon` slot to custom icon.
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item badge="3">
+<ghb-tabbar v-model="active">
+  <ghb-tabbar-item badge="3">
     <span>Custom</span>
     <template #icon="props">
       <img :src="props.active ? icon.active : icon.inactive" />
     </template>
-  </van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+  </ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">Tab</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
@@ -99,27 +99,27 @@ export default {
 ### Custom Color
 
 ```html
-<van-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
+  <ghb-tabbar-item icon="home-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">Tab</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ### Change Event
 
 ```html
-<van-tabbar v-model="active" @change="onChange">
-  <van-tabbar-item icon="home-o">Tab1</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab2</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab3</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab4</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar v-model="active" @change="onChange">
+  <ghb-tabbar-item icon="home-o">Tab1</ghb-tabbar-item>
+  <ghb-tabbar-item icon="search">Tab2</ghb-tabbar-item>
+  <ghb-tabbar-item icon="friends-o">Tab3</ghb-tabbar-item>
+  <ghb-tabbar-item icon="setting-o">Tab4</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ```js
-import { Notify } from 'vant';
+import { Notify } from 'ghbui';
 
 export default {
   methods: {
@@ -135,10 +135,10 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item replace to="/home" icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item replace to="/search" icon="search">Tab</van-tabbar-item>
-</van-tabbar>
+<ghb-tabbar route>
+  <ghb-tabbar-item replace to="/home" icon="home-o">Tab</ghb-tabbar-item>
+  <ghb-tabbar-item replace to="/search" icon="search">Tab</ghb-tabbar-item>
+</ghb-tabbar>
 ```
 
 ## API
@@ -170,7 +170,7 @@ export default {
 | --- | --- | --- | --- |
 | name | Identifier | _number \| string_ | Item index |
 | icon | Icon name | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `ghb-icon` |
 | dot | Whether to show red dot | _boolean_ | - |
 | badge `v2.5.6` | Content of the badge | _number \| string_ | `''` |
 | url | Link | _string_ | - |

@@ -3,29 +3,29 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>显示分享面板</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>显示分享面板</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
     <!---->
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>显示分享面板</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>显示分享面板</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
     <!---->
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>显示分享面板</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>显示分享面板</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
     <!---->
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>显示分享面板</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="ghb-cell ghb-cell--clickable">
+      <div class="ghb-cell__title"><span>显示分享面板</span></div><i class="ghb-icon ghb-icon-arrow ghb-cell__right-icon">
         <!----></i>
     </div>
     <!---->

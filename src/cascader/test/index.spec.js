@@ -10,7 +10,7 @@ test('should emit change event when active option changed', async () => {
   });
 
   await later();
-  wrapper.find('.van-cascader__option').trigger('click');
+  wrapper.find('.ghb-cascader__option').trigger('click');
 
   const firstOption = options[0];
   expect(wrapper.emitted('change')[0]).toEqual([
@@ -23,9 +23,9 @@ test('should emit change event when active option changed', async () => {
 
   await later();
   wrapper
-    .findAll('.van-cascader__options')
+    .findAll('.ghb-cascader__options')
     .at(1)
-    .find('.van-cascader__option')
+    .find('.ghb-cascader__option')
     .trigger('click');
   const secondOption = options[0].children[0];
   expect(wrapper.emitted('change')[1]).toEqual([
@@ -46,7 +46,7 @@ test('should emit finish event when all options is selected', async () => {
   });
 
   await later();
-  wrapper.find('.van-cascader__option').trigger('click');
+  wrapper.find('.ghb-cascader__option').trigger('click');
   expect(wrapper.emitted('finish')[0]).toEqual([
     {
       value: option.value,
@@ -58,7 +58,7 @@ test('should emit finish event when all options is selected', async () => {
 
 test('should emit close event when close icon is clicked', () => {
   const wrapper = mount(Cascader);
-  wrapper.find('.van-cascader__close-icon').trigger('click');
+  wrapper.find('.ghb-cascader__close-icon').trigger('click');
   expect(wrapper.emitted('close')[0]).toBeTruthy();
 });
 
@@ -68,7 +68,7 @@ test('should not render close icon when closeable is false', () => {
       closeable: false,
     },
   });
-  expect(wrapper.contains('.van-cascader__close-icon')).toBeFalsy();
+  expect(wrapper.contains('.ghb-cascader__close-icon')).toBeFalsy();
 });
 
 test('should render title slot correctly', () => {
@@ -77,7 +77,7 @@ test('should render title slot correctly', () => {
       title: () => 'Custom Title',
     },
   });
-  expect(wrapper.find('.van-cascader__title').html()).toMatchSnapshot();
+  expect(wrapper.find('.ghb-cascader__title').html()).toMatchSnapshot();
 });
 
 test('should select correct option when value changed', async () => {
@@ -90,7 +90,7 @@ test('should select correct option when value changed', async () => {
   await later();
   wrapper.setProps({ value: '330304' });
   await later();
-  const selectedOptions = wrapper.findAll('.van-cascader__option--selected');
+  const selectedOptions = wrapper.findAll('.ghb-cascader__option--selected');
   const lastSelectedOption = selectedOptions.at(selectedOptions.length - 1);
   expect(lastSelectedOption).toMatchSnapshot();
 });
@@ -106,7 +106,7 @@ test('should reset selected options when value is set to emtpy', async () => {
   await later();
   wrapper.setProps({ value: '' });
   await later();
-  expect(wrapper.contains('.van-cascader__option--selected')).toBeFalsy();
+  expect(wrapper.contains('.ghb-cascader__option--selected')).toBeFalsy();
 });
 
 test('should update tabs when previous tab is clicked', async () => {
@@ -118,7 +118,7 @@ test('should update tabs when previous tab is clicked', async () => {
   });
 
   await later();
-  wrapper.findAll('.van-cascader__option').at(1).trigger('click');
+  wrapper.findAll('.ghb-cascader__option').at(1).trigger('click');
   await later();
   expect(wrapper.html()).toMatchSnapshot();
 });

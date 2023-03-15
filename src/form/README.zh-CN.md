@@ -8,8 +8,8 @@
 
 ```js
 import Vue from 'vue';
-import { Form } from 'vant';
-import { Field } from 'vant';
+import { Form } from 'ghbui';
+import { Field } from 'ghbui';
 
 Vue.use(Form);
 Vue.use(Field);
@@ -22,15 +22,15 @@ Vue.use(Field);
 在表单中，每个 [Field 组件](#/zh-CN/field) 代表一个表单项，使用 Field 的 `rules` 属性定义校验规则。
 
 ```html
-<van-form @submit="onSubmit">
-  <van-field
+<ghb-form @submit="onSubmit">
+  <ghb-field
     v-model="username"
     name="用户名"
     label="用户名"
     placeholder="用户名"
     :rules="[{ required: true, message: '请填写用户名' }]"
   />
-  <van-field
+  <ghb-field
     v-model="password"
     type="password"
     name="密码"
@@ -39,9 +39,9 @@ Vue.use(Field);
     :rules="[{ required: true, message: '请填写密码' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">提交</van-button>
+    <ghb-button round block type="info" native-type="submit">提交</ghb-button>
   </div>
-</van-form>
+</ghb-form>
 ```
 
 ```js
@@ -65,36 +65,36 @@ export default {
 通过 `rules` 定义表单校验规则，可用字段见[下方表格](#/zh-CN/form#rule-shu-ju-jie-gou)。
 
 ```html
-<van-form validate-first @failed="onFailed">
+<ghb-form validate-first @failed="onFailed">
   <!-- 通过 pattern 进行正则校验 -->
-  <van-field
+  <ghb-field
     v-model="value1"
     name="pattern"
     placeholder="正则校验"
     :rules="[{ pattern, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行函数校验 -->
-  <van-field
+  <ghb-field
     v-model="value2"
     name="validator"
     placeholder="函数校验"
     :rules="[{ validator, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行异步函数校验 -->
-  <van-field
+  <ghb-field
     v-model="value3"
     name="asyncValidator"
     placeholder="异步函数校验"
     :rules="[{ validator: asyncValidator, message: '请输入正确内容' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">提交</van-button>
+    <ghb-button round block type="info" native-type="submit">提交</ghb-button>
   </div>
-</van-form>
+</ghb-form>
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'ghbui';
 
 export default {
   data() {
@@ -133,11 +133,11 @@ export default {
 在表单中使用 [Switch 组件](#/zh-CN/switch)。
 
 ```html
-<van-field name="switch" label="开关">
+<ghb-field name="switch" label="开关">
   <template #input>
-    <van-switch v-model="switchChecked" size="20" />
+    <ghb-switch v-model="switchChecked" size="20" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -155,19 +155,19 @@ export default {
 在表单中使用 [Checkbox 组件](#/zh-CN/checkbox)。
 
 ```html
-<van-field name="checkbox" label="复选框">
+<ghb-field name="checkbox" label="复选框">
   <template #input>
-    <van-checkbox v-model="checkbox" shape="square" />
+    <ghb-checkbox v-model="checkbox" shape="square" />
   </template>
-</van-field>
-<van-field name="checkboxGroup" label="复选框组">
+</ghb-field>
+<ghb-field name="checkboxGroup" label="复选框组">
   <template #input>
-    <van-checkbox-group v-model="checkboxGroup" direction="horizontal">
-      <van-checkbox name="1" shape="square">复选框 1</van-checkbox>
-      <van-checkbox name="2" shape="square">复选框 2</van-checkbox>
-    </van-checkbox-group>
+    <ghb-checkbox-group v-model="checkboxGroup" direction="horizontal">
+      <ghb-checkbox name="1" shape="square">复选框 1</ghb-checkbox>
+      <ghb-checkbox name="2" shape="square">复选框 2</ghb-checkbox>
+    </ghb-checkbox-group>
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -186,14 +186,14 @@ export default {
 在表单中使用 [Radio 组件](#/zh-CN/radio)。
 
 ```html
-<van-field name="radio" label="单选框">
+<ghb-field name="radio" label="单选框">
   <template #input>
-    <van-radio-group v-model="radio" direction="horizontal">
-      <van-radio name="1">单选框 1</van-radio>
-      <van-radio name="2">单选框 2</van-radio>
-    </van-radio-group>
+    <ghb-radio-group v-model="radio" direction="horizontal">
+      <ghb-radio name="1">单选框 1</ghb-radio>
+      <ghb-radio name="2">单选框 2</ghb-radio>
+    </ghb-radio-group>
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -211,11 +211,11 @@ export default {
 在表单中使用 [Stepper 组件](#/zh-CN/stepper)。
 
 ```html
-<van-field name="stepper" label="步进器">
+<ghb-field name="stepper" label="步进器">
   <template #input>
-    <van-stepper v-model="stepper" />
+    <ghb-stepper v-model="stepper" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -233,11 +233,11 @@ export default {
 在表单中使用 [Rate 组件](#/zh-CN/rate)。
 
 ```html
-<van-field name="rate" label="评分">
+<ghb-field name="rate" label="评分">
   <template #input>
-    <van-rate v-model="rate" />
+    <ghb-rate v-model="rate" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -255,11 +255,11 @@ export default {
 在表单中使用 [Slider 组件](#/zh-CN/slider)。
 
 ```html
-<van-field name="slider" label="滑块">
+<ghb-field name="slider" label="滑块">
   <template #input>
-    <van-slider v-model="slider" />
+    <ghb-slider v-model="slider" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -277,11 +277,11 @@ export default {
 在表单中使用 [Uploader 组件](#/zh-CN/uploader)。
 
 ```html
-<van-field name="uploader" label="文件上传">
+<ghb-field name="uploader" label="文件上传">
   <template #input>
-    <van-uploader v-model="uploader" />
+    <ghb-uploader v-model="uploader" />
   </template>
-</van-field>
+</ghb-field>
 ```
 
 ```js
@@ -299,7 +299,7 @@ export default {
 在表单中使用 [Picker 组件](#/zh-CN/picker)。
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="picker"
@@ -308,14 +308,14 @@ export default {
   placeholder="点击选择城市"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-picker
+<ghb-popup v-model="showPicker" position="bottom">
+  <ghb-picker
     show-toolbar
     :columns="columns"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -341,7 +341,7 @@ export default {
 在表单中使用 [DatetimePicker 组件](#/zh-CN/datetime-picker)。
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="datetimePicker"
@@ -350,13 +350,13 @@ export default {
   placeholder="点击选择时间"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-datetime-picker
+<ghb-popup v-model="showPicker" position="bottom">
+  <ghb-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -381,7 +381,7 @@ export default {
 在表单中使用 [Area 组件](#/zh-CN/area)。
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="area"
@@ -390,13 +390,13 @@ export default {
   placeholder="点击选择省市区"
   @click="showArea = true"
 />
-<van-popup v-model="showArea" position="bottom">
-  <van-area
+<ghb-popup v-model="showArea" position="bottom">
+  <ghb-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="showArea = false"
   />
-</van-popup>
+</ghb-popup>
 ```
 
 ```js
@@ -425,7 +425,7 @@ export default {
 在表单中使用 [Calendar 组件](#/zh-CN/calendar)。
 
 ```html
-<van-field
+<ghb-field
   readonly
   clickable
   name="calendar"
@@ -434,7 +434,7 @@ export default {
   placeholder="点击选择日期"
   @click="showCalendar = true"
 />
-<van-calendar v-model="showCalendar" @confirm="onConfirm" />
+<ghb-calendar v-model="showCalendar" @confirm="onConfirm" />
 ```
 
 ```js
@@ -530,7 +530,7 @@ export default {
 在表单中，除了提交按钮外，可能还有一些其他的功能性按钮，如发送验证码按钮。在使用这些按钮时，要注意将`native-type`设置为`button`，否则会触发表单提交。
 
 ```html
-<van-button native-type="button">发送验证码</van-button>
+<ghb-button native-type="button">发送验证码</ghb-button>
 ```
 
 这个问题的原因是浏览器中 button 标签 type 属性的默认值为`submit`，导致触发表单提交。我们会在下个大版本中将 type 的默认值调整为`button`来避免这个问题。
